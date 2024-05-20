@@ -1,30 +1,24 @@
 
-# EFT-DMA-Radar-v2
+EFT_DMA_雷达
 
-## Description
-EFT DMA Radar is a radar tool designed for Escape from Tarkov that provides real-time tracking of players and items on a 2D map.
+Escape from Tarkov 设计的工具，可在 2D 地图上实时跟踪玩家和物品，
+有问题请加QQ:2213762483反馈
 
-## Usage
+用法
+用VS 2022
+保证偏移是最新的
+确保所有必要的依赖项都已到位。
+编译项目。
+运行应用程序。
 
-1. Clone the repository.
-2. Ensure all necessary dependencies are in place.
-3. Compile the project.
-4. Run the application.
+依赖
+FTD3XX.dll - https://ftdichip.com/drivers/d3xx-drivers/
+leechcore.dll、vmm.dll、dbghelp.dll、symsrv.dll和vcruntime140.dll - https://github.com/ufrisk/MemProcFS/releases
+联系
 
-## Dependencies
+注意
+确保正确包含和引用所有必要的文件，以使应用程序正常运行，此项目为开源项目，从其他来源获取，我只是将他汉化
 
-- FTD3XX.dll - https://ftdichip.com/drivers/d3xx-drivers/
-- leechcore.dll, vmm.dll, dbghelp.dll, symsrv.dll and vcruntime140.dll - https://github.com/ufrisk/MemProcFS/releases
-
-## Contact
-For any inquiries or assistance, feel free to join the Discord server: https://discord.gg/jGSnTCekdx
-
-## Note
-
-Ensure all necessary files are properly included and referenced for the application to function correctly.
-
-## Acknowledgments
-This project builds upon the original work created by [Git link](https://github.com/6b45/eft-dma-radar-1) [UC Forum Thread](https://www.unknowncheats.me/forum/escape-from-tarkov/482418-2d-map-dma-radar-wip.html). I am not the original creator of this project; all credit for the initial concept and development goes to Lone. This version seeks to extend and enhance the original tool with updated functionalities and improvements. Big thanks to [Keegi](https://github.com/HuiTeab/) for continuing the project as long as he did & implementing many awesome features/functionality & MasterKeef for providing some maps to go with this
 
 ## Preview
 ![image](https://github.com/xx0m/EFT-DMA-Radar-v2/assets/63579245/a3a5c64a-3af8-4814-a81a-9e085b13367c)
