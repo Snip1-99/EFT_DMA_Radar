@@ -1172,7 +1172,7 @@ namespace eft_dma_radar
             btnAddFaction.MouseState = MaterialSkin.MouseState.HOVER;
             btnAddFaction.Name = "btnAddFaction";
             btnAddFaction.NoAccentTextColor = Color.Empty;
-            btnAddFaction.Size = new Size(93, 36);
+            btnAddFaction.Size = new Size(81, 36);
             btnAddFaction.TabIndex = 39;
             btnAddFaction.Text = "添加";
             toolTip.SetToolTip(btnAddFaction, "Creates a new loot filter profile");
@@ -1193,7 +1193,7 @@ namespace eft_dma_radar
             btnRemoveFaction.MouseState = MaterialSkin.MouseState.HOVER;
             btnRemoveFaction.Name = "btnRemoveFaction";
             btnRemoveFaction.NoAccentTextColor = Color.Empty;
-            btnRemoveFaction.Size = new Size(93, 36);
+            btnRemoveFaction.Size = new Size(81, 36);
             btnRemoveFaction.TabIndex = 40;
             btnRemoveFaction.Text = "移除";
             toolTip.SetToolTip(btnRemoveFaction, "Removes the selected loot filter profile");
@@ -1214,7 +1214,7 @@ namespace eft_dma_radar
             btnAddFactionEntry.MouseState = MaterialSkin.MouseState.HOVER;
             btnAddFactionEntry.Name = "btnAddFactionEntry";
             btnAddFactionEntry.NoAccentTextColor = Color.Empty;
-            btnAddFactionEntry.Size = new Size(129, 36);
+            btnAddFactionEntry.Size = new Size(113, 36);
             btnAddFactionEntry.TabIndex = 46;
             btnAddFactionEntry.Text = "添加名单";
             toolTip.SetToolTip(btnAddFactionEntry, "Creates a new loot filter profile");
@@ -1235,7 +1235,7 @@ namespace eft_dma_radar
             btnRemoveFactionEntry.MouseState = MaterialSkin.MouseState.HOVER;
             btnRemoveFactionEntry.Name = "btnRemoveFactionEntry";
             btnRemoveFactionEntry.NoAccentTextColor = Color.Empty;
-            btnRemoveFactionEntry.Size = new Size(93, 36);
+            btnRemoveFactionEntry.Size = new Size(81, 36);
             btnRemoveFactionEntry.TabIndex = 48;
             btnRemoveFactionEntry.Text = "移除";
             toolTip.SetToolTip(btnRemoveFactionEntry, "Removes the selected loot filter profile");
@@ -2396,7 +2396,7 @@ namespace eft_dma_radar
             cboFont.Hint = "字体";
             cboFont.IntegralHeight = false;
             cboFont.ItemHeight = 29;
-            cboFont.Items.AddRange(new object[] { "Arial", "Calibri", "Candara", "Consolas", "Constantia", "Corbel", "Helvetica", "Lato", "Roboto", "Segoe UI", "Tahoma", "Trebuchet MS", "Verdana" });
+            cboFont.Items.AddRange(new object[] { "Arial", "Microsoft YaHei", "SimSun", "SimHei", "KaiTi" });
             cboFont.Location = new Point(19, 241);
             cboFont.MaxDropDownItems = 10;
             cboFont.MouseState = MaterialSkin.MouseState.OUT;
@@ -2527,10 +2527,10 @@ namespace eft_dma_radar
             mcRadarEnemyStats.Depth = 0;
             mcRadarEnemyStats.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcRadarEnemyStats.Location = new Point(1247, 705);
-            mcRadarEnemyStats.Margin = new Padding(16, 16, 16, 16);
+            mcRadarEnemyStats.Margin = new Padding(16);
             mcRadarEnemyStats.MouseState = MaterialSkin.MouseState.HOVER;
             mcRadarEnemyStats.Name = "mcRadarEnemyStats";
-            mcRadarEnemyStats.Padding = new Padding(16, 16, 16, 16);
+            mcRadarEnemyStats.Padding = new Padding(16);
             mcRadarEnemyStats.Size = new Size(112, 86);
             mcRadarEnemyStats.TabIndex = 49;
             mcRadarEnemyStats.Visible = false;
@@ -2682,10 +2682,10 @@ namespace eft_dma_radar
             mcRadarStats.Depth = 0;
             mcRadarStats.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcRadarStats.Location = new Point(1360, 705);
-            mcRadarStats.Margin = new Padding(16, 16, 16, 16);
+            mcRadarStats.Margin = new Padding(16);
             mcRadarStats.MouseState = MaterialSkin.MouseState.HOVER;
             mcRadarStats.Name = "mcRadarStats";
-            mcRadarStats.Padding = new Padding(16, 16, 16, 16);
+            mcRadarStats.Padding = new Padding(16);
             mcRadarStats.Size = new Size(117, 86);
             mcRadarStats.TabIndex = 36;
             mcRadarStats.Visible = false;
@@ -2828,10 +2828,10 @@ namespace eft_dma_radar
             mcRadarSettings.Depth = 0;
             mcRadarSettings.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcRadarSettings.Location = new Point(1341, 6);
-            mcRadarSettings.Margin = new Padding(16, 16, 16, 16);
+            mcRadarSettings.Margin = new Padding(16);
             mcRadarSettings.MouseState = MaterialSkin.MouseState.HOVER;
             mcRadarSettings.Name = "mcRadarSettings";
-            mcRadarSettings.Padding = new Padding(16, 16, 16, 16);
+            mcRadarSettings.Padding = new Padding(16);
             mcRadarSettings.Size = new Size(136, 52);
             mcRadarSettings.TabIndex = 48;
             // 
@@ -2846,10 +2846,10 @@ namespace eft_dma_radar
             mcRadarMapSetup.Depth = 0;
             mcRadarMapSetup.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcRadarMapSetup.Location = new Point(11, 731);
-            mcRadarMapSetup.Margin = new Padding(16, 16, 16, 16);
+            mcRadarMapSetup.Margin = new Padding(16);
             mcRadarMapSetup.MouseState = MaterialSkin.MouseState.HOVER;
             mcRadarMapSetup.Name = "mcRadarMapSetup";
-            mcRadarMapSetup.Padding = new Padding(16, 16, 16, 16);
+            mcRadarMapSetup.Padding = new Padding(16);
             mcRadarMapSetup.Size = new Size(371, 60);
             mcRadarMapSetup.TabIndex = 18;
             mcRadarMapSetup.Visible = false;
@@ -2967,10 +2967,10 @@ namespace eft_dma_radar
             mcSettingsGeneralUI.Depth = 0;
             mcSettingsGeneralUI.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsGeneralUI.Location = new Point(17, 188);
-            mcSettingsGeneralUI.Margin = new Padding(16, 16, 16, 16);
+            mcSettingsGeneralUI.Margin = new Padding(16);
             mcSettingsGeneralUI.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsGeneralUI.Name = "mcSettingsGeneralUI";
-            mcSettingsGeneralUI.Padding = new Padding(16, 16, 16, 16);
+            mcSettingsGeneralUI.Padding = new Padding(16);
             mcSettingsGeneralUI.Size = new Size(723, 306);
             mcSettingsGeneralUI.TabIndex = 31;
             // 
@@ -3002,10 +3002,10 @@ namespace eft_dma_radar
             mcSettingsGeneralRadar.Depth = 0;
             mcSettingsGeneralRadar.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsGeneralRadar.Location = new Point(17, 16);
-            mcSettingsGeneralRadar.Margin = new Padding(16, 16, 16, 16);
+            mcSettingsGeneralRadar.Margin = new Padding(16);
             mcSettingsGeneralRadar.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsGeneralRadar.Name = "mcSettingsGeneralRadar";
-            mcSettingsGeneralRadar.Padding = new Padding(16, 16, 16, 16);
+            mcSettingsGeneralRadar.Padding = new Padding(16);
             mcSettingsGeneralRadar.Size = new Size(723, 154);
             mcSettingsGeneralRadar.TabIndex = 30;
             // 
@@ -3066,10 +3066,10 @@ namespace eft_dma_radar
             mcSettingsMemoryWritingSkillBuffs.Depth = 0;
             mcSettingsMemoryWritingSkillBuffs.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsMemoryWritingSkillBuffs.Location = new Point(655, 64);
-            mcSettingsMemoryWritingSkillBuffs.Margin = new Padding(16, 16, 16, 16);
+            mcSettingsMemoryWritingSkillBuffs.Margin = new Padding(16);
             mcSettingsMemoryWritingSkillBuffs.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsMemoryWritingSkillBuffs.Name = "mcSettingsMemoryWritingSkillBuffs";
-            mcSettingsMemoryWritingSkillBuffs.Padding = new Padding(16, 16, 16, 16);
+            mcSettingsMemoryWritingSkillBuffs.Padding = new Padding(16);
             mcSettingsMemoryWritingSkillBuffs.Size = new Size(606, 405);
             mcSettingsMemoryWritingSkillBuffs.TabIndex = 42;
             // 
@@ -3100,10 +3100,10 @@ namespace eft_dma_radar
             mcSettingsMemoryWritingThermal.Depth = 0;
             mcSettingsMemoryWritingThermal.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsMemoryWritingThermal.Location = new Point(17, 380);
-            mcSettingsMemoryWritingThermal.Margin = new Padding(16, 16, 16, 16);
+            mcSettingsMemoryWritingThermal.Margin = new Padding(16);
             mcSettingsMemoryWritingThermal.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsMemoryWritingThermal.Name = "mcSettingsMemoryWritingThermal";
-            mcSettingsMemoryWritingThermal.Padding = new Padding(16, 16, 16, 16);
+            mcSettingsMemoryWritingThermal.Padding = new Padding(16);
             mcSettingsMemoryWritingThermal.Size = new Size(611, 186);
             mcSettingsMemoryWritingThermal.TabIndex = 41;
             mcSettingsMemoryWritingThermal.Visible = false;
@@ -3135,10 +3135,10 @@ namespace eft_dma_radar
             mcSettingsMemoryWritingGlobal.Depth = 0;
             mcSettingsMemoryWritingGlobal.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsMemoryWritingGlobal.Location = new Point(17, 64);
-            mcSettingsMemoryWritingGlobal.Margin = new Padding(16, 16, 16, 16);
+            mcSettingsMemoryWritingGlobal.Margin = new Padding(16);
             mcSettingsMemoryWritingGlobal.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsMemoryWritingGlobal.Name = "mcSettingsMemoryWritingGlobal";
-            mcSettingsMemoryWritingGlobal.Padding = new Padding(16, 16, 16, 16);
+            mcSettingsMemoryWritingGlobal.Padding = new Padding(16);
             mcSettingsMemoryWritingGlobal.Size = new Size(611, 142);
             mcSettingsMemoryWritingGlobal.TabIndex = 38;
             // 
@@ -3170,10 +3170,10 @@ namespace eft_dma_radar
             mcSettingsMemoryWritingGear.Depth = 0;
             mcSettingsMemoryWritingGear.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsMemoryWritingGear.Location = new Point(17, 222);
-            mcSettingsMemoryWritingGear.Margin = new Padding(16, 16, 16, 16);
+            mcSettingsMemoryWritingGear.Margin = new Padding(16);
             mcSettingsMemoryWritingGear.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsMemoryWritingGear.Name = "mcSettingsMemoryWritingGear";
-            mcSettingsMemoryWritingGear.Padding = new Padding(16, 16, 16, 16);
+            mcSettingsMemoryWritingGear.Padding = new Padding(16);
             mcSettingsMemoryWritingGear.Size = new Size(611, 139);
             mcSettingsMemoryWritingGear.TabIndex = 39;
             // 
@@ -3215,10 +3215,10 @@ namespace eft_dma_radar
             mcSettingsLootMinRubleValue.Depth = 0;
             mcSettingsLootMinRubleValue.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsLootMinRubleValue.Location = new Point(17, 235);
-            mcSettingsLootMinRubleValue.Margin = new Padding(16, 16, 16, 16);
+            mcSettingsLootMinRubleValue.Margin = new Padding(16);
             mcSettingsLootMinRubleValue.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsLootMinRubleValue.Name = "mcSettingsLootMinRubleValue";
-            mcSettingsLootMinRubleValue.Padding = new Padding(16, 16, 16, 16);
+            mcSettingsLootMinRubleValue.Padding = new Padding(16);
             mcSettingsLootMinRubleValue.Size = new Size(670, 142);
             mcSettingsLootMinRubleValue.TabIndex = 37;
             // 
@@ -3253,10 +3253,10 @@ namespace eft_dma_radar
             mcSettingsLootGeneral.Depth = 0;
             mcSettingsLootGeneral.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsLootGeneral.Location = new Point(17, 16);
-            mcSettingsLootGeneral.Margin = new Padding(16, 16, 16, 16);
+            mcSettingsLootGeneral.Margin = new Padding(16);
             mcSettingsLootGeneral.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsLootGeneral.Name = "mcSettingsLootGeneral";
-            mcSettingsLootGeneral.Padding = new Padding(16, 16, 16, 16);
+            mcSettingsLootGeneral.Padding = new Padding(16);
             mcSettingsLootGeneral.Size = new Size(670, 201);
             mcSettingsLootGeneral.TabIndex = 36;
             // 
@@ -3326,10 +3326,10 @@ namespace eft_dma_radar
             mcSettingsAIFactionsEntryManagement.Depth = 0;
             mcSettingsAIFactionsEntryManagement.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsAIFactionsEntryManagement.Location = new Point(320, 16);
-            mcSettingsAIFactionsEntryManagement.Margin = new Padding(16, 16, 16, 16);
+            mcSettingsAIFactionsEntryManagement.Margin = new Padding(16);
             mcSettingsAIFactionsEntryManagement.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsAIFactionsEntryManagement.Name = "mcSettingsAIFactionsEntryManagement";
-            mcSettingsAIFactionsEntryManagement.Padding = new Padding(16, 16, 16, 16);
+            mcSettingsAIFactionsEntryManagement.Padding = new Padding(16);
             mcSettingsAIFactionsEntryManagement.Size = new Size(545, 122);
             mcSettingsAIFactionsEntryManagement.TabIndex = 43;
             // 
@@ -3361,10 +3361,10 @@ namespace eft_dma_radar
             mcSettingsAIFactionsFactions.Depth = 0;
             mcSettingsAIFactionsFactions.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsAIFactionsFactions.Location = new Point(320, 156);
-            mcSettingsAIFactionsFactions.Margin = new Padding(16, 16, 16, 16);
+            mcSettingsAIFactionsFactions.Margin = new Padding(16);
             mcSettingsAIFactionsFactions.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsAIFactionsFactions.Name = "mcSettingsAIFactionsFactions";
-            mcSettingsAIFactionsFactions.Padding = new Padding(16, 16, 16, 16);
+            mcSettingsAIFactionsFactions.Padding = new Padding(16);
             mcSettingsAIFactionsFactions.Size = new Size(545, 468);
             mcSettingsAIFactionsFactions.TabIndex = 42;
             // 
@@ -3445,10 +3445,10 @@ namespace eft_dma_radar
             mcSettingsColorsOther.Depth = 0;
             mcSettingsColorsOther.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsColorsOther.Location = new Point(995, 16);
-            mcSettingsColorsOther.Margin = new Padding(16, 16, 16, 16);
+            mcSettingsColorsOther.Margin = new Padding(16);
             mcSettingsColorsOther.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsColorsOther.Name = "mcSettingsColorsOther";
-            mcSettingsColorsOther.Padding = new Padding(16, 16, 16, 16);
+            mcSettingsColorsOther.Padding = new Padding(16);
             mcSettingsColorsOther.Size = new Size(213, 365);
             mcSettingsColorsOther.TabIndex = 43;
             // 
@@ -3650,10 +3650,10 @@ namespace eft_dma_radar
             mcSettingsColorsLootAndQuests.Depth = 0;
             mcSettingsColorsLootAndQuests.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsColorsLootAndQuests.Location = new Point(744, 16);
-            mcSettingsColorsLootAndQuests.Margin = new Padding(16, 16, 16, 16);
+            mcSettingsColorsLootAndQuests.Margin = new Padding(16);
             mcSettingsColorsLootAndQuests.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsColorsLootAndQuests.Name = "mcSettingsColorsLootAndQuests";
-            mcSettingsColorsLootAndQuests.Padding = new Padding(16, 16, 16, 16);
+            mcSettingsColorsLootAndQuests.Padding = new Padding(16);
             mcSettingsColorsLootAndQuests.Size = new Size(225, 365);
             mcSettingsColorsLootAndQuests.TabIndex = 42;
             // 
@@ -3787,10 +3787,10 @@ namespace eft_dma_radar
             mcSettingsColorsExfiltration.Depth = 0;
             mcSettingsColorsExfiltration.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsColorsExfiltration.Location = new Point(509, 16);
-            mcSettingsColorsExfiltration.Margin = new Padding(16, 16, 16, 16);
+            mcSettingsColorsExfiltration.Margin = new Padding(16);
             mcSettingsColorsExfiltration.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsColorsExfiltration.Name = "mcSettingsColorsExfiltration";
-            mcSettingsColorsExfiltration.Padding = new Padding(16, 16, 16, 16);
+            mcSettingsColorsExfiltration.Padding = new Padding(16);
             mcSettingsColorsExfiltration.Size = new Size(209, 365);
             mcSettingsColorsExfiltration.TabIndex = 41;
             // 
@@ -3974,10 +3974,10 @@ namespace eft_dma_radar
             mcSettingsColorsPlayers.Depth = 0;
             mcSettingsColorsPlayers.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsColorsPlayers.Location = new Point(280, 16);
-            mcSettingsColorsPlayers.Margin = new Padding(16, 16, 16, 16);
+            mcSettingsColorsPlayers.Margin = new Padding(16);
             mcSettingsColorsPlayers.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsColorsPlayers.Name = "mcSettingsColorsPlayers";
-            mcSettingsColorsPlayers.Padding = new Padding(16, 16, 16, 16);
+            mcSettingsColorsPlayers.Padding = new Padding(16);
             mcSettingsColorsPlayers.Size = new Size(202, 365);
             mcSettingsColorsPlayers.TabIndex = 40;
             // 
@@ -4189,10 +4189,10 @@ namespace eft_dma_radar
             mcSettingsColorsAI.Depth = 0;
             mcSettingsColorsAI.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsColorsAI.Location = new Point(17, 16);
-            mcSettingsColorsAI.Margin = new Padding(16, 16, 16, 16);
+            mcSettingsColorsAI.Margin = new Padding(16);
             mcSettingsColorsAI.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsColorsAI.Name = "mcSettingsColorsAI";
-            mcSettingsColorsAI.Padding = new Padding(16, 16, 16, 16);
+            mcSettingsColorsAI.Padding = new Padding(16);
             mcSettingsColorsAI.Size = new Size(237, 365);
             mcSettingsColorsAI.TabIndex = 39;
             // 
@@ -4454,7 +4454,7 @@ namespace eft_dma_radar
             mcPlayerLoadoutsAI.MaximumSize = new Size(686, 1020);
             mcPlayerLoadoutsAI.MouseState = MaterialSkin.MouseState.HOVER;
             mcPlayerLoadoutsAI.Name = "mcPlayerLoadoutsAI";
-            mcPlayerLoadoutsAI.Padding = new Padding(16, 16, 16, 16);
+            mcPlayerLoadoutsAI.Padding = new Padding(16);
             mcPlayerLoadoutsAI.Size = new Size(686, 768);
             mcPlayerLoadoutsAI.TabIndex = 3;
             // 
@@ -4498,7 +4498,7 @@ namespace eft_dma_radar
             mcPlayerLoadoutsPlayers.MaximumSize = new Size(686, 1020);
             mcPlayerLoadoutsPlayers.MouseState = MaterialSkin.MouseState.HOVER;
             mcPlayerLoadoutsPlayers.Name = "mcPlayerLoadoutsPlayers";
-            mcPlayerLoadoutsPlayers.Padding = new Padding(16, 16, 16, 16);
+            mcPlayerLoadoutsPlayers.Padding = new Padding(16);
             mcPlayerLoadoutsPlayers.Size = new Size(686, 768);
             mcPlayerLoadoutsPlayers.TabIndex = 2;
             // 
@@ -4552,10 +4552,10 @@ namespace eft_dma_radar
             mcWatchlistPlayerlist.Depth = 0;
             mcWatchlistPlayerlist.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcWatchlistPlayerlist.Location = new Point(1080, 6);
-            mcWatchlistPlayerlist.Margin = new Padding(16, 16, 16, 16);
+            mcWatchlistPlayerlist.Margin = new Padding(16);
             mcWatchlistPlayerlist.MouseState = MaterialSkin.MouseState.HOVER;
             mcWatchlistPlayerlist.Name = "mcWatchlistPlayerlist";
-            mcWatchlistPlayerlist.Padding = new Padding(16, 16, 16, 16);
+            mcWatchlistPlayerlist.Padding = new Padding(16);
             mcWatchlistPlayerlist.Size = new Size(264, 717);
             mcWatchlistPlayerlist.TabIndex = 48;
             // 
@@ -4610,10 +4610,10 @@ namespace eft_dma_radar
             mcWatchlistProfiles.Depth = 0;
             mcWatchlistProfiles.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcWatchlistProfiles.Location = new Point(514, 239);
-            mcWatchlistProfiles.Margin = new Padding(16, 16, 16, 16);
+            mcWatchlistProfiles.Margin = new Padding(16);
             mcWatchlistProfiles.MouseState = MaterialSkin.MouseState.HOVER;
             mcWatchlistProfiles.Name = "mcWatchlistProfiles";
-            mcWatchlistProfiles.Padding = new Padding(16, 16, 16, 16);
+            mcWatchlistProfiles.Padding = new Padding(16);
             mcWatchlistProfiles.Size = new Size(549, 483);
             mcWatchlistProfiles.TabIndex = 47;
             // 
@@ -4671,10 +4671,10 @@ namespace eft_dma_radar
             mcWatchlistPlayerManagement.Depth = 0;
             mcWatchlistPlayerManagement.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcWatchlistPlayerManagement.Location = new Point(514, 6);
-            mcWatchlistPlayerManagement.Margin = new Padding(16, 16, 16, 16);
+            mcWatchlistPlayerManagement.Margin = new Padding(16);
             mcWatchlistPlayerManagement.MouseState = MaterialSkin.MouseState.HOVER;
             mcWatchlistPlayerManagement.Name = "mcWatchlistPlayerManagement";
-            mcWatchlistPlayerManagement.Padding = new Padding(16, 16, 16, 16);
+            mcWatchlistPlayerManagement.Padding = new Padding(16);
             mcWatchlistPlayerManagement.Size = new Size(549, 217);
             mcWatchlistPlayerManagement.TabIndex = 46;
             // 
@@ -4761,10 +4761,10 @@ namespace eft_dma_radar
             mcLootFilterFilters.Depth = 0;
             mcLootFilterFilters.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcLootFilterFilters.Location = new Point(663, 184);
-            mcLootFilterFilters.Margin = new Padding(16, 16, 16, 16);
+            mcLootFilterFilters.Margin = new Padding(16);
             mcLootFilterFilters.MouseState = MaterialSkin.MouseState.HOVER;
             mcLootFilterFilters.Name = "mcLootFilterFilters";
-            mcLootFilterFilters.Padding = new Padding(16, 16, 16, 16);
+            mcLootFilterFilters.Padding = new Padding(16);
             mcLootFilterFilters.Size = new Size(598, 538);
             mcLootFilterFilters.TabIndex = 48;
             // 
@@ -4884,10 +4884,10 @@ namespace eft_dma_radar
             mcLootFilterItemManagement.Depth = 0;
             mcLootFilterItemManagement.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcLootFilterItemManagement.Location = new Point(663, 6);
-            mcLootFilterItemManagement.Margin = new Padding(16, 16, 16, 16);
+            mcLootFilterItemManagement.Margin = new Padding(16);
             mcLootFilterItemManagement.MouseState = MaterialSkin.MouseState.HOVER;
             mcLootFilterItemManagement.Name = "mcLootFilterItemManagement";
-            mcLootFilterItemManagement.Padding = new Padding(16, 16, 16, 16);
+            mcLootFilterItemManagement.Padding = new Padding(16);
             mcLootFilterItemManagement.Size = new Size(598, 161);
             mcLootFilterItemManagement.TabIndex = 47;
             // 
