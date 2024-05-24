@@ -12,6 +12,9 @@ namespace eft_dma_radar
         [JsonPropertyName("aimviewFOV")]
         public float AimViewFOV { get; set; }
 
+        [JsonPropertyName("unknownQuestItems")]
+        public bool UnknownQuestItems { get; set; }
+
         [JsonPropertyName("autoLootRefresh")]
         public bool AutoLootRefresh { get; set; }
 
@@ -24,11 +27,17 @@ namespace eft_dma_radar
         [JsonPropertyName("defaultZoom")]
         public int DefaultZoom { get; set; }
 
-        [JsonPropertyName("enemyStats")]
-        public bool EnemyStats { get; set; }
+        [JsonPropertyName("enemyCount")]
+        public bool EnemyCount { get; set; }
 
         [JsonPropertyName("extendedReach")]
         public bool ExtendedReach { get; set; }
+
+        [JsonPropertyName("font")]
+        public int Font { get; set; }
+
+        [JsonPropertyName("fontSize")]
+        public int FontSize { get; set; }
 
         [JsonPropertyName("freezeTimeOfDay")]
         public bool FreezeTimeOfDay { get; set; }
@@ -102,8 +111,8 @@ namespace eft_dma_radar
         [JsonPropertyName("processLoot")]
         public bool ProcessLoot { get; set; }
 
-        [JsonPropertyName("questHelperEnabled")]
-        public bool QuestHelperEnabled { get; set; }
+        [JsonPropertyName("questHelper")]
+        public bool QuestHelper { get; set; }
 
         [JsonPropertyName("showCorpses")]
         public bool ShowCorpses { get; set; }
@@ -128,9 +137,6 @@ namespace eft_dma_radar
 
         [JsonPropertyName("showSubItems")]
         public bool ShowSubItems { get; set; }
-
-        [JsonPropertyName("showTextOutline")]
-        public bool ShowTextOutline { get; set; }
 
         [JsonPropertyName("thermalVision")]
         public bool ThermalVision { get; set; }
@@ -197,34 +203,53 @@ namespace eft_dma_radar
         };
 
         [JsonIgnore]
-        public List<LootFilterManager.Filter> Filters { get => LootFilterManager.Filters; }
+        public List<LootFilterManager.Filter> Filters
+        {
+            get => LootFilterManager.Filters;
+        }
 
         [JsonIgnore]
-        private static readonly JsonSerializerOptions _jsonOptions = new JsonSerializerOptions() { WriteIndented = true };
+        private static readonly JsonSerializerOptions _jsonOptions = new JsonSerializerOptions()
+        {
+            WriteIndented = true
+        };
 
         [JsonIgnore]
         private static readonly object _lock = new();
 
         [JsonIgnore]
-        public LootFilterManager LootFilterManager { get => Program.LootFilterManager; }
+        public LootFilterManager LootFilterManager
+        {
+            get => Program.LootFilterManager;
+        }
 
         [JsonIgnore]
-        public ParallelOptions ParallelOptions { get; set; }
+        public ParallelOptions ParallelOptions
+        {
+            get; set;
+        }
 
         [JsonIgnore]
-        public List<Watchlist.Profile> Profiles { get => Watchlist.Profiles; }
+        public List<Watchlist.Profile> Profiles
+        {
+            get => Watchlist.Profiles;
+        }
 
         [JsonIgnore]
         private const string SettingsDirectory = "Configuration\\";
 
         [JsonIgnore]
-        public Watchlist Watchlist { get => Program.Watchlist; }
+        public Watchlist Watchlist
+        {
+            get => Program.Watchlist;
+        }
         #endregion
 
         public Config()
         {
             AimviewEnabled = false;
             AimViewFOV = 30;
+            UnknownQuestItems = false;
             AutoLootRefresh = false;
             AutoRefreshSettings = new Dictionary<string, int>
             {
@@ -241,8 +266,10 @@ namespace eft_dma_radar
             };
             ChamsEnabled = false;
             DefaultZoom = 100;
-            EnemyStats = false;
+            EnemyCount = false;
             ExtendedReach = false;
+            Font = 0;
+            FontSize = 13;
             FreezeTimeOfDay = false;
             ImportantLootOnly = false;
             InfiniteStamina = false;
@@ -287,7 +314,7 @@ namespace eft_dma_radar
             PlayerAimLineLength = 1000;
             PrimaryTeammateId = null;
             ProcessLoot = true;
-            QuestHelperEnabled = true;
+            QuestHelper = true;
             ShowCorpses = false;
             ShowExfilNames = false;
             ShowHoverArmor = false;
@@ -296,7 +323,6 @@ namespace eft_dma_radar
             ShowNames = false;
             ShowRadarStats = false;
             ShowSubItems = false;
-            ShowTextOutline = true;
             ThermalVision = false;
             ThrowPowerStrength = 1;
             TimeOfDay = 12f;

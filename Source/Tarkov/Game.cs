@@ -12,12 +12,11 @@ namespace eft_dma_radar
         private RegisteredPlayers _rgtPlayers;
         private GrenadeManager _grenadeManager;
         private ExfilManager _exfilManager;
-        private PlayerManager _playerManager;
+
         private Config _config;
         private CameraManager _cameraManager;
         private QuestManager _questManager;
-        private Toolbox _toolbox;
-        private Chams _chams;
+
         private CorpseManager _corpseManager;
         private ulong _localGameWorld;
         private readonly ulong _unityBase;
@@ -44,68 +43,71 @@ namespace eft_dma_radar
         {
             get => _inGame;
         }
+
         // in InHideout means local game world not false and registered players is 1
         public bool InHideout
         {
             get => _inHideout;
         }
+
         public bool IsScav
         {
             get => _isScav;
         }
+
         public string MapName
         {
             get => _mapName;
         }
+
         public int PlayerSide
         {
             get => 0;
         }
+
         public bool LoadingLoot
         {
             get => _loadingLoot;
         }
+
         public ReadOnlyDictionary<string, Player> Players
         {
             get => _rgtPlayers?.Players;
         }
+
         public LootManager Loot
         {
             get => _lootManager;
         }
+
         public ReadOnlyCollection<Grenade> Grenades
         {
             get => _grenadeManager?.Grenades;
         }
+
         public ReadOnlyCollection<Exfil> Exfils
         {
             get => _exfilManager?.Exfils;
         }
+
         public CameraManager CameraManager
         {
             get => _cameraManager;
         }
-        public PlayerManager PlayerManager
-        {
-            get => _playerManager;
-        }
-        public Toolbox Toolbox
-        {
-            get => _toolbox;
-        }
+
+
         public QuestManager QuestManager
         {
 
             get => _questManager;
         }
-        public Chams Chams
-        {
-            get => _chams;
-        }
+
+
         public CorpseManager CorpseManager
         {
             get => _corpseManager;
         }
+
         public ReadOnlyCollection<PlayerCorpse> Corpses
         {
             get => _corpseManager?.Corpses;
@@ -137,17 +139,14 @@ namespace eft_dma_radar
             }
             catch (DMAShutdown)
             {
-                Memory.Chams?.ChamsDisable();
                 HandleDMAShutdown();
             }
             catch (RaidEnded e)
             {
-                Memory.Chams?.ChamsDisable();
                 HandleRaidEnded(e);
             }
             catch (Exception ex)
             {
-                Memory.Chams?.ChamsDisable();
                 HandleUnexpectedException(ex);
             }
         }
@@ -228,7 +227,7 @@ namespace eft_dma_radar
                 Thread.Sleep(1500);
             }
             Thread.Sleep(1000);
-            Program.Log("Match found!");
+            Program.Log("Raid has started!!");
             this._inGame = true;
             Thread.Sleep(1500);
         }
@@ -364,7 +363,7 @@ namespace eft_dma_radar
                                 Memory.GameStatus = Game.GameStatus.InGame;
                                 found = true;
 
-                                Program.Log("Raid has started!!");
+                                Program.Log("Match started!!");
                             }
                         }
                     }
@@ -423,45 +422,6 @@ namespace eft_dma_radar
                             Program.Log($"ERROR loading CameraManager: {ex}");
                         }
                     }
-
-                    if (this._playerManager is null)
-                    {
-                        try
-                        {
-                            this._playerManager = new PlayerManager(this._localGameWorld);
-                        }
-                        catch (Exception ex)
-                        {
-                            Program.Log($"ERROR loading PlayerManager: {ex}");
-                        }
-                    }
-
-                    if (this._toolbox is null)
-                    {
-                        try
-                        {
-                            this._toolbox = new Toolbox();
-                        }
-                        catch (Exception ex)
-                        {
-                            Program.Log($"ERROR loading Toolbox: {ex}");
-                        }
-                    }
-
-                    if (this._chams is null)
-                    {
-                        try
-                        {
-                            if (this._rgtPlayers is not null)
-                            {
-                                this._chams = new Chams();
-                            }
-                        }
-                        catch (Exception ex)
-                        {
-                            Program.Log($"ERROR loading Chams: {ex}");
-                        }
-                    }
                 }
 
                 if (this._exfilManager is null)
@@ -492,7 +452,7 @@ namespace eft_dma_radar
                 else
                     this._grenadeManager.Refresh();
 
-                if (this._config.QuestHelperEnabled && this._questManager is null)
+                if (this._config.QuestHelper && this._questManager is null)
                 {
                     try
                     {

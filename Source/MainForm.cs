@@ -8,6 +8,7 @@ using MaterialSkin;
 using MaterialSkin.Controls;
 using eft_dma_radar.Properties;
 using System.Windows.Forms;
+using System.Collections.Generic;
 
 namespace eft_dma_radar
 {
@@ -118,14 +119,6 @@ namespace eft_dma_radar
         }
 
         /// <summary>
-        /// Radar is in the process of loading loot. Radar may be paused during this operation.
-        /// </summary>
-        private bool LoadingLoot
-        {
-            get => Memory.LoadingLoot;
-        }
-
-        /// <summary>
         /// Contains all 'Exfils' in Local Game World, and their status/position(s).
         /// </summary>
         private ReadOnlyCollection<Exfil> Exfils
@@ -199,7 +192,6 @@ namespace eft_dma_radar
             this.Enabled = false; // Lock window
 
             Config.SaveConfig(_config); // Save Config to Config.json
-            Memory.Toolbox?.StopToolbox();
             Memory.Loot?.StopAutoRefresh();
             Memory.Shutdown(); // Wait for Memory Thread to gracefully exit
             e.Cancel = false; // Ready to close
@@ -209,40 +201,18 @@ namespace eft_dma_radar
         /// <summary>
         /// Process hotkey presses.sc
         /// </summary>
-        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData) => keyData switch
         {
-            switch (keyData)
-            {
-                case Keys.F1:
-                    ZoomIn(5);
-                    return true;
-                case Keys.F2:
-                    ZoomOut(5);
-                    return true;
-                case Keys.F3:
-                    swShowLoot.Checked = !swShowLoot.Checked; // Toggle loot
-                    return true;
-                case Keys.F4:
-                    swAimview.Checked = !swAimview.Checked; // Toggle aimview
-                    return true;
-                case Keys.F5:
-                    ToggleMap(); // Toggle to next map
-                    return true;
-                case Keys.F6:
-                    swNames.Checked = !swNames.Checked; // Toggle Hide Names
-                    return true;
-                // Night Vision Ctrl + N
-                case Keys.Control | Keys.N:
-                    swNightVision.Checked = !swNightVision.Checked;
-                    return true;
-                // Thermal Vision Ctrl + T
-                case Keys.Control | Keys.T:
-                    swThermalVision.Checked = !swThermalVision.Checked;
-                    return true;
-                default:
-                    return base.ProcessCmdKey(ref msg, keyData);
-            }
-        }
+            Keys.Up => ZoomIn(5),
+            Keys.Down => ZoomOut(5),
+            Keys.F3 => swShowLoot.Checked = !swShowLoot.Checked,
+            Keys.F4 => swAimview.Checked = !swAimview.Checked,
+            Keys.F5 => ToggleMap(),
+            Keys.F6 => swNames.Checked = !swNames.Checked,
+            Keys.Control | Keys.N => swNightVision.Checked = !swNightVision.Checked,
+            Keys.Control | Keys.T => swThermalVision.Checked = !swThermalVision.Checked,
+            _ => base.ProcessCmdKey(ref msg, keyData),
+        };
 
         /// <summary>
         /// Process mousewheel events.
@@ -282,10 +252,10 @@ namespace eft_dma_radar
 
         #region GUI Events / Functions
         #region General Helper Functions
-        private void ToggleMap()
+        private bool ToggleMap()
         {
             if (!btnToggleMap.Enabled)
-                return;
+                return false;
 
             if (_mapSelectionIndex == _maps.Count - 1)
                 _mapSelectionIndex = 0; // Start over when end of maps reached
@@ -294,6 +264,8 @@ namespace eft_dma_radar
 
             tabRadar.Text = $"Radar ({_maps[_mapSelectionIndex].Name})";
             _mapChangeTimer.Restart(); // Start delay
+
+            return true;
         }
 
         private void InitiateWatchlist()
@@ -339,7 +311,6 @@ namespace eft_dma_radar
             cboLootFilterItemsToAdd.DisplayMember = "Name";
 
             UpdateLootFilters();
-
         }
 
         private void InitiateFactions()
@@ -355,6 +326,47 @@ namespace eft_dma_radar
         {
             cboAutoRefreshMap.Items.AddRange(_config.AutoRefreshSettings.Keys.ToArray());
             cboAutoRefreshMap.SelectedIndex = _selectedMap is not null ? cboAutoRefreshMap.FindStringExact(_selectedMap.Name) : 0;
+        }
+
+        private void InitiateUIScaling()
+        {
+            _uiScale = (.01f * _config.UIScale);
+
+            #region Update Paints/Text
+            SKPaints.TextBaseOutline.StrokeWidth = 2 * _uiScale;
+            SKPaints.TextRadarStatus.TextSize = 48 * _uiScale;
+            SKPaints.PaintBase.StrokeWidth = 3 * _uiScale;
+            SKPaints.PaintMouseoverGroup.StrokeWidth = 3 * _uiScale;
+            SKPaints.PaintDeathMarker.StrokeWidth = 3 * _uiScale;
+            SKPaints.LootPaint.StrokeWidth = 3 * _uiScale;
+            SKPaints.PaintTransparentBacker.StrokeWidth = 1 * _uiScale;
+            SKPaints.PaintAimviewCrosshair.StrokeWidth = 1 * _uiScale;
+            SKPaints.PaintGrenades.StrokeWidth = 3 * _uiScale;
+            SKPaints.PaintExfilOpen.StrokeWidth = 1 * _uiScale;
+            SKPaints.PaintExfilPending.StrokeWidth = 1 * _uiScale;
+            SKPaints.PaintExfilClosed.StrokeWidth = 1 * _uiScale;
+            #endregion
+            _aimviewWindowSize = 200 * _uiScale;
+
+            InitiateFontSize();
+        }
+
+        private void InitiateFont()
+        {
+            var fontToUse = SKTypeface.FromFamilyName(cboFont.Text);
+            SKPaints.TextMouseoverGroup.Typeface = fontToUse;
+            SKPaints.TextBase.Typeface = fontToUse;
+            SKPaints.LootText.Typeface = fontToUse;
+            SKPaints.TextBaseOutline.Typeface = fontToUse;
+            SKPaints.TextRadarStatus.Typeface = fontToUse;
+        }
+
+        private void InitiateFontSize()
+        {
+            SKPaints.TextMouseoverGroup.TextSize = _config.FontSize * _uiScale;
+            SKPaints.TextBase.TextSize = _config.FontSize * _uiScale;
+            SKPaints.LootText.TextSize = _config.FontSize * _uiScale;
+            SKPaints.TextBaseOutline.TextSize = _config.FontSize * _uiScale;
         }
 
         private DialogResult ShowErrorDialog(string message)
@@ -404,24 +416,25 @@ namespace eft_dma_radar
             swRadarStats.Checked = _config.ShowRadarStats;
             mcRadarStats.Visible = _config.ShowRadarStats;
             swRadarVsync.Checked = _config.VSync;
-            swRadarEnemyStats.Checked = _config.EnemyStats;
-            mcRadarEnemyStats.Visible = _config.EnemyStats;
+            swRadarEnemyCount.Checked = _config.EnemyCount;
+            mcRadarEnemyStats.Visible = _config.EnemyCount;
 
             // User Interface
             swShowLoot.Checked = _config.ShowLoot;
-            swQuestHelper.Checked = _config.QuestHelperEnabled;
+            swQuestHelper.Checked = _config.QuestHelper;
+            swUnknownQuestItems.Visible = _config.QuestHelper;
+            swUnknownQuestItems.Checked = _config.UnknownQuestItems;
             swAimview.Checked = _config.AimviewEnabled;
-            swTextOutline.Checked = _config.ShowTextOutline;
             swExfilNames.Checked = _config.ShowExfilNames;
             swNames.Checked = _config.ShowNames;
             swHoverArmor.Checked = _config.ShowHoverArmor;
-
             txtTeammateID.Text = _config.PrimaryTeammateId;
-
             sldrAimlineLength.Value = _config.PlayerAimLineLength;
-            sldrUIScale.Value = _config.UIScale;
             sldrZoomDistance.Value = _config.DefaultZoom;
 
+            sldrUIScale.Value = _config.UIScale;
+            cboFont.SelectedIndex = _config.Font;
+            sldrFontSize.Value = _config.FontSize;
             #endregion
 
             #region Memory Writing
@@ -475,7 +488,8 @@ namespace eft_dma_radar
             // Thermal Features
             mcSettingsMemoryWritingThermal.Enabled = _config.MasterSwitch;
             mcSettingsMemoryWritingThermal.Visible = _config.ThermalVision || _config.OpticThermalVision;
-            cboThermalType.SelectedIndex = _config.MainThermalSetting.ColorScheme;
+            cboThermalType.SelectedIndex = _config.ThermalVision ? 0 : (_config.OpticThermalVision ? 1 : 0);
+            cboThermalColorScheme.SelectedIndex = _config.ThermalVision ? _config.MainThermalSetting.ColorScheme : (_config.OpticThermalVision ? _config.OpticThermalSetting.ColorScheme : 0);
             sldrThermalColorCoefficient.Value = (int)(_config.MainThermalSetting.ColorCoefficient * 100);
             sldrMinTemperature.Value = (int)((_config.MainThermalSetting.MinTemperature - 0.001f) / (0.01f - 0.001f) * 100.0f);
             sldrThermalRampShift.Value = (int)((_config.MainThermalSetting.RampShift + 1.0f) * 100.0f);
@@ -508,6 +522,8 @@ namespace eft_dma_radar
             InitiateLootFilter();
             InitiateWatchlist();
             InitiateColors();
+            InitiateFont();
+            InitiateUIScaling();
         }
         #endregion
 
@@ -587,48 +603,132 @@ namespace eft_dma_radar
 
         private void TabControl_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (tabControlMain.SelectedIndex == 2) // Player Loadouts Tab
+            if (tabControlMain.SelectedIndex == 2)
             {
-                rchTxtPlayerInfo.Clear();
-                var enemyPlayers = this.AllPlayers
-                    ?.Select(x => x.Value)
-                    .Where(x => x.IsHumanHostileActive)
-                    .ToList()
-                    .OrderBy(x => x.GroupID)
-                    .ThenBy(x => x.Name);
-                if (this.InGame && enemyPlayers is not null)
+                GenerateCards(flpPlayerLoadoutsPlayers, x => x.IsHumanHostileActive, x => x.IsPMC, x => x.Value);
+                GenerateCards(flpPlayerLoadoutsAI, x => x.IsHostileActive && !x.IsHuman, x => x.Type == PlayerType.Boss, x => x.IsBossRaider, x => x.Value);
+            }
+            else if (tabControlMain.SelectedIndex == 5)
+            {
+                lootListListView.Items.Clear();
+
+                var localPlayer = this.LocalPlayer;
+                if (this.InGame && localPlayer is not null)
                 {
-                    var sb = new StringBuilder();
-                    sb.Append(@"{\rtf1\ansi");
-
-                    foreach (var player in enemyPlayers)
+                    var loot = this.Loot;
+                    if (loot is not null)
                     {
-                        string title = $"*** {player.Name} ({player.Type})  L:{player.Lvl}";
+                        var filter = loot.Filter;
+                        if (filter is not null)
+                        {
+                            List<(string name, int value)> rawItems = new() { };
 
-                        if (player.GroupID != -1)
-                            title += $" G:{player.GroupID}";
-                        if (player.KDA != -1f)
-                            title += $" KD{player.KDA.ToString("n1")}";
-
-                        sb.Append(@$"\b {title} \b0 ");
-                        sb.Append(@" \line ");
-
-                        var gear = player.Gear;
-
-                        if (gear is not null)
-                            foreach (var slot in gear)
+                            foreach (var item in filter)
                             {
-                                sb.Append(@$"\b {slot.Key}: \b0 ");
-                                sb.Append(slot.Value.Long);
-                                sb.Append(@" \line ");
+                                if (item is LootItem lootItem)
+                                {
+                                    rawItems.Add((item.Name, item.Value));
+                                }
+                                else if (item is LootContainer container)
+                                {
+                                    foreach (var containerItem in ((LootContainer)item).Items)
+                                    {
+                                        rawItems.Add((item.Name + ">" + containerItem.Name, containerItem.Value));
+                                    }
+                                }
+                                else
+                                {
+                                    // skip corpses
+                                    continue;
+                                }
                             }
-                        else
-                            sb.Append(@" ERROR retrieving gear \line");
-                        sb.Append(@" \line ");
+
+                            List<(string name, int value)> sortedItems = rawItems.OrderByDescending(item => item.value).ToList();
+                            foreach (var item in sortedItems)
+                            {
+                                var listViewItem = new ListViewItem(item.name);
+                                listViewItem.SubItems.Add(item.value.ToString());
+                                lootListListView.Items.Add(listViewItem);
+                            }
+
+                            lootListListView.Columns[0].AutoResize(ColumnHeaderAutoResizeStyle.ColumnContent);
+                            lootListListView.Columns[1].Width = 100;
+                        }
                     }
-                    sb.Append(@"}");
-                    rchTxtPlayerInfo.Rtf = sb.ToString();
                 }
+            }
+        }
+
+        private void GenerateCards(FlowLayoutPanel panel, Func<Player, bool> filter, params Func<Player, IComparable>[] orderBy)
+        {
+            panel.Controls.Clear();
+
+            if (!this.InGame)
+                return;
+
+            var enemyPlayers = this.AllPlayers?
+                .Select(x => x.Value)
+                .Where(filter)
+                .ToList();
+
+            if (enemyPlayers is null)
+                return;
+
+            foreach (var orderByFunc in orderBy.Reverse())
+            {
+                enemyPlayers = enemyPlayers.OrderByDescending(orderByFunc).ToList();
+            }
+
+            foreach (var player in enemyPlayers)
+            {
+                var playerCard = new MaterialCard();
+                playerCard.Width = panel.Width - 30;
+                playerCard.Margin = new Padding(5, 0, 0, 10);
+
+                var tableLayoutPanel = new TableLayoutPanel();
+                tableLayoutPanel.ColumnCount = 1;
+                tableLayoutPanel.AutoSize = true;
+                tableLayoutPanel.Dock = DockStyle.Top;
+                playerCard.Controls.Add(tableLayoutPanel);
+
+                var titleLabel = new MaterialLabel();
+                titleLabel.Text = $"{player.Name} ({player.Type}){(player.GroupID != -1 ? $" G:{player.GroupID}" : "")}";
+                titleLabel.AutoSize = true;
+                titleLabel.Dock = DockStyle.Top;
+                tableLayoutPanel.Controls.Add(titleLabel);
+
+                var gearPanel = new FlowLayoutPanel();
+                gearPanel.FlowDirection = FlowDirection.TopDown;
+                gearPanel.AutoSize = true;
+                gearPanel.Dock = DockStyle.Top;
+                tableLayoutPanel.Controls.Add(gearPanel);
+
+                if (player.Gear is not null)
+                {
+                    foreach (var slot in player.Gear)
+                    {
+                        var gearLabel = new MaterialLabel();
+                        gearLabel.Text = $"{GearManager.GetGearSlotName(slot.Key)}: {slot.Value.Long}";
+                        gearLabel.Margin = new Padding(0, 5, 0, 0);
+                        gearLabel.AutoSize = true;
+                        gearLabel.FontType = MaterialSkinManager.fontType.Body2;
+                        gearPanel.Controls.Add(gearLabel);
+                    }
+                }
+                else
+                {
+                    var errorLabel = new MaterialLabel();
+                    errorLabel.Text = "ERROR retrieving gear";
+                    errorLabel.Margin = new Padding(0, 5, 0, 0);
+                    errorLabel.AutoSize = true;
+                    gearPanel.Controls.Add(errorLabel);
+                }
+
+                int titleHeight = titleLabel.GetPreferredSize(new Size(playerCard.Width, 0)).Height;
+                int gearPanelHeight = gearPanel.GetPreferredSize(new Size(playerCard.Width, 0)).Height;
+                playerCard.Height = titleHeight + gearPanelHeight;
+
+                panel.Controls.Add(playerCard);
             }
         }
         #endregion
@@ -652,9 +752,9 @@ namespace eft_dma_radar
                     #region Radar Stats
                     var fps = _fps;
                     var memTicks = Memory.Ticks;
-                    var looseLoot = Loot.TotalLooseLoot;
-                    var containers = Loot.TotalContainers;
-                    var corpses = Loot.TotalCorpses;
+                    var looseLoot = Loot?.TotalLooseLoot ?? 0;
+                    var containers = Loot?.TotalContainers ?? 0;
+                    var corpses = Loot?.TotalCorpses ?? 0;
 
                     if (lblRadarFPSValue.Text != fps.ToString())
                         lblRadarFPSValue.Text = $"{fps}";
@@ -690,19 +790,41 @@ namespace eft_dma_radar
                     var bosses = playerCounts.GetValueOrDefault(PlayerType.Boss, 0);
 
                     if (lblRadarPMCsValue.Text != enemyPMCs.ToString())
+                    {
                         lblRadarPMCsValue.Text = $"{enemyPMCs}";
+                        lblRadarPMCsValue.UseAccent = enemyPMCs > 0;
+                        lblRadarPMCsValue.HighEmphasis = enemyPMCs > 0;
+                    }
 
                     if (lblRadarPlayerScavsValue.Text != playerScavs.ToString())
+                    {
                         lblRadarPlayerScavsValue.Text = $"{playerScavs}";
+                        lblRadarPlayerScavsValue.UseAccent = playerScavs > 0;
+                        lblRadarPlayerScavsValue.HighEmphasis = playerScavs > 0;
+                    }
+
 
                     if (lblRadarAIScavsValue.Text != aiScavs.ToString())
+                    {
                         lblRadarAIScavsValue.Text = $"{aiScavs}";
+                        lblRadarAIScavsValue.UseAccent = aiScavs > 0;
+                        lblRadarAIScavsValue.HighEmphasis = aiScavs > 0;
+                    }
+
 
                     if (lblRadarRoguesValue.Text != rogues.ToString())
+                    {
                         lblRadarRoguesValue.Text = $"{rogues}";
+                        lblRadarRoguesValue.UseAccent = rogues > 0;
+                        lblRadarRoguesValue.HighEmphasis = rogues > 0;
+                    }
 
                     if (lblRadarBossesValue.Text != bosses.ToString())
+                    {
                         lblRadarBossesValue.Text = $"{bosses}";
+                        lblRadarBossesValue.UseAccent = bosses > 0;
+                        lblRadarBossesValue.HighEmphasis = bosses > 0;
+                    }
 
                     #endregion
 
@@ -966,7 +1088,11 @@ namespace eft_dma_radar
 
                                     var friendlyMapPos = friendlyPos.ToMapPos(_selectedMap);
 
-                                    if (IsAggressorFacingTarget(playerMapPos.GetPoint(), player.Rotation.X, friendlyMapPos.GetPoint(), friendlyDist))
+                                    if (!player.IsHuman)
+                                    {
+                                        aimlineLength = 15; // shorten AI aimline
+                                    }
+                                    else if (IsAggressorFacingTarget(playerMapPos.GetPoint(), player.Rotation.X, friendlyMapPos.GetPoint(), friendlyDist))
                                     {
                                         aimlineLength = 1000; // Lengthen aimline
                                         break;
@@ -999,7 +1125,7 @@ namespace eft_dma_radar
                     lines = new string[2]
                     {
                         string.Empty,
-                        $"{(int)Math.Round(height)}, {(int)Math.Round(dist)}"
+                        $"{(int)Math.Round(height)},{(int)Math.Round(dist)}"
                     };
 
                     string name = player.Name;
@@ -1014,16 +1140,13 @@ namespace eft_dma_radar
                 }
                 else // just height & hp (for humans)
                 {
-                    lines = new string[1] { $"{(int)Math.Round(height)}, {(int)Math.Round(dist)}" };
+                    lines = new string[1] { $"{(int)Math.Round(height)},{(int)Math.Round(dist)}" };
 
                     if ((player.IsHuman || player.IsBossRaider) && player.Health != -1)
                         lines[0] += $" ({player.Health})";
                     if (player.ErrorCount > 10)
                         lines[0] = "ERROR"; // In case POS stops updating, let us know!
                 }
-
-                if (!string.IsNullOrEmpty(player.Category))
-                    lines[0] += $" [{player.Category}]";
 
                 playerZoomedPos.DrawPlayerText(
                     canvas,
@@ -1097,7 +1220,7 @@ namespace eft_dma_radar
             var localPlayer = this.LocalPlayer;
             if (this.InGame && localPlayer is not null)
             {
-                if (_config.QuestHelperEnabled && !Memory.IsScav) // Draw quest items (if enabled)
+                if (_config.QuestHelper && !Memory.IsScav) // Draw quest items (if enabled)
                 {
                     if (this.QuestManager is not null)
                     {
@@ -1107,7 +1230,8 @@ namespace eft_dma_radar
                         var questItems = this.QuestManager.QuestItems;
                         if (questItems is not null)
                         {
-                            foreach (var item in questItems.Where(x => x.Position.X != 0))
+                            var items = _config.UnknownQuestItems ? questItems.Where(x => x?.Position.X != 0 && x?.Name == "????") : questItems.Where(x => x?.Position.X != 0 && x?.Name != "????");
+                            foreach (var item in items)
                             {
                                 float position = item.Position.Z - localPlayerMapPos.Height;
                                 var itemZoomedPos = item.Position
@@ -1356,19 +1480,29 @@ namespace eft_dma_radar
                     lblRadarCorpsesValue.Text = "0";
 
                     lblRadarPMCsValue.Text = "0";
+                    lblRadarPMCsValue.UseAccent = false;
+                    lblRadarPMCsValue.HighEmphasis = false;
                     lblRadarPlayerScavsValue.Text = "0";
+                    lblRadarPlayerScavsValue.UseAccent = false;
+                    lblRadarPlayerScavsValue.HighEmphasis = false;
                     lblRadarAIScavsValue.Text = "0";
+                    lblRadarAIScavsValue.UseAccent = false;
+                    lblRadarAIScavsValue.HighEmphasis = false;
                     lblRadarRoguesValue.Text = "0";
+                    lblRadarRoguesValue.UseAccent = false;
+                    lblRadarRoguesValue.HighEmphasis = false;
                     lblRadarBossesValue.Text = "0";
+                    lblRadarBossesValue.UseAccent = false;
+                    lblRadarBossesValue.HighEmphasis = false;
                 }
             }
             else if (localPlayer is null)
             {
-                statusText = "Cannot find LocalPlayer";
+                statusText = "找不到玩家位置";
             }
             else if (selectedMap is null)
             {
-                statusText = "Loading Map";
+                statusText = "正在加载地图...";
             }
             else
             {
@@ -1635,6 +1769,26 @@ namespace eft_dma_radar
         {
             _closestTaskZoneToMouse = null;
         }
+
+        private T FindClosestObject<T>(IEnumerable<T> objects, Vector2 position, Func<T, Vector2> positionSelector, float threshold)
+            where T : class
+        {
+            if (objects is null || !objects.Any())
+                return null;
+
+            var closestObject = objects.Aggregate(
+                (x1, x2) =>
+                    x2 == null || Vector2.Distance(positionSelector(x1), position)
+                    < Vector2.Distance(positionSelector(x2), position)
+                        ? x1
+                        : x2
+            );
+
+            if (closestObject is not null && Vector2.Distance(positionSelector(closestObject), position) < threshold)
+                return closestObject;
+
+            return null;
+        }
         #endregion
 
         #region Event Handlers
@@ -1694,6 +1848,8 @@ namespace eft_dma_radar
         {
             if (this.InGame && this.LocalPlayer is not null) // Must be in-game
             {
+                var mouse = new Vector2(e.X, e.Y);
+
                 var players = this.AllPlayers
                     ?.Select(x => x.Value)
                     .Where(x => x.Type is not PlayerType.LocalPlayer && !x.HasExfild); // Get all players except LocalPlayer & Exfil'd Players
@@ -1702,132 +1858,29 @@ namespace eft_dma_radar
                 var tasksItems = this.QuestManager?.QuestItems?.Select(x => x);
                 var tasksZones = this.QuestManager?.QuestZones?.Select(x => x);
 
-                if ((players is not null && players.Any()) || (loot is not null && loot.Any()) || (tasksItems is not null && tasksItems.Any()) || (tasksZones is not null && tasksZones.Any()))
+                _closestPlayerToMouse = FindClosestObject(players, mouse, x => x.ZoomedPosition, 12 * _uiScale);
+                if (_closestPlayerToMouse is not null)
                 {
-                    var mouse = new Vector2(e.X, e.Y); // Get current mouse position in control
-
-                    if (players is not null && players.Any())
-                    {
-                        var closestPlayer = players.Aggregate(
-                            (x1, x2) =>
-                                Vector2.Distance(x1.ZoomedPosition, mouse)
-                                < Vector2.Distance(x2.ZoomedPosition, mouse)
-                                    ? x1
-                                    : x2
-                        ); // Get player object 'closest' to mouse position
-
-                        if (closestPlayer is not null)
-                        {
-                            var dist = Vector2.Distance(closestPlayer.ZoomedPosition, mouse);
-                            if (dist < 12) // See if 'closest object' is close enough.
-                            {
-                                _closestPlayerToMouse = closestPlayer; // Save ref to closest player object
-                                if (closestPlayer.IsHumanHostile && closestPlayer.GroupID != -1)
-                                    _mouseOverGroup = closestPlayer.GroupID; // Set group ID for closest player(s)
-                                else
-                                    _mouseOverGroup = null; // Clear Group ID
-                            }
-                            else
-                                ClearPlayerRefs();
-                        }
-                        else
-                            ClearPlayerRefs();
-                    }
+                    if (_closestPlayerToMouse.IsHumanHostile && _closestPlayerToMouse.GroupID != -1)
+                        _mouseOverGroup = _closestPlayerToMouse.GroupID;
                     else
-                        ClearPlayerRefs();
-
-                    if (_config.ProcessLoot && _config.ShowLoot)
-                    {
-                        if (loot is not null && loot.Any())
-                        {
-                            var closestItem = loot.Aggregate(
-                                (x1, x2) =>
-                                    Vector2.Distance(x1.ZoomedPosition, mouse)
-                                    < Vector2.Distance(x2.ZoomedPosition, mouse)
-                                        ? x1
-                                        : x2
-                            ); // Get loot object 'closest' to mouse position
-
-                            if (closestItem is not null)
-                            {
-                                var dist = Vector2.Distance(closestItem.ZoomedPosition, mouse);
-                                if (dist < 12) // See if 'closest object' is close enough.
-                                {
-                                    _closestItemToMouse = closestItem; // Save ref to closest item object
-                                }
-                                else
-                                    ClearItemRefs();
-                            }
-                            else
-                                ClearItemRefs();
-                        }
-                        else
-                            ClearItemRefs();
-                    }
-                    else
-                    {
-                        ClearItemRefs();
-                    }
-
-                    if (tasksItems is not null && tasksItems.Any())
-                    {
-                        var closestTaskItem = tasksItems.Aggregate(
-                            (x1, x2) =>
-                                Vector2.Distance(x1.ZoomedPosition, mouse)
-                                < Vector2.Distance(x2.ZoomedPosition, mouse)
-                                    ? x1
-                                    : x2
-                        ); // Get quest item object 'closest' to mouse position
-
-                        if (closestTaskItem is not null)
-                        {
-                            var dist = Vector2.Distance(closestTaskItem.ZoomedPosition, mouse);
-                            if (dist < 12) // See if 'closest object' is close enough.
-                            {
-                                _closestTaskItemToMouse = closestTaskItem; // Save ref to closest quest item object
-                            }
-                            else
-                                ClearTaskItemRefs();
-                        }
-                        else
-                            ClearTaskItemRefs();
-                    }
-                    else
-                        ClearTaskItemRefs();
-
-                    if (tasksZones is not null && tasksZones.Any())
-                    {
-                        var closestTaskZone = tasksZones.Aggregate(
-                            (x1, x2) =>
-                                Vector2.Distance(x1.ZoomedPosition, mouse)
-                                < Vector2.Distance(x2.ZoomedPosition, mouse)
-                                    ? x1
-                                    : x2
-                        ); // Get task zone 'closest' to mouse position
-
-                        if (closestTaskZone is not null)
-                        {
-                            var dist = Vector2.Distance(closestTaskZone.ZoomedPosition, mouse);
-                            if (dist < 12) // See if 'closest zone' is close enough.
-                            {
-                                _closestTaskZoneToMouse = closestTaskZone; // Save ref to closest zone object
-                            }
-                            else
-                                ClearTaskZoneRefs();
-                        }
-                        else
-                            ClearTaskZoneRefs();
-                    }
-                    else
-                        ClearTaskZoneRefs();
+                        _mouseOverGroup = null;
                 }
                 else
-                {
                     ClearPlayerRefs();
+
+                if (_config.ProcessLoot && _config.ShowLoot)
+                    _closestItemToMouse = FindClosestObject(loot, mouse, x => x.ZoomedPosition, 12 * _uiScale);
+                else
                     ClearItemRefs();
+
+                _closestTaskItemToMouse = FindClosestObject(tasksItems, mouse, x => x.ZoomedPosition, 12 * _uiScale);
+                if (_closestTaskItemToMouse == null)
                     ClearTaskItemRefs();
+
+                _closestTaskZoneToMouse = FindClosestObject(tasksZones, mouse, x => x.ZoomedPosition, 12);
+                if (_closestTaskZoneToMouse == null)
                     ClearTaskZoneRefs();
-                }
             }
             else if (this.InGame && Memory.LocalPlayer is null)
             {
@@ -1892,15 +1945,13 @@ namespace eft_dma_radar
                     {
                         DrawMap(canvas);
 
-                        DrawPlayers(canvas);
-
                         if (!_config.ShowLoot && _config.ShowCorpses)
                             DrawCorpses(canvas);
 
                         if (_config.ProcessLoot && _config.ShowLoot)
                             DrawLoot(canvas);
 
-                        if (_config.QuestHelperEnabled)
+                        if (_config.QuestHelper)
                             DrawQuestItems(canvas);
 
                         DrawGrenades(canvas);
@@ -1911,6 +1962,8 @@ namespace eft_dma_radar
                             DrawAimview(canvas);
 
                         DrawToolTips(canvas);
+
+                        DrawPlayers(canvas); // draw last to make them appear on top
                     }
                 }
                 else
@@ -1961,16 +2014,20 @@ namespace eft_dma_radar
             }
         }
 
-        private void ZoomIn(int amt)
+        private bool ZoomIn(int amt)
         {
             this.targetZoomValue = Math.Max(sldrZoomDistance.RangeMin, sldrZoomDistance.Value - amt);
             this.zoomTimer.Start();
+
+            return true;
         }
 
-        private void ZoomOut(int amt)
+        private bool ZoomOut(int amt)
         {
             this.targetZoomValue = Math.Min(sldrZoomDistance.RangeMax, sldrZoomDistance.Value + amt);
             this.zoomTimer.Start();
+
+            return false;
         }
 
         private void swRadarStats_CheckedChanged(object sender, EventArgs e)
@@ -2005,17 +2062,19 @@ namespace eft_dma_radar
 
         private void swQuestHelper_CheckedChanged(object sender, EventArgs e)
         {
-            _config.QuestHelperEnabled = swQuestHelper.Checked;
+            var enabled = swQuestHelper.Checked;
+            _config.QuestHelper = enabled;
+            swUnknownQuestItems.Visible = enabled;
+        }
+
+        private void swUnknownQuestItems_CheckedChanged(object sender, EventArgs e)
+        {
+            _config.UnknownQuestItems = swUnknownQuestItems.Checked;
         }
 
         private void swAimview_CheckedChanged(object sender, EventArgs e)
         {
             _config.AimviewEnabled = swAimview.Checked;
-        }
-
-        private void swTextOutline_CheckedChanged(object sender, EventArgs e)
-        {
-            _config.ShowTextOutline = swTextOutline.Checked;
         }
 
         private void swExfilNames_CheckedChanged(object sender, EventArgs e)
@@ -2042,29 +2101,42 @@ namespace eft_dma_radar
         {
             _config.UIScale = newValue;
             _uiScale = (.01f * newValue);
-            #region UpdatePaints
-            SKPaints.TextMouseoverGroup.TextSize = 12 * _uiScale;
-            SKPaints.TextBase.TextSize = 12 * _uiScale;
-            SKPaints.LootText.TextSize = 13 * _uiScale;
-            SKPaints.TextBaseOutline.TextSize = 13 * _uiScale;
-            SKPaints.TextRadarStatus.TextSize = 48 * _uiScale;
-            SKPaints.PaintBase.StrokeWidth = 3 * _uiScale;
-            SKPaints.PaintMouseoverGroup.StrokeWidth = 3 * _uiScale;
-            SKPaints.PaintDeathMarker.StrokeWidth = 3 * _uiScale;
-            SKPaints.LootPaint.StrokeWidth = 3 * _uiScale;
-            SKPaints.PaintTransparentBacker.StrokeWidth = 1 * _uiScale;
-            SKPaints.PaintAimviewCrosshair.StrokeWidth = 1 * _uiScale;
-            SKPaints.PaintGrenades.StrokeWidth = 3 * _uiScale;
-            SKPaints.PaintExfilOpen.StrokeWidth = 1 * _uiScale;
-            SKPaints.PaintExfilPending.StrokeWidth = 1 * _uiScale;
-            SKPaints.PaintExfilClosed.StrokeWidth = 1 * _uiScale;
-            #endregion
-            _aimviewWindowSize = 200 * _uiScale;
+
+            InitiateUIScaling();
         }
 
         private void btnRestartRadar_Click(object sender, EventArgs e)
         {
             Memory.Restart();
+        }
+
+        private void swRadarVsync_CheckedChanged(object sender, EventArgs e)
+        {
+            var enabled = swRadarVsync.Checked;
+            _config.VSync = enabled;
+
+            if (_mapCanvas is not null)
+                _mapCanvas.VSync = enabled;
+        }
+
+        private void swRadarEnemyCount_CheckedChanged(object sender, EventArgs e)
+        {
+            var enabled = swRadarEnemyCount.Checked;
+
+            _config.EnemyCount = enabled;
+            mcRadarEnemyStats.Visible = enabled;
+        }
+
+        private void cboFont_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _config.Font = cboFont.SelectedIndex;
+            InitiateFont();
+        }
+
+        private void sldrFontSize_onValueChanged(object sender, int newValue)
+        {
+            _config.FontSize = newValue;
+            InitiateFontSize();
         }
         #endregion
         #endregion
@@ -2139,18 +2211,6 @@ namespace eft_dma_radar
         private void sldrMagDrillsSpeed_onValueChanged(object sender, int newValue)
         {
             _config.MagDrillSpeed = newValue;
-
-            if (_config.MaxSkills["Mag Drills"] && Memory.LocalPlayer is not null)
-            {
-                var loadSpeedSkill = Memory.PlayerManager.Skills["MagDrills"]["LoadSpeed"];
-                loadSpeedSkill.MaxValue = (float)newValue;
-
-                var unloadSpeedSkill = Memory.PlayerManager.Skills["MagDrills"]["UnloadSpeed"];
-                unloadSpeedSkill.MaxValue = (float)newValue;
-
-                Memory.PlayerManager?.SetMaxSkill(loadSpeedSkill);
-                Memory.PlayerManager?.SetMaxSkill(unloadSpeedSkill);
-            }
         }
 
         private void swInfiniteStamina_CheckedChanged(object sender, EventArgs e)
@@ -2161,27 +2221,11 @@ namespace eft_dma_radar
         private void sldrJumpStrength_onValueChanged(object sender, int newValue)
         {
             _config.JumpPowerStrength = newValue;
-
-            if (_config.MaxSkills["Strength"] && Memory.LocalPlayer is not null)
-            {
-                var jumpHeightSkill = Memory.PlayerManager.Skills["Strength"]["BuffJumpHeightInc"];
-                jumpHeightSkill.MaxValue = 0.2f + ((float)newValue / 100);
-
-                Memory.PlayerManager?.SetMaxSkill(jumpHeightSkill);
-            }
         }
 
         private void sldrThrowStrength_onValueChanged(object sender, int newValue)
         {
             _config.ThrowPowerStrength = newValue;
-
-            if (_config.MaxSkills["Strength"] && Memory.LocalPlayer is not null)
-            {
-                var throwDistanceSkill = Memory.PlayerManager.Skills["Strength"]["BuffThrowDistanceInc"];
-                throwDistanceSkill.MaxValue = (float)newValue / 100;
-
-                Memory.PlayerManager?.SetMaxSkill(throwDistanceSkill);
-            }
         }
 
         private void cboThermalType_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -2231,11 +2275,6 @@ namespace eft_dma_radar
             mcSettingsMemoryWritingGear.Enabled = isChecked;
             mcSettingsMemoryWritingThermal.Enabled = isChecked;
             mcSettingsMemoryWritingSkillBuffs.Enabled = isChecked;
-
-            if (isChecked)
-                Memory.Toolbox?.StartToolbox();
-            else
-                Memory.Toolbox?.StopToolbox();
         }
 
         private void swMaxEndurance_CheckedChanged(object sender, EventArgs e)
@@ -2556,7 +2595,7 @@ namespace eft_dma_radar
             {
                 Text = entry,
                 Tag = entry,
-            }).OrderBy(entry => entry.Name).ToArray());
+            }).OrderByDescending(entry => entry.Name).ToArray());
         }
 
         private bool HasUnsavedFactionChanges()
@@ -3693,6 +3732,7 @@ namespace eft_dma_radar
                 {
                     _lootFilterManager.RemoveFilter(lstLootFilters.SelectedIndices[0]);
                     _lootFilterManager.AddEmptyProfile();
+                    UpdateLootFilters();
                 }
             }
             else
@@ -3701,10 +3741,9 @@ namespace eft_dma_radar
                 {
                     _lootFilterManager.RemoveFilter(selectedFilter);
                     UpdateLootFilterOrders();
+                    UpdateLootFilters();
                 }
             }
-
-            UpdateLootFilters();
         }
 
         private void txtLootFilterName_KeyDown(object sender, KeyEventArgs e)
@@ -3738,29 +3777,12 @@ namespace eft_dma_radar
         #endregion
         #endregion
 
-        private void swRadarVsync_CheckedChanged(object sender, EventArgs e)
-        {
-            var enabled = swRadarVsync.Checked;
-            _config.VSync = enabled;
-
-            if (_mapCanvas is not null)
-                _mapCanvas.VSync = enabled;
-        }
-
-        private void swRadarEnemyStats_CheckedChanged(object sender, EventArgs e)
-        {
-            var enabled = swRadarEnemyStats.Checked;
-
-            _config.EnemyStats = enabled;
-            mcRadarEnemyStats.Visible = enabled;
-        }
-
-        private void lblSettingsGeneralRadar_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void tabSelector_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSettingsColorsAIBoss_Click(object sender, EventArgs e)
         {
 
         }
@@ -3770,157 +3792,17 @@ namespace eft_dma_radar
 
         }
 
-        private void lblRadarPMCs_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSettingsMemoryWritingSkills_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSettingsMemoryWritingThermal_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void sldrThermalColorCoefficient_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void sldrMinRegularLoot_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSettingsAIFactionsEntryManagement_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtFactionEntryName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtFactionName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblWatchlistPlayerManagement_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblLootFilterItemManagement_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSettingsLootFilters_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lstLootFilterEntries_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSettingsLootFilterColor_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void swLootFilterActive_CheckedChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSettingsColorsAI_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSettingsColorsAIRogues_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSettingsColorsExfiltration_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSettingsColorsExfilActiveText_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSettingsColorsLootQuests_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSettingsColorsOther_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblRadarPlayerScavs_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblRadarAIScavs_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblRadarRogues_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblRadarBosses_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblRadarFPS_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblRadarLooseLoot_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblRadarContainers_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblRadarCorpses_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSettingsLootMinRubleValues_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSettingsLootGeneral_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void materialLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSettingsColorsAIMoranaFollower_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
         {
 
         }

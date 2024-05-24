@@ -29,7 +29,10 @@ namespace eft_dma_radar
         /// </summary>
         public float Height = 0;
 
-        private Config _config { get => Program.Config; }
+        private Config _config
+        {
+            get => Program.Config;
+        }
 
         /// <summary>
         /// Get exact player location (with optional X,Y offsets).
@@ -105,9 +108,7 @@ namespace eft_dma_radar
                 coords.X = (coords.X - textWidth / 2);
                 coords.Y = (coords.Y - text.TextSize / 2) - 3;
 
-                if (_config.ShowTextOutline)
-                    canvas.DrawText(exfil.Name, coords, Extensions.GetTextOutlinePaint());
-
+                canvas.DrawText(exfil.Name, coords, Extensions.GetTextOutlinePaint());
                 canvas.DrawText(exfil.Name, coords, text);
             }
         }
@@ -161,8 +162,8 @@ namespace eft_dma_radar
             }
 
             var coords = this.GetPoint(7 * UIScale, 3 * UIScale);
-            if (_config.ShowTextOutline)
-                canvas.DrawText(label, coords, Extensions.GetTextOutlinePaint());
+
+            canvas.DrawText(label, coords, Extensions.GetTextOutlinePaint());
             canvas.DrawText(label, coords, text);
         }
         /// <summary>
@@ -190,8 +191,9 @@ namespace eft_dma_radar
             }
 
             var coords = this.GetPoint(7 * UIScale, 3 * UIScale);
-            if (_config.ShowTextOutline)
-                canvas.DrawText(label, coords, Extensions.GetTextOutlinePaint());
+            var paintTest = Extensions.GetTextOutlinePaint();
+
+            canvas.DrawText(label, coords, paintTest);
             canvas.DrawText(label, coords, text);
         }
         /// <summary>
@@ -258,8 +260,8 @@ namespace eft_dma_radar
             }
 
             var coords = this.GetPoint(7 * UIScale, 3 * UIScale);
-            if (_config.ShowTextOutline)
-                canvas.DrawText(label, coords, Extensions.GetTextOutlinePaint());
+
+            canvas.DrawText(label, coords, Extensions.GetTextOutlinePaint());
             canvas.DrawText(label, coords, text);
         }
         /// <summary>
@@ -287,8 +289,8 @@ namespace eft_dma_radar
             }
 
             var coords = this.GetPoint(7 * UIScale, 3 * UIScale);
-            if (_config.ShowTextOutline)
-                canvas.DrawText(label, coords, Extensions.GetTextOutlinePaint());
+            
+            canvas.DrawText(label, coords, Extensions.GetTextOutlinePaint());
             canvas.DrawText(label, coords, text);
         }
         /// <summary>
@@ -333,8 +335,7 @@ namespace eft_dma_radar
             {
                 var coords = this.GetPoint(9 * UIScale, spacing);
 
-                if (_config.ShowTextOutline)
-                    canvas.DrawText(line, coords, Extensions.GetTextOutlinePaint());
+                canvas.DrawText(line, coords, Extensions.GetTextOutlinePaint());
                 canvas.DrawText(line, coords, text);
                 spacing += 12 * UIScale;
             }

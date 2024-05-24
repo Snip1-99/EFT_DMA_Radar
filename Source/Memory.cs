@@ -61,67 +61,54 @@ namespace eft_dma_radar
             {
                 var name = Memory.MapName;
 
-                switch (name)
+                return name switch
                 {
-                    case "factory4_day":
-                    case "factory4_night":
-                        return "Factory";
-                    case "bigmap":
-                        return "Customs";
-                    case "RezervBase":
-                        return "Reserve";
-                    case "TarkovStreets":
-                        return "Streets of Tarkov";
-                    case "laboratory":
-                        return "The Lab";
-                    case "Sandbox":
-                    case "Sandbox_high":
-                        return "Ground Zero";
-                    default:
-                        return name;
-                }
+                    "factory4_day" or "factory4_night" => "Factory",
+                    "bigmap" => "Customs",
+                    "RezervBase" => "Reserve",
+                    "TarkovStreets" => "Streets of Tarkov",
+                    "laboratory" => "The Lab",
+                    "Sandbox" or "Sandbox_high" => "Ground Zero",
+                    _ => name
+                };
             }
         }
+
         public static ReadOnlyDictionary<string, Player> Players
         {
             get => _game?.Players;
         }
+
         public static LootManager Loot
         {
             get => _game?.Loot;
         }
+
         public static ReadOnlyCollection<Grenade> Grenades
         {
             get => _game?.Grenades;
         }
+
         public static bool LoadingLoot
         {
             get => _game?.LoadingLoot ?? false;
         }
+
         public static ReadOnlyCollection<Exfil> Exfils
         {
             get => _game?.Exfils;
         }
-        public static PlayerManager PlayerManager
-        {
-            get => _game?.PlayerManager;
-        }
+
         public static QuestManager QuestManager
         {
             get => _game?.QuestManager;
         }
+
         public static CameraManager CameraManager
         {
             get => _game?.CameraManager;
         }
-        public static Toolbox Toolbox
-        {
-            get => _game?.Toolbox;
-        }
-        public static Chams Chams
-        {
-            get => _game?.Chams;
-        }
+
         public static ReadOnlyCollection<PlayerCorpse> Corpses
         {
             get => _game?.Corpses;
@@ -131,17 +118,13 @@ namespace eft_dma_radar
         {
             get
             {
-                Game game = Memory._game;
-                if (game == null)
+                var game = Memory._game;
+                if (game?.Players == null)
                 {
                     return null;
                 }
-                ReadOnlyDictionary<string, Player> players = game.Players;
-                if (players == null)
-                {
-                    return null;
-                }
-                return players.FirstOrDefault((KeyValuePair<string, Player> x) => x.Value.Type == PlayerType.LocalPlayer).Value;
+
+                return game.Players.FirstOrDefault((KeyValuePair<string, Player> x) => x.Value.Type == PlayerType.LocalPlayer).Value;
             }
         }
         #endregion
@@ -155,27 +138,52 @@ namespace eft_dma_radar
             try
             {
                 Program.Log("Loading memory module...");
+
                 if (!File.Exists("mmap.txt"))
                 {
                     Program.Log("No MemMap, attempting to generate...");
-                    vmmInstance = new Vmm("-printf", "-v", "-device", "fpga", "-waitinitialize");
-                    GetMemMap();
+                    GenerateMMap();
                 }
                 else
                 {
                     Program.Log("MemMap found, loading...");
                     vmmInstance = new Vmm("-printf", "-v", "-device", "fpga", "-memmap", "mmap.txt");
                 }
-                Program.Log("Starting Memory worker thread...");
-                Memory.StartMemoryWorker();
-                Program.HideConsole();
-                Memory._tickSw.Start(); // Start stopwatch for Mem Ticks/sec
+
+                InitiateMemoryWorker();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString(), "DMA Init", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Environment.Exit(-1);
+                try
+                {
+                    Program.Log("attempting to regenerate mmap...");
+                    
+                    if (File.Exists("mmap.txt"))
+                        File.Delete("mmap.txt");
+
+                    GenerateMMap();
+                    InitiateMemoryWorker();
+                }
+                catch
+                {
+                    MessageBox.Show(ex.ToString(), "DMA Init", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Environment.Exit(-1);
+                }
             }
+        }
+
+        private static void InitiateMemoryWorker()
+        {
+            Program.Log("Starting Memory worker thread...");
+            Memory.StartMemoryWorker();
+            Program.HideConsole();
+            Memory._tickSw.Start();
+        }
+
+        private static void GenerateMMap()
+        {
+            vmmInstance = new Vmm("-printf", "-v", "-device", "fpga", "-waitinitialize");
+            GetMemMap();
         }
 
         /// <summary>
@@ -608,68 +616,68 @@ namespace eft_dma_radar
         }
         #endregion
 
-        #region WriteMethods
+        //#region WriteMethods
 
-        /// <summary>
-        /// (Base)
-        /// Write value type/struct to specified address.
-        /// </summary>
-        /// <typeparam name="T">Value Type to write.</typeparam>
-        /// <param name="pid">Process ID to write to.</param>
-        /// <param name="addr">Virtual Address to write to.</param>
-        /// <param name="value"></param>
-        /// <exception cref="DMAException"></exception>
-        public static void WriteValue<T>(ulong addr, T value)
-            where T : unmanaged
-        {
-            try
-            {
-                if (!vmmInstance.MemWriteStruct(_pid, addr, value))
-                    throw new Exception("Memory Write Failed!");
-            }
-            catch (Exception ex)
-            {
-                throw new DMAException($"[DMA] ERROR writing {typeof(T)} value at 0x{addr.ToString("X")}", ex);
-            }
-        }
+        ///// <summary>
+        ///// (Base)
+        ///// Write value type/struct to specified address.
+        ///// </summary>
+        ///// <typeparam name="T">Value Type to write.</typeparam>
+        ///// <param name="pid">Process ID to write to.</param>
+        ///// <param name="addr">Virtual Address to write to.</param>
+        ///// <param name="value"></param>
+        ///// <exception cref="DMAException"></exception>
+        //public static void WriteValue<T>(ulong addr, T value)
+        //    where T : unmanaged
+        //{
+        //    try
+        //    {
+        //        if (!vmmInstance.MemWriteStruct(_pid, addr, value))
+        //            throw new Exception("Memory Write Failed!");
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new DMAException($"[DMA] ERROR writing {typeof(T)} value at 0x{addr.ToString("X")}", ex);
+        //    }
+        //}
 
-        /// <summary>
-        /// Performs multiple memory write operations in a single call
-        /// </summary>
-        /// <param name="entries">A collection of entries defining the memory writes.</param>
-        public static void WriteScatter(IEnumerable<IScatterWriteEntry> entries)
-        {
-            using (var scatter = vmmInstance.Scatter_Initialize(_pid, Vmm.FLAG_NOCACHE))
-            {
-                if (scatter == null)
-                    throw new InvalidOperationException("Failed to initialize scatter.");
+        ///// <summary>
+        ///// Performs multiple memory write operations in a single call
+        ///// </summary>
+        ///// <param name="entries">A collection of entries defining the memory writes.</param>
+        //public static void WriteScatter(IEnumerable<IScatterWriteEntry> entries)
+        //{
+        //    using (var scatter = vmmInstance.Scatter_Initialize(_pid, Vmm.FLAG_NOCACHE))
+        //    {
+        //        if (scatter == null)
+        //            throw new InvalidOperationException("Failed to initialize scatter.");
 
-                foreach (var entry in entries)
-                {
-                    bool success = entry switch
-                    {
-                        IScatterWriteDataEntry<int> intEntry => scatter.PrepareWriteStruct(intEntry.Address, intEntry.Data),
-                        IScatterWriteDataEntry<float> floatEntry => scatter.PrepareWriteStruct(floatEntry.Address, floatEntry.Data),
-                        IScatterWriteDataEntry<ulong> ulongEntry => scatter.PrepareWriteStruct(ulongEntry.Address, ulongEntry.Data),
-                        IScatterWriteDataEntry<bool> boolEntry => scatter.PrepareWriteStruct(boolEntry.Address, boolEntry.Data),
-                        IScatterWriteDataEntry<byte> byteEntry => scatter.PrepareWriteStruct(byteEntry.Address, byteEntry.Data),
-                        _ => throw new NotSupportedException($"Unsupported data type: {entry.GetType()}")
-                    };
+        //        foreach (var entry in entries)
+        //        {
+        //            bool success = entry switch
+        //            {
+        //                IScatterWriteDataEntry<int> intEntry => scatter.PrepareWriteStruct(intEntry.Address, intEntry.Data),
+        //                IScatterWriteDataEntry<float> floatEntry => scatter.PrepareWriteStruct(floatEntry.Address, floatEntry.Data),
+        //                IScatterWriteDataEntry<ulong> ulongEntry => scatter.PrepareWriteStruct(ulongEntry.Address, ulongEntry.Data),
+        //                IScatterWriteDataEntry<bool> boolEntry => scatter.PrepareWriteStruct(boolEntry.Address, boolEntry.Data),
+        //                IScatterWriteDataEntry<byte> byteEntry => scatter.PrepareWriteStruct(byteEntry.Address, byteEntry.Data),
+        //                _ => throw new NotSupportedException($"Unsupported data type: {entry.GetType()}")
+        //            };
 
-                    if (!success)
-                    {
-                        Program.Log($"Failed to prepare scatter write for address: {entry.Address}");
-                        continue;
-                    }
-                }
+        //            if (!success)
+        //            {
+        //                Program.Log($"Failed to prepare scatter write for address: {entry.Address}");
+        //                continue;
+        //            }
+        //        }
 
-                if (!scatter.Execute())
-                    throw new Exception("Scatter write execution failed.");
+        //        if (!scatter.Execute())
+        //            throw new Exception("Scatter write execution failed.");
 
-                scatter.Close();
-            }
-        }
-        #endregion
+        //        scatter.Close();
+        //    }
+        //}
+        //#endregion
 
         #region Methods
         /// <summary>
