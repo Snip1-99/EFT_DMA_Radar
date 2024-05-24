@@ -21,7 +21,7 @@ leechcore.dll、vmm.dll、dbghelp.dll、symsrv.dll和vcruntime140.dll - https://
 
 
 ## Preview
-![image](https://github.com/xx0m/EFT-DMA-Radar-v2/assets/63579245/a3a5c64a-3af8-4814-a81a-9e085b13367c)
+![image](https://github.com/Snip1-99/EFT_DMA_Radar/blob/663e7ae910035f99bb2f3e46dd6dec351f1db36f/git%E5%9B%BE%E7%89%87/1.png)
 ![image](https://github.com/xx0m/EFT-DMA-Radar-v2/assets/63579245/857c1280-3092-4318-9fa0-7cd1df6a0642)
 ![image](https://github.com/xx0m/EFT-DMA-Radar-v2/assets/63579245/c3ccacdc-3400-4f17-b8a6-d726e68df44e)
 ![image](https://github.com/xx0m/EFT-DMA-Radar-v2/assets/63579245/9c7c5388-9e9b-4895-bd3a-2c8e137d17e6)
