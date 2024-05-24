@@ -44,15 +44,15 @@ namespace eft_dma_radar
         private string _lastFactionEntry;
         private List<Player> _watchlistMatchPlayers = new();
 
-        private const double ZoomSensitivity = 0.3;
-        private const int ZoomInterval = 10;
+        private const double ZoomSensitivity = 0.1;
+        private const int ZoomInterval = 1;
         private int targetZoomValue = 0;
         private System.Windows.Forms.Timer zoomTimer;
 
-        private const float DragSensitivity = 3.5f;
+        private const float DragSensitivity = 12f;
 
         private const double PanSmoothness = 0.1;
-        private const int PanInterval = 10;
+        private const int PanInterval = 1;
         private SKPoint targetPanPosition;
         private System.Windows.Forms.Timer panTimer;
 

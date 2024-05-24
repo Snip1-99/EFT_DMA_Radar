@@ -2396,7 +2396,7 @@ namespace eft_dma_radar
             cboFont.Hint = "字体";
             cboFont.IntegralHeight = false;
             cboFont.ItemHeight = 29;
-            cboFont.Items.AddRange(new object[] { "Arial", "Microsoft YaHei", "SimSun", "SimHei", "KaiTi" });
+            cboFont.Items.AddRange(new object[] { "Microsoft YaHei", "SimSun", "SimHei", "KaiTi", "Arial" });
             cboFont.Location = new Point(19, 241);
             cboFont.MaxDropDownItems = 10;
             cboFont.MouseState = MaterialSkin.MouseState.OUT;
@@ -2526,7 +2526,7 @@ namespace eft_dma_radar
             mcRadarEnemyStats.Controls.Add(lblRadarPMCs);
             mcRadarEnemyStats.Depth = 0;
             mcRadarEnemyStats.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcRadarEnemyStats.Location = new Point(1247, 705);
+            mcRadarEnemyStats.Location = new Point(1245, 705);
             mcRadarEnemyStats.Margin = new Padding(16);
             mcRadarEnemyStats.MouseState = MaterialSkin.MouseState.HOVER;
             mcRadarEnemyStats.Name = "mcRadarEnemyStats";
@@ -2845,7 +2845,7 @@ namespace eft_dma_radar
             mcRadarMapSetup.Controls.Add(lblRadarMapSetup);
             mcRadarMapSetup.Depth = 0;
             mcRadarMapSetup.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcRadarMapSetup.Location = new Point(11, 731);
+            mcRadarMapSetup.Location = new Point(12, 731);
             mcRadarMapSetup.Margin = new Padding(16);
             mcRadarMapSetup.MouseState = MaterialSkin.MouseState.HOVER;
             mcRadarMapSetup.Name = "mcRadarMapSetup";
@@ -2940,10 +2940,10 @@ namespace eft_dma_radar
             tabSettingsGeneral.Controls.Add(mcSettingsGeneralUI);
             tabSettingsGeneral.Controls.Add(mcSettingsGeneralRadar);
             tabSettingsGeneral.ImageKey = "(none)";
-            tabSettingsGeneral.Location = new Point(4, 24);
+            tabSettingsGeneral.Location = new Point(4, 29);
             tabSettingsGeneral.Margin = new Padding(0);
             tabSettingsGeneral.Name = "tabSettingsGeneral";
-            tabSettingsGeneral.Size = new Size(1465, 728);
+            tabSettingsGeneral.Size = new Size(1465, 723);
             tabSettingsGeneral.TabIndex = 0;
             tabSettingsGeneral.Text = "雷达设置";
             // 
@@ -3032,10 +3032,10 @@ namespace eft_dma_radar
             tabSettingsMemoryWriting.Controls.Add(swMasterSwitch);
             tabSettingsMemoryWriting.Controls.Add(mcSettingsMemoryWritingGlobal);
             tabSettingsMemoryWriting.Controls.Add(mcSettingsMemoryWritingGear);
-            tabSettingsMemoryWriting.Location = new Point(4, 24);
+            tabSettingsMemoryWriting.Location = new Point(4, 29);
             tabSettingsMemoryWriting.Name = "tabSettingsMemoryWriting";
             tabSettingsMemoryWriting.Padding = new Padding(3);
-            tabSettingsMemoryWriting.Size = new Size(1465, 728);
+            tabSettingsMemoryWriting.Size = new Size(1465, 723);
             tabSettingsMemoryWriting.TabIndex = 1;
             tabSettingsMemoryWriting.Text = "内存功能（危险）";
             // 
@@ -3197,10 +3197,10 @@ namespace eft_dma_radar
             tabSettingsLoot.BackColor = Color.White;
             tabSettingsLoot.Controls.Add(mcSettingsLootMinRubleValue);
             tabSettingsLoot.Controls.Add(mcSettingsLootGeneral);
-            tabSettingsLoot.Location = new Point(4, 24);
+            tabSettingsLoot.Location = new Point(4, 29);
             tabSettingsLoot.Margin = new Padding(0);
             tabSettingsLoot.Name = "tabSettingsLoot";
-            tabSettingsLoot.Size = new Size(1465, 728);
+            tabSettingsLoot.Size = new Size(1465, 723);
             tabSettingsLoot.TabIndex = 2;
             tabSettingsLoot.Text = "物资";
             // 
@@ -3281,10 +3281,10 @@ namespace eft_dma_radar
             tabSettingsAIFactions.Controls.Add(lstFactionEntries);
             tabSettingsAIFactions.Controls.Add(mcSettingsAIFactionsEntryManagement);
             tabSettingsAIFactions.Controls.Add(mcSettingsAIFactionsFactions);
-            tabSettingsAIFactions.Location = new Point(4, 24);
+            tabSettingsAIFactions.Location = new Point(4, 29);
             tabSettingsAIFactions.Margin = new Padding(0);
             tabSettingsAIFactions.Name = "tabSettingsAIFactions";
-            tabSettingsAIFactions.Size = new Size(1465, 728);
+            tabSettingsAIFactions.Size = new Size(1465, 723);
             tabSettingsAIFactions.TabIndex = 3;
             tabSettingsAIFactions.Text = "队伍管理";
             // 
@@ -3306,7 +3306,7 @@ namespace eft_dma_radar
             lstFactionEntries.MultiSelect = false;
             lstFactionEntries.Name = "lstFactionEntries";
             lstFactionEntries.OwnerDraw = true;
-            lstFactionEntries.Size = new Size(286, 704);
+            lstFactionEntries.Size = new Size(286, 699);
             lstFactionEntries.TabIndex = 44;
             lstFactionEntries.UseCompatibleStateImageBehavior = false;
             lstFactionEntries.View = View.Details;
@@ -3416,10 +3416,10 @@ namespace eft_dma_radar
             tabSettingsColors.Controls.Add(mcSettingsColorsExfiltration);
             tabSettingsColors.Controls.Add(mcSettingsColorsPlayers);
             tabSettingsColors.Controls.Add(mcSettingsColorsAI);
-            tabSettingsColors.Location = new Point(4, 24);
+            tabSettingsColors.Location = new Point(4, 29);
             tabSettingsColors.Margin = new Padding(0);
             tabSettingsColors.Name = "tabSettingsColors";
-            tabSettingsColors.Size = new Size(1465, 728);
+            tabSettingsColors.Size = new Size(1465, 723);
             tabSettingsColors.TabIndex = 4;
             tabSettingsColors.Text = "颜色";
             // 
@@ -5001,18 +5001,18 @@ namespace eft_dma_radar
             materialLabel1.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle1;
             materialLabel1.HighEmphasis = true;
-            materialLabel1.Location = new Point(427, -1);
+            materialLabel1.Location = new Point(244, 8);
             materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             materialLabel1.Name = "materialLabel1";
-            materialLabel1.Size = new Size(547, 19);
+            materialLabel1.Size = new Size(1014, 19);
             materialLabel1.TabIndex = 50;
-            materialLabel1.Text = "此文件由翻译by：Snip1编译修改 QQ:2213762483，文件开源免费，请勿盗卖";
+            materialLabel1.Text = "此文件由翻译by：Snip1编译修改 QQ:2213762483，文件开源免费，请勿盗卖,git:https://github.com/Snip1-99/EFT_DMA_Radar,请移步自行下载";
             materialLabel1.UseAccent = true;
             materialLabel1.Click += materialLabel1_Click;
             // 
             // frmMain
             // 
-            AutoScaleDimensions = new SizeF(8F, 17F);
+            AutoScaleDimensions = new SizeF(10F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 192, 255);
             ClientSize = new Size(1491, 873);
