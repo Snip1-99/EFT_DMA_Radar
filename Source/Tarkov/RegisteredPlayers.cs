@@ -341,6 +341,18 @@ namespace eft_dma_radar
                         {
                             Program.Log($"{player.Name} died => {corpsePtr}");
                             player.IsAlive = false;
+
+                            if (Program.Config.ChamsEnabled)
+                            {
+
+                                Task.Run(async () =>
+                                {
+                                    await Memory.Chams.RestorePointersForPlayerAsync(player);
+
+                                    Memory.Chams.SetPlayerBodyChams(player, Memory.Chams.ThermalMaterial);
+                                });
+                            }
+
                         }
 
                         player.IsActive = false;

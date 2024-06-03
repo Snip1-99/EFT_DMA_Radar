@@ -56,10 +56,7 @@ namespace eft_dma_radar
 
         private static bool ShouldFetchDataFromApi()
         {
-            string filePath = "api_tarkov_dev_items.json";
-            bool fileDoesNotExist = !File.Exists(filePath);
-            bool lastModifiedMoreThanAMonthAgo = fileDoesNotExist || File.GetLastWriteTime(filePath).AddMonths(12) < DateTime.Now;
-            return lastModifiedMoreThanAMonthAgo;
+            return !File.Exists("api_tarkov_dev_items.json") || File.GetLastWriteTime("api_tarkov_dev_items.json").AddHours(1) < DateTime.Now;
         }
 
         private static TarkovDevResponse FetchDataFromApi()
@@ -70,7 +67,7 @@ namespace eft_dma_radar
                 var body = new
                 {
                     query = @"query {
-                                    items {
+                                    items(lang:zh) {
                                         id
                                         name
                                         shortName
