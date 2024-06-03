@@ -72,7 +72,7 @@ namespace eft_dma_radar
                             var corpsePlayerProfileIDPtr = Memory.ReadPtr(corpseBase + 0x140);
                             var corpsePlayerProfileID = Memory.ReadUnityString(corpsePlayerProfileIDPtr);
                             var posAddr = Memory.ReadPtrChain(corpseBase, Offsets.GameObject.To_TransformInternal);
-                            var position = new Transform(posAddr).GetPosition();
+                            var position = new Transform(posAddr, false).GetPosition();
                             //Console.WriteLine($"[CorpseManager] - CorpsePosition: {position}");
                             corpses.Add(new PlayerCorpse
                             {
@@ -93,6 +93,17 @@ namespace eft_dma_radar
                                         //Console.WriteLine($"[CorpseManager] - If you see this message, it means that the player is dead. but it's still in active list");
                                         //remove player from active list
                                         player.IsAlive = false;
+
+                                        if (Program.Config.ChamsEnabled)
+                                        {
+                                            
+                                           Task.Run(async () =>
+                                           {
+                                                await Memory.Chams.RestorePointersForPlayerAsync(player);
+
+                                                Memory.Chams.SetPlayerBodyChams(player, Memory.Chams.ThermalMaterial);
+                                           });                                            
+                                        }
 
                                         continue;
                                     }

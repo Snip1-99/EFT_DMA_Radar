@@ -1,6 +1,4 @@
-﻿using MaterialSkin.Controls;
-
-namespace eft_dma_radar
+﻿namespace eft_dma_radar
 {
     partial class frmMain
     {
@@ -34,286 +32,282 @@ namespace eft_dma_radar
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             colDialog = new ColorDialog();
             toolTip = new ToolTip(components);
-            sldrZoomDistance = new MaterialSlider();
-            sldrUIScale = new MaterialSlider();
-            sldrAimlineLength = new MaterialSlider();
-            swExfilNames = new MaterialSwitch();
-            swQuestHelper = new MaterialSwitch();
-            swHoverArmor = new MaterialSwitch();
-            swNames = new MaterialSwitch();
-            swAimview = new MaterialSwitch();
-            swShowLoot = new MaterialSwitch();
-            btnRestartRadar = new MaterialButton();
-            btnToggleMap = new MaterialButton();
-            swMapHelper = new MaterialSwitch();
-            swMasterSwitch = new MaterialSwitch();
-            swInfiniteStamina = new MaterialSwitch();
-            sldrJumpStrength = new MaterialSlider();
-            sldrThrowStrength = new MaterialSlider();
-            sldrTimeOfDay = new MaterialSlider();
-            swExtendedReach = new MaterialSwitch();
-            swFreezeTime = new MaterialSwitch();
-            swChams = new MaterialSwitch();
-            swNightVision = new MaterialSwitch();
-            swOpticalThermal = new MaterialSwitch();
-            swThermalVision = new MaterialSwitch();
-            sldrMagDrillsSpeed = new MaterialSlider();
-            swNoVisor = new MaterialSwitch();
-            swInstantADS = new MaterialSwitch();
-            swNoRecoilSway = new MaterialSwitch();
-            cboThermalColorScheme = new MaterialComboBox();
-            cboThermalType = new MaterialComboBox();
-            sldrMinCorpse = new MaterialSlider();
-            sldrMinRegularLoot = new MaterialSlider();
-            swCorpses = new MaterialSwitch();
-            swFilteredOnly = new MaterialSwitch();
-            swSubItems = new MaterialSwitch();
-            swItemValue = new MaterialSwitch();
-            swAutoRefresh = new MaterialSwitch();
-            btnRefreshLoot = new MaterialButton();
-            cboAutoRefreshMap = new MaterialComboBox();
-            sldrAutoRefreshDelay = new MaterialSlider();
-            sldrMinSubItems = new MaterialSlider();
-            sldrMinImportantLoot = new MaterialSlider();
-            btnAddFaction = new MaterialButton();
-            btnRemoveFaction = new MaterialButton();
-            btnAddFactionEntry = new MaterialButton();
-            btnRemoveFactionEntry = new MaterialButton();
-            txtTeammateID = new MaterialTextBox2();
-            txtFactionEntryName = new MaterialTextBox2();
-            txtFactionName = new MaterialTextBox2();
-            cboFactionType = new MaterialComboBox();
-            btnResetTheme = new MaterialButton();
-            btnMapSetupApply = new MaterialButton();
-            txtMapSetupScale = new MaterialTextBox2();
-            txtMapSetupY = new MaterialTextBox2();
-            txtMapSetupX = new MaterialTextBox2();
-            btnToggleMapFree = new MaterialButton();
-            btnRemoveWatchlistEntry = new MaterialButton();
-            txtWatchlistAccountID = new MaterialTextBox2();
-            txtWatchlistProfileName = new MaterialTextBox2();
-            btnAddWatchlistEntry = new MaterialButton();
-            btnAddWatchlistProfile = new MaterialButton();
-            btnRemoveWatchlistProfile = new MaterialButton();
-            txtWatchlistTag = new MaterialTextBox2();
-            txtWatchlistPlatformUsername = new MaterialTextBox2();
-            rdbYoutube = new MaterialRadioButton();
-            rdbTwitch = new MaterialRadioButton();
-            swWatchlistIsStreamer = new MaterialSwitch();
-            btnResetPlayerlist = new MaterialButton();
-            cboLootFilterItemsToAdd = new MaterialComboBox();
-            txtLootFilterItemToSearch = new MaterialTextBox2();
-            btnAddLootFilterItem = new MaterialButton();
-            btnRemoveLootFilterItem = new MaterialButton();
-            txtLootFilterName = new MaterialTextBox2();
-            swLootFilterActive = new MaterialSwitch();
-            btnAddFilter = new MaterialButton();
-            btnRemoveFilter = new MaterialButton();
-            swMaxEndurance = new MaterialSwitch();
-            swMaxStrength = new MaterialSwitch();
-            swMaxVitality = new MaterialSwitch();
-            swMaxHealth = new MaterialSwitch();
-            swMaxStressResistance = new MaterialSwitch();
-            swMaxMetabolism = new MaterialSwitch();
-            swMaxImmunity = new MaterialSwitch();
-            swMaxPerception = new MaterialSwitch();
-            swMaxIntellect = new MaterialSwitch();
-            swMaxThrowables = new MaterialSwitch();
-            swMaxSurgery = new MaterialSwitch();
-            swMaxCovertMovement = new MaterialSwitch();
-            swMaxSearch = new MaterialSwitch();
-            swMaxMagDrills = new MaterialSwitch();
-            swMaxLightVests = new MaterialSwitch();
-            swMaxHeavyVests = new MaterialSwitch();
-            swMaxAttention = new MaterialSwitch();
-            swProcessLoot = new MaterialSwitch();
-            swRadarStats = new MaterialSwitch();
-            swRadarVsync = new MaterialSwitch();
-            swRadarEnemyCount = new MaterialSwitch();
-            sldrFontSize = new MaterialSlider();
-            cboFont = new MaterialComboBox();
-            swUnknownQuestItems = new MaterialSwitch();
-            sldrThermalColorCoefficient = new MaterialSlider();
-            sldrMinTemperature = new MaterialSlider();
-            sldrThermalRampShift = new MaterialSlider();
-            tabControlMain = new MaterialTabControl();
+            sldrZoomDistance = new MaterialSkin.Controls.MaterialSlider();
+            sldrUIScale = new MaterialSkin.Controls.MaterialSlider();
+            sldrAimlineLength = new MaterialSkin.Controls.MaterialSlider();
+            swExfilNames = new MaterialSkin.Controls.MaterialSwitch();
+            swQuestHelper = new MaterialSkin.Controls.MaterialSwitch();
+            swHoverArmor = new MaterialSkin.Controls.MaterialSwitch();
+            swNames = new MaterialSkin.Controls.MaterialSwitch();
+            swAimview = new MaterialSkin.Controls.MaterialSwitch();
+            swShowLoot = new MaterialSkin.Controls.MaterialSwitch();
+            btnRestartRadar = new MaterialSkin.Controls.MaterialButton();
+            btnToggleMap = new MaterialSkin.Controls.MaterialButton();
+            swMapHelper = new MaterialSkin.Controls.MaterialSwitch();
+            swMasterSwitch = new MaterialSkin.Controls.MaterialSwitch();
+            swInfiniteStamina = new MaterialSkin.Controls.MaterialSwitch();
+            sldrJumpStrength = new MaterialSkin.Controls.MaterialSlider();
+            sldrThrowStrength = new MaterialSkin.Controls.MaterialSlider();
+            sldrTimeOfDay = new MaterialSkin.Controls.MaterialSlider();
+            swExtendedReach = new MaterialSkin.Controls.MaterialSwitch();
+            swFreezeTime = new MaterialSkin.Controls.MaterialSwitch();
+            swChams = new MaterialSkin.Controls.MaterialSwitch();
+            swNightVision = new MaterialSkin.Controls.MaterialSwitch();
+            swOpticalThermal = new MaterialSkin.Controls.MaterialSwitch();
+            swThermalVision = new MaterialSkin.Controls.MaterialSwitch();
+            sldrMagDrillsSpeed = new MaterialSkin.Controls.MaterialSlider();
+            swNoVisor = new MaterialSkin.Controls.MaterialSwitch();
+            swInstantADS = new MaterialSkin.Controls.MaterialSwitch();
+            swNoRecoilSway = new MaterialSkin.Controls.MaterialSwitch();
+            cboThermalColorScheme = new MaterialSkin.Controls.MaterialComboBox();
+            cboThermalType = new MaterialSkin.Controls.MaterialComboBox();
+            sldrMinCorpse = new MaterialSkin.Controls.MaterialSlider();
+            sldrMinRegularLoot = new MaterialSkin.Controls.MaterialSlider();
+            swCorpses = new MaterialSkin.Controls.MaterialSwitch();
+            swFilteredOnly = new MaterialSkin.Controls.MaterialSwitch();
+            swSubItems = new MaterialSkin.Controls.MaterialSwitch();
+            swItemValue = new MaterialSkin.Controls.MaterialSwitch();
+            swAutoRefresh = new MaterialSkin.Controls.MaterialSwitch();
+            btnRefreshLoot = new MaterialSkin.Controls.MaterialButton();
+            cboAutoRefreshMap = new MaterialSkin.Controls.MaterialComboBox();
+            sldrAutoRefreshDelay = new MaterialSkin.Controls.MaterialSlider();
+            sldrMinSubItems = new MaterialSkin.Controls.MaterialSlider();
+            sldrMinImportantLoot = new MaterialSkin.Controls.MaterialSlider();
+            btnAddFaction = new MaterialSkin.Controls.MaterialButton();
+            btnRemoveFaction = new MaterialSkin.Controls.MaterialButton();
+            btnAddFactionEntry = new MaterialSkin.Controls.MaterialButton();
+            btnRemoveFactionEntry = new MaterialSkin.Controls.MaterialButton();
+            txtTeammateID = new MaterialSkin.Controls.MaterialTextBox2();
+            txtFactionEntryName = new MaterialSkin.Controls.MaterialTextBox2();
+            txtFactionName = new MaterialSkin.Controls.MaterialTextBox2();
+            cboFactionType = new MaterialSkin.Controls.MaterialComboBox();
+            btnResetTheme = new MaterialSkin.Controls.MaterialButton();
+            btnMapSetupApply = new MaterialSkin.Controls.MaterialButton();
+            txtMapSetupScale = new MaterialSkin.Controls.MaterialTextBox2();
+            txtMapSetupY = new MaterialSkin.Controls.MaterialTextBox2();
+            txtMapSetupX = new MaterialSkin.Controls.MaterialTextBox2();
+            btnToggleMapFree = new MaterialSkin.Controls.MaterialButton();
+            btnRemoveWatchlistEntry = new MaterialSkin.Controls.MaterialButton();
+            txtWatchlistAccountID = new MaterialSkin.Controls.MaterialTextBox2();
+            txtWatchlistProfileName = new MaterialSkin.Controls.MaterialTextBox2();
+            btnAddWatchlistEntry = new MaterialSkin.Controls.MaterialButton();
+            btnAddWatchlistProfile = new MaterialSkin.Controls.MaterialButton();
+            btnRemoveWatchlistProfile = new MaterialSkin.Controls.MaterialButton();
+            txtWatchlistTag = new MaterialSkin.Controls.MaterialTextBox2();
+            txtWatchlistPlatformUsername = new MaterialSkin.Controls.MaterialTextBox2();
+            rdbYoutube = new MaterialSkin.Controls.MaterialRadioButton();
+            rdbTwitch = new MaterialSkin.Controls.MaterialRadioButton();
+            swWatchlistIsStreamer = new MaterialSkin.Controls.MaterialSwitch();
+            btnResetPlayerlist = new MaterialSkin.Controls.MaterialButton();
+            cboLootFilterItemsToAdd = new MaterialSkin.Controls.MaterialComboBox();
+            txtLootFilterItemToSearch = new MaterialSkin.Controls.MaterialTextBox2();
+            btnAddLootFilterItem = new MaterialSkin.Controls.MaterialButton();
+            btnRemoveLootFilterItem = new MaterialSkin.Controls.MaterialButton();
+            txtLootFilterName = new MaterialSkin.Controls.MaterialTextBox2();
+            swLootFilterActive = new MaterialSkin.Controls.MaterialSwitch();
+            btnAddFilter = new MaterialSkin.Controls.MaterialButton();
+            btnRemoveFilter = new MaterialSkin.Controls.MaterialButton();
+            swMaxEndurance = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxStrength = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxVitality = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxHealth = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxStressResistance = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxMetabolism = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxImmunity = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxPerception = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxIntellect = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxThrowables = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxSurgery = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxCovertMovement = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxSearch = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxMagDrills = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxLightVests = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxHeavyVests = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxAttention = new MaterialSkin.Controls.MaterialSwitch();
+            swProcessLoot = new MaterialSkin.Controls.MaterialSwitch();
+            swRadarStats = new MaterialSkin.Controls.MaterialSwitch();
+            swRadarVsync = new MaterialSkin.Controls.MaterialSwitch();
+            swRadarEnemyCount = new MaterialSkin.Controls.MaterialSwitch();
+            sldrFontSize = new MaterialSkin.Controls.MaterialSlider();
+            cboFont = new MaterialSkin.Controls.MaterialComboBox();
+            swUnknownQuestItems = new MaterialSkin.Controls.MaterialSwitch();
+            sldrThermalColorCoefficient = new MaterialSkin.Controls.MaterialSlider();
+            sldrMinTemperature = new MaterialSkin.Controls.MaterialSlider();
+            sldrThermalRampShift = new MaterialSkin.Controls.MaterialSlider();
+            tabControlMain = new MaterialSkin.Controls.MaterialTabControl();
             tabRadar = new TabPage();
-            mcRadarEnemyStats = new MaterialCard();
-            lblRadarBossesValue = new MaterialLabel();
-            lblRadarPlayerScavsValue = new MaterialLabel();
-            lblRadarBosses = new MaterialLabel();
-            lblRadarPlayerScavs = new MaterialLabel();
-            lblRadarRoguesValue = new MaterialLabel();
-            lblRadarAIScavsValue = new MaterialLabel();
-            lblRadarPMCsValue = new MaterialLabel();
-            lblRadarRogues = new MaterialLabel();
-            lblRadarAIScavs = new MaterialLabel();
-            lblRadarPMCs = new MaterialLabel();
-            mcRadarStats = new MaterialCard();
-            lblRadarCorpsesValue = new MaterialLabel();
-            lblRadarCorpses = new MaterialLabel();
-            lblRadarMemSValue = new MaterialLabel();
-            lblRadarMemS = new MaterialLabel();
-            lblRadarContainersValue = new MaterialLabel();
-            lblRadarLooseLootValue = new MaterialLabel();
-            lblRadarFPSValue = new MaterialLabel();
-            lblRadarContainers = new MaterialLabel();
-            lblRadarLooseLoot = new MaterialLabel();
-            lblRadarFPS = new MaterialLabel();
-            mcRadarSettings = new MaterialCard();
-            mcRadarMapSetup = new MaterialCard();
-            lblRadarMapSetup = new MaterialLabel();
+            mcRadarEnemyStats = new MaterialSkin.Controls.MaterialCard();
+            lblRadarBossesValue = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarPlayerScavsValue = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarBosses = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarPlayerScavs = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarRoguesValue = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarAIScavsValue = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarPMCsValue = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarRogues = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarAIScavs = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarPMCs = new MaterialSkin.Controls.MaterialLabel();
+            mcRadarStats = new MaterialSkin.Controls.MaterialCard();
+            lblRadarCorpsesValue = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarCorpses = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarMemSValue = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarMemS = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarContainersValue = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarLooseLootValue = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarFPSValue = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarContainers = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarLooseLoot = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarFPS = new MaterialSkin.Controls.MaterialLabel();
+            mcRadarSettings = new MaterialSkin.Controls.MaterialCard();
+            mcRadarMapSetup = new MaterialSkin.Controls.MaterialCard();
+            lblRadarMapSetup = new MaterialSkin.Controls.MaterialLabel();
             skMapCanvas = new SkiaSharp.Views.Desktop.SKGLControl();
             tabSettings = new TabPage();
-            tabSelector = new MaterialTabSelector();
-            tabControlSettings = new MaterialTabControl();
+            tabSelector = new MaterialSkin.Controls.MaterialTabSelector();
+            tabControlSettings = new MaterialSkin.Controls.MaterialTabControl();
             tabSettingsGeneral = new TabPage();
-            mcSettingsGeneralUI = new MaterialCard();
-            lblSettingsGeneralUI = new MaterialLabel();
-            mcSettingsGeneralRadar = new MaterialCard();
-            lblSettingsGeneralRadar = new MaterialLabel();
+            mcSettingsGeneralUI = new MaterialSkin.Controls.MaterialCard();
+            lblSettingsGeneralUI = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsGeneralRadar = new MaterialSkin.Controls.MaterialCard();
+            lblSettingsGeneralRadar = new MaterialSkin.Controls.MaterialLabel();
             tabSettingsMemoryWriting = new TabPage();
-            mcSettingsMemoryWritingSkillBuffs = new MaterialCard();
-            lblSettingsMemoryWritingSkills = new MaterialLabel();
-            mcSettingsMemoryWritingThermal = new MaterialCard();
-            lblSettingsMemoryWritingThermal = new MaterialLabel();
-            mcSettingsMemoryWritingGlobal = new MaterialCard();
-            lblSettingsMemoryWritingGlobal = new MaterialLabel();
-            mcSettingsMemoryWritingGear = new MaterialCard();
-            lblSettingsMemoryWritingGear = new MaterialLabel();
+            mcSettingsMemoryWritingSkillBuffs = new MaterialSkin.Controls.MaterialCard();
+            lblSettingsMemoryWritingSkills = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsMemoryWritingThermal = new MaterialSkin.Controls.MaterialCard();
+            lblSettingsMemoryWritingThermal = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsMemoryWritingGlobal = new MaterialSkin.Controls.MaterialCard();
+            lblSettingsMemoryWritingGlobal = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsMemoryWritingGear = new MaterialSkin.Controls.MaterialCard();
+            lblSettingsMemoryWritingGear = new MaterialSkin.Controls.MaterialLabel();
             tabSettingsLoot = new TabPage();
-            mcSettingsLootMinRubleValue = new MaterialCard();
-            lblSettingsLootMinRubleValues = new MaterialLabel();
-            mcSettingsLootGeneral = new MaterialCard();
-            lblSettingsLootGeneral = new MaterialLabel();
+            mcSettingsLootMinRubleValue = new MaterialSkin.Controls.MaterialCard();
+            lblSettingsLootMinRubleValues = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsLootGeneral = new MaterialSkin.Controls.MaterialCard();
+            lblSettingsLootGeneral = new MaterialSkin.Controls.MaterialLabel();
             tabSettingsAIFactions = new TabPage();
-            lstFactionEntries = new MaterialListView();
+            lstFactionEntries = new MaterialSkin.Controls.MaterialListView();
             colFactionsAIName = new ColumnHeader();
-            mcSettingsAIFactionsEntryManagement = new MaterialCard();
-            lblSettingsAIFactionsEntryManagement = new MaterialLabel();
-            mcSettingsAIFactionsFactions = new MaterialCard();
-            lstFactions = new MaterialListView();
+            mcSettingsAIFactionsEntryManagement = new MaterialSkin.Controls.MaterialCard();
+            lblSettingsAIFactionsEntryManagement = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsAIFactionsFactions = new MaterialSkin.Controls.MaterialCard();
+            lstFactions = new MaterialSkin.Controls.MaterialListView();
             colFactionName = new ColumnHeader();
-            lblSettingsAIFactionsFactions = new MaterialLabel();
+            lblSettingsAIFactionsFactions = new MaterialSkin.Controls.MaterialLabel();
             tabSettingsColors = new TabPage();
-            mcSettingsColorsOther = new MaterialCard();
+            mcSettingsColorsOther = new MaterialSkin.Controls.MaterialCard();
             picOtherAccent = new PictureBox();
-            lblSettingsOtherAccent = new MaterialLabel();
+            lblSettingsOtherAccent = new MaterialSkin.Controls.MaterialLabel();
             picOtherPrimaryLight = new PictureBox();
-            lblSettingsOtherPrimaryLight = new MaterialLabel();
+            lblSettingsOtherPrimaryLight = new MaterialSkin.Controls.MaterialLabel();
             picOtherPrimaryDark = new PictureBox();
-            lblSettingsOtherPrimaryDark = new MaterialLabel();
+            lblSettingsOtherPrimaryDark = new MaterialSkin.Controls.MaterialLabel();
             picOtherPrimary = new PictureBox();
-            lblSettingsOtherPrimary = new MaterialLabel();
+            lblSettingsOtherPrimary = new MaterialSkin.Controls.MaterialLabel();
             picOtherChams = new PictureBox();
-            lblSettingsOtherChams = new MaterialLabel();
+            lblSettingsOtherChams = new MaterialSkin.Controls.MaterialLabel();
             picOtherDeathMarker = new PictureBox();
-            lblSettingsOtherDeathMarker = new MaterialLabel();
+            lblSettingsOtherDeathMarker = new MaterialSkin.Controls.MaterialLabel();
             picOtherTextOutline = new PictureBox();
-            lblSettingsOtherTextOutline = new MaterialLabel();
-            lblSettingsColorsOther = new MaterialLabel();
-            mcSettingsColorsLootAndQuests = new MaterialCard();
+            lblSettingsOtherTextOutline = new MaterialSkin.Controls.MaterialLabel();
+            lblSettingsColorsOther = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsColorsLootAndQuests = new MaterialSkin.Controls.MaterialCard();
             picQuestZone = new PictureBox();
-            lblSettingsQuestZones = new MaterialLabel();
+            lblSettingsQuestZones = new MaterialSkin.Controls.MaterialLabel();
             picQuestItem = new PictureBox();
-            lblSettingsQuestItems = new MaterialLabel();
+            lblSettingsQuestItems = new MaterialSkin.Controls.MaterialLabel();
             picLootImportant = new PictureBox();
-            lblSettingsLootImportant = new MaterialLabel();
+            lblSettingsLootImportant = new MaterialSkin.Controls.MaterialLabel();
             picLootRegular = new PictureBox();
-            lblSettingsLootRegular = new MaterialLabel();
-            lblSettingsColorsLootQuests = new MaterialLabel();
-            mcSettingsColorsExfiltration = new MaterialCard();
+            lblSettingsLootRegular = new MaterialSkin.Controls.MaterialLabel();
+            lblSettingsColorsLootQuests = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsColorsExfiltration = new MaterialSkin.Controls.MaterialCard();
             picExfilClosedIcon = new PictureBox();
-            lblSettingsColorsExfilClosedIcon = new MaterialLabel();
+            lblSettingsColorsExfilClosedIcon = new MaterialSkin.Controls.MaterialLabel();
             picExfilClosedText = new PictureBox();
-            lblSettingsColorsExfilClosedText = new MaterialLabel();
+            lblSettingsColorsExfilClosedText = new MaterialSkin.Controls.MaterialLabel();
             picExfilPendingIcon = new PictureBox();
-            lblSettingsColorsExfilPendingIcon = new MaterialLabel();
+            lblSettingsColorsExfilPendingIcon = new MaterialSkin.Controls.MaterialLabel();
             picExfilPendingText = new PictureBox();
-            lblSettingsColorsExfilPendingText = new MaterialLabel();
+            lblSettingsColorsExfilPendingText = new MaterialSkin.Controls.MaterialLabel();
             picExfilActiveIcon = new PictureBox();
-            lblSettingsColorsExfilActiveIcon = new MaterialLabel();
+            lblSettingsColorsExfilActiveIcon = new MaterialSkin.Controls.MaterialLabel();
             picExfilActiveText = new PictureBox();
-            lblSettingsColorsExfilActiveText = new MaterialLabel();
-            lblSettingsColorsExfiltration = new MaterialLabel();
-            mcSettingsColorsPlayers = new MaterialCard();
+            lblSettingsColorsExfilActiveText = new MaterialSkin.Controls.MaterialLabel();
+            lblSettingsColorsExfiltration = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsColorsPlayers = new MaterialSkin.Controls.MaterialCard();
             picPlayersSpecial = new PictureBox();
-            lblSettingsColorsPlayersSpecial = new MaterialLabel();
+            lblSettingsColorsPlayersSpecial = new MaterialSkin.Controls.MaterialLabel();
             picPlayersTeamHover = new PictureBox();
-            lblSettingsColorsPlayersTeamHover = new MaterialLabel();
+            lblSettingsColorsPlayersTeamHover = new MaterialSkin.Controls.MaterialLabel();
             picPlayersTeammate = new PictureBox();
-            lblSettingsColorsPlayersTeammate = new MaterialLabel();
+            lblSettingsColorsPlayersTeammate = new MaterialSkin.Controls.MaterialLabel();
             picPlayersLocalPlayer = new PictureBox();
-            lblSettingsColorsPlayersLocalPlayer = new MaterialLabel();
+            lblSettingsColorsPlayersLocalPlayer = new MaterialSkin.Controls.MaterialLabel();
             picPlayersScav = new PictureBox();
-            lblSettingsColorsPlayersScav = new MaterialLabel();
+            lblSettingsColorsPlayersScav = new MaterialSkin.Controls.MaterialLabel();
             picPlayersBEAR = new PictureBox();
-            lblSettingsColorsPlayersBEAR = new MaterialLabel();
+            lblSettingsColorsPlayersBEAR = new MaterialSkin.Controls.MaterialLabel();
             picPlayersUSEC = new PictureBox();
-            lblSettingsColorsPlayersUSEC = new MaterialLabel();
-            lblSettingsColorsPlayers = new MaterialLabel();
-            mcSettingsColorsAI = new MaterialCard();
+            lblSettingsColorsPlayersUSEC = new MaterialSkin.Controls.MaterialLabel();
+            lblSettingsColorsPlayers = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsColorsAI = new MaterialSkin.Controls.MaterialCard();
             picAIOther = new PictureBox();
-            lblSettingsColorsAIOther = new MaterialLabel();
+            lblSettingsColorsAIOther = new MaterialSkin.Controls.MaterialLabel();
             picAIScav = new PictureBox();
-            lblSettingsColorsAIScav = new MaterialLabel();
+            lblSettingsColorsAIScav = new MaterialSkin.Controls.MaterialLabel();
             picAIFollowerOfMorana = new PictureBox();
-            lblSettingsColorsAIMoranaFollower = new MaterialLabel();
+            lblSettingsColorsAIMoranaFollower = new MaterialSkin.Controls.MaterialLabel();
             picAICultist = new PictureBox();
-            lblSettingsColorsAICultists = new MaterialLabel();
+            lblSettingsColorsAICultists = new MaterialSkin.Controls.MaterialLabel();
             picAIRogue = new PictureBox();
-            lblSettingsColorsAIRogues = new MaterialLabel();
+            lblSettingsColorsAIRogues = new MaterialSkin.Controls.MaterialLabel();
             picAIRaider = new PictureBox();
-            lblSettingsColorsAIRaiders = new MaterialLabel();
+            lblSettingsColorsAIRaiders = new MaterialSkin.Controls.MaterialLabel();
             picAIBossFollower = new PictureBox();
-            lblSettingsColorsAIBossFollower = new MaterialLabel();
+            lblSettingsColorsAIBossFollower = new MaterialSkin.Controls.MaterialLabel();
             picAIBossGuard = new PictureBox();
-            lblSettingsColorsAIBossGuard = new MaterialLabel();
+            lblSettingsColorsAIBossGuard = new MaterialSkin.Controls.MaterialLabel();
             picAIBoss = new PictureBox();
-            lblSettingsColorsAIBoss = new MaterialLabel();
-            lblSettingsColorsAI = new MaterialLabel();
+            lblSettingsColorsAIBoss = new MaterialSkin.Controls.MaterialLabel();
+            lblSettingsColorsAI = new MaterialSkin.Controls.MaterialLabel();
             tabPlayerLoadouts = new TabPage();
-            mcPlayerLoadoutsAI = new MaterialCard();
-            lblPlayerLoadoutsAI = new MaterialLabel();
+            mcPlayerLoadoutsAI = new MaterialSkin.Controls.MaterialCard();
+            lblPlayerLoadoutsAI = new MaterialSkin.Controls.MaterialLabel();
             flpPlayerLoadoutsAI = new FlowLayoutPanel();
-            mcPlayerLoadoutsPlayers = new MaterialCard();
-            lblPlayerLoadoutsPlayers = new MaterialLabel();
+            mcPlayerLoadoutsPlayers = new MaterialSkin.Controls.MaterialCard();
+            lblPlayerLoadoutsPlayers = new MaterialSkin.Controls.MaterialLabel();
             flpPlayerLoadoutsPlayers = new FlowLayoutPanel();
             tabWatchlist = new TabPage();
-            mcWatchlistPlayerlist = new MaterialCard();
-            lstWatchlistPlayerList = new MaterialListView();
+            mcWatchlistPlayerlist = new MaterialSkin.Controls.MaterialCard();
+            lstWatchlistPlayerList = new MaterialSkin.Controls.MaterialListView();
             colPlayerlistName = new ColumnHeader();
-            lblWatchlistPlayerlist = new MaterialLabel();
-            mcWatchlistProfiles = new MaterialCard();
-            lstWatchlistProfiles = new MaterialListView();
+            lblWatchlistPlayerlist = new MaterialSkin.Controls.MaterialLabel();
+            mcWatchlistProfiles = new MaterialSkin.Controls.MaterialCard();
+            lstWatchlistProfiles = new MaterialSkin.Controls.MaterialListView();
             colWatchlistProfileName = new ColumnHeader();
-            lblWatchlistProfiles = new MaterialLabel();
-            mcWatchlistPlayerManagement = new MaterialCard();
-            lblWatchlistPlayerManagement = new MaterialLabel();
-            lstWatchlistEntries = new MaterialListView();
+            lblWatchlistProfiles = new MaterialSkin.Controls.MaterialLabel();
+            mcWatchlistPlayerManagement = new MaterialSkin.Controls.MaterialCard();
+            lblWatchlistPlayerManagement = new MaterialSkin.Controls.MaterialLabel();
+            lstWatchlistEntries = new MaterialSkin.Controls.MaterialListView();
             colWatchlistAccID = new ColumnHeader();
             colWatchlistTag = new ColumnHeader();
             colWatchlistUsername = new ColumnHeader();
             tabLootFilter = new TabPage();
-            mcLootFilterFilters = new MaterialCard();
-            lstLootFilters = new MaterialListView();
+            mcLootFilterFilters = new MaterialSkin.Controls.MaterialCard();
+            lstLootFilters = new MaterialSkin.Controls.MaterialListView();
             colLootFilterName = new ColumnHeader();
-            lblSettingsLootFilters = new MaterialLabel();
+            lblSettingsLootFilters = new MaterialSkin.Controls.MaterialLabel();
             picLootFilterColor = new PictureBox();
-            btnFilterPriorityUp = new MaterialButton();
-            lblSettingsLootFilterColor = new MaterialLabel();
-            btnFilterPriorityDown = new MaterialButton();
-            mcLootFilterItemManagement = new MaterialCard();
-            lblLootFilterItemManagement = new MaterialLabel();
-            lstLootFilterEntries = new MaterialListView();
+            btnFilterPriorityUp = new MaterialSkin.Controls.MaterialButton();
+            lblSettingsLootFilterColor = new MaterialSkin.Controls.MaterialLabel();
+            btnFilterPriorityDown = new MaterialSkin.Controls.MaterialButton();
+            mcLootFilterItemManagement = new MaterialSkin.Controls.MaterialCard();
+            lblLootFilterItemManagement = new MaterialSkin.Controls.MaterialLabel();
+            lstLootFilterEntries = new MaterialSkin.Controls.MaterialListView();
             colLootFilterItemName = new ColumnHeader();
             colLootFilterItemValue = new ColumnHeader();
-            tabPageLootList = new TabPage();
-            lootListListView = new MaterialListView();
-            columnName1 = new ColumnHeader();
-            columnValue1 = new ColumnHeader();
             iconList = new ImageList(components);
-            materialLabel1 = new MaterialLabel();
+            materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             tabControlMain.SuspendLayout();
             tabRadar.SuspendLayout();
             mcRadarEnemyStats.SuspendLayout();
@@ -386,7 +380,6 @@ namespace eft_dma_radar
             mcLootFilterFilters.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picLootFilterColor).BeginInit();
             mcLootFilterItemManagement.SuspendLayout();
-            tabPageLootList.SuspendLayout();
             SuspendLayout();
             // 
             // colDialog
@@ -397,7 +390,7 @@ namespace eft_dma_radar
             // 
             sldrZoomDistance.Depth = 0;
             sldrZoomDistance.ForeColor = Color.Black;
-            sldrZoomDistance.Location = new Point(17, 187);
+            sldrZoomDistance.Location = new Point(17, 188);
             sldrZoomDistance.MouseState = MaterialSkin.MouseState.HOVER;
             sldrZoomDistance.Name = "sldrZoomDistance";
             sldrZoomDistance.RangeMax = 200;
@@ -452,16 +445,16 @@ namespace eft_dma_radar
             // swExfilNames
             // 
             swExfilNames.Depth = 0;
-            swExfilNames.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swExfilNames.Font = new Font("Segoe UI", 9F);
             swExfilNames.Location = new Point(17, 96);
             swExfilNames.Margin = new Padding(0);
             swExfilNames.MouseLocation = new Point(-1, -1);
             swExfilNames.MouseState = MaterialSkin.MouseState.HOVER;
             swExfilNames.Name = "swExfilNames";
             swExfilNames.Ripple = true;
-            swExfilNames.Size = new Size(167, 31);
+            swExfilNames.Size = new Size(167, 32);
             swExfilNames.TabIndex = 6;
-            swExfilNames.Text = "文本轮廓";
+            swExfilNames.Text = "撤离点显示";
             toolTip.SetToolTip(swExfilNames, "Shows exfiltration point names on radar");
             swExfilNames.UseVisualStyleBackColor = true;
             swExfilNames.CheckedChanged += swExfilNames_CheckedChanged;
@@ -469,16 +462,16 @@ namespace eft_dma_radar
             // swQuestHelper
             // 
             swQuestHelper.Depth = 0;
-            swQuestHelper.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swQuestHelper.Location = new Point(197, 106);
+            swQuestHelper.Font = new Font("Segoe UI", 9F);
+            swQuestHelper.Location = new Point(197, 107);
             swQuestHelper.Margin = new Padding(0);
             swQuestHelper.MouseLocation = new Point(-1, -1);
             swQuestHelper.MouseState = MaterialSkin.MouseState.HOVER;
             swQuestHelper.Name = "swQuestHelper";
             swQuestHelper.Ripple = true;
-            swQuestHelper.Size = new Size(174, 31);
+            swQuestHelper.Size = new Size(174, 32);
             swQuestHelper.TabIndex = 5;
-            swQuestHelper.Text = "显示撤离点";
+            swQuestHelper.Text = "任务助手";
             toolTip.SetToolTip(swQuestHelper, "Displays all active quest tasks/items on the map. Must use 'Show Loot' to display quest items.");
             swQuestHelper.UseVisualStyleBackColor = true;
             swQuestHelper.CheckedChanged += swQuestHelper_CheckedChanged;
@@ -486,14 +479,14 @@ namespace eft_dma_radar
             // swHoverArmor
             // 
             swHoverArmor.Depth = 0;
-            swHoverArmor.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swHoverArmor.Font = new Font("Segoe UI", 9F);
             swHoverArmor.Location = new Point(197, 51);
             swHoverArmor.Margin = new Padding(0);
             swHoverArmor.MouseLocation = new Point(-1, -1);
             swHoverArmor.MouseState = MaterialSkin.MouseState.HOVER;
             swHoverArmor.Name = "swHoverArmor";
             swHoverArmor.Ripple = true;
-            swHoverArmor.Size = new Size(174, 31);
+            swHoverArmor.Size = new Size(174, 32);
             swHoverArmor.TabIndex = 4;
             swHoverArmor.Text = "悬停显示";
             toolTip.SetToolTip(swHoverArmor, "Show current gear pieces when hovering over a player");
@@ -503,14 +496,14 @@ namespace eft_dma_radar
             // swNames
             // 
             swNames.Depth = 0;
-            swNames.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swNames.Location = new Point(555, 50);
+            swNames.Font = new Font("Segoe UI", 9F);
+            swNames.Location = new Point(557, 50);
             swNames.Margin = new Padding(0);
             swNames.MouseLocation = new Point(-1, -1);
             swNames.MouseState = MaterialSkin.MouseState.HOVER;
             swNames.Name = "swNames";
             swNames.Ripple = true;
-            swNames.Size = new Size(160, 31);
+            swNames.Size = new Size(160, 32);
             swNames.TabIndex = 3;
             swNames.Text = "显示玩家ID(F6)";
             toolTip.SetToolTip(swNames, "Shows player names on the radar");
@@ -520,14 +513,14 @@ namespace eft_dma_radar
             // swAimview
             // 
             swAimview.Depth = 0;
-            swAimview.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swAimview.Font = new Font("Segoe UI", 9F);
             swAimview.Location = new Point(374, 50);
             swAimview.Margin = new Padding(0);
             swAimview.MouseLocation = new Point(-1, -1);
             swAimview.MouseState = MaterialSkin.MouseState.HOVER;
             swAimview.Name = "swAimview";
             swAimview.Ripple = true;
-            swAimview.Size = new Size(182, 31);
+            swAimview.Size = new Size(182, 32);
             swAimview.TabIndex = 2;
             swAimview.Text = "三维目标 (F4)";
             toolTip.SetToolTip(swAimview, "Displays the 3D aimview");
@@ -537,14 +530,14 @@ namespace eft_dma_radar
             // swShowLoot
             // 
             swShowLoot.Depth = 0;
-            swShowLoot.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swShowLoot.Font = new Font("Segoe UI", 9F);
             swShowLoot.Location = new Point(17, 51);
             swShowLoot.Margin = new Padding(0);
             swShowLoot.MouseLocation = new Point(-1, -1);
             swShowLoot.MouseState = MaterialSkin.MouseState.HOVER;
             swShowLoot.Name = "swShowLoot";
             swShowLoot.Ripple = true;
-            swShowLoot.Size = new Size(152, 31);
+            swShowLoot.Size = new Size(152, 32);
             swShowLoot.TabIndex = 1;
             swShowLoot.Text = "物资 (F3)";
             toolTip.SetToolTip(swShowLoot, "Displays loose loot & lootable items on corpses/cointainers");
@@ -555,12 +548,12 @@ namespace eft_dma_radar
             // 
             btnRestartRadar.AutoSize = false;
             btnRestartRadar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnRestartRadar.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnRestartRadar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnRestartRadar.Depth = 0;
-            btnRestartRadar.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnRestartRadar.Font = new Font("Segoe UI", 8F);
             btnRestartRadar.HighEmphasis = true;
             btnRestartRadar.Icon = null;
-            btnRestartRadar.Location = new Point(502, 41);
+            btnRestartRadar.Location = new Point(502, 96);
             btnRestartRadar.Margin = new Padding(5, 7, 5, 7);
             btnRestartRadar.MouseState = MaterialSkin.MouseState.HOVER;
             btnRestartRadar.Name = "btnRestartRadar";
@@ -569,7 +562,7 @@ namespace eft_dma_radar
             btnRestartRadar.TabIndex = 2;
             btnRestartRadar.Text = "重启雷达";
             toolTip.SetToolTip(btnRestartRadar, "Manually triggers radar restart");
-            btnRestartRadar.Type = MaterialButton.MaterialButtonType.Contained;
+            btnRestartRadar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnRestartRadar.UseAccentColor = true;
             btnRestartRadar.UseVisualStyleBackColor = true;
             btnRestartRadar.Click += btnRestartRadar_Click;
@@ -578,11 +571,11 @@ namespace eft_dma_radar
             // 
             btnToggleMap.AutoSize = false;
             btnToggleMap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnToggleMap.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnToggleMap.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnToggleMap.Depth = 0;
             btnToggleMap.HighEmphasis = true;
             btnToggleMap.Icon = null;
-            btnToggleMap.Location = new Point(502, 96);
+            btnToggleMap.Location = new Point(502, 23);
             btnToggleMap.Margin = new Padding(5, 7, 5, 7);
             btnToggleMap.MouseState = MaterialSkin.MouseState.HOVER;
             btnToggleMap.Name = "btnToggleMap";
@@ -591,7 +584,7 @@ namespace eft_dma_radar
             btnToggleMap.TabIndex = 1;
             btnToggleMap.Text = "切换Map (F5)";
             toolTip.SetToolTip(btnToggleMap, "Manually toggles active map");
-            btnToggleMap.Type = MaterialButton.MaterialButtonType.Contained;
+            btnToggleMap.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnToggleMap.UseAccentColor = true;
             btnToggleMap.UseVisualStyleBackColor = true;
             btnToggleMap.Click += btnToggleMap_Click;
@@ -599,14 +592,14 @@ namespace eft_dma_radar
             // swMapHelper
             // 
             swMapHelper.Depth = 0;
-            swMapHelper.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swMapHelper.Font = new Font("Segoe UI", 9F);
             swMapHelper.Location = new Point(17, 51);
             swMapHelper.Margin = new Padding(0);
             swMapHelper.MouseLocation = new Point(-1, -1);
             swMapHelper.MouseState = MaterialSkin.MouseState.HOVER;
             swMapHelper.Name = "swMapHelper";
             swMapHelper.Ripple = true;
-            swMapHelper.Size = new Size(167, 31);
+            swMapHelper.Size = new Size(167, 32);
             swMapHelper.TabIndex = 0;
             swMapHelper.Text = "地图帮助";
             toolTip.SetToolTip(swMapHelper, "Shows the 'Map Setup' panel");
@@ -616,16 +609,16 @@ namespace eft_dma_radar
             // swMasterSwitch
             // 
             swMasterSwitch.Depth = 0;
-            swMasterSwitch.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swMasterSwitch.Location = new Point(17, 16);
+            swMasterSwitch.Font = new Font("Segoe UI", 9F);
+            swMasterSwitch.Location = new Point(17, 15);
             swMasterSwitch.Margin = new Padding(0);
             swMasterSwitch.MouseLocation = new Point(-1, -1);
             swMasterSwitch.MouseState = MaterialSkin.MouseState.HOVER;
             swMasterSwitch.Name = "swMasterSwitch";
             swMasterSwitch.Ripple = true;
-            swMasterSwitch.Size = new Size(182, 31);
+            swMasterSwitch.Size = new Size(219, 32);
             swMasterSwitch.TabIndex = 36;
-            swMasterSwitch.Text = "内存总开关";
+            swMasterSwitch.Text = "内存功能总开关";
             toolTip.SetToolTip(swMasterSwitch, "Shows exfiltration point names on radar");
             swMasterSwitch.UseVisualStyleBackColor = true;
             swMasterSwitch.CheckedChanged += swMasterSwitch_CheckedChanged;
@@ -633,14 +626,14 @@ namespace eft_dma_radar
             // swInfiniteStamina
             // 
             swInfiniteStamina.Depth = 0;
-            swInfiniteStamina.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swInfiniteStamina.Location = new Point(157, 51);
+            swInfiniteStamina.Font = new Font("Segoe UI", 9F);
+            swInfiniteStamina.Location = new Point(177, 51);
             swInfiniteStamina.Margin = new Padding(0);
             swInfiniteStamina.MouseLocation = new Point(-1, -1);
             swInfiniteStamina.MouseState = MaterialSkin.MouseState.HOVER;
             swInfiniteStamina.Name = "swInfiniteStamina";
             swInfiniteStamina.Ripple = true;
-            swInfiniteStamina.Size = new Size(203, 31);
+            swInfiniteStamina.Size = new Size(203, 32);
             swInfiniteStamina.TabIndex = 38;
             swInfiniteStamina.Text = "无限耐力";
             toolTip.SetToolTip(swInfiniteStamina, "Allows you to run forever");
@@ -705,14 +698,14 @@ namespace eft_dma_radar
             // swExtendedReach
             // 
             swExtendedReach.Depth = 0;
-            swExtendedReach.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swExtendedReach.Font = new Font("Segoe UI", 9F);
             swExtendedReach.Location = new Point(381, 51);
             swExtendedReach.Margin = new Padding(0);
             swExtendedReach.MouseLocation = new Point(-1, -1);
             swExtendedReach.MouseState = MaterialSkin.MouseState.HOVER;
             swExtendedReach.Name = "swExtendedReach";
             swExtendedReach.Ripple = true;
-            swExtendedReach.Size = new Size(200, 31);
+            swExtendedReach.Size = new Size(200, 32);
             swExtendedReach.TabIndex = 7;
             swExtendedReach.Text = "隔空取物";
             toolTip.SetToolTip(swExtendedReach, "Increases maximum loot/door interaction distance");
@@ -722,14 +715,14 @@ namespace eft_dma_radar
             // swFreezeTime
             // 
             swFreezeTime.Depth = 0;
-            swFreezeTime.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swFreezeTime.Font = new Font("Segoe UI", 9F);
             swFreezeTime.Location = new Point(17, 96);
             swFreezeTime.Margin = new Padding(0);
             swFreezeTime.MouseLocation = new Point(-1, -1);
             swFreezeTime.MouseState = MaterialSkin.MouseState.HOVER;
             swFreezeTime.Name = "swFreezeTime";
             swFreezeTime.Ripple = true;
-            swFreezeTime.Size = new Size(174, 31);
+            swFreezeTime.Size = new Size(174, 32);
             swFreezeTime.TabIndex = 5;
             swFreezeTime.Text = "冻结时间";
             toolTip.SetToolTip(swFreezeTime, "Freeze the in-game time of the day");
@@ -740,16 +733,16 @@ namespace eft_dma_radar
             // 
             swChams.Depth = 0;
             swChams.Enabled = false;
-            swChams.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swChams.Font = new Font("Segoe UI", 9F);
             swChams.Location = new Point(17, 51);
             swChams.Margin = new Padding(0);
             swChams.MouseLocation = new Point(-1, -1);
             swChams.MouseState = MaterialSkin.MouseState.HOVER;
             swChams.Name = "swChams";
             swChams.Ripple = true;
-            swChams.Size = new Size(130, 31);
+            swChams.Size = new Size(130, 32);
             swChams.TabIndex = 1;
-            swChams.Text = "Chams";
+            swChams.Text = "热能";
             toolTip.SetToolTip(swChams, "Displays loose loot & lootable items on corpses/cointainers");
             swChams.UseVisualStyleBackColor = true;
             swChams.CheckedChanged += swChams_CheckedChanged;
@@ -757,14 +750,14 @@ namespace eft_dma_radar
             // swNightVision
             // 
             swNightVision.Depth = 0;
-            swNightVision.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swNightVision.Font = new Font("Segoe UI", 9F);
             swNightVision.Location = new Point(435, 96);
             swNightVision.Margin = new Padding(0);
             swNightVision.MouseLocation = new Point(-1, -1);
             swNightVision.MouseState = MaterialSkin.MouseState.HOVER;
             swNightVision.Name = "swNightVision";
             swNightVision.Ripple = true;
-            swNightVision.Size = new Size(166, 31);
+            swNightVision.Size = new Size(166, 32);
             swNightVision.TabIndex = 36;
             swNightVision.Text = "夜视";
             toolTip.SetToolTip(swNightVision, "Enables 'bug eye' night vision");
@@ -774,14 +767,14 @@ namespace eft_dma_radar
             // swOpticalThermal
             // 
             swOpticalThermal.Depth = 0;
-            swOpticalThermal.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swOpticalThermal.Font = new Font("Segoe UI", 9F);
             swOpticalThermal.Location = new Point(222, 96);
             swOpticalThermal.Margin = new Padding(0);
             swOpticalThermal.MouseLocation = new Point(-1, -1);
             swOpticalThermal.MouseState = MaterialSkin.MouseState.HOVER;
             swOpticalThermal.Name = "swOpticalThermal";
             swOpticalThermal.Ripple = true;
-            swOpticalThermal.Size = new Size(202, 31);
+            swOpticalThermal.Size = new Size(202, 32);
             swOpticalThermal.TabIndex = 35;
             swOpticalThermal.Text = "热能";
             toolTip.SetToolTip(swOpticalThermal, "Turns optics into thermals");
@@ -791,14 +784,14 @@ namespace eft_dma_radar
             // swThermalVision
             // 
             swThermalVision.Depth = 0;
-            swThermalVision.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swThermalVision.Font = new Font("Segoe UI", 9F);
             swThermalVision.Location = new Point(16, 96);
             swThermalVision.Margin = new Padding(0);
             swThermalVision.MouseLocation = new Point(-1, -1);
             swThermalVision.MouseState = MaterialSkin.MouseState.HOVER;
             swThermalVision.Name = "swThermalVision";
             swThermalVision.Ripple = true;
-            swThermalVision.Size = new Size(202, 31);
+            swThermalVision.Size = new Size(202, 32);
             swThermalVision.TabIndex = 34;
             swThermalVision.Text = "热成像";
             toolTip.SetToolTip(swThermalVision, "Enables T-7 thermal vision");
@@ -827,14 +820,14 @@ namespace eft_dma_radar
             // swNoVisor
             // 
             swNoVisor.Depth = 0;
-            swNoVisor.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swNoVisor.Font = new Font("Segoe UI", 9F);
             swNoVisor.Location = new Point(435, 51);
             swNoVisor.Margin = new Padding(0);
             swNoVisor.MouseLocation = new Point(-1, -1);
             swNoVisor.MouseState = MaterialSkin.MouseState.HOVER;
             swNoVisor.Name = "swNoVisor";
             swNoVisor.Ripple = true;
-            swNoVisor.Size = new Size(145, 31);
+            swNoVisor.Size = new Size(145, 32);
             swNoVisor.TabIndex = 7;
             swNoVisor.Text = "移除面具";
             toolTip.SetToolTip(swNoVisor, "Removes visual visor effect");
@@ -844,14 +837,14 @@ namespace eft_dma_radar
             // swInstantADS
             // 
             swInstantADS.Depth = 0;
-            swInstantADS.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swInstantADS.Font = new Font("Segoe UI", 9F);
             swInstantADS.Location = new Point(222, 51);
             swInstantADS.Margin = new Padding(0);
             swInstantADS.MouseLocation = new Point(-1, -1);
             swInstantADS.MouseState = MaterialSkin.MouseState.HOVER;
             swInstantADS.Name = "swInstantADS";
             swInstantADS.Ripple = true;
-            swInstantADS.Size = new Size(173, 31);
+            swInstantADS.Size = new Size(173, 32);
             swInstantADS.TabIndex = 2;
             swInstantADS.Text = "上弹加速";
             toolTip.SetToolTip(swInstantADS, "Increases ADS speed to be near instantaneous");
@@ -861,14 +854,14 @@ namespace eft_dma_radar
             // swNoRecoilSway
             // 
             swNoRecoilSway.Depth = 0;
-            swNoRecoilSway.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swNoRecoilSway.Font = new Font("Segoe UI", 9F);
             swNoRecoilSway.Location = new Point(17, 51);
             swNoRecoilSway.Margin = new Padding(0);
             swNoRecoilSway.MouseLocation = new Point(-1, -1);
             swNoRecoilSway.MouseState = MaterialSkin.MouseState.HOVER;
             swNoRecoilSway.Name = "swNoRecoilSway";
             swNoRecoilSway.Ripple = true;
-            swNoRecoilSway.Size = new Size(202, 31);
+            swNoRecoilSway.Size = new Size(202, 32);
             swNoRecoilSway.TabIndex = 1;
             swNoRecoilSway.Text = "无反冲/摆动";
             toolTip.SetToolTip(swNoRecoilSway, "Removes weapon recoil & sway");
@@ -970,14 +963,14 @@ namespace eft_dma_radar
             // swCorpses
             // 
             swCorpses.Depth = 0;
-            swCorpses.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swCorpses.Font = new Font("Segoe UI", 9F);
             swCorpses.Location = new Point(17, 96);
             swCorpses.Margin = new Padding(0);
             swCorpses.MouseLocation = new Point(-1, -1);
             swCorpses.MouseState = MaterialSkin.MouseState.HOVER;
             swCorpses.Name = "swCorpses";
             swCorpses.Ripple = true;
-            swCorpses.Size = new Size(143, 31);
+            swCorpses.Size = new Size(143, 32);
             swCorpses.TabIndex = 0;
             swCorpses.Text = "尸体";
             toolTip.SetToolTip(swCorpses, "Shows player/scav/boss etc corpses");
@@ -987,14 +980,14 @@ namespace eft_dma_radar
             // swFilteredOnly
             // 
             swFilteredOnly.Depth = 0;
-            swFilteredOnly.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swFilteredOnly.Font = new Font("Segoe UI", 9F);
             swFilteredOnly.Location = new Point(202, 51);
             swFilteredOnly.Margin = new Padding(0);
             swFilteredOnly.MouseLocation = new Point(-1, -1);
             swFilteredOnly.MouseState = MaterialSkin.MouseState.HOVER;
             swFilteredOnly.Name = "swFilteredOnly";
             swFilteredOnly.Ripple = true;
-            swFilteredOnly.Size = new Size(175, 31);
+            swFilteredOnly.Size = new Size(175, 32);
             swFilteredOnly.TabIndex = 31;
             swFilteredOnly.Text = "显示筛选物品";
             toolTip.SetToolTip(swFilteredOnly, "Only shows items considered 'important' or ones in a filter");
@@ -1004,14 +997,14 @@ namespace eft_dma_radar
             // swSubItems
             // 
             swSubItems.Depth = 0;
-            swSubItems.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swSubItems.Location = new Point(410, 96);
+            swSubItems.Font = new Font("Segoe UI", 9F);
+            swSubItems.Location = new Point(446, 104);
             swSubItems.Margin = new Padding(0);
             swSubItems.MouseLocation = new Point(-1, -1);
             swSubItems.MouseState = MaterialSkin.MouseState.HOVER;
             swSubItems.Name = "swSubItems";
             swSubItems.Ripple = true;
-            swSubItems.Size = new Size(152, 31);
+            swSubItems.Size = new Size(152, 32);
             swSubItems.TabIndex = 32;
             swSubItems.Text = "显示子物资";
             toolTip.SetToolTip(swSubItems, "Shows sub-items within a container/corpse");
@@ -1021,14 +1014,14 @@ namespace eft_dma_radar
             // swItemValue
             // 
             swItemValue.Depth = 0;
-            swItemValue.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swItemValue.Font = new Font("Segoe UI", 9F);
             swItemValue.Location = new Point(202, 96);
             swItemValue.Margin = new Padding(0);
             swItemValue.MouseLocation = new Point(-1, -1);
             swItemValue.MouseState = MaterialSkin.MouseState.HOVER;
             swItemValue.Name = "swItemValue";
             swItemValue.Ripple = true;
-            swItemValue.Size = new Size(170, 31);
+            swItemValue.Size = new Size(170, 32);
             swItemValue.TabIndex = 33;
             swItemValue.Text = "项目";
             toolTip.SetToolTip(swItemValue, "Shows item value");
@@ -1038,14 +1031,14 @@ namespace eft_dma_radar
             // swAutoRefresh
             // 
             swAutoRefresh.Depth = 0;
-            swAutoRefresh.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swAutoRefresh.Location = new Point(17, 143);
+            swAutoRefresh.Font = new Font("Segoe UI", 9F);
+            swAutoRefresh.Location = new Point(16, 146);
             swAutoRefresh.Margin = new Padding(0);
             swAutoRefresh.MouseLocation = new Point(-1, -1);
             swAutoRefresh.MouseState = MaterialSkin.MouseState.HOVER;
             swAutoRefresh.Name = "swAutoRefresh";
             swAutoRefresh.Ripple = true;
-            swAutoRefresh.Size = new Size(176, 31);
+            swAutoRefresh.Size = new Size(176, 32);
             swAutoRefresh.TabIndex = 34;
             swAutoRefresh.Text = "自动刷新地图";
             toolTip.SetToolTip(swAutoRefresh, "Automatically refreshes loot on the map");
@@ -1056,12 +1049,12 @@ namespace eft_dma_radar
             // 
             btnRefreshLoot.AutoSize = false;
             btnRefreshLoot.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnRefreshLoot.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnRefreshLoot.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnRefreshLoot.Depth = 0;
-            btnRefreshLoot.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnRefreshLoot.Font = new Font("Segoe UI", 8F);
             btnRefreshLoot.HighEmphasis = true;
             btnRefreshLoot.Icon = null;
-            btnRefreshLoot.Location = new Point(410, 41);
+            btnRefreshLoot.Location = new Point(465, 42);
             btnRefreshLoot.Margin = new Padding(5, 7, 5, 7);
             btnRefreshLoot.MouseState = MaterialSkin.MouseState.HOVER;
             btnRefreshLoot.Name = "btnRefreshLoot";
@@ -1070,7 +1063,7 @@ namespace eft_dma_radar
             btnRefreshLoot.TabIndex = 35;
             btnRefreshLoot.Text = "手动刷新物资";
             toolTip.SetToolTip(btnRefreshLoot, "Manually triggers radar restart");
-            btnRefreshLoot.Type = MaterialButton.MaterialButtonType.Contained;
+            btnRefreshLoot.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnRefreshLoot.UseAccentColor = true;
             btnRefreshLoot.UseVisualStyleBackColor = true;
             btnRefreshLoot.Click += btnRefreshLoot_Click;
@@ -1090,7 +1083,7 @@ namespace eft_dma_radar
             cboAutoRefreshMap.Hint = "Map";
             cboAutoRefreshMap.IntegralHeight = false;
             cboAutoRefreshMap.ItemHeight = 29;
-            cboAutoRefreshMap.Location = new Point(199, 139);
+            cboAutoRefreshMap.Location = new Point(202, 146);
             cboAutoRefreshMap.MaxDropDownItems = 4;
             cboAutoRefreshMap.MouseState = MaterialSkin.MouseState.OUT;
             cboAutoRefreshMap.Name = "cboAutoRefreshMap";
@@ -1106,7 +1099,7 @@ namespace eft_dma_radar
             // 
             sldrAutoRefreshDelay.Depth = 0;
             sldrAutoRefreshDelay.ForeColor = Color.Black;
-            sldrAutoRefreshDelay.Location = new Point(382, 139);
+            sldrAutoRefreshDelay.Location = new Point(402, 143);
             sldrAutoRefreshDelay.MouseState = MaterialSkin.MouseState.HOVER;
             sldrAutoRefreshDelay.Name = "sldrAutoRefreshDelay";
             sldrAutoRefreshDelay.RangeMax = 90;
@@ -1163,20 +1156,20 @@ namespace eft_dma_radar
             // btnAddFaction
             // 
             btnAddFaction.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnAddFaction.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnAddFaction.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnAddFaction.Depth = 0;
             btnAddFaction.HighEmphasis = true;
             btnAddFaction.Icon = (Image)resources.GetObject("btnAddFaction.Icon");
-            btnAddFaction.Location = new Point(263, 351);
+            btnAddFaction.Location = new Point(432, 341);
             btnAddFaction.Margin = new Padding(5, 7, 5, 7);
             btnAddFaction.MouseState = MaterialSkin.MouseState.HOVER;
             btnAddFaction.Name = "btnAddFaction";
             btnAddFaction.NoAccentTextColor = Color.Empty;
-            btnAddFaction.Size = new Size(81, 36);
+            btnAddFaction.Size = new Size(93, 36);
             btnAddFaction.TabIndex = 39;
             btnAddFaction.Text = "添加";
             toolTip.SetToolTip(btnAddFaction, "Creates a new loot filter profile");
-            btnAddFaction.Type = MaterialButton.MaterialButtonType.Contained;
+            btnAddFaction.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnAddFaction.UseAccentColor = true;
             btnAddFaction.UseVisualStyleBackColor = true;
             btnAddFaction.Click += btnAddFaction_Click;
@@ -1184,20 +1177,20 @@ namespace eft_dma_radar
             // btnRemoveFaction
             // 
             btnRemoveFaction.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnRemoveFaction.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnRemoveFaction.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnRemoveFaction.Depth = 0;
             btnRemoveFaction.HighEmphasis = true;
             btnRemoveFaction.Icon = (Image)resources.GetObject("btnRemoveFaction.Icon");
-            btnRemoveFaction.Location = new Point(263, 411);
+            btnRemoveFaction.Location = new Point(432, 391);
             btnRemoveFaction.Margin = new Padding(5, 7, 5, 7);
             btnRemoveFaction.MouseState = MaterialSkin.MouseState.HOVER;
             btnRemoveFaction.Name = "btnRemoveFaction";
             btnRemoveFaction.NoAccentTextColor = Color.Empty;
-            btnRemoveFaction.Size = new Size(81, 36);
+            btnRemoveFaction.Size = new Size(93, 36);
             btnRemoveFaction.TabIndex = 40;
             btnRemoveFaction.Text = "移除";
             toolTip.SetToolTip(btnRemoveFaction, "Removes the selected loot filter profile");
-            btnRemoveFaction.Type = MaterialButton.MaterialButtonType.Outlined;
+            btnRemoveFaction.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
             btnRemoveFaction.UseAccentColor = true;
             btnRemoveFaction.UseVisualStyleBackColor = true;
             btnRemoveFaction.Click += btnRemoveFaction_Click;
@@ -1205,20 +1198,20 @@ namespace eft_dma_radar
             // btnAddFactionEntry
             // 
             btnAddFactionEntry.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnAddFactionEntry.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnAddFactionEntry.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnAddFactionEntry.Depth = 0;
             btnAddFactionEntry.HighEmphasis = true;
             btnAddFactionEntry.Icon = (Image)resources.GetObject("btnAddFactionEntry.Icon");
-            btnAddFactionEntry.Location = new Point(331, 147);
+            btnAddFactionEntry.Location = new Point(432, 147);
             btnAddFactionEntry.Margin = new Padding(5, 7, 5, 7);
             btnAddFactionEntry.MouseState = MaterialSkin.MouseState.HOVER;
             btnAddFactionEntry.Name = "btnAddFactionEntry";
             btnAddFactionEntry.NoAccentTextColor = Color.Empty;
-            btnAddFactionEntry.Size = new Size(113, 36);
+            btnAddFactionEntry.Size = new Size(93, 36);
             btnAddFactionEntry.TabIndex = 46;
-            btnAddFactionEntry.Text = "添加名单";
+            btnAddFactionEntry.Text = "添加";
             toolTip.SetToolTip(btnAddFactionEntry, "Creates a new loot filter profile");
-            btnAddFactionEntry.Type = MaterialButton.MaterialButtonType.Contained;
+            btnAddFactionEntry.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnAddFactionEntry.UseAccentColor = true;
             btnAddFactionEntry.UseVisualStyleBackColor = true;
             btnAddFactionEntry.Click += btnAddFactionEntry_Click;
@@ -1226,20 +1219,20 @@ namespace eft_dma_radar
             // btnRemoveFactionEntry
             // 
             btnRemoveFactionEntry.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnRemoveFactionEntry.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnRemoveFactionEntry.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnRemoveFactionEntry.Depth = 0;
             btnRemoveFactionEntry.HighEmphasis = true;
             btnRemoveFactionEntry.Icon = (Image)resources.GetObject("btnRemoveFactionEntry.Icon");
-            btnRemoveFactionEntry.Location = new Point(331, 63);
+            btnRemoveFactionEntry.Location = new Point(413, 51);
             btnRemoveFactionEntry.Margin = new Padding(5, 7, 5, 7);
             btnRemoveFactionEntry.MouseState = MaterialSkin.MouseState.HOVER;
             btnRemoveFactionEntry.Name = "btnRemoveFactionEntry";
             btnRemoveFactionEntry.NoAccentTextColor = Color.Empty;
-            btnRemoveFactionEntry.Size = new Size(81, 36);
+            btnRemoveFactionEntry.Size = new Size(93, 36);
             btnRemoveFactionEntry.TabIndex = 48;
             btnRemoveFactionEntry.Text = "移除";
             toolTip.SetToolTip(btnRemoveFactionEntry, "Removes the selected loot filter profile");
-            btnRemoveFactionEntry.Type = MaterialButton.MaterialButtonType.Outlined;
+            btnRemoveFactionEntry.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
             btnRemoveFactionEntry.UseAccentColor = true;
             btnRemoveFactionEntry.UseVisualStyleBackColor = true;
             btnRemoveFactionEntry.Click += btnRemoveFactionEntry_Click;
@@ -1254,7 +1247,7 @@ namespace eft_dma_radar
             txtTeammateID.HideSelection = true;
             txtTeammateID.Hint = "队友ID";
             txtTeammateID.LeadingIcon = null;
-            txtTeammateID.Location = new Point(429, 191);
+            txtTeammateID.Location = new Point(439, 193);
             txtTeammateID.MaxLength = 32767;
             txtTeammateID.MouseState = MaterialSkin.MouseState.OUT;
             txtTeammateID.Name = "txtTeammateID";
@@ -1305,6 +1298,7 @@ namespace eft_dma_radar
             txtFactionEntryName.TrailingIcon = null;
             txtFactionEntryName.UseSystemPasswordChar = false;
             txtFactionEntryName.UseTallSize = false;
+            txtFactionEntryName.Click += txtFactionEntryName_Click;
             txtFactionEntryName.KeyDown += txtFactionEntryName_KeyDown;
             // 
             // txtFactionName
@@ -1317,7 +1311,7 @@ namespace eft_dma_radar
             txtFactionName.HideSelection = true;
             txtFactionName.Hint = "Faction Name";
             txtFactionName.LeadingIcon = null;
-            txtFactionName.Location = new Point(241, 51);
+            txtFactionName.Location = new Point(290, 51);
             txtFactionName.MaxLength = 32767;
             txtFactionName.MouseState = MaterialSkin.MouseState.OUT;
             txtFactionName.Name = "txtFactionName";
@@ -1354,7 +1348,7 @@ namespace eft_dma_radar
             cboFactionType.Hint = "Faction Type";
             cboFactionType.IntegralHeight = false;
             cboFactionType.ItemHeight = 29;
-            cboFactionType.Location = new Point(241, 102);
+            cboFactionType.Location = new Point(290, 102);
             cboFactionType.MaxDropDownItems = 4;
             cboFactionType.MouseState = MaterialSkin.MouseState.OUT;
             cboFactionType.Name = "cboFactionType";
@@ -1369,9 +1363,9 @@ namespace eft_dma_radar
             // 
             btnResetTheme.AutoSize = false;
             btnResetTheme.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnResetTheme.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnResetTheme.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnResetTheme.Depth = 0;
-            btnResetTheme.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnResetTheme.Font = new Font("Segoe UI", 8F);
             btnResetTheme.HighEmphasis = true;
             btnResetTheme.Icon = null;
             btnResetTheme.Location = new Point(85, 309);
@@ -1383,7 +1377,7 @@ namespace eft_dma_radar
             btnResetTheme.TabIndex = 59;
             btnResetTheme.Text = "重置主题";
             toolTip.SetToolTip(btnResetTheme, "Manually triggers radar restart");
-            btnResetTheme.Type = MaterialButton.MaterialButtonType.Contained;
+            btnResetTheme.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnResetTheme.UseAccentColor = true;
             btnResetTheme.UseVisualStyleBackColor = true;
             btnResetTheme.Click += btnResetTheme_Click;
@@ -1392,12 +1386,12 @@ namespace eft_dma_radar
             // 
             btnMapSetupApply.AutoSize = false;
             btnMapSetupApply.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnMapSetupApply.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnMapSetupApply.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnMapSetupApply.Depth = 0;
-            btnMapSetupApply.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnMapSetupApply.Font = new Font("Segoe UI", 8F);
             btnMapSetupApply.HighEmphasis = true;
             btnMapSetupApply.Icon = null;
-            btnMapSetupApply.Location = new Point(293, 17);
+            btnMapSetupApply.Location = new Point(309, 23);
             btnMapSetupApply.Margin = new Padding(5, 7, 5, 7);
             btnMapSetupApply.MouseState = MaterialSkin.MouseState.HOVER;
             btnMapSetupApply.Name = "btnMapSetupApply";
@@ -1406,7 +1400,7 @@ namespace eft_dma_radar
             btnMapSetupApply.TabIndex = 35;
             btnMapSetupApply.Text = "应用";
             toolTip.SetToolTip(btnMapSetupApply, "Manually triggers radar restart");
-            btnMapSetupApply.Type = MaterialButton.MaterialButtonType.Contained;
+            btnMapSetupApply.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnMapSetupApply.UseAccentColor = true;
             btnMapSetupApply.UseVisualStyleBackColor = true;
             btnMapSetupApply.Click += btnMapSetupApply_Click;
@@ -1422,7 +1416,7 @@ namespace eft_dma_radar
             txtMapSetupScale.HideSelection = true;
             txtMapSetupScale.Hint = "Scale";
             txtMapSetupScale.LeadingIcon = null;
-            txtMapSetupScale.Location = new Point(195, 20);
+            txtMapSetupScale.Location = new Point(211, 28);
             txtMapSetupScale.MaxLength = 32767;
             txtMapSetupScale.MouseState = MaterialSkin.MouseState.OUT;
             txtMapSetupScale.Name = "txtMapSetupScale";
@@ -1454,7 +1448,7 @@ namespace eft_dma_radar
             txtMapSetupY.HideSelection = true;
             txtMapSetupY.Hint = "Y";
             txtMapSetupY.LeadingIcon = null;
-            txtMapSetupY.Location = new Point(99, 20);
+            txtMapSetupY.Location = new Point(115, 28);
             txtMapSetupY.MaxLength = 32767;
             txtMapSetupY.MouseState = MaterialSkin.MouseState.OUT;
             txtMapSetupY.Name = "txtMapSetupY";
@@ -1486,7 +1480,7 @@ namespace eft_dma_radar
             txtMapSetupX.HideSelection = true;
             txtMapSetupX.Hint = "X";
             txtMapSetupX.LeadingIcon = null;
-            txtMapSetupX.Location = new Point(3, 20);
+            txtMapSetupX.Location = new Point(19, 28);
             txtMapSetupX.MaxLength = 32767;
             txtMapSetupX.MouseState = MaterialSkin.MouseState.OUT;
             txtMapSetupX.Name = "txtMapSetupX";
@@ -1511,7 +1505,7 @@ namespace eft_dma_radar
             // 
             btnToggleMapFree.AutoSize = false;
             btnToggleMapFree.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnToggleMapFree.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnToggleMapFree.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnToggleMapFree.Depth = 0;
             btnToggleMapFree.HighEmphasis = true;
             btnToggleMapFree.Icon = Properties.Resources.tick;
@@ -1524,7 +1518,7 @@ namespace eft_dma_radar
             btnToggleMapFree.TabIndex = 47;
             btnToggleMapFree.Text = "视角跟随";
             toolTip.SetToolTip(btnToggleMapFree, "Toggles radar following functionality");
-            btnToggleMapFree.Type = MaterialButton.MaterialButtonType.Text;
+            btnToggleMapFree.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             btnToggleMapFree.UseAccentColor = true;
             btnToggleMapFree.UseVisualStyleBackColor = true;
             btnToggleMapFree.Click += btnToggleMapFree_Click;
@@ -1532,7 +1526,7 @@ namespace eft_dma_radar
             // btnRemoveWatchlistEntry
             // 
             btnRemoveWatchlistEntry.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnRemoveWatchlistEntry.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnRemoveWatchlistEntry.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnRemoveWatchlistEntry.Depth = 0;
             btnRemoveWatchlistEntry.HighEmphasis = true;
             btnRemoveWatchlistEntry.Icon = (Image)resources.GetObject("btnRemoveWatchlistEntry.Icon");
@@ -1545,7 +1539,7 @@ namespace eft_dma_radar
             btnRemoveWatchlistEntry.TabIndex = 48;
             btnRemoveWatchlistEntry.Text = "移除";
             toolTip.SetToolTip(btnRemoveWatchlistEntry, "Removes the selected entry from the active watchlist profile");
-            btnRemoveWatchlistEntry.Type = MaterialButton.MaterialButtonType.Outlined;
+            btnRemoveWatchlistEntry.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
             btnRemoveWatchlistEntry.UseAccentColor = true;
             btnRemoveWatchlistEntry.UseVisualStyleBackColor = true;
             btnRemoveWatchlistEntry.Click += btnRemoveWatchlistEntry_Click;
@@ -1617,7 +1611,7 @@ namespace eft_dma_radar
             // btnAddWatchlistEntry
             // 
             btnAddWatchlistEntry.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnAddWatchlistEntry.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnAddWatchlistEntry.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnAddWatchlistEntry.Depth = 0;
             btnAddWatchlistEntry.HighEmphasis = true;
             btnAddWatchlistEntry.Icon = (Image)resources.GetObject("btnAddWatchlistEntry.Icon");
@@ -1630,7 +1624,7 @@ namespace eft_dma_radar
             btnAddWatchlistEntry.TabIndex = 46;
             btnAddWatchlistEntry.Text = "添加";
             toolTip.SetToolTip(btnAddWatchlistEntry, "Adds a new entry to the active watchlist profile");
-            btnAddWatchlistEntry.Type = MaterialButton.MaterialButtonType.Contained;
+            btnAddWatchlistEntry.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnAddWatchlistEntry.UseAccentColor = true;
             btnAddWatchlistEntry.UseVisualStyleBackColor = true;
             btnAddWatchlistEntry.Click += btnAddWatchlistEntry_Click;
@@ -1638,7 +1632,7 @@ namespace eft_dma_radar
             // btnAddWatchlistProfile
             // 
             btnAddWatchlistProfile.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnAddWatchlistProfile.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnAddWatchlistProfile.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnAddWatchlistProfile.Depth = 0;
             btnAddWatchlistProfile.HighEmphasis = true;
             btnAddWatchlistProfile.Icon = (Image)resources.GetObject("btnAddWatchlistProfile.Icon");
@@ -1651,7 +1645,7 @@ namespace eft_dma_radar
             btnAddWatchlistProfile.TabIndex = 39;
             btnAddWatchlistProfile.Text = "添加";
             toolTip.SetToolTip(btnAddWatchlistProfile, "Creates a new watchlist profile");
-            btnAddWatchlistProfile.Type = MaterialButton.MaterialButtonType.Contained;
+            btnAddWatchlistProfile.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnAddWatchlistProfile.UseAccentColor = true;
             btnAddWatchlistProfile.UseVisualStyleBackColor = true;
             btnAddWatchlistProfile.Click += btnAddWatchlistProfile_Click;
@@ -1659,7 +1653,7 @@ namespace eft_dma_radar
             // btnRemoveWatchlistProfile
             // 
             btnRemoveWatchlistProfile.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnRemoveWatchlistProfile.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnRemoveWatchlistProfile.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnRemoveWatchlistProfile.Depth = 0;
             btnRemoveWatchlistProfile.HighEmphasis = true;
             btnRemoveWatchlistProfile.Icon = (Image)resources.GetObject("btnRemoveWatchlistProfile.Icon");
@@ -1672,7 +1666,7 @@ namespace eft_dma_radar
             btnRemoveWatchlistProfile.TabIndex = 40;
             btnRemoveWatchlistProfile.Text = "移除";
             toolTip.SetToolTip(btnRemoveWatchlistProfile, "Removes the selected watchlist profile");
-            btnRemoveWatchlistProfile.Type = MaterialButton.MaterialButtonType.Outlined;
+            btnRemoveWatchlistProfile.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
             btnRemoveWatchlistProfile.UseAccentColor = true;
             btnRemoveWatchlistProfile.UseVisualStyleBackColor = true;
             btnRemoveWatchlistProfile.Click += btnRemoveWatchlistProfile_Click;
@@ -1797,11 +1791,11 @@ namespace eft_dma_radar
             // btnResetPlayerlist
             // 
             btnResetPlayerlist.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnResetPlayerlist.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnResetPlayerlist.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnResetPlayerlist.Depth = 0;
             btnResetPlayerlist.HighEmphasis = true;
             btnResetPlayerlist.Icon = null;
-            btnResetPlayerlist.Location = new Point(94, 659);
+            btnResetPlayerlist.Location = new Point(94, 658);
             btnResetPlayerlist.Margin = new Padding(5, 7, 5, 7);
             btnResetPlayerlist.MouseState = MaterialSkin.MouseState.HOVER;
             btnResetPlayerlist.Name = "btnResetPlayerlist";
@@ -1810,7 +1804,7 @@ namespace eft_dma_radar
             btnResetPlayerlist.TabIndex = 41;
             btnResetPlayerlist.Text = "重置";
             toolTip.SetToolTip(btnResetPlayerlist, "Removes the selected watchlist profile");
-            btnResetPlayerlist.Type = MaterialButton.MaterialButtonType.Outlined;
+            btnResetPlayerlist.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
             btnResetPlayerlist.UseAccentColor = true;
             btnResetPlayerlist.UseVisualStyleBackColor = true;
             btnResetPlayerlist.Click += btnResetPlayerlist_Click;
@@ -1875,7 +1869,7 @@ namespace eft_dma_radar
             // btnAddLootFilterItem
             // 
             btnAddLootFilterItem.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnAddLootFilterItem.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnAddLootFilterItem.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnAddLootFilterItem.Depth = 0;
             btnAddLootFilterItem.HighEmphasis = true;
             btnAddLootFilterItem.Icon = (Image)resources.GetObject("btnAddLootFilterItem.Icon");
@@ -1888,7 +1882,7 @@ namespace eft_dma_radar
             btnAddLootFilterItem.TabIndex = 46;
             btnAddLootFilterItem.Text = "添加";
             toolTip.SetToolTip(btnAddLootFilterItem, "Creates a new loot filter profile");
-            btnAddLootFilterItem.Type = MaterialButton.MaterialButtonType.Contained;
+            btnAddLootFilterItem.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnAddLootFilterItem.UseAccentColor = true;
             btnAddLootFilterItem.UseVisualStyleBackColor = true;
             btnAddLootFilterItem.Click += btnAddLootFilterItem_Click;
@@ -1896,7 +1890,7 @@ namespace eft_dma_radar
             // btnRemoveLootFilterItem
             // 
             btnRemoveLootFilterItem.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnRemoveLootFilterItem.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnRemoveLootFilterItem.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnRemoveLootFilterItem.Depth = 0;
             btnRemoveLootFilterItem.HighEmphasis = true;
             btnRemoveLootFilterItem.Icon = (Image)resources.GetObject("btnRemoveLootFilterItem.Icon");
@@ -1909,7 +1903,7 @@ namespace eft_dma_radar
             btnRemoveLootFilterItem.TabIndex = 47;
             btnRemoveLootFilterItem.Text = "移除";
             toolTip.SetToolTip(btnRemoveLootFilterItem, "Removes the selected loot filter profile");
-            btnRemoveLootFilterItem.Type = MaterialButton.MaterialButtonType.Outlined;
+            btnRemoveLootFilterItem.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
             btnRemoveLootFilterItem.UseAccentColor = true;
             btnRemoveLootFilterItem.UseVisualStyleBackColor = true;
             btnRemoveLootFilterItem.Click += btnRemoveLootFilterItem_Click;
@@ -1924,7 +1918,7 @@ namespace eft_dma_radar
             txtLootFilterName.HideSelection = true;
             txtLootFilterName.Hint = "过滤器名称";
             txtLootFilterName.LeadingIcon = null;
-            txtLootFilterName.Location = new Point(384, 51);
+            txtLootFilterName.Location = new Point(376, 51);
             txtLootFilterName.MaxLength = 32767;
             txtLootFilterName.MouseState = MaterialSkin.MouseState.OUT;
             txtLootFilterName.Name = "txtLootFilterName";
@@ -1949,28 +1943,29 @@ namespace eft_dma_radar
             // swLootFilterActive
             // 
             swLootFilterActive.Depth = 0;
-            swLootFilterActive.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swLootFilterActive.Font = new Font("Segoe UI", 9F);
             swLootFilterActive.Location = new Point(439, 153);
             swLootFilterActive.Margin = new Padding(0);
             swLootFilterActive.MouseLocation = new Point(-1, -1);
             swLootFilterActive.MouseState = MaterialSkin.MouseState.HOVER;
             swLootFilterActive.Name = "swLootFilterActive";
             swLootFilterActive.Ripple = true;
-            swLootFilterActive.Size = new Size(134, 31);
+            swLootFilterActive.Size = new Size(134, 32);
             swLootFilterActive.TabIndex = 45;
-            swLootFilterActive.Text = "Active";
+            swLootFilterActive.Text = "地图显示";
             toolTip.SetToolTip(swLootFilterActive, "Only shows items considered 'important' or ones in a filter");
             swLootFilterActive.UseVisualStyleBackColor = true;
+            swLootFilterActive.CheckedChanged += swLootFilterActive_CheckedChanged_1;
             swLootFilterActive.Click += swLootFilterActive_CheckedChanged;
             // 
             // btnAddFilter
             // 
             btnAddFilter.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnAddFilter.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnAddFilter.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnAddFilter.Depth = 0;
             btnAddFilter.HighEmphasis = true;
             btnAddFilter.Icon = (Image)resources.GetObject("btnAddFilter.Icon");
-            btnAddFilter.Location = new Point(256, 422);
+            btnAddFilter.Location = new Point(256, 423);
             btnAddFilter.Margin = new Padding(5, 7, 5, 7);
             btnAddFilter.MouseState = MaterialSkin.MouseState.HOVER;
             btnAddFilter.Name = "btnAddFilter";
@@ -1979,7 +1974,7 @@ namespace eft_dma_radar
             btnAddFilter.TabIndex = 39;
             btnAddFilter.Text = "添加";
             toolTip.SetToolTip(btnAddFilter, "Creates a new loot filter profile");
-            btnAddFilter.Type = MaterialButton.MaterialButtonType.Contained;
+            btnAddFilter.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnAddFilter.UseAccentColor = true;
             btnAddFilter.UseVisualStyleBackColor = true;
             btnAddFilter.Click += btnAddFilter_Click;
@@ -1987,7 +1982,7 @@ namespace eft_dma_radar
             // btnRemoveFilter
             // 
             btnRemoveFilter.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnRemoveFilter.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnRemoveFilter.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnRemoveFilter.Depth = 0;
             btnRemoveFilter.HighEmphasis = true;
             btnRemoveFilter.Icon = (Image)resources.GetObject("btnRemoveFilter.Icon");
@@ -2000,7 +1995,7 @@ namespace eft_dma_radar
             btnRemoveFilter.TabIndex = 40;
             btnRemoveFilter.Text = "移除";
             toolTip.SetToolTip(btnRemoveFilter, "Removes the selected loot filter profile");
-            btnRemoveFilter.Type = MaterialButton.MaterialButtonType.Outlined;
+            btnRemoveFilter.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
             btnRemoveFilter.UseAccentColor = true;
             btnRemoveFilter.UseVisualStyleBackColor = true;
             btnRemoveFilter.Click += btnRemoveFilter_Click;
@@ -2008,16 +2003,16 @@ namespace eft_dma_radar
             // swMaxEndurance
             // 
             swMaxEndurance.Depth = 0;
-            swMaxEndurance.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swMaxEndurance.Font = new Font("Segoe UI", 9F);
             swMaxEndurance.Location = new Point(17, 51);
             swMaxEndurance.Margin = new Padding(0);
             swMaxEndurance.MouseLocation = new Point(-1, -1);
             swMaxEndurance.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxEndurance.Name = "swMaxEndurance";
             swMaxEndurance.Ripple = true;
-            swMaxEndurance.Size = new Size(157, 31);
+            swMaxEndurance.Size = new Size(157, 32);
             swMaxEndurance.TabIndex = 35;
-            swMaxEndurance.Text = "REMOVE";
+            swMaxEndurance.Text = "Endurance";
             toolTip.SetToolTip(swMaxEndurance, "Maximises endurance buffs");
             swMaxEndurance.UseVisualStyleBackColor = true;
             swMaxEndurance.CheckedChanged += swMaxEndurance_CheckedChanged;
@@ -2025,14 +2020,14 @@ namespace eft_dma_radar
             // swMaxStrength
             // 
             swMaxStrength.Depth = 0;
-            swMaxStrength.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swMaxStrength.Font = new Font("Segoe UI", 9F);
             swMaxStrength.Location = new Point(199, 51);
             swMaxStrength.Margin = new Padding(0);
             swMaxStrength.MouseLocation = new Point(-1, -1);
             swMaxStrength.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxStrength.Name = "swMaxStrength";
             swMaxStrength.Ripple = true;
-            swMaxStrength.Size = new Size(138, 31);
+            swMaxStrength.Size = new Size(138, 32);
             swMaxStrength.TabIndex = 36;
             swMaxStrength.Text = "Strength";
             toolTip.SetToolTip(swMaxStrength, "Maximises strength buffs");
@@ -2042,14 +2037,14 @@ namespace eft_dma_radar
             // swMaxVitality
             // 
             swMaxVitality.Depth = 0;
-            swMaxVitality.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swMaxVitality.Font = new Font("Segoe UI", 9F);
             swMaxVitality.Location = new Point(429, 51);
             swMaxVitality.Margin = new Padding(0);
             swMaxVitality.MouseLocation = new Point(-1, -1);
             swMaxVitality.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxVitality.Name = "swMaxVitality";
             swMaxVitality.Ripple = true;
-            swMaxVitality.Size = new Size(129, 31);
+            swMaxVitality.Size = new Size(129, 32);
             swMaxVitality.TabIndex = 37;
             swMaxVitality.Text = "Vitality";
             toolTip.SetToolTip(swMaxVitality, "Maximises vitality buffs");
@@ -2059,14 +2054,14 @@ namespace eft_dma_radar
             // swMaxHealth
             // 
             swMaxHealth.Depth = 0;
-            swMaxHealth.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swMaxHealth.Font = new Font("Segoe UI", 9F);
             swMaxHealth.Location = new Point(17, 96);
             swMaxHealth.Margin = new Padding(0);
             swMaxHealth.MouseLocation = new Point(-1, -1);
             swMaxHealth.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxHealth.Name = "swMaxHealth";
             swMaxHealth.Ripple = true;
-            swMaxHealth.Size = new Size(129, 31);
+            swMaxHealth.Size = new Size(129, 32);
             swMaxHealth.TabIndex = 38;
             swMaxHealth.Text = "Health";
             toolTip.SetToolTip(swMaxHealth, "Maximises health buffs");
@@ -2076,14 +2071,14 @@ namespace eft_dma_radar
             // swMaxStressResistance
             // 
             swMaxStressResistance.Depth = 0;
-            swMaxStressResistance.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swMaxStressResistance.Font = new Font("Segoe UI", 9F);
             swMaxStressResistance.Location = new Point(199, 96);
             swMaxStressResistance.Margin = new Padding(0);
             swMaxStressResistance.MouseLocation = new Point(-1, -1);
             swMaxStressResistance.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxStressResistance.Name = "swMaxStressResistance";
             swMaxStressResistance.Ripple = true;
-            swMaxStressResistance.Size = new Size(214, 31);
+            swMaxStressResistance.Size = new Size(214, 32);
             swMaxStressResistance.TabIndex = 39;
             swMaxStressResistance.Text = "Stress Resistance";
             toolTip.SetToolTip(swMaxStressResistance, "Maximises stress resistance buffs\r\n");
@@ -2093,14 +2088,14 @@ namespace eft_dma_radar
             // swMaxMetabolism
             // 
             swMaxMetabolism.Depth = 0;
-            swMaxMetabolism.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swMaxMetabolism.Font = new Font("Segoe UI", 9F);
             swMaxMetabolism.Location = new Point(429, 96);
             swMaxMetabolism.Margin = new Padding(0);
             swMaxMetabolism.MouseLocation = new Point(-1, -1);
             swMaxMetabolism.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxMetabolism.Name = "swMaxMetabolism";
             swMaxMetabolism.Ripple = true;
-            swMaxMetabolism.Size = new Size(167, 31);
+            swMaxMetabolism.Size = new Size(167, 32);
             swMaxMetabolism.TabIndex = 40;
             swMaxMetabolism.Text = "Metabolism";
             toolTip.SetToolTip(swMaxMetabolism, "Maximises metabolsim buffs\r\n");
@@ -2110,14 +2105,14 @@ namespace eft_dma_radar
             // swMaxImmunity
             // 
             swMaxImmunity.Depth = 0;
-            swMaxImmunity.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swMaxImmunity.Font = new Font("Segoe UI", 9F);
             swMaxImmunity.Location = new Point(17, 142);
             swMaxImmunity.Margin = new Padding(0);
             swMaxImmunity.MouseLocation = new Point(-1, -1);
             swMaxImmunity.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxImmunity.Name = "swMaxImmunity";
             swMaxImmunity.Ripple = true;
-            swMaxImmunity.Size = new Size(149, 31);
+            swMaxImmunity.Size = new Size(149, 32);
             swMaxImmunity.TabIndex = 41;
             swMaxImmunity.Text = "Immunity";
             toolTip.SetToolTip(swMaxImmunity, "Maximises immunity buffs\r\n");
@@ -2127,14 +2122,14 @@ namespace eft_dma_radar
             // swMaxPerception
             // 
             swMaxPerception.Depth = 0;
-            swMaxPerception.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swMaxPerception.Font = new Font("Segoe UI", 9F);
             swMaxPerception.Location = new Point(199, 142);
             swMaxPerception.Margin = new Padding(0);
             swMaxPerception.MouseLocation = new Point(-1, -1);
             swMaxPerception.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxPerception.Name = "swMaxPerception";
             swMaxPerception.Ripple = true;
-            swMaxPerception.Size = new Size(157, 31);
+            swMaxPerception.Size = new Size(157, 32);
             swMaxPerception.TabIndex = 42;
             swMaxPerception.Text = "Perception";
             toolTip.SetToolTip(swMaxPerception, "Maximises perception buffs\r\n");
@@ -2144,14 +2139,14 @@ namespace eft_dma_radar
             // swMaxIntellect
             // 
             swMaxIntellect.Depth = 0;
-            swMaxIntellect.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swMaxIntellect.Font = new Font("Segoe UI", 9F);
             swMaxIntellect.Location = new Point(429, 142);
             swMaxIntellect.Margin = new Padding(0);
             swMaxIntellect.MouseLocation = new Point(-1, -1);
             swMaxIntellect.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxIntellect.Name = "swMaxIntellect";
             swMaxIntellect.Ripple = true;
-            swMaxIntellect.Size = new Size(138, 31);
+            swMaxIntellect.Size = new Size(138, 32);
             swMaxIntellect.TabIndex = 43;
             swMaxIntellect.Text = "Intellect";
             toolTip.SetToolTip(swMaxIntellect, "Maximises intellect buffs\r\n");
@@ -2161,14 +2156,14 @@ namespace eft_dma_radar
             // swMaxThrowables
             // 
             swMaxThrowables.Depth = 0;
-            swMaxThrowables.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swMaxThrowables.Font = new Font("Segoe UI", 9F);
             swMaxThrowables.Location = new Point(429, 187);
             swMaxThrowables.Margin = new Padding(0);
             swMaxThrowables.MouseLocation = new Point(-1, -1);
             swMaxThrowables.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxThrowables.Name = "swMaxThrowables";
             swMaxThrowables.Ripple = true;
-            swMaxThrowables.Size = new Size(169, 31);
+            swMaxThrowables.Size = new Size(169, 32);
             swMaxThrowables.TabIndex = 44;
             swMaxThrowables.Text = "Throwables";
             toolTip.SetToolTip(swMaxThrowables, "Maximises throwables buffs\r\n");
@@ -2178,14 +2173,14 @@ namespace eft_dma_radar
             // swMaxSurgery
             // 
             swMaxSurgery.Depth = 0;
-            swMaxSurgery.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swMaxSurgery.Font = new Font("Segoe UI", 9F);
             swMaxSurgery.Location = new Point(17, 232);
             swMaxSurgery.Margin = new Padding(0);
             swMaxSurgery.MouseLocation = new Point(-1, -1);
             swMaxSurgery.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxSurgery.Name = "swMaxSurgery";
             swMaxSurgery.Ripple = true;
-            swMaxSurgery.Size = new Size(133, 31);
+            swMaxSurgery.Size = new Size(133, 32);
             swMaxSurgery.TabIndex = 45;
             swMaxSurgery.Text = "Surgery";
             toolTip.SetToolTip(swMaxSurgery, "Maximises surgery buffs\r\n");
@@ -2195,14 +2190,14 @@ namespace eft_dma_radar
             // swMaxCovertMovement
             // 
             swMaxCovertMovement.Depth = 0;
-            swMaxCovertMovement.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swMaxCovertMovement.Font = new Font("Segoe UI", 9F);
             swMaxCovertMovement.Location = new Point(199, 187);
             swMaxCovertMovement.Margin = new Padding(0);
             swMaxCovertMovement.MouseLocation = new Point(-1, -1);
             swMaxCovertMovement.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxCovertMovement.Name = "swMaxCovertMovement";
             swMaxCovertMovement.Ripple = true;
-            swMaxCovertMovement.Size = new Size(214, 31);
+            swMaxCovertMovement.Size = new Size(214, 32);
             swMaxCovertMovement.TabIndex = 46;
             swMaxCovertMovement.Text = "Covert Movement";
             toolTip.SetToolTip(swMaxCovertMovement, "Maximises covert movement buffs\r\n");
@@ -2212,14 +2207,14 @@ namespace eft_dma_radar
             // swMaxSearch
             // 
             swMaxSearch.Depth = 0;
-            swMaxSearch.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swMaxSearch.Font = new Font("Segoe UI", 9F);
             swMaxSearch.Location = new Point(199, 232);
             swMaxSearch.Margin = new Padding(0);
             swMaxSearch.MouseLocation = new Point(-1, -1);
             swMaxSearch.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxSearch.Name = "swMaxSearch";
             swMaxSearch.Ripple = true;
-            swMaxSearch.Size = new Size(127, 31);
+            swMaxSearch.Size = new Size(127, 32);
             swMaxSearch.TabIndex = 47;
             swMaxSearch.Text = "Search";
             toolTip.SetToolTip(swMaxSearch, "Maximises search buffs\r\n");
@@ -2229,14 +2224,14 @@ namespace eft_dma_radar
             // swMaxMagDrills
             // 
             swMaxMagDrills.Depth = 0;
-            swMaxMagDrills.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swMaxMagDrills.Font = new Font("Segoe UI", 9F);
             swMaxMagDrills.Location = new Point(429, 232);
             swMaxMagDrills.Margin = new Padding(0);
             swMaxMagDrills.MouseLocation = new Point(-1, -1);
             swMaxMagDrills.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxMagDrills.Name = "swMaxMagDrills";
             swMaxMagDrills.Ripple = true;
-            swMaxMagDrills.Size = new Size(154, 31);
+            swMaxMagDrills.Size = new Size(154, 32);
             swMaxMagDrills.TabIndex = 48;
             swMaxMagDrills.Text = "Mag Drills";
             toolTip.SetToolTip(swMaxMagDrills, "Maximises mag drills buffs\r\n");
@@ -2246,14 +2241,14 @@ namespace eft_dma_radar
             // swMaxLightVests
             // 
             swMaxLightVests.Depth = 0;
-            swMaxLightVests.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swMaxLightVests.Font = new Font("Segoe UI", 9F);
             swMaxLightVests.Location = new Point(17, 278);
             swMaxLightVests.Margin = new Padding(0);
             swMaxLightVests.MouseLocation = new Point(-1, -1);
             swMaxLightVests.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxLightVests.Name = "swMaxLightVests";
             swMaxLightVests.Ripple = true;
-            swMaxLightVests.Size = new Size(162, 31);
+            swMaxLightVests.Size = new Size(162, 32);
             swMaxLightVests.TabIndex = 49;
             swMaxLightVests.Text = "Light Vests";
             toolTip.SetToolTip(swMaxLightVests, "Maximises light vests buffs\r\n");
@@ -2263,14 +2258,14 @@ namespace eft_dma_radar
             // swMaxHeavyVests
             // 
             swMaxHeavyVests.Depth = 0;
-            swMaxHeavyVests.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swMaxHeavyVests.Font = new Font("Segoe UI", 9F);
             swMaxHeavyVests.Location = new Point(199, 278);
             swMaxHeavyVests.Margin = new Padding(0);
             swMaxHeavyVests.MouseLocation = new Point(-1, -1);
             swMaxHeavyVests.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxHeavyVests.Name = "swMaxHeavyVests";
             swMaxHeavyVests.Ripple = true;
-            swMaxHeavyVests.Size = new Size(169, 31);
+            swMaxHeavyVests.Size = new Size(169, 32);
             swMaxHeavyVests.TabIndex = 50;
             swMaxHeavyVests.Text = "Heavy Vests";
             toolTip.SetToolTip(swMaxHeavyVests, "Maximises heavy vests buffs\r\n");
@@ -2280,14 +2275,14 @@ namespace eft_dma_radar
             // swMaxAttention
             // 
             swMaxAttention.Depth = 0;
-            swMaxAttention.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swMaxAttention.Font = new Font("Segoe UI", 9F);
             swMaxAttention.Location = new Point(19, 187);
             swMaxAttention.Margin = new Padding(0);
             swMaxAttention.MouseLocation = new Point(-1, -1);
             swMaxAttention.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxAttention.Name = "swMaxAttention";
             swMaxAttention.Ripple = true;
-            swMaxAttention.Size = new Size(146, 31);
+            swMaxAttention.Size = new Size(146, 32);
             swMaxAttention.TabIndex = 51;
             swMaxAttention.Text = "Attention";
             toolTip.SetToolTip(swMaxAttention, "Maximises attention buffs\r\n");
@@ -2297,14 +2292,14 @@ namespace eft_dma_radar
             // swProcessLoot
             // 
             swProcessLoot.Depth = 0;
-            swProcessLoot.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swProcessLoot.Font = new Font("Segoe UI", 9F);
             swProcessLoot.Location = new Point(17, 51);
             swProcessLoot.Margin = new Padding(0);
             swProcessLoot.MouseLocation = new Point(-1, -1);
             swProcessLoot.MouseState = MaterialSkin.MouseState.HOVER;
             swProcessLoot.Name = "swProcessLoot";
             swProcessLoot.Ripple = true;
-            swProcessLoot.Size = new Size(183, 31);
+            swProcessLoot.Size = new Size(183, 32);
             swProcessLoot.TabIndex = 40;
             swProcessLoot.Text = "物资显示";
             toolTip.SetToolTip(swProcessLoot, "Enables processing of loot items");
@@ -2314,14 +2309,14 @@ namespace eft_dma_radar
             // swRadarStats
             // 
             swRadarStats.Depth = 0;
-            swRadarStats.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swRadarStats.Font = new Font("Segoe UI", 9F);
             swRadarStats.Location = new Point(17, 96);
             swRadarStats.Margin = new Padding(0);
             swRadarStats.MouseLocation = new Point(-1, -1);
             swRadarStats.MouseState = MaterialSkin.MouseState.HOVER;
             swRadarStats.Name = "swRadarStats";
             swRadarStats.Ripple = true;
-            swRadarStats.Size = new Size(165, 31);
+            swRadarStats.Size = new Size(165, 32);
             swRadarStats.TabIndex = 31;
             swRadarStats.Text = "显示统计信息";
             toolTip.SetToolTip(swRadarStats, "Shows radar stats on radar tab");
@@ -2331,14 +2326,14 @@ namespace eft_dma_radar
             // swRadarVsync
             // 
             swRadarVsync.Depth = 0;
-            swRadarVsync.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swRadarVsync.Font = new Font("Segoe UI", 9F);
             swRadarVsync.Location = new Point(197, 51);
             swRadarVsync.Margin = new Padding(0);
             swRadarVsync.MouseLocation = new Point(-1, -1);
             swRadarVsync.MouseState = MaterialSkin.MouseState.HOVER;
             swRadarVsync.Name = "swRadarVsync";
             swRadarVsync.Ripple = true;
-            swRadarVsync.Size = new Size(135, 31);
+            swRadarVsync.Size = new Size(135, 32);
             swRadarVsync.TabIndex = 32;
             swRadarVsync.Text = "VSync";
             toolTip.SetToolTip(swRadarVsync, "Shows radar stats on radar tab");
@@ -2348,14 +2343,14 @@ namespace eft_dma_radar
             // swRadarEnemyCount
             // 
             swRadarEnemyCount.Depth = 0;
-            swRadarEnemyCount.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            swRadarEnemyCount.Font = new Font("Segoe UI", 9F);
             swRadarEnemyCount.Location = new Point(197, 96);
             swRadarEnemyCount.Margin = new Padding(0);
             swRadarEnemyCount.MouseLocation = new Point(-1, -1);
             swRadarEnemyCount.MouseState = MaterialSkin.MouseState.HOVER;
             swRadarEnemyCount.Name = "swRadarEnemyCount";
             swRadarEnemyCount.Ripple = true;
-            swRadarEnemyCount.Size = new Size(174, 31);
+            swRadarEnemyCount.Size = new Size(174, 32);
             swRadarEnemyCount.TabIndex = 33;
             swRadarEnemyCount.Text = "敌人统计";
             toolTip.SetToolTip(swRadarEnemyCount, "Shows radar stats on radar tab");
@@ -2366,7 +2361,7 @@ namespace eft_dma_radar
             // 
             sldrFontSize.Depth = 0;
             sldrFontSize.ForeColor = Color.Black;
-            sldrFontSize.Location = new Point(238, 241);
+            sldrFontSize.Location = new Point(219, 240);
             sldrFontSize.MouseState = MaterialSkin.MouseState.HOVER;
             sldrFontSize.Name = "sldrFontSize";
             sldrFontSize.RangeMax = 36;
@@ -2397,7 +2392,7 @@ namespace eft_dma_radar
             cboFont.IntegralHeight = false;
             cboFont.ItemHeight = 29;
             cboFont.Items.AddRange(new object[] { "Microsoft YaHei", "SimSun", "SimHei", "KaiTi", "Arial" });
-            cboFont.Location = new Point(19, 241);
+            cboFont.Location = new Point(17, 240);
             cboFont.MaxDropDownItems = 10;
             cboFont.MouseState = MaterialSkin.MouseState.OUT;
             cboFont.Name = "cboFont";
@@ -2411,14 +2406,14 @@ namespace eft_dma_radar
             // swUnknownQuestItems
             // 
             swUnknownQuestItems.Depth = 0;
-            swUnknownQuestItems.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swUnknownQuestItems.Location = new Point(374, 106);
+            swUnknownQuestItems.Font = new Font("Segoe UI", 9F);
+            swUnknownQuestItems.Location = new Point(374, 107);
             swUnknownQuestItems.Margin = new Padding(0);
             swUnknownQuestItems.MouseLocation = new Point(-1, -1);
             swUnknownQuestItems.MouseState = MaterialSkin.MouseState.HOVER;
             swUnknownQuestItems.Name = "swUnknownQuestItems";
             swUnknownQuestItems.Ripple = true;
-            swUnknownQuestItems.Size = new Size(251, 31);
+            swUnknownQuestItems.Size = new Size(251, 32);
             swUnknownQuestItems.TabIndex = 40;
             swUnknownQuestItems.Text = "未知任务项目";
             toolTip.SetToolTip(swUnknownQuestItems, "Displays all active quest tasks/items on the map. Must use 'Show Loot' to display quest items.");
@@ -2435,7 +2430,7 @@ namespace eft_dma_radar
             sldrThermalColorCoefficient.RangeMin = 1;
             sldrThermalColorCoefficient.Size = new Size(370, 40);
             sldrThermalColorCoefficient.TabIndex = 36;
-            sldrThermalColorCoefficient.Text = "颜色";
+            sldrThermalColorCoefficient.Text = "Color Coefficient";
             sldrThermalColorCoefficient.UseAccentColor = true;
             sldrThermalColorCoefficient.Value = 30;
             sldrThermalColorCoefficient.ValueMax = 100;
@@ -2480,7 +2475,6 @@ namespace eft_dma_radar
             tabControlMain.Controls.Add(tabPlayerLoadouts);
             tabControlMain.Controls.Add(tabWatchlist);
             tabControlMain.Controls.Add(tabLootFilter);
-            tabControlMain.Controls.Add(tabPageLootList);
             tabControlMain.Depth = 0;
             tabControlMain.Dock = DockStyle.Fill;
             tabControlMain.ImageList = iconList;
@@ -2526,11 +2520,11 @@ namespace eft_dma_radar
             mcRadarEnemyStats.Controls.Add(lblRadarPMCs);
             mcRadarEnemyStats.Depth = 0;
             mcRadarEnemyStats.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcRadarEnemyStats.Location = new Point(1245, 705);
-            mcRadarEnemyStats.Margin = new Padding(16);
+            mcRadarEnemyStats.Location = new Point(1247, 706);
+            mcRadarEnemyStats.Margin = new Padding(16, 16, 16, 16);
             mcRadarEnemyStats.MouseState = MaterialSkin.MouseState.HOVER;
             mcRadarEnemyStats.Name = "mcRadarEnemyStats";
-            mcRadarEnemyStats.Padding = new Padding(16);
+            mcRadarEnemyStats.Padding = new Padding(16, 16, 16, 16);
             mcRadarEnemyStats.Size = new Size(112, 86);
             mcRadarEnemyStats.TabIndex = 49;
             mcRadarEnemyStats.Visible = false;
@@ -2554,7 +2548,7 @@ namespace eft_dma_radar
             lblRadarPlayerScavsValue.Depth = 0;
             lblRadarPlayerScavsValue.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarPlayerScavsValue.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarPlayerScavsValue.Location = new Point(91, 20);
+            lblRadarPlayerScavsValue.Location = new Point(91, 19);
             lblRadarPlayerScavsValue.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarPlayerScavsValue.Name = "lblRadarPlayerScavsValue";
             lblRadarPlayerScavsValue.Size = new Size(8, 14);
@@ -2567,7 +2561,7 @@ namespace eft_dma_radar
             lblRadarBosses.Depth = 0;
             lblRadarBosses.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarBosses.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarBosses.Location = new Point(40, 65);
+            lblRadarBosses.Location = new Point(49, 67);
             lblRadarBosses.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarBosses.Name = "lblRadarBosses";
             lblRadarBosses.Size = new Size(34, 14);
@@ -2580,7 +2574,7 @@ namespace eft_dma_radar
             lblRadarPlayerScavs.Depth = 0;
             lblRadarPlayerScavs.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarPlayerScavs.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarPlayerScavs.Location = new Point(7, 20);
+            lblRadarPlayerScavs.Location = new Point(13, 19);
             lblRadarPlayerScavs.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarPlayerScavs.Name = "lblRadarPlayerScavs";
             lblRadarPlayerScavs.Size = new Size(63, 14);
@@ -2632,7 +2626,7 @@ namespace eft_dma_radar
             lblRadarRogues.Depth = 0;
             lblRadarRogues.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarRogues.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarRogues.Location = new Point(29, 51);
+            lblRadarRogues.Location = new Point(38, 51);
             lblRadarRogues.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarRogues.Name = "lblRadarRogues";
             lblRadarRogues.Size = new Size(44, 14);
@@ -2645,7 +2639,7 @@ namespace eft_dma_radar
             lblRadarAIScavs.Depth = 0;
             lblRadarAIScavs.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarAIScavs.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarAIScavs.Location = new Point(7, 35);
+            lblRadarAIScavs.Location = new Point(13, 34);
             lblRadarAIScavs.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarAIScavs.Name = "lblRadarAIScavs";
             lblRadarAIScavs.Size = new Size(63, 14);
@@ -2658,7 +2652,7 @@ namespace eft_dma_radar
             lblRadarPMCs.Depth = 0;
             lblRadarPMCs.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarPMCs.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarPMCs.Location = new Point(47, 3);
+            lblRadarPMCs.Location = new Point(53, 3);
             lblRadarPMCs.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarPMCs.Name = "lblRadarPMCs";
             lblRadarPMCs.Size = new Size(28, 14);
@@ -2681,11 +2675,11 @@ namespace eft_dma_radar
             mcRadarStats.Controls.Add(lblRadarFPS);
             mcRadarStats.Depth = 0;
             mcRadarStats.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcRadarStats.Location = new Point(1360, 705);
-            mcRadarStats.Margin = new Padding(16);
+            mcRadarStats.Location = new Point(1360, 706);
+            mcRadarStats.Margin = new Padding(16, 16, 16, 16);
             mcRadarStats.MouseState = MaterialSkin.MouseState.HOVER;
             mcRadarStats.Name = "mcRadarStats";
-            mcRadarStats.Padding = new Padding(16);
+            mcRadarStats.Padding = new Padding(16, 16, 16, 16);
             mcRadarStats.Size = new Size(117, 86);
             mcRadarStats.TabIndex = 36;
             mcRadarStats.Visible = false;
@@ -2696,7 +2690,7 @@ namespace eft_dma_radar
             lblRadarCorpsesValue.Depth = 0;
             lblRadarCorpsesValue.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarCorpsesValue.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarCorpsesValue.Location = new Point(82, 67);
+            lblRadarCorpsesValue.Location = new Point(88, 67);
             lblRadarCorpsesValue.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarCorpsesValue.Name = "lblRadarCorpsesValue";
             lblRadarCorpsesValue.Size = new Size(8, 14);
@@ -2709,7 +2703,7 @@ namespace eft_dma_radar
             lblRadarCorpses.Depth = 0;
             lblRadarCorpses.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarCorpses.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarCorpses.Location = new Point(43, 67);
+            lblRadarCorpses.Location = new Point(49, 67);
             lblRadarCorpses.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarCorpses.Name = "lblRadarCorpses";
             lblRadarCorpses.Size = new Size(28, 14);
@@ -2722,7 +2716,7 @@ namespace eft_dma_radar
             lblRadarMemSValue.Depth = 0;
             lblRadarMemSValue.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarMemSValue.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarMemSValue.Location = new Point(82, 20);
+            lblRadarMemSValue.Location = new Point(88, 19);
             lblRadarMemSValue.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarMemSValue.Name = "lblRadarMemSValue";
             lblRadarMemSValue.Size = new Size(8, 14);
@@ -2735,7 +2729,7 @@ namespace eft_dma_radar
             lblRadarMemS.Depth = 0;
             lblRadarMemS.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarMemS.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarMemS.Location = new Point(27, 20);
+            lblRadarMemS.Location = new Point(33, 19);
             lblRadarMemS.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarMemS.Name = "lblRadarMemS";
             lblRadarMemS.Size = new Size(42, 14);
@@ -2748,7 +2742,7 @@ namespace eft_dma_radar
             lblRadarContainersValue.Depth = 0;
             lblRadarContainersValue.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarContainersValue.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarContainersValue.Location = new Point(82, 51);
+            lblRadarContainersValue.Location = new Point(88, 51);
             lblRadarContainersValue.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarContainersValue.Name = "lblRadarContainersValue";
             lblRadarContainersValue.Size = new Size(8, 14);
@@ -2761,7 +2755,7 @@ namespace eft_dma_radar
             lblRadarLooseLootValue.Depth = 0;
             lblRadarLooseLootValue.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarLooseLootValue.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarLooseLootValue.Location = new Point(82, 35);
+            lblRadarLooseLootValue.Location = new Point(88, 35);
             lblRadarLooseLootValue.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarLooseLootValue.Name = "lblRadarLooseLootValue";
             lblRadarLooseLootValue.Size = new Size(8, 14);
@@ -2774,7 +2768,7 @@ namespace eft_dma_radar
             lblRadarFPSValue.Depth = 0;
             lblRadarFPSValue.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarFPSValue.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarFPSValue.Location = new Point(82, 3);
+            lblRadarFPSValue.Location = new Point(88, 3);
             lblRadarFPSValue.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarFPSValue.Name = "lblRadarFPSValue";
             lblRadarFPSValue.Size = new Size(8, 14);
@@ -2787,7 +2781,7 @@ namespace eft_dma_radar
             lblRadarContainers.Depth = 0;
             lblRadarContainers.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarContainers.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarContainers.Location = new Point(43, 51);
+            lblRadarContainers.Location = new Point(49, 51);
             lblRadarContainers.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarContainers.Name = "lblRadarContainers";
             lblRadarContainers.Size = new Size(28, 14);
@@ -2800,7 +2794,7 @@ namespace eft_dma_radar
             lblRadarLooseLoot.Depth = 0;
             lblRadarLooseLoot.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarLooseLoot.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarLooseLoot.Location = new Point(16, 37);
+            lblRadarLooseLoot.Location = new Point(22, 35);
             lblRadarLooseLoot.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarLooseLoot.Name = "lblRadarLooseLoot";
             lblRadarLooseLoot.Size = new Size(52, 14);
@@ -2813,7 +2807,7 @@ namespace eft_dma_radar
             lblRadarFPS.Depth = 0;
             lblRadarFPS.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarFPS.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarFPS.Location = new Point(6, 3);
+            lblRadarFPS.Location = new Point(8, 3);
             lblRadarFPS.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarFPS.Name = "lblRadarFPS";
             lblRadarFPS.Size = new Size(64, 14);
@@ -2828,10 +2822,10 @@ namespace eft_dma_radar
             mcRadarSettings.Depth = 0;
             mcRadarSettings.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcRadarSettings.Location = new Point(1341, 6);
-            mcRadarSettings.Margin = new Padding(16);
+            mcRadarSettings.Margin = new Padding(16, 16, 16, 16);
             mcRadarSettings.MouseState = MaterialSkin.MouseState.HOVER;
             mcRadarSettings.Name = "mcRadarSettings";
-            mcRadarSettings.Padding = new Padding(16);
+            mcRadarSettings.Padding = new Padding(16, 16, 16, 16);
             mcRadarSettings.Size = new Size(136, 52);
             mcRadarSettings.TabIndex = 48;
             // 
@@ -2845,12 +2839,12 @@ namespace eft_dma_radar
             mcRadarMapSetup.Controls.Add(lblRadarMapSetup);
             mcRadarMapSetup.Depth = 0;
             mcRadarMapSetup.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcRadarMapSetup.Location = new Point(12, 731);
-            mcRadarMapSetup.Margin = new Padding(16);
+            mcRadarMapSetup.Location = new Point(11, 725);
+            mcRadarMapSetup.Margin = new Padding(16, 16, 16, 16);
             mcRadarMapSetup.MouseState = MaterialSkin.MouseState.HOVER;
             mcRadarMapSetup.Name = "mcRadarMapSetup";
-            mcRadarMapSetup.Padding = new Padding(16);
-            mcRadarMapSetup.Size = new Size(371, 60);
+            mcRadarMapSetup.Padding = new Padding(16, 16, 16, 16);
+            mcRadarMapSetup.Size = new Size(385, 67);
             mcRadarMapSetup.TabIndex = 18;
             mcRadarMapSetup.Visible = false;
             // 
@@ -2861,7 +2855,7 @@ namespace eft_dma_radar
             lblRadarMapSetup.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarMapSetup.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle1;
             lblRadarMapSetup.HighEmphasis = true;
-            lblRadarMapSetup.Location = new Point(125, 0);
+            lblRadarMapSetup.Location = new Point(152, 11);
             lblRadarMapSetup.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarMapSetup.Name = "lblRadarMapSetup";
             lblRadarMapSetup.Size = new Size(65, 19);
@@ -2872,7 +2866,7 @@ namespace eft_dma_radar
             // 
             // skMapCanvas
             // 
-            skMapCanvas.BackColor = Color.Brown;
+            skMapCanvas.BackColor = Color.Black;
             skMapCanvas.Dock = DockStyle.Fill;
             skMapCanvas.Location = new Point(3, 3);
             skMapCanvas.Margin = new Padding(5, 3, 5, 3);
@@ -2901,7 +2895,7 @@ namespace eft_dma_radar
             // tabSelector
             // 
             tabSelector.BaseTabControl = tabControlSettings;
-            tabSelector.CharacterCasing = MaterialTabSelector.CustomCharacterCasing.Normal;
+            tabSelector.CharacterCasing = MaterialSkin.Controls.MaterialTabSelector.CustomCharacterCasing.Normal;
             tabSelector.Depth = 0;
             tabSelector.Dock = DockStyle.Top;
             tabSelector.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
@@ -2913,7 +2907,6 @@ namespace eft_dma_radar
             tabSelector.TabIndex = 29;
             tabSelector.TabIndicatorHeight = 1;
             tabSelector.Text = "雷达设置";
-            tabSelector.Click += tabSelector_Click;
             // 
             // tabControlSettings
             // 
@@ -2924,7 +2917,7 @@ namespace eft_dma_radar
             tabControlSettings.Controls.Add(tabSettingsAIFactions);
             tabControlSettings.Controls.Add(tabSettingsColors);
             tabControlSettings.Depth = 0;
-            tabControlSettings.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            tabControlSettings.Font = new Font("Segoe UI", 9F);
             tabControlSettings.Location = new Point(0, 41);
             tabControlSettings.Margin = new Padding(0);
             tabControlSettings.MouseState = MaterialSkin.MouseState.HOVER;
@@ -2940,10 +2933,10 @@ namespace eft_dma_radar
             tabSettingsGeneral.Controls.Add(mcSettingsGeneralUI);
             tabSettingsGeneral.Controls.Add(mcSettingsGeneralRadar);
             tabSettingsGeneral.ImageKey = "(none)";
-            tabSettingsGeneral.Location = new Point(4, 29);
+            tabSettingsGeneral.Location = new Point(4, 24);
             tabSettingsGeneral.Margin = new Padding(0);
             tabSettingsGeneral.Name = "tabSettingsGeneral";
-            tabSettingsGeneral.Size = new Size(1465, 723);
+            tabSettingsGeneral.Size = new Size(1465, 728);
             tabSettingsGeneral.TabIndex = 0;
             tabSettingsGeneral.Text = "雷达设置";
             // 
@@ -2967,10 +2960,10 @@ namespace eft_dma_radar
             mcSettingsGeneralUI.Depth = 0;
             mcSettingsGeneralUI.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsGeneralUI.Location = new Point(17, 188);
-            mcSettingsGeneralUI.Margin = new Padding(16);
+            mcSettingsGeneralUI.Margin = new Padding(16, 16, 16, 16);
             mcSettingsGeneralUI.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsGeneralUI.Name = "mcSettingsGeneralUI";
-            mcSettingsGeneralUI.Padding = new Padding(16);
+            mcSettingsGeneralUI.Padding = new Padding(16, 16, 16, 16);
             mcSettingsGeneralUI.Size = new Size(723, 306);
             mcSettingsGeneralUI.TabIndex = 31;
             // 
@@ -3002,10 +2995,10 @@ namespace eft_dma_radar
             mcSettingsGeneralRadar.Depth = 0;
             mcSettingsGeneralRadar.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsGeneralRadar.Location = new Point(17, 16);
-            mcSettingsGeneralRadar.Margin = new Padding(16);
+            mcSettingsGeneralRadar.Margin = new Padding(16, 16, 16, 16);
             mcSettingsGeneralRadar.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsGeneralRadar.Name = "mcSettingsGeneralRadar";
-            mcSettingsGeneralRadar.Padding = new Padding(16);
+            mcSettingsGeneralRadar.Padding = new Padding(16, 16, 16, 16);
             mcSettingsGeneralRadar.Size = new Size(723, 154);
             mcSettingsGeneralRadar.TabIndex = 30;
             // 
@@ -3032,10 +3025,10 @@ namespace eft_dma_radar
             tabSettingsMemoryWriting.Controls.Add(swMasterSwitch);
             tabSettingsMemoryWriting.Controls.Add(mcSettingsMemoryWritingGlobal);
             tabSettingsMemoryWriting.Controls.Add(mcSettingsMemoryWritingGear);
-            tabSettingsMemoryWriting.Location = new Point(4, 29);
+            tabSettingsMemoryWriting.Location = new Point(4, 24);
             tabSettingsMemoryWriting.Name = "tabSettingsMemoryWriting";
             tabSettingsMemoryWriting.Padding = new Padding(3);
-            tabSettingsMemoryWriting.Size = new Size(1465, 723);
+            tabSettingsMemoryWriting.Size = new Size(1465, 728);
             tabSettingsMemoryWriting.TabIndex = 1;
             tabSettingsMemoryWriting.Text = "内存功能（危险）";
             // 
@@ -3065,12 +3058,12 @@ namespace eft_dma_radar
             mcSettingsMemoryWritingSkillBuffs.Controls.Add(lblSettingsMemoryWritingSkills);
             mcSettingsMemoryWritingSkillBuffs.Depth = 0;
             mcSettingsMemoryWritingSkillBuffs.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcSettingsMemoryWritingSkillBuffs.Location = new Point(655, 64);
-            mcSettingsMemoryWritingSkillBuffs.Margin = new Padding(16);
+            mcSettingsMemoryWritingSkillBuffs.Location = new Point(655, 63);
+            mcSettingsMemoryWritingSkillBuffs.Margin = new Padding(16, 16, 16, 16);
             mcSettingsMemoryWritingSkillBuffs.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsMemoryWritingSkillBuffs.Name = "mcSettingsMemoryWritingSkillBuffs";
-            mcSettingsMemoryWritingSkillBuffs.Padding = new Padding(16);
-            mcSettingsMemoryWritingSkillBuffs.Size = new Size(606, 405);
+            mcSettingsMemoryWritingSkillBuffs.Padding = new Padding(16, 16, 16, 16);
+            mcSettingsMemoryWritingSkillBuffs.Size = new Size(606, 406);
             mcSettingsMemoryWritingSkillBuffs.TabIndex = 42;
             // 
             // lblSettingsMemoryWritingSkills
@@ -3100,10 +3093,10 @@ namespace eft_dma_radar
             mcSettingsMemoryWritingThermal.Depth = 0;
             mcSettingsMemoryWritingThermal.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsMemoryWritingThermal.Location = new Point(17, 380);
-            mcSettingsMemoryWritingThermal.Margin = new Padding(16);
+            mcSettingsMemoryWritingThermal.Margin = new Padding(16, 16, 16, 16);
             mcSettingsMemoryWritingThermal.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsMemoryWritingThermal.Name = "mcSettingsMemoryWritingThermal";
-            mcSettingsMemoryWritingThermal.Padding = new Padding(16);
+            mcSettingsMemoryWritingThermal.Padding = new Padding(16, 16, 16, 16);
             mcSettingsMemoryWritingThermal.Size = new Size(611, 186);
             mcSettingsMemoryWritingThermal.TabIndex = 41;
             mcSettingsMemoryWritingThermal.Visible = false;
@@ -3134,11 +3127,11 @@ namespace eft_dma_radar
             mcSettingsMemoryWritingGlobal.Controls.Add(swChams);
             mcSettingsMemoryWritingGlobal.Depth = 0;
             mcSettingsMemoryWritingGlobal.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcSettingsMemoryWritingGlobal.Location = new Point(17, 64);
-            mcSettingsMemoryWritingGlobal.Margin = new Padding(16);
+            mcSettingsMemoryWritingGlobal.Location = new Point(17, 63);
+            mcSettingsMemoryWritingGlobal.Margin = new Padding(16, 16, 16, 16);
             mcSettingsMemoryWritingGlobal.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsMemoryWritingGlobal.Name = "mcSettingsMemoryWritingGlobal";
-            mcSettingsMemoryWritingGlobal.Padding = new Padding(16);
+            mcSettingsMemoryWritingGlobal.Padding = new Padding(16, 16, 16, 16);
             mcSettingsMemoryWritingGlobal.Size = new Size(611, 142);
             mcSettingsMemoryWritingGlobal.TabIndex = 38;
             // 
@@ -3170,10 +3163,10 @@ namespace eft_dma_radar
             mcSettingsMemoryWritingGear.Depth = 0;
             mcSettingsMemoryWritingGear.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsMemoryWritingGear.Location = new Point(17, 222);
-            mcSettingsMemoryWritingGear.Margin = new Padding(16);
+            mcSettingsMemoryWritingGear.Margin = new Padding(16, 16, 16, 16);
             mcSettingsMemoryWritingGear.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsMemoryWritingGear.Name = "mcSettingsMemoryWritingGear";
-            mcSettingsMemoryWritingGear.Padding = new Padding(16);
+            mcSettingsMemoryWritingGear.Padding = new Padding(16, 16, 16, 16);
             mcSettingsMemoryWritingGear.Size = new Size(611, 139);
             mcSettingsMemoryWritingGear.TabIndex = 39;
             // 
@@ -3197,10 +3190,10 @@ namespace eft_dma_radar
             tabSettingsLoot.BackColor = Color.White;
             tabSettingsLoot.Controls.Add(mcSettingsLootMinRubleValue);
             tabSettingsLoot.Controls.Add(mcSettingsLootGeneral);
-            tabSettingsLoot.Location = new Point(4, 29);
+            tabSettingsLoot.Location = new Point(4, 24);
             tabSettingsLoot.Margin = new Padding(0);
             tabSettingsLoot.Name = "tabSettingsLoot";
-            tabSettingsLoot.Size = new Size(1465, 723);
+            tabSettingsLoot.Size = new Size(1465, 728);
             tabSettingsLoot.TabIndex = 2;
             tabSettingsLoot.Text = "物资";
             // 
@@ -3215,10 +3208,10 @@ namespace eft_dma_radar
             mcSettingsLootMinRubleValue.Depth = 0;
             mcSettingsLootMinRubleValue.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsLootMinRubleValue.Location = new Point(17, 235);
-            mcSettingsLootMinRubleValue.Margin = new Padding(16);
+            mcSettingsLootMinRubleValue.Margin = new Padding(16, 16, 16, 16);
             mcSettingsLootMinRubleValue.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsLootMinRubleValue.Name = "mcSettingsLootMinRubleValue";
-            mcSettingsLootMinRubleValue.Padding = new Padding(16);
+            mcSettingsLootMinRubleValue.Padding = new Padding(16, 16, 16, 16);
             mcSettingsLootMinRubleValue.Size = new Size(670, 142);
             mcSettingsLootMinRubleValue.TabIndex = 37;
             // 
@@ -3253,11 +3246,11 @@ namespace eft_dma_radar
             mcSettingsLootGeneral.Depth = 0;
             mcSettingsLootGeneral.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsLootGeneral.Location = new Point(17, 16);
-            mcSettingsLootGeneral.Margin = new Padding(16);
+            mcSettingsLootGeneral.Margin = new Padding(16, 16, 16, 16);
             mcSettingsLootGeneral.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsLootGeneral.Name = "mcSettingsLootGeneral";
-            mcSettingsLootGeneral.Padding = new Padding(16);
-            mcSettingsLootGeneral.Size = new Size(670, 201);
+            mcSettingsLootGeneral.Padding = new Padding(16, 16, 16, 16);
+            mcSettingsLootGeneral.Size = new Size(670, 202);
             mcSettingsLootGeneral.TabIndex = 36;
             // 
             // lblSettingsLootGeneral
@@ -3281,12 +3274,12 @@ namespace eft_dma_radar
             tabSettingsAIFactions.Controls.Add(lstFactionEntries);
             tabSettingsAIFactions.Controls.Add(mcSettingsAIFactionsEntryManagement);
             tabSettingsAIFactions.Controls.Add(mcSettingsAIFactionsFactions);
-            tabSettingsAIFactions.Location = new Point(4, 29);
+            tabSettingsAIFactions.Location = new Point(4, 24);
             tabSettingsAIFactions.Margin = new Padding(0);
             tabSettingsAIFactions.Name = "tabSettingsAIFactions";
-            tabSettingsAIFactions.Size = new Size(1465, 723);
+            tabSettingsAIFactions.Size = new Size(1465, 728);
             tabSettingsAIFactions.TabIndex = 3;
-            tabSettingsAIFactions.Text = "队伍管理";
+            tabSettingsAIFactions.Text = "AI阵营设置";
             // 
             // lstFactionEntries
             // 
@@ -3296,7 +3289,7 @@ namespace eft_dma_radar
             lstFactionEntries.BorderStyle = BorderStyle.None;
             lstFactionEntries.Columns.AddRange(new ColumnHeader[] { colFactionsAIName });
             lstFactionEntries.Depth = 0;
-            lstFactionEntries.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lstFactionEntries.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             lstFactionEntries.FullRowSelect = true;
             lstFactionEntries.Location = new Point(17, 16);
             lstFactionEntries.MaximumSize = new Size(480, 1020);
@@ -3306,7 +3299,7 @@ namespace eft_dma_radar
             lstFactionEntries.MultiSelect = false;
             lstFactionEntries.Name = "lstFactionEntries";
             lstFactionEntries.OwnerDraw = true;
-            lstFactionEntries.Size = new Size(286, 699);
+            lstFactionEntries.Size = new Size(286, 705);
             lstFactionEntries.TabIndex = 44;
             lstFactionEntries.UseCompatibleStateImageBehavior = false;
             lstFactionEntries.View = View.Details;
@@ -3314,7 +3307,7 @@ namespace eft_dma_radar
             // 
             // colFactionsAIName
             // 
-            colFactionsAIName.Text = "Name";
+            colFactionsAIName.Text = "ID";
             colFactionsAIName.Width = 250;
             // 
             // mcSettingsAIFactionsEntryManagement
@@ -3326,10 +3319,10 @@ namespace eft_dma_radar
             mcSettingsAIFactionsEntryManagement.Depth = 0;
             mcSettingsAIFactionsEntryManagement.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsAIFactionsEntryManagement.Location = new Point(320, 16);
-            mcSettingsAIFactionsEntryManagement.Margin = new Padding(16);
+            mcSettingsAIFactionsEntryManagement.Margin = new Padding(16, 16, 16, 16);
             mcSettingsAIFactionsEntryManagement.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsAIFactionsEntryManagement.Name = "mcSettingsAIFactionsEntryManagement";
-            mcSettingsAIFactionsEntryManagement.Padding = new Padding(16);
+            mcSettingsAIFactionsEntryManagement.Padding = new Padding(16, 16, 16, 16);
             mcSettingsAIFactionsEntryManagement.Size = new Size(545, 122);
             mcSettingsAIFactionsEntryManagement.TabIndex = 43;
             // 
@@ -3360,11 +3353,11 @@ namespace eft_dma_radar
             mcSettingsAIFactionsFactions.Controls.Add(lblSettingsAIFactionsFactions);
             mcSettingsAIFactionsFactions.Depth = 0;
             mcSettingsAIFactionsFactions.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcSettingsAIFactionsFactions.Location = new Point(320, 156);
-            mcSettingsAIFactionsFactions.Margin = new Padding(16);
+            mcSettingsAIFactionsFactions.Location = new Point(320, 155);
+            mcSettingsAIFactionsFactions.Margin = new Padding(16, 16, 16, 16);
             mcSettingsAIFactionsFactions.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsAIFactionsFactions.Name = "mcSettingsAIFactionsFactions";
-            mcSettingsAIFactionsFactions.Padding = new Padding(16);
+            mcSettingsAIFactionsFactions.Padding = new Padding(16, 16, 16, 16);
             mcSettingsAIFactionsFactions.Size = new Size(545, 468);
             mcSettingsAIFactionsFactions.TabIndex = 42;
             // 
@@ -3416,10 +3409,10 @@ namespace eft_dma_radar
             tabSettingsColors.Controls.Add(mcSettingsColorsExfiltration);
             tabSettingsColors.Controls.Add(mcSettingsColorsPlayers);
             tabSettingsColors.Controls.Add(mcSettingsColorsAI);
-            tabSettingsColors.Location = new Point(4, 29);
+            tabSettingsColors.Location = new Point(4, 24);
             tabSettingsColors.Margin = new Padding(0);
             tabSettingsColors.Name = "tabSettingsColors";
-            tabSettingsColors.Size = new Size(1465, 723);
+            tabSettingsColors.Size = new Size(1465, 728);
             tabSettingsColors.TabIndex = 4;
             tabSettingsColors.Text = "颜色";
             // 
@@ -3445,10 +3438,10 @@ namespace eft_dma_radar
             mcSettingsColorsOther.Depth = 0;
             mcSettingsColorsOther.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsColorsOther.Location = new Point(995, 16);
-            mcSettingsColorsOther.Margin = new Padding(16);
+            mcSettingsColorsOther.Margin = new Padding(16, 16, 16, 16);
             mcSettingsColorsOther.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsColorsOther.Name = "mcSettingsColorsOther";
-            mcSettingsColorsOther.Padding = new Padding(16);
+            mcSettingsColorsOther.Padding = new Padding(16, 16, 16, 16);
             mcSettingsColorsOther.Size = new Size(213, 365);
             mcSettingsColorsOther.TabIndex = 43;
             // 
@@ -3469,7 +3462,7 @@ namespace eft_dma_radar
             lblSettingsOtherAccent.Depth = 0;
             lblSettingsOtherAccent.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsOtherAccent.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsOtherAccent.Location = new Point(56, 255);
+            lblSettingsOtherAccent.Location = new Point(64, 255);
             lblSettingsOtherAccent.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsOtherAccent.Name = "lblSettingsOtherAccent";
             lblSettingsOtherAccent.Size = new Size(47, 17);
@@ -3493,12 +3486,12 @@ namespace eft_dma_radar
             lblSettingsOtherPrimaryLight.Depth = 0;
             lblSettingsOtherPrimaryLight.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsOtherPrimaryLight.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsOtherPrimaryLight.Location = new Point(73, 221);
+            lblSettingsOtherPrimaryLight.Location = new Point(17, 221);
             lblSettingsOtherPrimaryLight.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsOtherPrimaryLight.Name = "lblSettingsOtherPrimaryLight";
-            lblSettingsOtherPrimaryLight.Size = new Size(32, 17);
+            lblSettingsOtherPrimaryLight.Size = new Size(88, 17);
             lblSettingsOtherPrimaryLight.TabIndex = 55;
-            lblSettingsOtherPrimaryLight.Text = "亮色:";
+            lblSettingsOtherPrimaryLight.Text = "Primary Light:";
             // 
             // picOtherPrimaryDark
             // 
@@ -3517,12 +3510,12 @@ namespace eft_dma_radar
             lblSettingsOtherPrimaryDark.Depth = 0;
             lblSettingsOtherPrimaryDark.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsOtherPrimaryDark.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsOtherPrimaryDark.Location = new Point(73, 187);
+            lblSettingsOtherPrimaryDark.Location = new Point(21, 187);
             lblSettingsOtherPrimaryDark.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsOtherPrimaryDark.Name = "lblSettingsOtherPrimaryDark";
-            lblSettingsOtherPrimaryDark.Size = new Size(32, 17);
+            lblSettingsOtherPrimaryDark.Size = new Size(85, 17);
             lblSettingsOtherPrimaryDark.TabIndex = 53;
-            lblSettingsOtherPrimaryDark.Text = "深色:";
+            lblSettingsOtherPrimaryDark.Text = "Primary Dark:";
             // 
             // picOtherPrimary
             // 
@@ -3541,7 +3534,7 @@ namespace eft_dma_radar
             lblSettingsOtherPrimary.Depth = 0;
             lblSettingsOtherPrimary.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsOtherPrimary.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsOtherPrimary.Location = new Point(57, 153);
+            lblSettingsOtherPrimary.Location = new Point(64, 153);
             lblSettingsOtherPrimary.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsOtherPrimary.Name = "lblSettingsOtherPrimary";
             lblSettingsOtherPrimary.Size = new Size(46, 17);
@@ -3565,7 +3558,7 @@ namespace eft_dma_radar
             lblSettingsOtherChams.Depth = 0;
             lblSettingsOtherChams.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsOtherChams.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsOtherChams.Location = new Point(55, 119);
+            lblSettingsOtherChams.Location = new Point(63, 119);
             lblSettingsOtherChams.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsOtherChams.Name = "lblSettingsOtherChams";
             lblSettingsOtherChams.Size = new Size(48, 17);
@@ -3589,7 +3582,7 @@ namespace eft_dma_radar
             lblSettingsOtherDeathMarker.Depth = 0;
             lblSettingsOtherDeathMarker.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsOtherDeathMarker.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsOtherDeathMarker.Location = new Point(41, 85);
+            lblSettingsOtherDeathMarker.Location = new Point(49, 85);
             lblSettingsOtherDeathMarker.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsOtherDeathMarker.Name = "lblSettingsOtherDeathMarker";
             lblSettingsOtherDeathMarker.Size = new Size(60, 17);
@@ -3613,7 +3606,7 @@ namespace eft_dma_radar
             lblSettingsOtherTextOutline.Depth = 0;
             lblSettingsOtherTextOutline.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsOtherTextOutline.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsOtherTextOutline.Location = new Point(73, 51);
+            lblSettingsOtherTextOutline.Location = new Point(81, 51);
             lblSettingsOtherTextOutline.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsOtherTextOutline.Name = "lblSettingsOtherTextOutline";
             lblSettingsOtherTextOutline.Size = new Size(32, 17);
@@ -3650,10 +3643,10 @@ namespace eft_dma_radar
             mcSettingsColorsLootAndQuests.Depth = 0;
             mcSettingsColorsLootAndQuests.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsColorsLootAndQuests.Location = new Point(744, 16);
-            mcSettingsColorsLootAndQuests.Margin = new Padding(16);
+            mcSettingsColorsLootAndQuests.Margin = new Padding(16, 16, 16, 16);
             mcSettingsColorsLootAndQuests.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsColorsLootAndQuests.Name = "mcSettingsColorsLootAndQuests";
-            mcSettingsColorsLootAndQuests.Padding = new Padding(16);
+            mcSettingsColorsLootAndQuests.Padding = new Padding(16, 16, 16, 16);
             mcSettingsColorsLootAndQuests.Size = new Size(225, 365);
             mcSettingsColorsLootAndQuests.TabIndex = 42;
             // 
@@ -3674,7 +3667,7 @@ namespace eft_dma_radar
             lblSettingsQuestZones.Depth = 0;
             lblSettingsQuestZones.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsQuestZones.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsQuestZones.Location = new Point(40, 153);
+            lblSettingsQuestZones.Location = new Point(62, 153);
             lblSettingsQuestZones.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsQuestZones.Name = "lblSettingsQuestZones";
             lblSettingsQuestZones.Size = new Size(60, 17);
@@ -3698,7 +3691,7 @@ namespace eft_dma_radar
             lblSettingsQuestItems.Depth = 0;
             lblSettingsQuestItems.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsQuestItems.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsQuestItems.Location = new Point(40, 119);
+            lblSettingsQuestItems.Location = new Point(62, 119);
             lblSettingsQuestItems.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsQuestItems.Name = "lblSettingsQuestItems";
             lblSettingsQuestItems.Size = new Size(60, 17);
@@ -3722,7 +3715,7 @@ namespace eft_dma_radar
             lblSettingsLootImportant.Depth = 0;
             lblSettingsLootImportant.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsLootImportant.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsLootImportant.Location = new Point(40, 85);
+            lblSettingsLootImportant.Location = new Point(62, 85);
             lblSettingsLootImportant.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsLootImportant.Name = "lblSettingsLootImportant";
             lblSettingsLootImportant.Size = new Size(60, 17);
@@ -3746,7 +3739,7 @@ namespace eft_dma_radar
             lblSettingsLootRegular.Depth = 0;
             lblSettingsLootRegular.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsLootRegular.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsLootRegular.Location = new Point(40, 51);
+            lblSettingsLootRegular.Location = new Point(62, 51);
             lblSettingsLootRegular.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsLootRegular.Name = "lblSettingsLootRegular";
             lblSettingsLootRegular.Size = new Size(60, 17);
@@ -3787,10 +3780,10 @@ namespace eft_dma_radar
             mcSettingsColorsExfiltration.Depth = 0;
             mcSettingsColorsExfiltration.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsColorsExfiltration.Location = new Point(509, 16);
-            mcSettingsColorsExfiltration.Margin = new Padding(16);
+            mcSettingsColorsExfiltration.Margin = new Padding(16, 16, 16, 16);
             mcSettingsColorsExfiltration.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsColorsExfiltration.Name = "mcSettingsColorsExfiltration";
-            mcSettingsColorsExfiltration.Padding = new Padding(16);
+            mcSettingsColorsExfiltration.Padding = new Padding(16, 16, 16, 16);
             mcSettingsColorsExfiltration.Size = new Size(209, 365);
             mcSettingsColorsExfiltration.TabIndex = 41;
             // 
@@ -3931,7 +3924,7 @@ namespace eft_dma_radar
             lblSettingsColorsExfilActiveText.Depth = 0;
             lblSettingsColorsExfilActiveText.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsExfilActiveText.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsExfilActiveText.Location = new Point(46, 51);
+            lblSettingsColorsExfilActiveText.Location = new Point(32, 51);
             lblSettingsColorsExfilActiveText.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsExfilActiveText.Name = "lblSettingsColorsExfilActiveText";
             lblSettingsColorsExfilActiveText.Size = new Size(60, 17);
@@ -3974,10 +3967,10 @@ namespace eft_dma_radar
             mcSettingsColorsPlayers.Depth = 0;
             mcSettingsColorsPlayers.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsColorsPlayers.Location = new Point(280, 16);
-            mcSettingsColorsPlayers.Margin = new Padding(16);
+            mcSettingsColorsPlayers.Margin = new Padding(16, 16, 16, 16);
             mcSettingsColorsPlayers.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsColorsPlayers.Name = "mcSettingsColorsPlayers";
-            mcSettingsColorsPlayers.Padding = new Padding(16);
+            mcSettingsColorsPlayers.Padding = new Padding(16, 16, 16, 16);
             mcSettingsColorsPlayers.Size = new Size(202, 365);
             mcSettingsColorsPlayers.TabIndex = 40;
             // 
@@ -3998,7 +3991,7 @@ namespace eft_dma_radar
             lblSettingsColorsPlayersSpecial.Depth = 0;
             lblSettingsColorsPlayersSpecial.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsPlayersSpecial.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsPlayersSpecial.Location = new Point(32, 255);
+            lblSettingsColorsPlayersSpecial.Location = new Point(39, 264);
             lblSettingsColorsPlayersSpecial.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsPlayersSpecial.Name = "lblSettingsColorsPlayersSpecial";
             lblSettingsColorsPlayersSpecial.Size = new Size(60, 17);
@@ -4022,7 +4015,7 @@ namespace eft_dma_radar
             lblSettingsColorsPlayersTeamHover.Depth = 0;
             lblSettingsColorsPlayersTeamHover.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsPlayersTeamHover.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsPlayersTeamHover.Location = new Point(32, 221);
+            lblSettingsColorsPlayersTeamHover.Location = new Point(39, 221);
             lblSettingsColorsPlayersTeamHover.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsPlayersTeamHover.Name = "lblSettingsColorsPlayersTeamHover";
             lblSettingsColorsPlayersTeamHover.Size = new Size(60, 17);
@@ -4046,7 +4039,7 @@ namespace eft_dma_radar
             lblSettingsColorsPlayersTeammate.Depth = 0;
             lblSettingsColorsPlayersTeammate.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsPlayersTeammate.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsPlayersTeammate.Location = new Point(63, 187);
+            lblSettingsColorsPlayersTeammate.Location = new Point(71, 187);
             lblSettingsColorsPlayersTeammate.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsPlayersTeammate.Name = "lblSettingsColorsPlayersTeammate";
             lblSettingsColorsPlayersTeammate.Size = new Size(32, 17);
@@ -4070,7 +4063,7 @@ namespace eft_dma_radar
             lblSettingsColorsPlayersLocalPlayer.Depth = 0;
             lblSettingsColorsPlayersLocalPlayer.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsPlayersLocalPlayer.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsPlayersLocalPlayer.Location = new Point(66, 153);
+            lblSettingsColorsPlayersLocalPlayer.Location = new Point(74, 153);
             lblSettingsColorsPlayersLocalPlayer.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsPlayersLocalPlayer.Name = "lblSettingsColorsPlayersLocalPlayer";
             lblSettingsColorsPlayersLocalPlayer.Size = new Size(29, 17);
@@ -4094,7 +4087,7 @@ namespace eft_dma_radar
             lblSettingsColorsPlayersScav.Depth = 0;
             lblSettingsColorsPlayersScav.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsPlayersScav.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsPlayersScav.Location = new Point(61, 119);
+            lblSettingsColorsPlayersScav.Location = new Point(66, 120);
             lblSettingsColorsPlayersScav.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsPlayersScav.Name = "lblSettingsColorsPlayersScav";
             lblSettingsColorsPlayersScav.Size = new Size(34, 17);
@@ -4118,7 +4111,7 @@ namespace eft_dma_radar
             lblSettingsColorsPlayersBEAR.Depth = 0;
             lblSettingsColorsPlayersBEAR.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsPlayersBEAR.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsPlayersBEAR.Location = new Point(63, 85);
+            lblSettingsColorsPlayersBEAR.Location = new Point(71, 86);
             lblSettingsColorsPlayersBEAR.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsPlayersBEAR.Name = "lblSettingsColorsPlayersBEAR";
             lblSettingsColorsPlayersBEAR.Size = new Size(32, 17);
@@ -4142,7 +4135,7 @@ namespace eft_dma_radar
             lblSettingsColorsPlayersUSEC.Depth = 0;
             lblSettingsColorsPlayersUSEC.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsPlayersUSEC.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsPlayersUSEC.Location = new Point(64, 51);
+            lblSettingsColorsPlayersUSEC.Location = new Point(69, 51);
             lblSettingsColorsPlayersUSEC.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsPlayersUSEC.Name = "lblSettingsColorsPlayersUSEC";
             lblSettingsColorsPlayersUSEC.Size = new Size(32, 17);
@@ -4189,10 +4182,10 @@ namespace eft_dma_radar
             mcSettingsColorsAI.Depth = 0;
             mcSettingsColorsAI.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcSettingsColorsAI.Location = new Point(17, 16);
-            mcSettingsColorsAI.Margin = new Padding(16);
+            mcSettingsColorsAI.Margin = new Padding(16, 16, 16, 16);
             mcSettingsColorsAI.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsColorsAI.Name = "mcSettingsColorsAI";
-            mcSettingsColorsAI.Padding = new Padding(16);
+            mcSettingsColorsAI.Padding = new Padding(16, 16, 16, 16);
             mcSettingsColorsAI.Size = new Size(237, 365);
             mcSettingsColorsAI.TabIndex = 39;
             // 
@@ -4213,7 +4206,7 @@ namespace eft_dma_radar
             lblSettingsColorsAIOther.Depth = 0;
             lblSettingsColorsAIOther.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsAIOther.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsAIOther.Location = new Point(98, 323);
+            lblSettingsColorsAIOther.Location = new Point(104, 323);
             lblSettingsColorsAIOther.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsAIOther.Name = "lblSettingsColorsAIOther";
             lblSettingsColorsAIOther.Size = new Size(32, 17);
@@ -4237,7 +4230,7 @@ namespace eft_dma_radar
             lblSettingsColorsAIScav.Depth = 0;
             lblSettingsColorsAIScav.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsAIScav.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsAIScav.Location = new Point(95, 289);
+            lblSettingsColorsAIScav.Location = new Point(102, 289);
             lblSettingsColorsAIScav.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsAIScav.Name = "lblSettingsColorsAIScav";
             lblSettingsColorsAIScav.Size = new Size(34, 17);
@@ -4261,13 +4254,12 @@ namespace eft_dma_radar
             lblSettingsColorsAIMoranaFollower.Depth = 0;
             lblSettingsColorsAIMoranaFollower.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsAIMoranaFollower.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsAIMoranaFollower.Location = new Point(19, 255);
+            lblSettingsColorsAIMoranaFollower.Location = new Point(30, 255);
             lblSettingsColorsAIMoranaFollower.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsAIMoranaFollower.Name = "lblSettingsColorsAIMoranaFollower";
             lblSettingsColorsAIMoranaFollower.Size = new Size(98, 17);
             lblSettingsColorsAIMoranaFollower.TabIndex = 57;
             lblSettingsColorsAIMoranaFollower.Text = "Morana 追随者:";
-            lblSettingsColorsAIMoranaFollower.Click += lblSettingsColorsAIMoranaFollower_Click;
             // 
             // picAICultist
             // 
@@ -4286,7 +4278,7 @@ namespace eft_dma_radar
             lblSettingsColorsAICultists.Depth = 0;
             lblSettingsColorsAICultists.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsAICultists.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsAICultists.Location = new Point(83, 221);
+            lblSettingsColorsAICultists.Location = new Point(89, 221);
             lblSettingsColorsAICultists.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsAICultists.Name = "lblSettingsColorsAICultists";
             lblSettingsColorsAICultists.Size = new Size(46, 17);
@@ -4310,7 +4302,7 @@ namespace eft_dma_radar
             lblSettingsColorsAIRogues.Depth = 0;
             lblSettingsColorsAIRogues.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsAIRogues.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsAIRogues.Location = new Point(83, 187);
+            lblSettingsColorsAIRogues.Location = new Point(89, 187);
             lblSettingsColorsAIRogues.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsAIRogues.Name = "lblSettingsColorsAIRogues";
             lblSettingsColorsAIRogues.Size = new Size(46, 17);
@@ -4334,7 +4326,7 @@ namespace eft_dma_radar
             lblSettingsColorsAIRaiders.Depth = 0;
             lblSettingsColorsAIRaiders.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsAIRaiders.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsAIRaiders.Location = new Point(83, 153);
+            lblSettingsColorsAIRaiders.Location = new Point(90, 153);
             lblSettingsColorsAIRaiders.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsAIRaiders.Name = "lblSettingsColorsAIRaiders";
             lblSettingsColorsAIRaiders.Size = new Size(45, 17);
@@ -4358,7 +4350,7 @@ namespace eft_dma_radar
             lblSettingsColorsAIBossFollower.Depth = 0;
             lblSettingsColorsAIBossFollower.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsAIBossFollower.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsAIBossFollower.Location = new Point(45, 120);
+            lblSettingsColorsAIBossFollower.Location = new Point(50, 119);
             lblSettingsColorsAIBossFollower.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsAIBossFollower.Name = "lblSettingsColorsAIBossFollower";
             lblSettingsColorsAIBossFollower.Size = new Size(80, 17);
@@ -4382,12 +4374,12 @@ namespace eft_dma_radar
             lblSettingsColorsAIBossGuard.Depth = 0;
             lblSettingsColorsAIBossGuard.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsAIBossGuard.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsAIBossGuard.Location = new Point(64, 86);
+            lblSettingsColorsAIBossGuard.Location = new Point(66, 86);
             lblSettingsColorsAIBossGuard.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsAIBossGuard.Name = "lblSettingsColorsAIBossGuard";
-            lblSettingsColorsAIBossGuard.Size = new Size(63, 17);
+            lblSettingsColorsAIBossGuard.Size = new Size(66, 17);
             lblSettingsColorsAIBossGuard.TabIndex = 47;
-            lblSettingsColorsAIBossGuard.Text = "Boss 警卫";
+            lblSettingsColorsAIBossGuard.Text = "Boss 警卫:";
             // 
             // picAIBoss
             // 
@@ -4406,13 +4398,12 @@ namespace eft_dma_radar
             lblSettingsColorsAIBoss.Depth = 0;
             lblSettingsColorsAIBoss.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsAIBoss.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsAIBoss.Location = new Point(97, 51);
+            lblSettingsColorsAIBoss.Location = new Point(102, 51);
             lblSettingsColorsAIBoss.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsAIBoss.Name = "lblSettingsColorsAIBoss";
             lblSettingsColorsAIBoss.Size = new Size(35, 17);
             lblSettingsColorsAIBoss.TabIndex = 44;
             lblSettingsColorsAIBoss.Text = "Boss:";
-            lblSettingsColorsAIBoss.Click += lblSettingsColorsAIBoss_Click;
             // 
             // lblSettingsColorsAI
             // 
@@ -4454,8 +4445,8 @@ namespace eft_dma_radar
             mcPlayerLoadoutsAI.MaximumSize = new Size(686, 1020);
             mcPlayerLoadoutsAI.MouseState = MaterialSkin.MouseState.HOVER;
             mcPlayerLoadoutsAI.Name = "mcPlayerLoadoutsAI";
-            mcPlayerLoadoutsAI.Padding = new Padding(16);
-            mcPlayerLoadoutsAI.Size = new Size(686, 768);
+            mcPlayerLoadoutsAI.Padding = new Padding(16, 16, 16, 16);
+            mcPlayerLoadoutsAI.Size = new Size(686, 767);
             mcPlayerLoadoutsAI.TabIndex = 3;
             // 
             // lblPlayerLoadoutsAI
@@ -4473,6 +4464,7 @@ namespace eft_dma_radar
             lblPlayerLoadoutsAI.TabIndex = 31;
             lblPlayerLoadoutsAI.Text = "Bosses / Rogues / Guards / AI Scavs etc";
             lblPlayerLoadoutsAI.UseAccent = true;
+            lblPlayerLoadoutsAI.Click += lblPlayerLoadoutsAI_Click;
             // 
             // flpPlayerLoadoutsAI
             // 
@@ -4498,8 +4490,8 @@ namespace eft_dma_radar
             mcPlayerLoadoutsPlayers.MaximumSize = new Size(686, 1020);
             mcPlayerLoadoutsPlayers.MouseState = MaterialSkin.MouseState.HOVER;
             mcPlayerLoadoutsPlayers.Name = "mcPlayerLoadoutsPlayers";
-            mcPlayerLoadoutsPlayers.Padding = new Padding(16);
-            mcPlayerLoadoutsPlayers.Size = new Size(686, 768);
+            mcPlayerLoadoutsPlayers.Padding = new Padding(16, 16, 16, 16);
+            mcPlayerLoadoutsPlayers.Size = new Size(686, 767);
             mcPlayerLoadoutsPlayers.TabIndex = 2;
             // 
             // lblPlayerLoadoutsPlayers
@@ -4552,11 +4544,11 @@ namespace eft_dma_radar
             mcWatchlistPlayerlist.Depth = 0;
             mcWatchlistPlayerlist.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcWatchlistPlayerlist.Location = new Point(1080, 6);
-            mcWatchlistPlayerlist.Margin = new Padding(16);
+            mcWatchlistPlayerlist.Margin = new Padding(16, 16, 16, 16);
             mcWatchlistPlayerlist.MouseState = MaterialSkin.MouseState.HOVER;
             mcWatchlistPlayerlist.Name = "mcWatchlistPlayerlist";
-            mcWatchlistPlayerlist.Padding = new Padding(16);
-            mcWatchlistPlayerlist.Size = new Size(264, 717);
+            mcWatchlistPlayerlist.Padding = new Padding(16, 16, 16, 16);
+            mcWatchlistPlayerlist.Size = new Size(264, 716);
             mcWatchlistPlayerlist.TabIndex = 48;
             // 
             // lstWatchlistPlayerList
@@ -4610,10 +4602,10 @@ namespace eft_dma_radar
             mcWatchlistProfiles.Depth = 0;
             mcWatchlistProfiles.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcWatchlistProfiles.Location = new Point(514, 239);
-            mcWatchlistProfiles.Margin = new Padding(16);
+            mcWatchlistProfiles.Margin = new Padding(16, 16, 16, 16);
             mcWatchlistProfiles.MouseState = MaterialSkin.MouseState.HOVER;
             mcWatchlistProfiles.Name = "mcWatchlistProfiles";
-            mcWatchlistProfiles.Padding = new Padding(16);
+            mcWatchlistProfiles.Padding = new Padding(16, 16, 16, 16);
             mcWatchlistProfiles.Size = new Size(549, 483);
             mcWatchlistProfiles.TabIndex = 47;
             // 
@@ -4625,7 +4617,7 @@ namespace eft_dma_radar
             lstWatchlistProfiles.Columns.AddRange(new ColumnHeader[] { colWatchlistProfileName });
             lstWatchlistProfiles.Depth = 0;
             lstWatchlistProfiles.FullRowSelect = true;
-            lstWatchlistProfiles.Location = new Point(19, 54);
+            lstWatchlistProfiles.Location = new Point(17, 51);
             lstWatchlistProfiles.MinimumSize = new Size(114, 113);
             lstWatchlistProfiles.MouseLocation = new Point(-1, -1);
             lstWatchlistProfiles.MouseState = MaterialSkin.MouseState.OUT;
@@ -4649,7 +4641,7 @@ namespace eft_dma_radar
             lblWatchlistProfiles.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblWatchlistProfiles.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblWatchlistProfiles.HighEmphasis = true;
-            lblWatchlistProfiles.Location = new Point(19, 16);
+            lblWatchlistProfiles.Location = new Point(19, 17);
             lblWatchlistProfiles.MouseState = MaterialSkin.MouseState.HOVER;
             lblWatchlistProfiles.Name = "lblWatchlistProfiles";
             lblWatchlistProfiles.Size = new Size(70, 24);
@@ -4671,11 +4663,11 @@ namespace eft_dma_radar
             mcWatchlistPlayerManagement.Depth = 0;
             mcWatchlistPlayerManagement.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcWatchlistPlayerManagement.Location = new Point(514, 6);
-            mcWatchlistPlayerManagement.Margin = new Padding(16);
+            mcWatchlistPlayerManagement.Margin = new Padding(16, 16, 16, 16);
             mcWatchlistPlayerManagement.MouseState = MaterialSkin.MouseState.HOVER;
             mcWatchlistPlayerManagement.Name = "mcWatchlistPlayerManagement";
-            mcWatchlistPlayerManagement.Padding = new Padding(16);
-            mcWatchlistPlayerManagement.Size = new Size(549, 217);
+            mcWatchlistPlayerManagement.Padding = new Padding(16, 16, 16, 16);
+            mcWatchlistPlayerManagement.Size = new Size(549, 216);
             mcWatchlistPlayerManagement.TabIndex = 46;
             // 
             // lblWatchlistPlayerManagement
@@ -4701,7 +4693,7 @@ namespace eft_dma_radar
             lstWatchlistEntries.BorderStyle = BorderStyle.None;
             lstWatchlistEntries.Columns.AddRange(new ColumnHeader[] { colWatchlistAccID, colWatchlistTag, colWatchlistUsername });
             lstWatchlistEntries.Depth = 0;
-            lstWatchlistEntries.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lstWatchlistEntries.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             lstWatchlistEntries.FullRowSelect = true;
             lstWatchlistEntries.Location = new Point(17, 6);
             lstWatchlistEntries.MaximumSize = new Size(480, 1020);
@@ -4761,10 +4753,10 @@ namespace eft_dma_radar
             mcLootFilterFilters.Depth = 0;
             mcLootFilterFilters.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcLootFilterFilters.Location = new Point(663, 184);
-            mcLootFilterFilters.Margin = new Padding(16);
+            mcLootFilterFilters.Margin = new Padding(16, 16, 16, 16);
             mcLootFilterFilters.MouseState = MaterialSkin.MouseState.HOVER;
             mcLootFilterFilters.Name = "mcLootFilterFilters";
-            mcLootFilterFilters.Padding = new Padding(16);
+            mcLootFilterFilters.Padding = new Padding(16, 16, 16, 16);
             mcLootFilterFilters.Size = new Size(598, 538);
             mcLootFilterFilters.TabIndex = 48;
             // 
@@ -4775,7 +4767,7 @@ namespace eft_dma_radar
             lstLootFilters.BorderStyle = BorderStyle.None;
             lstLootFilters.Columns.AddRange(new ColumnHeader[] { colLootFilterName });
             lstLootFilters.Depth = 0;
-            lstLootFilters.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lstLootFilters.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             lstLootFilters.FullRowSelect = true;
             lstLootFilters.Location = new Point(17, 51);
             lstLootFilters.MinimumSize = new Size(229, 113);
@@ -4783,7 +4775,7 @@ namespace eft_dma_radar
             lstLootFilters.MouseState = MaterialSkin.MouseState.OUT;
             lstLootFilters.Name = "lstLootFilters";
             lstLootFilters.OwnerDraw = true;
-            lstLootFilters.Size = new Size(229, 472);
+            lstLootFilters.Size = new Size(229, 471);
             lstLootFilters.TabIndex = 47;
             lstLootFilters.UseCompatibleStateImageBehavior = false;
             lstLootFilters.View = View.Details;
@@ -4824,7 +4816,7 @@ namespace eft_dma_radar
             // 
             btnFilterPriorityUp.AutoSize = false;
             btnFilterPriorityUp.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnFilterPriorityUp.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnFilterPriorityUp.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnFilterPriorityUp.Depth = 0;
             btnFilterPriorityUp.HighEmphasis = true;
             btnFilterPriorityUp.Icon = (Image)resources.GetObject("btnFilterPriorityUp.Icon");
@@ -4835,7 +4827,7 @@ namespace eft_dma_radar
             btnFilterPriorityUp.NoAccentTextColor = Color.Empty;
             btnFilterPriorityUp.Size = new Size(46, 45);
             btnFilterPriorityUp.TabIndex = 41;
-            btnFilterPriorityUp.Type = MaterialButton.MaterialButtonType.Text;
+            btnFilterPriorityUp.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             btnFilterPriorityUp.UseAccentColor = true;
             btnFilterPriorityUp.UseVisualStyleBackColor = true;
             btnFilterPriorityUp.Click += btnFilterPriorityUp_Click;
@@ -4845,7 +4837,7 @@ namespace eft_dma_radar
             lblSettingsLootFilterColor.AutoSize = true;
             lblSettingsLootFilterColor.Depth = 0;
             lblSettingsLootFilterColor.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
-            lblSettingsLootFilterColor.Location = new Point(353, 115);
+            lblSettingsLootFilterColor.Location = new Point(353, 108);
             lblSettingsLootFilterColor.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsLootFilterColor.Name = "lblSettingsLootFilterColor";
             lblSettingsLootFilterColor.Size = new Size(69, 19);
@@ -4856,7 +4848,7 @@ namespace eft_dma_radar
             // 
             btnFilterPriorityDown.AutoSize = false;
             btnFilterPriorityDown.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnFilterPriorityDown.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnFilterPriorityDown.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnFilterPriorityDown.Depth = 0;
             btnFilterPriorityDown.HighEmphasis = true;
             btnFilterPriorityDown.Icon = (Image)resources.GetObject("btnFilterPriorityDown.Icon");
@@ -4868,7 +4860,7 @@ namespace eft_dma_radar
             btnFilterPriorityDown.RightToLeft = RightToLeft.No;
             btnFilterPriorityDown.Size = new Size(46, 45);
             btnFilterPriorityDown.TabIndex = 42;
-            btnFilterPriorityDown.Type = MaterialButton.MaterialButtonType.Text;
+            btnFilterPriorityDown.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             btnFilterPriorityDown.UseAccentColor = true;
             btnFilterPriorityDown.UseVisualStyleBackColor = true;
             btnFilterPriorityDown.Click += btnFilterPriorityDown_Click;
@@ -4884,10 +4876,10 @@ namespace eft_dma_radar
             mcLootFilterItemManagement.Depth = 0;
             mcLootFilterItemManagement.ForeColor = Color.FromArgb(222, 0, 0, 0);
             mcLootFilterItemManagement.Location = new Point(663, 6);
-            mcLootFilterItemManagement.Margin = new Padding(16);
+            mcLootFilterItemManagement.Margin = new Padding(16, 16, 16, 16);
             mcLootFilterItemManagement.MouseState = MaterialSkin.MouseState.HOVER;
             mcLootFilterItemManagement.Name = "mcLootFilterItemManagement";
-            mcLootFilterItemManagement.Padding = new Padding(16);
+            mcLootFilterItemManagement.Padding = new Padding(16, 16, 16, 16);
             mcLootFilterItemManagement.Size = new Size(598, 161);
             mcLootFilterItemManagement.TabIndex = 47;
             // 
@@ -4901,10 +4893,11 @@ namespace eft_dma_radar
             lblLootFilterItemManagement.Location = new Point(19, 17);
             lblLootFilterItemManagement.MouseState = MaterialSkin.MouseState.HOVER;
             lblLootFilterItemManagement.Name = "lblLootFilterItemManagement";
-            lblLootFilterItemManagement.Size = new Size(166, 24);
+            lblLootFilterItemManagement.Size = new Size(81, 24);
             lblLootFilterItemManagement.TabIndex = 33;
-            lblLootFilterItemManagement.Text = "Item Management";
+            lblLootFilterItemManagement.Text = "物资管理";
             lblLootFilterItemManagement.UseAccent = true;
+            lblLootFilterItemManagement.Click += lblLootFilterItemManagement_Click;
             // 
             // lstLootFilterEntries
             // 
@@ -4914,7 +4907,7 @@ namespace eft_dma_radar
             lstLootFilterEntries.BorderStyle = BorderStyle.None;
             lstLootFilterEntries.Columns.AddRange(new ColumnHeader[] { colLootFilterItemName, colLootFilterItemValue });
             lstLootFilterEntries.Depth = 0;
-            lstLootFilterEntries.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lstLootFilterEntries.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             lstLootFilterEntries.FullRowSelect = true;
             lstLootFilterEntries.Location = new Point(17, 6);
             lstLootFilterEntries.MaximumSize = new Size(629, 1020);
@@ -4939,49 +4932,6 @@ namespace eft_dma_radar
             colLootFilterItemValue.Text = "Value";
             colLootFilterItemValue.Width = 80;
             // 
-            // tabPageLootList
-            // 
-            tabPageLootList.BackColor = Color.DimGray;
-            tabPageLootList.Controls.Add(lootListListView);
-            tabPageLootList.ImageKey = "list.png";
-            tabPageLootList.Location = new Point(4, 39);
-            tabPageLootList.Name = "tabPageLootList";
-            tabPageLootList.Padding = new Padding(3);
-            tabPageLootList.Size = new Size(1483, 803);
-            tabPageLootList.TabIndex = 5;
-            tabPageLootList.Text = "物资列表";
-            // 
-            // lootListListView
-            // 
-            lootListListView.AutoSizeTable = false;
-            lootListListView.BackColor = Color.FromArgb(255, 255, 255);
-            lootListListView.BorderStyle = BorderStyle.None;
-            lootListListView.Columns.AddRange(new ColumnHeader[] { columnName1, columnValue1 });
-            lootListListView.Depth = 0;
-            lootListListView.Dock = DockStyle.Fill;
-            lootListListView.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            lootListListView.FullRowSelect = true;
-            lootListListView.Location = new Point(3, 3);
-            lootListListView.MinimumSize = new Size(229, 113);
-            lootListListView.MouseLocation = new Point(-1, -1);
-            lootListListView.MouseState = MaterialSkin.MouseState.OUT;
-            lootListListView.Name = "lootListListView";
-            lootListListView.OwnerDraw = true;
-            lootListListView.Size = new Size(1477, 797);
-            lootListListView.TabIndex = 0;
-            lootListListView.UseCompatibleStateImageBehavior = false;
-            lootListListView.View = View.Details;
-            // 
-            // columnName1
-            // 
-            columnName1.Text = "Name";
-            columnName1.Width = 400;
-            // 
-            // columnValue1
-            // 
-            columnValue1.Text = "Value";
-            columnValue1.Width = 100;
-            // 
             // iconList
             // 
             iconList.ColorDepth = ColorDepth.Depth32Bit;
@@ -4992,7 +4942,6 @@ namespace eft_dma_radar
             iconList.Images.SetKeyName(2, "loadouts.png");
             iconList.Images.SetKeyName(3, "watchlist.png");
             iconList.Images.SetKeyName(4, "loot.png");
-            iconList.Images.SetKeyName(5, "list.png");
             // 
             // materialLabel1
             // 
@@ -5001,33 +4950,32 @@ namespace eft_dma_radar
             materialLabel1.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle1;
             materialLabel1.HighEmphasis = true;
-            materialLabel1.Location = new Point(244, 8);
+            materialLabel1.Location = new Point(145, 8);
             materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             materialLabel1.Name = "materialLabel1";
             materialLabel1.Size = new Size(1014, 19);
-            materialLabel1.TabIndex = 50;
+            materialLabel1.TabIndex = 51;
             materialLabel1.Text = "此文件由翻译by：Snip1编译修改 QQ:2213762483，文件开源免费，请勿盗卖,git:https://github.com/Snip1-99/EFT_DMA_Radar,请移步自行下载";
             materialLabel1.UseAccent = true;
             materialLabel1.Click += materialLabel1_Click;
             // 
             // frmMain
             // 
-            AutoScaleDimensions = new SizeF(10F, 19F);
+            AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(255, 192, 255);
             ClientSize = new Size(1491, 873);
             Controls.Add(materialLabel1);
             Controls.Add(tabControlMain);
             DrawerShowIconsWhenHidden = true;
             DrawerTabControl = tabControlMain;
             DrawerWidth = 180;
-            Font = new Font("微软雅黑", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 134);
+            ForeColor = Color.Coral;
             FormStyle = FormStyles.ActionBar_None;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(5, 3, 5, 3);
             Name = "frmMain";
             Padding = new Padding(0, 27, 0, 0);
-            Load += frmMain_Load;
             Shown += frmMain_Shown;
             tabControlMain.ResumeLayout(false);
             tabRadar.ResumeLayout(false);
@@ -5126,7 +5074,6 @@ namespace eft_dma_radar
             ((System.ComponentModel.ISupportInitialize)picLootFilterColor).EndInit();
             mcLootFilterItemManagement.ResumeLayout(false);
             mcLootFilterItemManagement.PerformLayout();
-            tabPageLootList.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -5410,12 +5357,7 @@ namespace eft_dma_radar
         private MaterialSkin.Controls.MaterialListView lstFactionEntries;
         private ColumnHeader colFactionsAIName;
         private MaterialSkin.Controls.MaterialSwitch swUnknownQuestItems;
-        
-        private TabPage tabPageLootList;
-        private MaterialSkin.Controls.MaterialListView lootListListView;
-        private ColumnHeader columnName1;
-        private ColumnHeader columnValue1;
-        private MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
     }
 }
 
