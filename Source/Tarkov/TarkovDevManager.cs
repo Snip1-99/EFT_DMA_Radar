@@ -56,7 +56,11 @@ namespace eft_dma_radar
 
         private static bool ShouldFetchDataFromApi()
         {
-            return !File.Exists("api_tarkov_dev_items.json") || File.GetLastWriteTime("api_tarkov_dev_items.json").AddHours(1) < DateTime.Now;
+            return !File.Exists("api_tarkov_dev_items.json") || File.GetLastWriteTime("api_tarkov_dev_items.json").AddHours(12) < DateTime.Now;  //一天获取移除物资api
+            //string filePath = "api_tarkov_dev_items.json";
+            //bool fileDoesNotExist = !File.Exists(filePath);
+            //bool lastModifiedMoreThanAMonthAgo = fileDoesNotExist || File.GetLastWriteTime(filePath).AddMonths(12) < DateTime.Now;             一年更新一次物资，适用于自己修改物资配置文件
+            //return lastModifiedMoreThanAMonthAgo;
         }
 
         private static TarkovDevResponse FetchDataFromApi()

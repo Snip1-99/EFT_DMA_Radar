@@ -12,12 +12,11 @@ namespace eft_dma_radar
         private RegisteredPlayers _rgtPlayers;
         private GrenadeManager _grenadeManager;
         private ExfilManager _exfilManager;
-        private PlayerManager _playerManager;
+
         private Config _config;
         private CameraManager _cameraManager;
         private QuestManager _questManager;
-        private Toolbox _toolbox;
-        private Chams _chams;
+
         private CorpseManager _corpseManager;
         private ulong _localGameWorld;
         private readonly ulong _unityBase;
@@ -96,15 +95,6 @@ namespace eft_dma_radar
             get => _cameraManager;
         }
 
-        public PlayerManager PlayerManager
-        {
-            get => _playerManager;
-        }
-
-        public Toolbox Toolbox
-        {
-            get => _toolbox;
-        }
 
         public QuestManager QuestManager
         {
@@ -112,10 +102,6 @@ namespace eft_dma_radar
             get => _questManager;
         }
 
-        public Chams Chams
-        {
-            get => _chams;
-        }
 
         public CorpseManager CorpseManager
         {
@@ -153,17 +139,14 @@ namespace eft_dma_radar
             }
             catch (DMAShutdown)
             {
-                Memory.Chams?.ChamsDisable();
                 HandleDMAShutdown();
             }
             catch (RaidEnded e)
             {
-                Memory.Chams?.ChamsDisable();
                 HandleRaidEnded(e);
             }
             catch (Exception ex)
             {
-                Memory.Chams?.ChamsDisable();
                 HandleUnexpectedException(ex);
             }
         }
@@ -196,7 +179,7 @@ namespace eft_dma_radar
                 }
                 catch
                 {
-                    Program.Log("找不到地图名称!!!");
+                    Program.Log("Couldn't find map name!!!");
                     this._mapName = "bigmap";
                 }
             }
@@ -216,7 +199,7 @@ namespace eft_dma_radar
         /// <param name="e">The RaidEnded exception instance containing details about the raid end.</param>
         private void HandleRaidEnded(RaidEnded e)
         {
-            Program.Log("战局已经结束!");
+            Program.Log("Raid has ended!");
 
             //this._inGame = false;
             //Memory.GameStatus = Game.GameStatus.Menu;
@@ -229,7 +212,7 @@ namespace eft_dma_radar
         /// <param name="ex">The exception instance that was thrown.</param>
         private void HandleUnexpectedException(Exception ex)
         {
-            Program.Log($"严重错误-由于未处理的异常，战局已结束: {ex}");
+            Program.Log($"CRITICAL ERROR - Raid ended due to unhandled exception: {ex}");
             this._inGame = false;
         }
 
@@ -244,7 +227,7 @@ namespace eft_dma_radar
                 Thread.Sleep(1500);
             }
             Thread.Sleep(1000);
-            Program.Log("战局已经开始!!");
+            Program.Log("Raid has started!!");
             this._inGame = true;
             Thread.Sleep(1500);
         }
@@ -259,7 +242,7 @@ namespace eft_dma_radar
             if (activeObject.obj != 0x0 && lastObject.obj == 0x0)
             {
                 // Add wait for lastObject to be populated
-                Program.Log("战局已经结束。找不到地图名称！正在等待...");
+                Program.Log("Waiting for lastObject to be populated...");
                 while (lastObject.obj == 0x0)
                 {
                     lastObject = Memory.ReadValue<BaseObject>(Memory.ReadPtr(lastObjectPtr));
@@ -275,7 +258,7 @@ namespace eft_dma_radar
                     var objectNameStr = Memory.ReadString(objectNamePtr, 64);
                     if (objectNameStr.Contains(objectName, StringComparison.OrdinalIgnoreCase))
                     {
-                        Program.Log($"找到对象 {objectNameStr}");
+                        Program.Log($"Found object {objectNameStr}");
                         return activeObject.obj;
                     }
 
@@ -288,11 +271,11 @@ namespace eft_dma_radar
                 var objectNameStr = Memory.ReadString(objectNamePtr, 64);
                 if (objectNameStr.Contains(objectName, StringComparison.OrdinalIgnoreCase))
                 {
-                    Program.Log($"找到对象 {objectNameStr}");
+                    Program.Log($"Found object {objectNameStr}");
                     return lastObject.obj;
                 }
             }
-            Program.Log($"找不到对象{objectName}");
+            Program.Log($"Couldn't find object {objectName}");
             return 0;
         }
 
@@ -305,13 +288,13 @@ namespace eft_dma_radar
             {
                 var addr = Memory.ReadPtr(_unityBase + Offsets.ModuleBase.GameObjectManager);
                 _gom = Memory.ReadValue<GameObjectManager>(addr);
-                Program.Log($"在0x处找到游戏对象管理器{addr.ToString("X")}");
+                Program.Log($"Found Game Object Manager at 0x{addr.ToString("X")}");
                 return true;
             }
             catch (DMAShutdown) { throw; }
             catch (Exception ex)
             {
-                throw new GameNotRunningException($"获取游戏对象管理器时出错，游戏可能未运行: {ex}");
+                throw new GameNotRunningException($"ERROR getting Game Object Manager, game may not be running: {ex}");
             }
         }
 
@@ -339,24 +322,24 @@ namespace eft_dma_radar
                 }
                 if (gameWorld == 0)
                 {
-                    Program.Log("无法找到GameWorld对象，可能不在战局中.");
+                    Program.Log("Unable to find GameWorld Object, likely not in raid.");
                 }
                 else
                 {
                     try
                     {
                         this._localGameWorld = Memory.ReadPtrChain(gameWorld, Offsets.GameWorld.To_LocalGameWorld);
-                        Program.Log($"在0x处找到LocalGameWorld{this._localGameWorld.ToString("X")}");
+                        Program.Log($"Found LocalGameWorld at 0x{this._localGameWorld.ToString("X")}");
                     }
                     catch
                     {
-                        Program.Log("找不到LocalGameWorld指针");
+                        Program.Log("Couldnt find LocalGameWorld pointer");
                         Memory.GameStatus = Game.GameStatus.Menu;
                     }
 
                     if (this._localGameWorld == 0)
                     {
-                        Program.Log("找到LocalGameWorld，但为0");
+                        Program.Log("LocalGameWorld found but is 0");
                     }
                     else
                     {
@@ -364,7 +347,7 @@ namespace eft_dma_radar
 
                         if (!Memory.ReadValue<bool>(this._localGameWorld + Offsets.LocalGameWorld.RaidStarted))
                         {
-                            Program.Log("战局还没有开始！");
+                            Program.Log("Raid hasn't started!");
                         }
                         else
                         {
@@ -380,7 +363,7 @@ namespace eft_dma_radar
                                 Memory.GameStatus = Game.GameStatus.InGame;
                                 found = true;
 
-                                Program.Log("战局开始!!");
+                                Program.Log("Match started!!");
                             }
                         }
                     }
@@ -392,7 +375,7 @@ namespace eft_dma_radar
             }
             catch (Exception ex)
             {
-                Program.Log($"获取本地游戏世界时出错： {ex}. 正在重试。。.");
+                Program.Log($"ERROR getting Local Game World: {ex}. Retrying...");
             }
 
             return found;
@@ -421,7 +404,7 @@ namespace eft_dma_radar
                     }
                     catch (Exception ex)
                     {
-                        Program.Log($"加载LootManager时出错: {ex}");
+                        Program.Log($"ERROR loading LootManager: {ex}");
                     }
                     this._loadingLoot = false;
                 }
@@ -436,46 +419,7 @@ namespace eft_dma_radar
                         }
                         catch (Exception ex)
                         {
-                            Program.Log($"加载CameraManager时出错: {ex}");
-                        }
-                    }
-
-                    if (this._playerManager is null)
-                    {
-                        try
-                        {
-                            this._playerManager = new PlayerManager(this._localGameWorld);
-                        }
-                        catch (Exception ex)
-                        {
-                            Program.Log($"加载PlayerManager时出错: {ex}");
-                        }
-                    }
-
-                    if (this._toolbox is null)
-                    {
-                        try
-                        {
-                            this._toolbox = new Toolbox();
-                        }
-                        catch (Exception ex)
-                        {
-                            Program.Log($"加载工具箱时出错: {ex}");
-                        }
-                    }
-
-                    if (this._chams is null)
-                    {
-                        try
-                        {
-                            if (this._rgtPlayers is not null)
-                            {
-                                this._chams = new Chams();
-                            }
-                        }
-                        catch (Exception ex)
-                        {
-                            Program.Log($"加载热能时出错: {ex}");
+                            Program.Log($"ERROR loading CameraManager: {ex}");
                         }
                     }
                 }
@@ -488,7 +432,7 @@ namespace eft_dma_radar
                     }
                     catch (Exception ex)
                     {
-                        Program.Log($"加载ExfilController时出错: {ex}");
+                        Program.Log($"ERROR loading ExfilController: {ex}");
                     }
                 }
                 else
@@ -502,7 +446,7 @@ namespace eft_dma_radar
                     }
                     catch (Exception ex)
                     {
-                        Program.Log($"加载GrenadeManager时出错: {ex}");
+                        Program.Log($"ERROR loading GrenadeManager: {ex}");
                     }
                 }
                 else
@@ -516,7 +460,7 @@ namespace eft_dma_radar
                     }
                     catch (Exception ex)
                     {
-                        Program.Log($"加载QuestManager时出错： {ex}");
+                        Program.Log($"ERROR loading QuestManager: {ex}");
                     }
                 }
 
@@ -528,7 +472,7 @@ namespace eft_dma_radar
                     }
                     catch (Exception ex)
                     {
-                        Program.Log($"加载语料库管理器时出错： {ex}");
+                        Program.Log($"ERROR loading CorpseManager: {ex}");
                     }
                 }
                 else this._corpseManager.Refresh();
