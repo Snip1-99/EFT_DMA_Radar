@@ -1,0 +1,308 @@
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\dbghelp.dll
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\FTD3XX.dll
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\leechcore.dll
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\libSkiaSharp.dll
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\symsrv.dll
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\vcruntime140.dll
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\vmm.dll
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Customs-1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Customs.json
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Customs.png
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Customs1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Customs2f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Customs3f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Factory-1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Factory.json
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Factory1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Factory2f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Factory3f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\GroundZero-1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\GroundZero.json
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\GroundZero1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\GroundZero2f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\GroundZero3f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Interchange.json
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Interchange1f.png
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Interchange2f.png
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Interchange3f.png
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Labs-1f.png
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Labs.json
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Labs1f.png
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Labs2f.png
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Lighthouse.json
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Lighthouse1f.png
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Reserve-1f.png
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Reserve.json
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Reserve1f.png
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Shoreline-1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Shoreline.json
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Shoreline1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Shoreline2f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Shoreline3f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Streets-1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Streets.json
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Streets1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Streets2f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Streets3f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Streets4f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Streets5f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Woods.json
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\Maps\Woods1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\eft-dma-radar.exe
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\eft-dma-radar.deps.json
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\eft-dma-radar.runtimeconfig.json
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\eft-dma-radar.dll
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\MaterialSkin.dll
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\OpenTK.dll
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\OpenTK.GLControl.dll
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\SkiaSharp.dll
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\SkiaSharp.Views.Desktop.Common.dll
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\SkiaSharp.Views.WindowsForms.dll
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\Administrator\Desktop\EFT1.3\ETF\bin\x64\Release\net6.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\Administrator\Desktop\EFT1.3\ETF\obj\x64\Release\net6.0-windows\eft-dma-radar.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\EFT1.3\ETF\obj\x64\Release\net6.0-windows\eft_dma_radar.Properties.Resources.resources
+C:\Users\Administrator\Desktop\EFT1.3\ETF\obj\x64\Release\net6.0-windows\eft_dma_radar.frmMain.resources
+C:\Users\Administrator\Desktop\EFT1.3\ETF\obj\x64\Release\net6.0-windows\eft-dma-radar.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\EFT1.3\ETF\obj\x64\Release\net6.0-windows\eft-dma-radar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\EFT1.3\ETF\obj\x64\Release\net6.0-windows\eft-dma-radar.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\EFT1.3\ETF\obj\x64\Release\net6.0-windows\eft-dma-radar.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\EFT1.3\ETF\obj\x64\Release\net6.0-windows\eft-dma-radar.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\EFT1.3\ETF\obj\x64\Release\net6.0-windows\eft-dma-.A468FFDD.Up2Date
+C:\Users\Administrator\Desktop\EFT1.3\ETF\obj\x64\Release\net6.0-windows\eft-dma-radar.dll
+C:\Users\Administrator\Desktop\EFT1.3\ETF\obj\x64\Release\net6.0-windows\refint\eft-dma-radar.dll
+C:\Users\Administrator\Desktop\EFT1.3\ETF\obj\x64\Release\net6.0-windows\eft-dma-radar.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\EFT1.3\ETF\obj\x64\Release\net6.0-windows\ref\eft-dma-radar.dll
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\dbghelp.dll
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\FTD3XX.dll
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\leechcore.dll
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\libSkiaSharp.dll
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\symsrv.dll
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\vcruntime140.dll
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\vmm.dll
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Customs-1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Customs.json
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Customs.png
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Customs1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Customs2f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Customs3f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Factory-1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Factory.json
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Factory1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Factory2f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Factory3f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\GroundZero-1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\GroundZero.json
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\GroundZero1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\GroundZero2f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\GroundZero3f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Interchange.json
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Interchange1f.png
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Interchange2f.png
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Interchange3f.png
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Labs-1f.png
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Labs.json
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Labs1f.png
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Labs2f.png
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Lighthouse.json
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Lighthouse1f.png
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Reserve-1f.png
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Reserve.json
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Reserve1f.png
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Shoreline-1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Shoreline.json
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Shoreline1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Shoreline2f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Shoreline3f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Streets-1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Streets.json
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Streets1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Streets2f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Streets3f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Streets4f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Streets5f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Woods.json
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\Maps\Woods1f.jpg
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\eft-dma-radar.exe
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\eft-dma-radar.deps.json
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\eft-dma-radar.runtimeconfig.json
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\eft-dma-radar.dll
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\MaterialSkin.dll
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\OpenTK.dll
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\OpenTK.GLControl.dll
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\SkiaSharp.dll
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\SkiaSharp.Views.Desktop.Common.dll
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\SkiaSharp.Views.WindowsForms.dll
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\bin\x64\Release\net6.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\obj\x64\Release\net6.0-windows\eft-dma-radar.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\obj\x64\Release\net6.0-windows\eft_dma_radar.Properties.Resources.resources
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\obj\x64\Release\net6.0-windows\eft_dma_radar.frmMain.resources
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\obj\x64\Release\net6.0-windows\eft-dma-radar.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\obj\x64\Release\net6.0-windows\eft-dma-radar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\obj\x64\Release\net6.0-windows\eft-dma-radar.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\obj\x64\Release\net6.0-windows\eft-dma-radar.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\obj\x64\Release\net6.0-windows\eft-dma-radar.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\obj\x64\Release\net6.0-windows\eft-dma-.A468FFDD.Up2Date
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\obj\x64\Release\net6.0-windows\eft-dma-radar.dll
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\obj\x64\Release\net6.0-windows\refint\eft-dma-radar.dll
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\obj\x64\Release\net6.0-windows\eft-dma-radar.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\EFT1.3\EFT 源码\obj\x64\Release\net6.0-windows\ref\eft-dma-radar.dll
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\dbghelp.dll
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\FTD3XX.dll
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\leechcore.dll
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\libSkiaSharp.dll
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\symsrv.dll
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\vcruntime140.dll
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\vmm.dll
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Customs-1f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Customs.json
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Customs.png
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Customs1f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Customs2f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Customs3f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Factory-1f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Factory.json
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Factory1f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Factory2f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Factory3f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\GroundZero-1f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\GroundZero.json
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\GroundZero1f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\GroundZero2f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\GroundZero3f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Interchange.json
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Interchange1f.png
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Interchange2f.png
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Interchange3f.png
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Labs-1f.png
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Labs.json
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Labs1f.png
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Labs2f.png
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Lighthouse.json
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Lighthouse1f.png
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Reserve-1f.png
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Reserve.json
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Reserve1f.png
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Shoreline-1f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Shoreline.json
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Shoreline1f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Shoreline2f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Shoreline3f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Streets-1f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Streets.json
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Streets1f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Streets2f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Streets3f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Streets4f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Streets5f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Woods.json
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\Maps\Woods1f.jpg
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\eft-dma-radar.exe
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\eft-dma-radar.deps.json
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\eft-dma-radar.runtimeconfig.json
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\eft-dma-radar.dll
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\MaterialSkin.dll
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\OpenTK.dll
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\OpenTK.GLControl.dll
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\SkiaSharp.dll
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\SkiaSharp.Views.Desktop.Common.dll
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\SkiaSharp.Views.WindowsForms.dll
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\Snip1\Desktop\TEXT\bin\x64\Release\net6.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\Snip1\Desktop\TEXT\obj\x64\Release\net6.0-windows\eft-dma-radar.csproj.AssemblyReference.cache
+C:\Users\Snip1\Desktop\TEXT\obj\x64\Release\net6.0-windows\eft_dma_radar.Properties.Resources.resources
+C:\Users\Snip1\Desktop\TEXT\obj\x64\Release\net6.0-windows\eft_dma_radar.frmMain.resources
+C:\Users\Snip1\Desktop\TEXT\obj\x64\Release\net6.0-windows\eft-dma-radar.csproj.GenerateResource.cache
+C:\Users\Snip1\Desktop\TEXT\obj\x64\Release\net6.0-windows\eft-dma-radar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Snip1\Desktop\TEXT\obj\x64\Release\net6.0-windows\eft-dma-radar.AssemblyInfoInputs.cache
+C:\Users\Snip1\Desktop\TEXT\obj\x64\Release\net6.0-windows\eft-dma-radar.AssemblyInfo.cs
+C:\Users\Snip1\Desktop\TEXT\obj\x64\Release\net6.0-windows\eft-dma-radar.csproj.CoreCompileInputs.cache
+C:\Users\Snip1\Desktop\TEXT\obj\x64\Release\net6.0-windows\eft-dma-.A468FFDD.Up2Date
+C:\Users\Snip1\Desktop\TEXT\obj\x64\Release\net6.0-windows\eft-dma-radar.dll
+C:\Users\Snip1\Desktop\TEXT\obj\x64\Release\net6.0-windows\refint\eft-dma-radar.dll
+C:\Users\Snip1\Desktop\TEXT\obj\x64\Release\net6.0-windows\eft-dma-radar.genruntimeconfig.cache
+C:\Users\Snip1\Desktop\TEXT\obj\x64\Release\net6.0-windows\ref\eft-dma-radar.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\dbghelp.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\FTD3XX.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\leechcore.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\libSkiaSharp.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\symsrv.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\vcruntime140.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\vmm.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Customs-1f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Customs.json
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Customs.png
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Customs1f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Customs2f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Customs3f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Factory-1f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Factory.json
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Factory1f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Factory2f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Factory3f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\GroundZero-1f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\GroundZero.json
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\GroundZero1f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\GroundZero2f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\GroundZero3f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Interchange.json
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Interchange1f.png
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Interchange2f.png
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Interchange3f.png
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Labs-1f.png
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Labs.json
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Labs1f.png
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Labs2f.png
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Lighthouse.json
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Lighthouse1f.png
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Reserve-1f.png
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Reserve.json
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Reserve1f.png
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Shoreline-1f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Shoreline.json
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Shoreline1f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Shoreline2f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Shoreline3f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Streets-1f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Streets.json
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Streets1f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Streets2f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Streets3f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Streets4f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Streets5f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Woods.json
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\Maps\Woods1f.jpg
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\eft-dma-radar.exe
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\eft-dma-radar.deps.json
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\eft-dma-radar.runtimeconfig.json
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\eft-dma-radar.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\MaterialSkin.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\OpenTK.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\OpenTK.GLControl.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\SkiaSharp.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\SkiaSharp.Views.Desktop.Common.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\SkiaSharp.Views.WindowsForms.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\bin\x64\Release\net6.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\obj\x64\Release\net6.0-windows\eft-dma-radar.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\新建文件夹 (2)\obj\x64\Release\net6.0-windows\eft_dma_radar.Properties.Resources.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\obj\x64\Release\net6.0-windows\eft_dma_radar.frmMain.resources
+C:\Users\Administrator\Desktop\新建文件夹 (2)\obj\x64\Release\net6.0-windows\eft-dma-radar.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\新建文件夹 (2)\obj\x64\Release\net6.0-windows\eft-dma-radar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\新建文件夹 (2)\obj\x64\Release\net6.0-windows\eft-dma-radar.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\新建文件夹 (2)\obj\x64\Release\net6.0-windows\eft-dma-radar.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\新建文件夹 (2)\obj\x64\Release\net6.0-windows\eft-dma-radar.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\新建文件夹 (2)\obj\x64\Release\net6.0-windows\eft-dma-.A468FFDD.Up2Date
+C:\Users\Administrator\Desktop\新建文件夹 (2)\obj\x64\Release\net6.0-windows\eft-dma-radar.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\obj\x64\Release\net6.0-windows\refint\eft-dma-radar.dll
+C:\Users\Administrator\Desktop\新建文件夹 (2)\obj\x64\Release\net6.0-windows\eft-dma-radar.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\新建文件夹 (2)\obj\x64\Release\net6.0-windows\ref\eft-dma-radar.dll
