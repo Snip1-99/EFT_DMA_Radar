@@ -17,4 +17,4 @@ QQ:2213762483
 这个项目是基与xxOm git：https://github.com/xx0m/EFT-DMA-Radar-v2 汉化翻译而来
 
 ## Preview
-![image]([https://github.com/xx0m/EFT-DMA-Radar-v2/assets/63579245/9e55038f-8095-4680-9d3f-b14f44046276](https://github.com/Snip1-99/EFT_DMA_Radar/blob/7c30514d329612d09248485ac4eddcf8649e45c9/Source/%E9%A2%84%E8%A7%88%E5%9B%BE/QQ%E5%9B%BE%E7%89%8720240605103523.png))
+![image](https://github.com/Snip1-99/EFT_DMA_Radar/blob/main/Source/%E9%A2%84%E8%A7%88%E5%9B%BE/QQ%E5%9B%BE%E7%89%8720240605103523.png))
