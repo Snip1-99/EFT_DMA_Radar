@@ -4,6 +4,7 @@
 描述
 EFT DMA雷达是为逃离塔科夫而设计的雷达工具，可在2D地图上实时跟踪玩家和物品，
 此项目是汉化优化得来，通常游戏更新我并不会第一时间更新雷达,有疑问请与我联系
+为爱发电，有错误请理解
 QQ:2213762483
 
 用法
@@ -18,3 +19,9 @@ QQ:2213762483
 
 ## Preview
 ![image](https://github.com/Snip1-99/EFT_DMA_Radar/blob/main/Source/%E9%A2%84%E8%A7%88%E5%9B%BE/QQ%E5%9B%BE%E7%89%8720240605103523.png))
+![image](https://github.com/Snip1-99/EFT_DMA_Radar/blob/main/Source/%E9%A2%84%E8%A7%88%E5%9B%BE/QQ%E5%9B%BE%E7%89%8720240605103528.png))
+![image](https://github.com/Snip1-99/EFT_DMA_Radar/blob/main/Source/%E9%A2%84%E8%A7%88%E5%9B%BE/QQ%E5%9B%BE%E7%89%8720240605103530.png))
+![image](https://github.com/Snip1-99/EFT_DMA_Radar/blob/main/Source/%E9%A2%84%E8%A7%88%E5%9B%BE/QQ%E5%9B%BE%E7%89%8720240605103533.png))
+![image](https://github.com/Snip1-99/EFT_DMA_Radar/blob/main/Source/%E9%A2%84%E8%A7%88%E5%9B%BE/QQ%E5%9B%BE%E7%89%8720240605103536.png))
+![image](https://github.com/Snip1-99/EFT_DMA_Radar/blob/main/Source/%E9%A2%84%E8%A7%88%E5%9B%BE/QQ%E5%9B%BE%E7%89%8720240605103538.png))
+![image](https://github.com/Snip1-99/EFT_DMA_Radar/blob/main/Source/%E9%A2%84%E8%A7%88%E5%9B%BE/QQ%E5%9B%BE%E7%89%8720240605103541.png))
