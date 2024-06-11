@@ -1,6 +1,4 @@
-﻿using MaterialSkin.Controls;
-
-namespace eft_dma_radar
+﻿namespace eft_dma_radar
 {
     partial class frmMain
     {
@@ -34,288 +32,310 @@ namespace eft_dma_radar
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             colDialog = new ColorDialog();
             toolTip = new ToolTip(components);
-            sldrZoomDistance = new MaterialSlider();
-            sldrUIScale = new MaterialSlider();
-            sldrAimlineLength = new MaterialSlider();
-            swExfilNames = new MaterialSwitch();
-            swQuestHelper = new MaterialSwitch();
-            swHoverArmor = new MaterialSwitch();
-            swNames = new MaterialSwitch();
-            swAimview = new MaterialSwitch();
-            swShowLoot = new MaterialSwitch();
-            btnRestartRadar = new MaterialButton();
-            btnToggleMap = new MaterialButton();
-            swMapHelper = new MaterialSwitch();
-            swMasterSwitch = new MaterialSwitch();
-            swInfiniteStamina = new MaterialSwitch();
-            sldrJumpStrength = new MaterialSlider();
-            sldrThrowStrength = new MaterialSlider();
-            sldrTimeOfDay = new MaterialSlider();
-            swExtendedReach = new MaterialSwitch();
-            swFreezeTime = new MaterialSwitch();
-            swChams = new MaterialSwitch();
-            swNightVision = new MaterialSwitch();
-            swOpticalThermal = new MaterialSwitch();
-            swThermalVision = new MaterialSwitch();
-            sldrMagDrillsSpeed = new MaterialSlider();
-            swNoVisor = new MaterialSwitch();
-            swInstantADS = new MaterialSwitch();
-            swNoRecoilSway = new MaterialSwitch();
-            cboThermalColorScheme = new MaterialComboBox();
-            cboThermalType = new MaterialComboBox();
-            sldrMinCorpse = new MaterialSlider();
-            sldrMinRegularLoot = new MaterialSlider();
-            swCorpses = new MaterialSwitch();
-            swFilteredOnly = new MaterialSwitch();
-            swSubItems = new MaterialSwitch();
-            swItemValue = new MaterialSwitch();
-            swAutoRefresh = new MaterialSwitch();
-            btnRefreshLoot = new MaterialButton();
-            cboAutoRefreshMap = new MaterialComboBox();
-            sldrAutoRefreshDelay = new MaterialSlider();
-            sldrMinSubItems = new MaterialSlider();
-            sldrMinImportantLoot = new MaterialSlider();
-            btnAddFaction = new MaterialButton();
-            btnRemoveFaction = new MaterialButton();
-            btnAddFactionEntry = new MaterialButton();
-            btnRemoveFactionEntry = new MaterialButton();
-            txtTeammateID = new MaterialTextBox2();
-            txtFactionEntryName = new MaterialTextBox2();
-            txtFactionName = new MaterialTextBox2();
-            cboFactionType = new MaterialComboBox();
-            btnResetTheme = new MaterialButton();
-            btnMapSetupApply = new MaterialButton();
-            txtMapSetupScale = new MaterialTextBox2();
-            txtMapSetupY = new MaterialTextBox2();
-            txtMapSetupX = new MaterialTextBox2();
-            btnToggleMapFree = new MaterialButton();
-            btnRemoveWatchlistEntry = new MaterialButton();
-            txtWatchlistAccountID = new MaterialTextBox2();
-            txtWatchlistProfileName = new MaterialTextBox2();
-            btnAddWatchlistEntry = new MaterialButton();
-            btnAddWatchlistProfile = new MaterialButton();
-            btnRemoveWatchlistProfile = new MaterialButton();
-            txtWatchlistTag = new MaterialTextBox2();
-            txtWatchlistPlatformUsername = new MaterialTextBox2();
-            rdbYoutube = new MaterialRadioButton();
-            rdbTwitch = new MaterialRadioButton();
-            swWatchlistIsStreamer = new MaterialSwitch();
-            btnResetPlayerlist = new MaterialButton();
-            cboLootFilterItemsToAdd = new MaterialComboBox();
-            txtLootFilterItemToSearch = new MaterialTextBox2();
-            btnAddLootFilterItem = new MaterialButton();
-            btnRemoveLootFilterItem = new MaterialButton();
-            txtLootFilterName = new MaterialTextBox2();
-            swLootFilterActive = new MaterialSwitch();
-            btnAddFilter = new MaterialButton();
-            btnRemoveFilter = new MaterialButton();
-            swMaxEndurance = new MaterialSwitch();
-            swMaxStrength = new MaterialSwitch();
-            swMaxVitality = new MaterialSwitch();
-            swMaxHealth = new MaterialSwitch();
-            swMaxStressResistance = new MaterialSwitch();
-            swMaxMetabolism = new MaterialSwitch();
-            swMaxImmunity = new MaterialSwitch();
-            swMaxPerception = new MaterialSwitch();
-            swMaxIntellect = new MaterialSwitch();
-            swMaxThrowables = new MaterialSwitch();
-            swMaxSurgery = new MaterialSwitch();
-            swMaxCovertMovement = new MaterialSwitch();
-            swMaxSearch = new MaterialSwitch();
-            swMaxMagDrills = new MaterialSwitch();
-            swMaxLightVests = new MaterialSwitch();
-            swMaxHeavyVests = new MaterialSwitch();
-            swMaxAttention = new MaterialSwitch();
-            swProcessLoot = new MaterialSwitch();
-            swRadarStats = new MaterialSwitch();
-            swRadarVsync = new MaterialSwitch();
-            swRadarEnemyCount = new MaterialSwitch();
-            sldrFontSize = new MaterialSlider();
-            cboFont = new MaterialComboBox();
-            swUnknownQuestItems = new MaterialSwitch();
-            sldrThermalColorCoefficient = new MaterialSlider();
-            sldrMinTemperature = new MaterialSlider();
-            sldrThermalRampShift = new MaterialSlider();
-            tabControlMain = new MaterialTabControl();
+            sldrUIScale = new MaterialSkin.Controls.MaterialSlider();
+            sldrAimlineLength = new MaterialSkin.Controls.MaterialSlider();
+            swExfilNames = new MaterialSkin.Controls.MaterialSwitch();
+            swQuestHelper = new MaterialSkin.Controls.MaterialSwitch();
+            swHoverArmor = new MaterialSkin.Controls.MaterialSwitch();
+            swNames = new MaterialSkin.Controls.MaterialSwitch();
+            swAimview = new MaterialSkin.Controls.MaterialSwitch();
+            swShowLoot = new MaterialSkin.Controls.MaterialSwitch();
+            btnRestartRadar = new MaterialSkin.Controls.MaterialButton();
+            btnToggleMap = new MaterialSkin.Controls.MaterialButton();
+            swMapHelper = new MaterialSkin.Controls.MaterialSwitch();
+            swMasterSwitch = new MaterialSkin.Controls.MaterialSwitch();
+            swInfiniteStamina = new MaterialSkin.Controls.MaterialSwitch();
+            sldrJumpStrength = new MaterialSkin.Controls.MaterialSlider();
+            sldrThrowStrength = new MaterialSkin.Controls.MaterialSlider();
+            sldrTimeOfDay = new MaterialSkin.Controls.MaterialSlider();
+            swExtendedReach = new MaterialSkin.Controls.MaterialSwitch();
+            swFreezeTime = new MaterialSkin.Controls.MaterialSwitch();
+            swNightVision = new MaterialSkin.Controls.MaterialSwitch();
+            swOpticalThermal = new MaterialSkin.Controls.MaterialSwitch();
+            swThermalVision = new MaterialSkin.Controls.MaterialSwitch();
+            sldrMagDrillsSpeed = new MaterialSkin.Controls.MaterialSlider();
+            swNoVisor = new MaterialSkin.Controls.MaterialSwitch();
+            swInstantADS = new MaterialSkin.Controls.MaterialSwitch();
+            swNoRecoilSway = new MaterialSkin.Controls.MaterialSwitch();
+            cboThermalColorScheme = new MaterialSkin.Controls.MaterialComboBox();
+            cboThermalType = new MaterialSkin.Controls.MaterialComboBox();
+            sldrMinCorpse = new MaterialSkin.Controls.MaterialSlider();
+            sldrMinRegularLoot = new MaterialSkin.Controls.MaterialSlider();
+            swCorpses = new MaterialSkin.Controls.MaterialSwitch();
+            swFilteredOnly = new MaterialSkin.Controls.MaterialSwitch();
+            swSubItems = new MaterialSkin.Controls.MaterialSwitch();
+            swItemValue = new MaterialSkin.Controls.MaterialSwitch();
+            swAutoRefresh = new MaterialSkin.Controls.MaterialSwitch();
+            btnRefreshLoot = new MaterialSkin.Controls.MaterialButton();
+            cboAutoRefreshMap = new MaterialSkin.Controls.MaterialComboBox();
+            sldrAutoRefreshDelay = new MaterialSkin.Controls.MaterialSlider();
+            sldrMinSubItems = new MaterialSkin.Controls.MaterialSlider();
+            sldrMinImportantLoot = new MaterialSkin.Controls.MaterialSlider();
+            btnAddFaction = new MaterialSkin.Controls.MaterialButton();
+            btnRemoveFaction = new MaterialSkin.Controls.MaterialButton();
+            btnAddFactionEntry = new MaterialSkin.Controls.MaterialButton();
+            btnRemoveFactionEntry = new MaterialSkin.Controls.MaterialButton();
+            txtTeammateID = new MaterialSkin.Controls.MaterialTextBox2();
+            txtFactionEntryName = new MaterialSkin.Controls.MaterialTextBox2();
+            txtFactionName = new MaterialSkin.Controls.MaterialTextBox2();
+            cboFactionType = new MaterialSkin.Controls.MaterialComboBox();
+            btnResetTheme = new MaterialSkin.Controls.MaterialButton();
+            btnMapSetupApply = new MaterialSkin.Controls.MaterialButton();
+            txtMapSetupScale = new MaterialSkin.Controls.MaterialTextBox2();
+            txtMapSetupY = new MaterialSkin.Controls.MaterialTextBox2();
+            txtMapSetupX = new MaterialSkin.Controls.MaterialTextBox2();
+            btnToggleMapFree = new MaterialSkin.Controls.MaterialButton();
+            btnRemoveWatchlistEntry = new MaterialSkin.Controls.MaterialButton();
+            txtWatchlistAccountID = new MaterialSkin.Controls.MaterialTextBox2();
+            txtWatchlistProfileName = new MaterialSkin.Controls.MaterialTextBox2();
+            btnAddWatchlistEntry = new MaterialSkin.Controls.MaterialButton();
+            btnAddWatchlistProfile = new MaterialSkin.Controls.MaterialButton();
+            btnRemoveWatchlistProfile = new MaterialSkin.Controls.MaterialButton();
+            txtWatchlistTag = new MaterialSkin.Controls.MaterialTextBox2();
+            txtWatchlistPlatformUsername = new MaterialSkin.Controls.MaterialTextBox2();
+            rdbYoutube = new MaterialSkin.Controls.MaterialRadioButton();
+            rdbTwitch = new MaterialSkin.Controls.MaterialRadioButton();
+            swWatchlistIsStreamer = new MaterialSkin.Controls.MaterialSwitch();
+            btnResetPlayerlist = new MaterialSkin.Controls.MaterialButton();
+            cboLootFilterItemsToAdd = new MaterialSkin.Controls.MaterialComboBox();
+            txtLootFilterItemToSearch = new MaterialSkin.Controls.MaterialTextBox2();
+            btnAddLootFilterItem = new MaterialSkin.Controls.MaterialButton();
+            btnRemoveLootFilterItem = new MaterialSkin.Controls.MaterialButton();
+            txtLootFilterName = new MaterialSkin.Controls.MaterialTextBox2();
+            swLootFilterActive = new MaterialSkin.Controls.MaterialSwitch();
+            btnAddFilter = new MaterialSkin.Controls.MaterialButton();
+            btnRemoveFilter = new MaterialSkin.Controls.MaterialButton();
+            swMaxEndurance = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxStrength = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxVitality = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxHealth = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxStressResistance = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxMetabolism = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxImmunity = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxPerception = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxIntellect = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxThrowables = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxSurgery = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxCovertMovement = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxSearch = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxMagDrills = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxLightVests = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxHeavyVests = new MaterialSkin.Controls.MaterialSwitch();
+            swMaxAttention = new MaterialSkin.Controls.MaterialSwitch();
+            swProcessLoot = new MaterialSkin.Controls.MaterialSwitch();
+            swRadarStats = new MaterialSkin.Controls.MaterialSwitch();
+            swRadarVsync = new MaterialSkin.Controls.MaterialSwitch();
+            swRadarEnemyCount = new MaterialSkin.Controls.MaterialSwitch();
+            sldrFontSize = new MaterialSkin.Controls.MaterialSlider();
+            cboFont = new MaterialSkin.Controls.MaterialComboBox();
+            swUnknownQuestItems = new MaterialSkin.Controls.MaterialSwitch();
+            swChams = new MaterialSkin.Controls.MaterialSwitch();
+            swChamsPMCs = new MaterialSkin.Controls.MaterialSwitch();
+            swChamsBosses = new MaterialSkin.Controls.MaterialSwitch();
+            swChamsRogues = new MaterialSkin.Controls.MaterialSwitch();
+            swChamsCultists = new MaterialSkin.Controls.MaterialSwitch();
+            swChamsScavs = new MaterialSkin.Controls.MaterialSwitch();
+            swChamsTeammates = new MaterialSkin.Controls.MaterialSwitch();
+            swChamsCorpses = new MaterialSkin.Controls.MaterialSwitch();
+            swChamsRevert = new MaterialSkin.Controls.MaterialSwitch();
+            swChamsPlayerScavs = new MaterialSkin.Controls.MaterialSwitch();
+            btnPingSelectedItem = new MaterialSkin.Controls.MaterialButton();
+            txtLootItemFilter = new MaterialSkin.Controls.MaterialTextBox2();
+            btnToggleLootItemViewer = new MaterialSkin.Controls.MaterialButton();
+            sldrLootPingMaxRadius = new MaterialSkin.Controls.MaterialSlider();
+            sldrLootPingAnimationSpeed = new MaterialSkin.Controls.MaterialSlider();
+            sldrThermalColorCoefficient = new MaterialSkin.Controls.MaterialSlider();
+            sldrMinTemperature = new MaterialSkin.Controls.MaterialSlider();
+            sldrThermalRampShift = new MaterialSkin.Controls.MaterialSlider();
+            tabControlMain = new MaterialSkin.Controls.MaterialTabControl();
             tabRadar = new TabPage();
-            mcRadarEnemyStats = new MaterialCard();
-            lblRadarBossesValue = new MaterialLabel();
-            lblRadarPlayerScavsValue = new MaterialLabel();
-            lblRadarBosses = new MaterialLabel();
-            lblRadarPlayerScavs = new MaterialLabel();
-            lblRadarRoguesValue = new MaterialLabel();
-            lblRadarAIScavsValue = new MaterialLabel();
-            lblRadarPMCsValue = new MaterialLabel();
-            lblRadarRogues = new MaterialLabel();
-            lblRadarAIScavs = new MaterialLabel();
-            lblRadarPMCs = new MaterialLabel();
-            mcRadarStats = new MaterialCard();
-            lblRadarCorpsesValue = new MaterialLabel();
-            lblRadarCorpses = new MaterialLabel();
-            lblRadarMemSValue = new MaterialLabel();
-            lblRadarMemS = new MaterialLabel();
-            lblRadarContainersValue = new MaterialLabel();
-            lblRadarLooseLootValue = new MaterialLabel();
-            lblRadarFPSValue = new MaterialLabel();
-            lblRadarContainers = new MaterialLabel();
-            lblRadarLooseLoot = new MaterialLabel();
-            lblRadarFPS = new MaterialLabel();
-            mcRadarSettings = new MaterialCard();
-            mcRadarMapSetup = new MaterialCard();
-            lblRadarMapSetup = new MaterialLabel();
+            mcRadarLootItemViewer = new MaterialSkin.Controls.MaterialCard();
+            lstLootItems = new MaterialSkin.Controls.MaterialListView();
+            columnHeader1 = new ColumnHeader();
+            columnHeader2 = new ColumnHeader();
+            columnHeader3 = new ColumnHeader();
+            mcRadarEnemyStats = new MaterialSkin.Controls.MaterialCard();
+            lblRadarBossesValue = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarPlayerScavsValue = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarBosses = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarPlayerScavs = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarRoguesValue = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarAIScavsValue = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarPMCsValue = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarRogues = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarAIScavs = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarPMCs = new MaterialSkin.Controls.MaterialLabel();
+            mcRadarStats = new MaterialSkin.Controls.MaterialCard();
+            lblRadarCorpsesValue = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarCorpses = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarMemSValue = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarMemS = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarContainersValue = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarLooseLootValue = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarFPSValue = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarContainers = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarLooseLoot = new MaterialSkin.Controls.MaterialLabel();
+            lblRadarFPS = new MaterialSkin.Controls.MaterialLabel();
+            mcRadarSettings = new MaterialSkin.Controls.MaterialCard();
+            mcRadarMapSetup = new MaterialSkin.Controls.MaterialCard();
+            lblRadarMapSetup = new MaterialSkin.Controls.MaterialLabel();
             skMapCanvas = new SkiaSharp.Views.Desktop.SKGLControl();
             tabSettings = new TabPage();
-            tabSelector = new MaterialTabSelector();
-            tabControlSettings = new MaterialTabControl();
+            tabSelector = new MaterialSkin.Controls.MaterialTabSelector();
+            tabControlSettings = new MaterialSkin.Controls.MaterialTabControl();
             tabSettingsGeneral = new TabPage();
-            mcSettingsGeneralUI = new MaterialCard();
-            lblSettingsGeneralUI = new MaterialLabel();
-            mcSettingsGeneralRadar = new MaterialCard();
-            lblSettingsGeneralRadar = new MaterialLabel();
+            mcSettingsGeneralUI = new MaterialSkin.Controls.MaterialCard();
+            sldrZoomSensitivity = new MaterialSkin.Controls.MaterialSlider();
+            lblSettingsGeneralUI = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsGeneralRadar = new MaterialSkin.Controls.MaterialCard();
+            lblSettingsGeneralRadar = new MaterialSkin.Controls.MaterialLabel();
             tabSettingsMemoryWriting = new TabPage();
-            mcSettingsMemoryWritingSkillBuffs = new MaterialCard();
-            lblSettingsMemoryWritingSkills = new MaterialLabel();
-            mcSettingsMemoryWritingThermal = new MaterialCard();
-            lblSettingsMemoryWritingThermal = new MaterialLabel();
-            mcSettingsMemoryWritingGlobal = new MaterialCard();
-            lblSettingsMemoryWritingGlobal = new MaterialLabel();
-            mcSettingsMemoryWritingGear = new MaterialCard();
-            lblSettingsMemoryWritingGear = new MaterialLabel();
+            mcSettingsMemoryWritingChams = new MaterialSkin.Controls.MaterialCard();
+            lblSettingsMemoryWritingChams = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsMemoryWritingSkillBuffs = new MaterialSkin.Controls.MaterialCard();
+            lblSettingsMemoryWritingSkills = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsMemoryWritingThermal = new MaterialSkin.Controls.MaterialCard();
+            lblSettingsMemoryWritingThermal = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsMemoryWritingGlobal = new MaterialSkin.Controls.MaterialCard();
+            lblSettingsMemoryWritingGlobal = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsMemoryWritingGear = new MaterialSkin.Controls.MaterialCard();
+            lblSettingsMemoryWritingGear = new MaterialSkin.Controls.MaterialLabel();
             tabSettingsLoot = new TabPage();
-            mcSettingsLootMinRubleValue = new MaterialCard();
-            lblSettingsLootMinRubleValues = new MaterialLabel();
-            mcSettingsLootGeneral = new MaterialCard();
-            lblSettingsLootGeneral = new MaterialLabel();
+            mcSettingsLootPing = new MaterialSkin.Controls.MaterialCard();
+            lblSettingsLootPing = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsLootMinRubleValue = new MaterialSkin.Controls.MaterialCard();
+            lblSettingsLootMinRubleValues = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsLootGeneral = new MaterialSkin.Controls.MaterialCard();
+            lblSettingsLootGeneral = new MaterialSkin.Controls.MaterialLabel();
             tabSettingsAIFactions = new TabPage();
-            lstFactionEntries = new MaterialListView();
+            lstFactionEntries = new MaterialSkin.Controls.MaterialListView();
             colFactionsAIName = new ColumnHeader();
-            mcSettingsAIFactionsEntryManagement = new MaterialCard();
-            lblSettingsAIFactionsEntryManagement = new MaterialLabel();
-            mcSettingsAIFactionsFactions = new MaterialCard();
-            lstFactions = new MaterialListView();
+            mcSettingsAIFactionsEntryManagement = new MaterialSkin.Controls.MaterialCard();
+            lblSettingsAIFactionsEntryManagement = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsAIFactionsFactions = new MaterialSkin.Controls.MaterialCard();
+            lstFactions = new MaterialSkin.Controls.MaterialListView();
             colFactionName = new ColumnHeader();
-            lblSettingsAIFactionsFactions = new MaterialLabel();
+            lblSettingsAIFactionsFactions = new MaterialSkin.Controls.MaterialLabel();
             tabSettingsColors = new TabPage();
-            mcSettingsColorsOther = new MaterialCard();
+            mcSettingsColorsOther = new MaterialSkin.Controls.MaterialCard();
             picOtherAccent = new PictureBox();
-            lblSettingsOtherAccent = new MaterialLabel();
+            lblSettingsColorOtherAccent = new MaterialSkin.Controls.MaterialLabel();
             picOtherPrimaryLight = new PictureBox();
-            lblSettingsOtherPrimaryLight = new MaterialLabel();
+            ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss = new MaterialSkin.Controls.MaterialLabel();
             picOtherPrimaryDark = new PictureBox();
-            lblSettingsOtherPrimaryDark = new MaterialLabel();
+            lblSettingsColorOtherPrimaryDark = new MaterialSkin.Controls.MaterialLabel();
             picOtherPrimary = new PictureBox();
-            lblSettingsOtherPrimary = new MaterialLabel();
+            lblSettingsColorOtherPrimary = new MaterialSkin.Controls.MaterialLabel();
             picOtherChams = new PictureBox();
-            lblSettingsOtherChams = new MaterialLabel();
+            lblSettingsColorOtherChams = new MaterialSkin.Controls.MaterialLabel();
             picOtherDeathMarker = new PictureBox();
-            lblSettingsOtherDeathMarker = new MaterialLabel();
+            lblSettingsColorOtherDeathMarker = new MaterialSkin.Controls.MaterialLabel();
             picOtherTextOutline = new PictureBox();
-            lblSettingsOtherTextOutline = new MaterialLabel();
-            lblSettingsColorsOther = new MaterialLabel();
-            mcSettingsColorsLootAndQuests = new MaterialCard();
+            lblSettingsColorOtherTextOutline = new MaterialSkin.Controls.MaterialLabel();
+            lblSettingsColorsOther = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsColorsLootAndQuests = new MaterialSkin.Controls.MaterialCard();
+            picLootPing = new PictureBox();
+            lblSettingsColorsLootPing = new MaterialSkin.Controls.MaterialLabel();
             picQuestZone = new PictureBox();
-            lblSettingsQuestZones = new MaterialLabel();
+            lblSettingsColorsQuestZones = new MaterialSkin.Controls.MaterialLabel();
             picQuestItem = new PictureBox();
-            lblSettingsQuestItems = new MaterialLabel();
+            lblSettingsColorsQuestItems = new MaterialSkin.Controls.MaterialLabel();
             picLootImportant = new PictureBox();
-            lblSettingsLootImportant = new MaterialLabel();
+            lblSettingsColorsLootImportant = new MaterialSkin.Controls.MaterialLabel();
             picLootRegular = new PictureBox();
-            lblSettingsLootRegular = new MaterialLabel();
-            lblSettingsColorsLootQuests = new MaterialLabel();
-            mcSettingsColorsExfiltration = new MaterialCard();
+            lblSettingsColorsLootRegular = new MaterialSkin.Controls.MaterialLabel();
+            lblSettingsColorsLootQuests = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsColorsExfiltration = new MaterialSkin.Controls.MaterialCard();
             picExfilClosedIcon = new PictureBox();
-            lblSettingsColorsExfilClosedIcon = new MaterialLabel();
+            lblSettingsColorsExfilClosedIcon = new MaterialSkin.Controls.MaterialLabel();
             picExfilClosedText = new PictureBox();
-            lblSettingsColorsExfilClosedText = new MaterialLabel();
+            lblSettingsColorsExfilClosedText = new MaterialSkin.Controls.MaterialLabel();
             picExfilPendingIcon = new PictureBox();
-            lblSettingsColorsExfilPendingIcon = new MaterialLabel();
+            lblSettingsColorsExfilPendingIcon = new MaterialSkin.Controls.MaterialLabel();
             picExfilPendingText = new PictureBox();
-            lblSettingsColorsExfilPendingText = new MaterialLabel();
+            lblSettingsColorsExfilPendingText = new MaterialSkin.Controls.MaterialLabel();
             picExfilActiveIcon = new PictureBox();
-            lblSettingsColorsExfilActiveIcon = new MaterialLabel();
+            lblSettingsColorsExfilActiveIcon = new MaterialSkin.Controls.MaterialLabel();
             picExfilActiveText = new PictureBox();
-            lblSettingsColorsExfilActiveText = new MaterialLabel();
-            lblSettingsColorsExfiltration = new MaterialLabel();
-            mcSettingsColorsPlayers = new MaterialCard();
+            lblSettingsColorsExfilActiveText = new MaterialSkin.Controls.MaterialLabel();
+            lblSettingsColorsExfiltration = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsColorsPlayers = new MaterialSkin.Controls.MaterialCard();
             picPlayersSpecial = new PictureBox();
-            lblSettingsColorsPlayersSpecial = new MaterialLabel();
+            lblSettingsColorsPlayersSpecial = new MaterialSkin.Controls.MaterialLabel();
             picPlayersTeamHover = new PictureBox();
-            lblSettingsColorsPlayersTeamHover = new MaterialLabel();
+            lblSettingsColorsPlayersTeamHover = new MaterialSkin.Controls.MaterialLabel();
             picPlayersTeammate = new PictureBox();
-            lblSettingsColorsPlayersTeammate = new MaterialLabel();
+            lblSettingsColorsPlayersTeammate = new MaterialSkin.Controls.MaterialLabel();
             picPlayersLocalPlayer = new PictureBox();
-            lblSettingsColorsPlayersLocalPlayer = new MaterialLabel();
+            lblSettingsColorsPlayersLocalPlayer = new MaterialSkin.Controls.MaterialLabel();
             picPlayersScav = new PictureBox();
-            lblSettingsColorsPlayersScav = new MaterialLabel();
+            lblSettingsColorsPlayersScav = new MaterialSkin.Controls.MaterialLabel();
             picPlayersBEAR = new PictureBox();
-            lblSettingsColorsPlayersBEAR = new MaterialLabel();
+            lblSettingsColorsPlayersBEAR = new MaterialSkin.Controls.MaterialLabel();
             picPlayersUSEC = new PictureBox();
-            lblSettingsColorsPlayersUSEC = new MaterialLabel();
-            lblSettingsColorsPlayers = new MaterialLabel();
-            mcSettingsColorsAI = new MaterialCard();
+            lblSettingsColorsPlayersUSEC = new MaterialSkin.Controls.MaterialLabel();
+            lblSettingsColorsPlayers = new MaterialSkin.Controls.MaterialLabel();
+            mcSettingsColorsAI = new MaterialSkin.Controls.MaterialCard();
             picAIOther = new PictureBox();
-            lblSettingsColorsAIOther = new MaterialLabel();
+            lblSettingsColorsAIOther = new MaterialSkin.Controls.MaterialLabel();
             picAIScav = new PictureBox();
-            lblSettingsColorsAIScav = new MaterialLabel();
+            lblSettingsColorsAIScav = new MaterialSkin.Controls.MaterialLabel();
             picAIFollowerOfMorana = new PictureBox();
-            lblSettingsColorsAIMoranaFollower = new MaterialLabel();
+            lblSettingsColorsAIMoranaFollower = new MaterialSkin.Controls.MaterialLabel();
             picAICultist = new PictureBox();
-            lblSettingsColorsAICultists = new MaterialLabel();
+            lblSettingsColorsAICultists = new MaterialSkin.Controls.MaterialLabel();
             picAIRogue = new PictureBox();
-            lblSettingsColorsAIRogues = new MaterialLabel();
+            lblSettingsColorsAIRogues = new MaterialSkin.Controls.MaterialLabel();
             picAIRaider = new PictureBox();
-            lblSettingsColorsAIRaiders = new MaterialLabel();
+            lblSettingsColorsAIRaiders = new MaterialSkin.Controls.MaterialLabel();
             picAIBossFollower = new PictureBox();
-            lblSettingsColorsAIBossFollower = new MaterialLabel();
+            lblSettingsColorsAIBossFollower = new MaterialSkin.Controls.MaterialLabel();
             picAIBossGuard = new PictureBox();
-            lblSettingsColorsAIBossGuard = new MaterialLabel();
+            lblSettingsColorsAIBossGuard = new MaterialSkin.Controls.MaterialLabel();
             picAIBoss = new PictureBox();
-            lblSettingsColorsAIBoss = new MaterialLabel();
-            lblSettingsColorsAI = new MaterialLabel();
+            lblSettingsColorsAIBoss = new MaterialSkin.Controls.MaterialLabel();
+            lblSettingsColorsAI = new MaterialSkin.Controls.MaterialLabel();
             tabPlayerLoadouts = new TabPage();
-            mcPlayerLoadoutsAI = new MaterialCard();
-            lblPlayerLoadoutsAI = new MaterialLabel();
+            mcPlayerLoadoutsAI = new MaterialSkin.Controls.MaterialCard();
+            lblPlayerLoadoutsAI = new MaterialSkin.Controls.MaterialLabel();
             flpPlayerLoadoutsAI = new FlowLayoutPanel();
-            mcPlayerLoadoutsPlayers = new MaterialCard();
-            lblPlayerLoadoutsPlayers = new MaterialLabel();
+            mcPlayerLoadoutsPlayers = new MaterialSkin.Controls.MaterialCard();
+            lblPlayerLoadoutsPlayers = new MaterialSkin.Controls.MaterialLabel();
             flpPlayerLoadoutsPlayers = new FlowLayoutPanel();
             tabWatchlist = new TabPage();
-            mcWatchlistPlayerlist = new MaterialCard();
-            lstWatchlistPlayerList = new MaterialListView();
+            mcWatchlistPlayerlist = new MaterialSkin.Controls.MaterialCard();
+            lstWatchlistPlayerList = new MaterialSkin.Controls.MaterialListView();
             colPlayerlistName = new ColumnHeader();
-            lblWatchlistPlayerlist = new MaterialLabel();
-            mcWatchlistProfiles = new MaterialCard();
-            lstWatchlistProfiles = new MaterialListView();
+            lblWatchlistPlayerlist = new MaterialSkin.Controls.MaterialLabel();
+            mcWatchlistProfiles = new MaterialSkin.Controls.MaterialCard();
+            lstWatchlistProfiles = new MaterialSkin.Controls.MaterialListView();
             colWatchlistProfileName = new ColumnHeader();
-            lblWatchlistProfiles = new MaterialLabel();
-            mcWatchlistPlayerManagement = new MaterialCard();
-            lblWatchlistPlayerManagement = new MaterialLabel();
-            lstWatchlistEntries = new MaterialListView();
+            lblWatchlistProfiles = new MaterialSkin.Controls.MaterialLabel();
+            mcWatchlistPlayerManagement = new MaterialSkin.Controls.MaterialCard();
+            lblWatchlistPlayerManagement = new MaterialSkin.Controls.MaterialLabel();
+            lstWatchlistEntries = new MaterialSkin.Controls.MaterialListView();
             colWatchlistAccID = new ColumnHeader();
             colWatchlistTag = new ColumnHeader();
             colWatchlistUsername = new ColumnHeader();
             tabLootFilter = new TabPage();
-            mcLootFilterFilters = new MaterialCard();
-            lstLootFilters = new MaterialListView();
+            mcLootFilterFilters = new MaterialSkin.Controls.MaterialCard();
+            lstLootFilters = new MaterialSkin.Controls.MaterialListView();
             colLootFilterName = new ColumnHeader();
-            lblSettingsLootFilters = new MaterialLabel();
+            lblSettingsLootFilters = new MaterialSkin.Controls.MaterialLabel();
             picLootFilterColor = new PictureBox();
-            btnFilterPriorityUp = new MaterialButton();
-            lblSettingsLootFilterColor = new MaterialLabel();
-            btnFilterPriorityDown = new MaterialButton();
-            mcLootFilterItemManagement = new MaterialCard();
-            lblLootFilterItemManagement = new MaterialLabel();
-            lstLootFilterEntries = new MaterialListView();
+            btnFilterPriorityUp = new MaterialSkin.Controls.MaterialButton();
+            lblSettingsLootFilterColor = new MaterialSkin.Controls.MaterialLabel();
+            btnFilterPriorityDown = new MaterialSkin.Controls.MaterialButton();
+            mcLootFilterItemManagement = new MaterialSkin.Controls.MaterialCard();
+            lblLootFilterItemManagement = new MaterialSkin.Controls.MaterialLabel();
+            lstLootFilterEntries = new MaterialSkin.Controls.MaterialListView();
             colLootFilterItemName = new ColumnHeader();
             colLootFilterItemValue = new ColumnHeader();
-            tabPageLootList = new TabPage();
-            lootListListView = new MaterialListView();
-            columnName1 = new ColumnHeader();
-            columnValue1 = new ColumnHeader();
             iconList = new ImageList(components);
-            materialLabel1 = new MaterialLabel();
+            materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             tabControlMain.SuspendLayout();
             tabRadar.SuspendLayout();
+            mcRadarLootItemViewer.SuspendLayout();
             mcRadarEnemyStats.SuspendLayout();
             mcRadarStats.SuspendLayout();
             mcRadarSettings.SuspendLayout();
@@ -326,11 +346,13 @@ namespace eft_dma_radar
             mcSettingsGeneralUI.SuspendLayout();
             mcSettingsGeneralRadar.SuspendLayout();
             tabSettingsMemoryWriting.SuspendLayout();
+            mcSettingsMemoryWritingChams.SuspendLayout();
             mcSettingsMemoryWritingSkillBuffs.SuspendLayout();
             mcSettingsMemoryWritingThermal.SuspendLayout();
             mcSettingsMemoryWritingGlobal.SuspendLayout();
             mcSettingsMemoryWritingGear.SuspendLayout();
             tabSettingsLoot.SuspendLayout();
+            mcSettingsLootPing.SuspendLayout();
             mcSettingsLootMinRubleValue.SuspendLayout();
             mcSettingsLootGeneral.SuspendLayout();
             tabSettingsAIFactions.SuspendLayout();
@@ -346,6 +368,7 @@ namespace eft_dma_radar
             ((System.ComponentModel.ISupportInitialize)picOtherDeathMarker).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picOtherTextOutline).BeginInit();
             mcSettingsColorsLootAndQuests.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picLootPing).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picQuestZone).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picQuestItem).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picLootImportant).BeginInit();
@@ -386,42 +409,22 @@ namespace eft_dma_radar
             mcLootFilterFilters.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picLootFilterColor).BeginInit();
             mcLootFilterItemManagement.SuspendLayout();
-            tabPageLootList.SuspendLayout();
             SuspendLayout();
             // 
             // colDialog
             // 
             colDialog.FullOpen = true;
             // 
-            // sldrZoomDistance
-            // 
-            sldrZoomDistance.Depth = 0;
-            sldrZoomDistance.ForeColor = Color.Black;
-            sldrZoomDistance.Location = new Point(17, 187);
-            sldrZoomDistance.MouseState = MaterialSkin.MouseState.HOVER;
-            sldrZoomDistance.Name = "sldrZoomDistance";
-            sldrZoomDistance.RangeMax = 200;
-            sldrZoomDistance.RangeMin = 10;
-            sldrZoomDistance.Size = new Size(351, 40);
-            sldrZoomDistance.TabIndex = 32;
-            sldrZoomDistance.Text = "缩放距离";
-            toolTip.SetToolTip(sldrZoomDistance, "The map zoom distance (also controlled with mouse scrolling)");
-            sldrZoomDistance.UseAccentColor = true;
-            sldrZoomDistance.Value = 100;
-            sldrZoomDistance.ValueMax = 200;
-            sldrZoomDistance.ValueSuffix = "%";
-            sldrZoomDistance.onValueChanged += sldrZoomDistance_onValueChanged;
-            // 
             // sldrUIScale
             // 
             sldrUIScale.Depth = 0;
             sldrUIScale.ForeColor = Color.Black;
-            sldrUIScale.Location = new Point(439, 142);
+            sldrUIScale.Location = new Point(384, 142);
             sldrUIScale.MouseState = MaterialSkin.MouseState.HOVER;
             sldrUIScale.Name = "sldrUIScale";
             sldrUIScale.RangeMax = 200;
             sldrUIScale.RangeMin = 10;
-            sldrUIScale.Size = new Size(275, 40);
+            sldrUIScale.Size = new Size(241, 40);
             sldrUIScale.TabIndex = 31;
             sldrUIScale.Text = "UI 比例";
             toolTip.SetToolTip(sldrUIScale, "Scales the UI fonts etc, useful for larger screen resolutions");
@@ -435,12 +438,12 @@ namespace eft_dma_radar
             // 
             sldrAimlineLength.Depth = 0;
             sldrAimlineLength.ForeColor = Color.Black;
-            sldrAimlineLength.Location = new Point(17, 142);
+            sldrAimlineLength.Location = new Point(15, 142);
             sldrAimlineLength.MouseState = MaterialSkin.MouseState.HOVER;
             sldrAimlineLength.Name = "sldrAimlineLength";
             sldrAimlineLength.RangeMax = 1000;
             sldrAimlineLength.RangeMin = 10;
-            sldrAimlineLength.Size = new Size(347, 40);
+            sldrAimlineLength.Size = new Size(304, 40);
             sldrAimlineLength.TabIndex = 30;
             sldrAimlineLength.Text = "瞄准线长度";
             toolTip.SetToolTip(sldrAimlineLength, "Length of the 'bar' or 'aim line' on the localplayer");
@@ -452,14 +455,14 @@ namespace eft_dma_radar
             // swExfilNames
             // 
             swExfilNames.Depth = 0;
-            swExfilNames.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swExfilNames.Location = new Point(16, 106);
+            swExfilNames.Font = new Font("Segoe UI", 9F);
+            swExfilNames.Location = new Point(15, 96);
             swExfilNames.Margin = new Padding(0);
             swExfilNames.MouseLocation = new Point(-1, -1);
             swExfilNames.MouseState = MaterialSkin.MouseState.HOVER;
             swExfilNames.Name = "swExfilNames";
             swExfilNames.Ripple = true;
-            swExfilNames.Size = new Size(167, 31);
+            swExfilNames.Size = new Size(146, 32);
             swExfilNames.TabIndex = 6;
             swExfilNames.Text = "撤离点名称";
             toolTip.SetToolTip(swExfilNames, "Shows exfiltration point names on radar");
@@ -469,14 +472,14 @@ namespace eft_dma_radar
             // swQuestHelper
             // 
             swQuestHelper.Depth = 0;
-            swQuestHelper.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swQuestHelper.Location = new Point(197, 106);
+            swQuestHelper.Font = new Font("Segoe UI", 9F);
+            swQuestHelper.Location = new Point(172, 107);
             swQuestHelper.Margin = new Padding(0);
             swQuestHelper.MouseLocation = new Point(-1, -1);
             swQuestHelper.MouseState = MaterialSkin.MouseState.HOVER;
             swQuestHelper.Name = "swQuestHelper";
             swQuestHelper.Ripple = true;
-            swQuestHelper.Size = new Size(174, 31);
+            swQuestHelper.Size = new Size(152, 32);
             swQuestHelper.TabIndex = 5;
             swQuestHelper.Text = "显示撤离点";
             toolTip.SetToolTip(swQuestHelper, "Displays all active quest tasks/items on the map. Must use 'Show Loot' to display quest items.");
@@ -486,14 +489,14 @@ namespace eft_dma_radar
             // swHoverArmor
             // 
             swHoverArmor.Depth = 0;
-            swHoverArmor.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swHoverArmor.Location = new Point(197, 51);
+            swHoverArmor.Font = new Font("Segoe UI", 9F);
+            swHoverArmor.Location = new Point(172, 51);
             swHoverArmor.Margin = new Padding(0);
             swHoverArmor.MouseLocation = new Point(-1, -1);
             swHoverArmor.MouseState = MaterialSkin.MouseState.HOVER;
             swHoverArmor.Name = "swHoverArmor";
             swHoverArmor.Ripple = true;
-            swHoverArmor.Size = new Size(174, 31);
+            swHoverArmor.Size = new Size(152, 32);
             swHoverArmor.TabIndex = 4;
             swHoverArmor.Text = "悬停显示";
             toolTip.SetToolTip(swHoverArmor, "Show current gear pieces when hovering over a player");
@@ -503,16 +506,16 @@ namespace eft_dma_radar
             // swNames
             // 
             swNames.Depth = 0;
-            swNames.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swNames.Location = new Point(547, 50);
+            swNames.Font = new Font("Segoe UI", 9F);
+            swNames.Location = new Point(487, 50);
             swNames.Margin = new Padding(0);
             swNames.MouseLocation = new Point(-1, -1);
             swNames.MouseState = MaterialSkin.MouseState.HOVER;
             swNames.Name = "swNames";
             swNames.Ripple = true;
-            swNames.Size = new Size(167, 31);
+            swNames.Size = new Size(140, 32);
             swNames.TabIndex = 3;
-            swNames.Text = "显示玩家ID(F6)";
+            swNames.Text = "显示玩家ID (F6)";
             toolTip.SetToolTip(swNames, "Shows player names on the radar");
             swNames.UseVisualStyleBackColor = true;
             swNames.CheckedChanged += swNames_CheckedChanged;
@@ -520,14 +523,14 @@ namespace eft_dma_radar
             // swAimview
             // 
             swAimview.Depth = 0;
-            swAimview.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swAimview.Location = new Point(374, 50);
+            swAimview.Font = new Font("Segoe UI", 9F);
+            swAimview.Location = new Point(315, 50);
             swAimview.Margin = new Padding(0);
             swAimview.MouseLocation = new Point(-1, -1);
             swAimview.MouseState = MaterialSkin.MouseState.HOVER;
             swAimview.Name = "swAimview";
             swAimview.Ripple = true;
-            swAimview.Size = new Size(182, 31);
+            swAimview.Size = new Size(159, 32);
             swAimview.TabIndex = 2;
             swAimview.Text = "三维目标 (F4)";
             toolTip.SetToolTip(swAimview, "Displays the 3D aimview");
@@ -537,14 +540,14 @@ namespace eft_dma_radar
             // swShowLoot
             // 
             swShowLoot.Depth = 0;
-            swShowLoot.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swShowLoot.Location = new Point(16, 51);
+            swShowLoot.Font = new Font("Segoe UI", 9F);
+            swShowLoot.Location = new Point(15, 51);
             swShowLoot.Margin = new Padding(0);
             swShowLoot.MouseLocation = new Point(-1, -1);
             swShowLoot.MouseState = MaterialSkin.MouseState.HOVER;
             swShowLoot.Name = "swShowLoot";
             swShowLoot.Ripple = true;
-            swShowLoot.Size = new Size(152, 31);
+            swShowLoot.Size = new Size(133, 32);
             swShowLoot.TabIndex = 1;
             swShowLoot.Text = "物资 (F3)";
             toolTip.SetToolTip(swShowLoot, "Displays loose loot & lootable items on corpses/cointainers");
@@ -555,21 +558,21 @@ namespace eft_dma_radar
             // 
             btnRestartRadar.AutoSize = false;
             btnRestartRadar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnRestartRadar.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnRestartRadar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnRestartRadar.Depth = 0;
-            btnRestartRadar.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnRestartRadar.Font = new Font("Segoe UI", 8F);
             btnRestartRadar.HighEmphasis = true;
             btnRestartRadar.Icon = null;
-            btnRestartRadar.Location = new Point(502, 41);
-            btnRestartRadar.Margin = new Padding(5, 7, 5, 7);
+            btnRestartRadar.Location = new Point(384, 32);
+            btnRestartRadar.Margin = new Padding(4, 7, 4, 7);
             btnRestartRadar.MouseState = MaterialSkin.MouseState.HOVER;
             btnRestartRadar.Name = "btnRestartRadar";
             btnRestartRadar.NoAccentTextColor = Color.Empty;
-            btnRestartRadar.Size = new Size(163, 41);
+            btnRestartRadar.Size = new Size(143, 41);
             btnRestartRadar.TabIndex = 2;
             btnRestartRadar.Text = "重启雷达";
             toolTip.SetToolTip(btnRestartRadar, "Manually triggers radar restart");
-            btnRestartRadar.Type = MaterialButton.MaterialButtonType.Contained;
+            btnRestartRadar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnRestartRadar.UseAccentColor = true;
             btnRestartRadar.UseVisualStyleBackColor = true;
             btnRestartRadar.Click += btnRestartRadar_Click;
@@ -578,20 +581,20 @@ namespace eft_dma_radar
             // 
             btnToggleMap.AutoSize = false;
             btnToggleMap.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnToggleMap.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnToggleMap.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnToggleMap.Depth = 0;
             btnToggleMap.HighEmphasis = true;
             btnToggleMap.Icon = null;
-            btnToggleMap.Location = new Point(502, 96);
-            btnToggleMap.Margin = new Padding(5, 7, 5, 7);
+            btnToggleMap.Location = new Point(384, 90);
+            btnToggleMap.Margin = new Padding(4, 7, 4, 7);
             btnToggleMap.MouseState = MaterialSkin.MouseState.HOVER;
             btnToggleMap.Name = "btnToggleMap";
             btnToggleMap.NoAccentTextColor = Color.Empty;
-            btnToggleMap.Size = new Size(163, 41);
+            btnToggleMap.Size = new Size(143, 41);
             btnToggleMap.TabIndex = 1;
             btnToggleMap.Text = "切换Map (F5)";
             toolTip.SetToolTip(btnToggleMap, "Manually toggles active map");
-            btnToggleMap.Type = MaterialButton.MaterialButtonType.Contained;
+            btnToggleMap.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnToggleMap.UseAccentColor = true;
             btnToggleMap.UseVisualStyleBackColor = true;
             btnToggleMap.Click += btnToggleMap_Click;
@@ -599,14 +602,14 @@ namespace eft_dma_radar
             // swMapHelper
             // 
             swMapHelper.Depth = 0;
-            swMapHelper.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swMapHelper.Location = new Point(17, 51);
+            swMapHelper.Font = new Font("Segoe UI", 9F);
+            swMapHelper.Location = new Point(15, 51);
             swMapHelper.Margin = new Padding(0);
             swMapHelper.MouseLocation = new Point(-1, -1);
             swMapHelper.MouseState = MaterialSkin.MouseState.HOVER;
             swMapHelper.Name = "swMapHelper";
             swMapHelper.Ripple = true;
-            swMapHelper.Size = new Size(167, 31);
+            swMapHelper.Size = new Size(146, 32);
             swMapHelper.TabIndex = 0;
             swMapHelper.Text = "地图帮助";
             toolTip.SetToolTip(swMapHelper, "Shows the 'Map Setup' panel");
@@ -616,14 +619,14 @@ namespace eft_dma_radar
             // swMasterSwitch
             // 
             swMasterSwitch.Depth = 0;
-            swMasterSwitch.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swMasterSwitch.Location = new Point(17, 16);
+            swMasterSwitch.Font = new Font("Segoe UI", 9F);
+            swMasterSwitch.Location = new Point(15, 16);
             swMasterSwitch.Margin = new Padding(0);
             swMasterSwitch.MouseLocation = new Point(-1, -1);
             swMasterSwitch.MouseState = MaterialSkin.MouseState.HOVER;
             swMasterSwitch.Name = "swMasterSwitch";
             swMasterSwitch.Ripple = true;
-            swMasterSwitch.Size = new Size(182, 31);
+            swMasterSwitch.Size = new Size(159, 32);
             swMasterSwitch.TabIndex = 36;
             swMasterSwitch.Text = "内存总开关";
             toolTip.SetToolTip(swMasterSwitch, "Shows exfiltration point names on radar");
@@ -633,14 +636,14 @@ namespace eft_dma_radar
             // swInfiniteStamina
             // 
             swInfiniteStamina.Depth = 0;
-            swInfiniteStamina.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swInfiniteStamina.Location = new Point(157, 51);
+            swInfiniteStamina.Font = new Font("Segoe UI", 9F);
+            swInfiniteStamina.Location = new Point(17, 51);
             swInfiniteStamina.Margin = new Padding(0);
             swInfiniteStamina.MouseLocation = new Point(-1, -1);
             swInfiniteStamina.MouseState = MaterialSkin.MouseState.HOVER;
             swInfiniteStamina.Name = "swInfiniteStamina";
             swInfiniteStamina.Ripple = true;
-            swInfiniteStamina.Size = new Size(203, 31);
+            swInfiniteStamina.Size = new Size(178, 32);
             swInfiniteStamina.TabIndex = 38;
             swInfiniteStamina.Text = "无限耐力";
             toolTip.SetToolTip(swInfiniteStamina, "Allows you to run forever");
@@ -651,11 +654,11 @@ namespace eft_dma_radar
             // 
             sldrJumpStrength.Depth = 0;
             sldrJumpStrength.ForeColor = Color.Black;
-            sldrJumpStrength.Location = new Point(17, 357);
+            sldrJumpStrength.Location = new Point(15, 357);
             sldrJumpStrength.MouseState = MaterialSkin.MouseState.HOVER;
             sldrJumpStrength.Name = "sldrJumpStrength";
             sldrJumpStrength.RangeMax = 5;
-            sldrJumpStrength.Size = new Size(263, 40);
+            sldrJumpStrength.Size = new Size(230, 40);
             sldrJumpStrength.TabIndex = 35;
             sldrJumpStrength.Text = "高跳";
             toolTip.SetToolTip(sldrJumpStrength, "The 'strength' of jumping");
@@ -669,11 +672,11 @@ namespace eft_dma_radar
             // 
             sldrThrowStrength.Depth = 0;
             sldrThrowStrength.ForeColor = Color.Black;
-            sldrThrowStrength.Location = new Point(329, 317);
+            sldrThrowStrength.Location = new Point(288, 317);
             sldrThrowStrength.MouseState = MaterialSkin.MouseState.HOVER;
             sldrThrowStrength.Name = "sldrThrowStrength";
             sldrThrowStrength.RangeMin = 1;
-            sldrThrowStrength.Size = new Size(263, 40);
+            sldrThrowStrength.Size = new Size(230, 40);
             sldrThrowStrength.TabIndex = 30;
             sldrThrowStrength.Text = "投掷力量";
             toolTip.SetToolTip(sldrThrowStrength, "The 'strength' of the throwing grenades");
@@ -687,12 +690,12 @@ namespace eft_dma_radar
             // 
             sldrTimeOfDay.Depth = 0;
             sldrTimeOfDay.ForeColor = Color.Black;
-            sldrTimeOfDay.Location = new Point(197, 91);
+            sldrTimeOfDay.Location = new Point(172, 91);
             sldrTimeOfDay.MouseState = MaterialSkin.MouseState.HOVER;
             sldrTimeOfDay.Name = "sldrTimeOfDay";
             sldrTimeOfDay.RangeMax = 24;
             sldrTimeOfDay.RangeMin = 1;
-            sldrTimeOfDay.Size = new Size(272, 40);
+            sldrTimeOfDay.Size = new Size(238, 40);
             sldrTimeOfDay.TabIndex = 30;
             sldrTimeOfDay.Text = "时间切换";
             toolTip.SetToolTip(sldrTimeOfDay, "The time of the in-game day to set");
@@ -705,14 +708,14 @@ namespace eft_dma_radar
             // swExtendedReach
             // 
             swExtendedReach.Depth = 0;
-            swExtendedReach.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swExtendedReach.Location = new Point(381, 51);
+            swExtendedReach.Font = new Font("Segoe UI", 9F);
+            swExtendedReach.Location = new Point(194, 51);
             swExtendedReach.Margin = new Padding(0);
             swExtendedReach.MouseLocation = new Point(-1, -1);
             swExtendedReach.MouseState = MaterialSkin.MouseState.HOVER;
             swExtendedReach.Name = "swExtendedReach";
             swExtendedReach.Ripple = true;
-            swExtendedReach.Size = new Size(200, 31);
+            swExtendedReach.Size = new Size(175, 32);
             swExtendedReach.TabIndex = 7;
             swExtendedReach.Text = "隔空取物";
             toolTip.SetToolTip(swExtendedReach, "Increases maximum loot/door interaction distance");
@@ -722,49 +725,31 @@ namespace eft_dma_radar
             // swFreezeTime
             // 
             swFreezeTime.Depth = 0;
-            swFreezeTime.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swFreezeTime.Location = new Point(17, 96);
+            swFreezeTime.Font = new Font("Segoe UI", 9F);
+            swFreezeTime.Location = new Point(15, 96);
             swFreezeTime.Margin = new Padding(0);
             swFreezeTime.MouseLocation = new Point(-1, -1);
             swFreezeTime.MouseState = MaterialSkin.MouseState.HOVER;
             swFreezeTime.Name = "swFreezeTime";
             swFreezeTime.Ripple = true;
-            swFreezeTime.Size = new Size(174, 31);
+            swFreezeTime.Size = new Size(152, 32);
             swFreezeTime.TabIndex = 5;
             swFreezeTime.Text = "冻结时间";
             toolTip.SetToolTip(swFreezeTime, "Freeze the in-game time of the day");
             swFreezeTime.UseVisualStyleBackColor = true;
             swFreezeTime.CheckedChanged += swFreezeTime_CheckedChanged;
             // 
-            // swChams
-            // 
-            swChams.Depth = 0;
-            swChams.Enabled = false;
-            swChams.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swChams.Location = new Point(17, 51);
-            swChams.Margin = new Padding(0);
-            swChams.MouseLocation = new Point(-1, -1);
-            swChams.MouseState = MaterialSkin.MouseState.HOVER;
-            swChams.Name = "swChams";
-            swChams.Ripple = true;
-            swChams.Size = new Size(130, 31);
-            swChams.TabIndex = 1;
-            swChams.Text = "热能";
-            toolTip.SetToolTip(swChams, "Displays loose loot & lootable items on corpses/cointainers");
-            swChams.UseVisualStyleBackColor = true;
-            swChams.CheckedChanged += swChams_CheckedChanged;
-            // 
             // swNightVision
             // 
             swNightVision.Depth = 0;
-            swNightVision.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swNightVision.Location = new Point(435, 96);
+            swNightVision.Font = new Font("Segoe UI", 9F);
+            swNightVision.Location = new Point(381, 96);
             swNightVision.Margin = new Padding(0);
             swNightVision.MouseLocation = new Point(-1, -1);
             swNightVision.MouseState = MaterialSkin.MouseState.HOVER;
             swNightVision.Name = "swNightVision";
             swNightVision.Ripple = true;
-            swNightVision.Size = new Size(166, 31);
+            swNightVision.Size = new Size(145, 32);
             swNightVision.TabIndex = 36;
             swNightVision.Text = "夜视";
             toolTip.SetToolTip(swNightVision, "Enables 'bug eye' night vision");
@@ -774,16 +759,16 @@ namespace eft_dma_radar
             // swOpticalThermal
             // 
             swOpticalThermal.Depth = 0;
-            swOpticalThermal.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swOpticalThermal.Location = new Point(222, 96);
+            swOpticalThermal.Font = new Font("Segoe UI", 9F);
+            swOpticalThermal.Location = new Point(194, 96);
             swOpticalThermal.Margin = new Padding(0);
             swOpticalThermal.MouseLocation = new Point(-1, -1);
             swOpticalThermal.MouseState = MaterialSkin.MouseState.HOVER;
             swOpticalThermal.Name = "swOpticalThermal";
             swOpticalThermal.Ripple = true;
-            swOpticalThermal.Size = new Size(202, 31);
+            swOpticalThermal.Size = new Size(177, 32);
             swOpticalThermal.TabIndex = 35;
-            swOpticalThermal.Text = "热能";
+            swOpticalThermal.Text = "热成像";
             toolTip.SetToolTip(swOpticalThermal, "Turns optics into thermals");
             swOpticalThermal.UseVisualStyleBackColor = true;
             swOpticalThermal.CheckedChanged += swOpticalThermal_CheckedChanged;
@@ -791,16 +776,16 @@ namespace eft_dma_radar
             // swThermalVision
             // 
             swThermalVision.Depth = 0;
-            swThermalVision.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swThermalVision.Location = new Point(16, 96);
+            swThermalVision.Font = new Font("Segoe UI", 9F);
+            swThermalVision.Location = new Point(14, 96);
             swThermalVision.Margin = new Padding(0);
             swThermalVision.MouseLocation = new Point(-1, -1);
             swThermalVision.MouseState = MaterialSkin.MouseState.HOVER;
             swThermalVision.Name = "swThermalVision";
             swThermalVision.Ripple = true;
-            swThermalVision.Size = new Size(202, 31);
+            swThermalVision.Size = new Size(177, 32);
             swThermalVision.TabIndex = 34;
-            swThermalVision.Text = "热成像";
+            swThermalVision.Text = "T-7";
             toolTip.SetToolTip(swThermalVision, "Enables T-7 thermal vision");
             swThermalVision.UseVisualStyleBackColor = true;
             swThermalVision.CheckedChanged += swThermalVision_CheckedChanged;
@@ -809,12 +794,12 @@ namespace eft_dma_radar
             // 
             sldrMagDrillsSpeed.Depth = 0;
             sldrMagDrillsSpeed.ForeColor = Color.Black;
-            sldrMagDrillsSpeed.Location = new Point(17, 317);
+            sldrMagDrillsSpeed.Location = new Point(15, 317);
             sldrMagDrillsSpeed.MouseState = MaterialSkin.MouseState.HOVER;
             sldrMagDrillsSpeed.Name = "sldrMagDrillsSpeed";
             sldrMagDrillsSpeed.RangeMax = 70;
             sldrMagDrillsSpeed.RangeMin = 1;
-            sldrMagDrillsSpeed.Size = new Size(263, 40);
+            sldrMagDrillsSpeed.Size = new Size(230, 40);
             sldrMagDrillsSpeed.TabIndex = 30;
             sldrMagDrillsSpeed.Text = "加速上弹";
             toolTip.SetToolTip(sldrMagDrillsSpeed, "Speed of un/packing ammunition from a magazine");
@@ -827,14 +812,14 @@ namespace eft_dma_radar
             // swNoVisor
             // 
             swNoVisor.Depth = 0;
-            swNoVisor.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swNoVisor.Location = new Point(435, 51);
+            swNoVisor.Font = new Font("Segoe UI", 9F);
+            swNoVisor.Location = new Point(381, 51);
             swNoVisor.Margin = new Padding(0);
             swNoVisor.MouseLocation = new Point(-1, -1);
             swNoVisor.MouseState = MaterialSkin.MouseState.HOVER;
             swNoVisor.Name = "swNoVisor";
             swNoVisor.Ripple = true;
-            swNoVisor.Size = new Size(145, 31);
+            swNoVisor.Size = new Size(127, 32);
             swNoVisor.TabIndex = 7;
             swNoVisor.Text = "移除面具";
             toolTip.SetToolTip(swNoVisor, "Removes visual visor effect");
@@ -844,14 +829,14 @@ namespace eft_dma_radar
             // swInstantADS
             // 
             swInstantADS.Depth = 0;
-            swInstantADS.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swInstantADS.Location = new Point(222, 51);
+            swInstantADS.Font = new Font("Segoe UI", 9F);
+            swInstantADS.Location = new Point(194, 51);
             swInstantADS.Margin = new Padding(0);
             swInstantADS.MouseLocation = new Point(-1, -1);
             swInstantADS.MouseState = MaterialSkin.MouseState.HOVER;
             swInstantADS.Name = "swInstantADS";
             swInstantADS.Ripple = true;
-            swInstantADS.Size = new Size(173, 31);
+            swInstantADS.Size = new Size(151, 32);
             swInstantADS.TabIndex = 2;
             swInstantADS.Text = "上弹加速";
             toolTip.SetToolTip(swInstantADS, "Increases ADS speed to be near instantaneous");
@@ -861,14 +846,14 @@ namespace eft_dma_radar
             // swNoRecoilSway
             // 
             swNoRecoilSway.Depth = 0;
-            swNoRecoilSway.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swNoRecoilSway.Location = new Point(17, 51);
+            swNoRecoilSway.Font = new Font("Segoe UI", 9F);
+            swNoRecoilSway.Location = new Point(15, 51);
             swNoRecoilSway.Margin = new Padding(0);
             swNoRecoilSway.MouseLocation = new Point(-1, -1);
             swNoRecoilSway.MouseState = MaterialSkin.MouseState.HOVER;
             swNoRecoilSway.Name = "swNoRecoilSway";
             swNoRecoilSway.Ripple = true;
-            swNoRecoilSway.Size = new Size(202, 31);
+            swNoRecoilSway.Size = new Size(177, 32);
             swNoRecoilSway.TabIndex = 1;
             swNoRecoilSway.Text = "无反冲/摆动";
             toolTip.SetToolTip(swNoRecoilSway, "Removes weapon recoil & sway");
@@ -891,11 +876,11 @@ namespace eft_dma_radar
             cboThermalColorScheme.IntegralHeight = false;
             cboThermalColorScheme.ItemHeight = 29;
             cboThermalColorScheme.Items.AddRange(new object[] { "Fusion", "Rainbow", "White Hot", "Black Hot" });
-            cboThermalColorScheme.Location = new Point(17, 96);
+            cboThermalColorScheme.Location = new Point(15, 96);
             cboThermalColorScheme.MaxDropDownItems = 4;
             cboThermalColorScheme.MouseState = MaterialSkin.MouseState.OUT;
             cboThermalColorScheme.Name = "cboThermalColorScheme";
-            cboThermalColorScheme.Size = new Size(195, 35);
+            cboThermalColorScheme.Size = new Size(171, 35);
             cboThermalColorScheme.StartIndex = 0;
             cboThermalColorScheme.TabIndex = 38;
             toolTip.SetToolTip(cboThermalColorScheme, "The color scheme/preset to edit");
@@ -918,11 +903,11 @@ namespace eft_dma_radar
             cboThermalType.IntegralHeight = false;
             cboThermalType.ItemHeight = 29;
             cboThermalType.Items.AddRange(new object[] { "Main", "Optic" });
-            cboThermalType.Location = new Point(17, 51);
+            cboThermalType.Location = new Point(15, 51);
             cboThermalType.MaxDropDownItems = 4;
             cboThermalType.MouseState = MaterialSkin.MouseState.OUT;
             cboThermalType.Name = "cboThermalType";
-            cboThermalType.Size = new Size(195, 35);
+            cboThermalType.Size = new Size(171, 35);
             cboThermalType.StartIndex = 0;
             cboThermalType.TabIndex = 37;
             toolTip.SetToolTip(cboThermalType, "The type of thermal to edit");
@@ -933,12 +918,12 @@ namespace eft_dma_radar
             // 
             sldrMinCorpse.Depth = 0;
             sldrMinCorpse.ForeColor = Color.Black;
-            sldrMinCorpse.Location = new Point(390, 45);
+            sldrMinCorpse.Location = new Point(341, 45);
             sldrMinCorpse.MouseState = MaterialSkin.MouseState.HOVER;
             sldrMinCorpse.Name = "sldrMinCorpse";
             sldrMinCorpse.RangeMax = 800;
             sldrMinCorpse.RangeMin = 10;
-            sldrMinCorpse.Size = new Size(275, 40);
+            sldrMinCorpse.Size = new Size(241, 40);
             sldrMinCorpse.TabIndex = 31;
             sldrMinCorpse.Text = "尸体";
             toolTip.SetToolTip(sldrMinCorpse, "The minimum value for a corpse to be shown");
@@ -952,12 +937,12 @@ namespace eft_dma_radar
             // 
             sldrMinRegularLoot.Depth = 0;
             sldrMinRegularLoot.ForeColor = Color.Black;
-            sldrMinRegularLoot.Location = new Point(17, 45);
+            sldrMinRegularLoot.Location = new Point(15, 45);
             sldrMinRegularLoot.MouseState = MaterialSkin.MouseState.HOVER;
             sldrMinRegularLoot.Name = "sldrMinRegularLoot";
             sldrMinRegularLoot.RangeMax = 249;
             sldrMinRegularLoot.RangeMin = 10;
-            sldrMinRegularLoot.Size = new Size(347, 40);
+            sldrMinRegularLoot.Size = new Size(304, 40);
             sldrMinRegularLoot.TabIndex = 30;
             sldrMinRegularLoot.Text = "普通物资";
             toolTip.SetToolTip(sldrMinRegularLoot, "The minimum value for loot to be displayed");
@@ -970,14 +955,14 @@ namespace eft_dma_radar
             // swCorpses
             // 
             swCorpses.Depth = 0;
-            swCorpses.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swCorpses.Location = new Point(17, 96);
+            swCorpses.Font = new Font("Segoe UI", 9F);
+            swCorpses.Location = new Point(15, 96);
             swCorpses.Margin = new Padding(0);
             swCorpses.MouseLocation = new Point(-1, -1);
             swCorpses.MouseState = MaterialSkin.MouseState.HOVER;
             swCorpses.Name = "swCorpses";
             swCorpses.Ripple = true;
-            swCorpses.Size = new Size(143, 31);
+            swCorpses.Size = new Size(125, 32);
             swCorpses.TabIndex = 0;
             swCorpses.Text = "尸体";
             toolTip.SetToolTip(swCorpses, "Shows player/scav/boss etc corpses");
@@ -987,14 +972,14 @@ namespace eft_dma_radar
             // swFilteredOnly
             // 
             swFilteredOnly.Depth = 0;
-            swFilteredOnly.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swFilteredOnly.Location = new Point(202, 51);
+            swFilteredOnly.Font = new Font("Segoe UI", 9F);
+            swFilteredOnly.Location = new Point(177, 51);
             swFilteredOnly.Margin = new Padding(0);
             swFilteredOnly.MouseLocation = new Point(-1, -1);
             swFilteredOnly.MouseState = MaterialSkin.MouseState.HOVER;
             swFilteredOnly.Name = "swFilteredOnly";
             swFilteredOnly.Ripple = true;
-            swFilteredOnly.Size = new Size(175, 31);
+            swFilteredOnly.Size = new Size(153, 32);
             swFilteredOnly.TabIndex = 31;
             swFilteredOnly.Text = "显示筛选物品";
             toolTip.SetToolTip(swFilteredOnly, "Only shows items considered 'important' or ones in a filter");
@@ -1004,14 +989,14 @@ namespace eft_dma_radar
             // swSubItems
             // 
             swSubItems.Depth = 0;
-            swSubItems.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swSubItems.Location = new Point(410, 96);
+            swSubItems.Font = new Font("Segoe UI", 9F);
+            swSubItems.Location = new Point(372, 96);
             swSubItems.Margin = new Padding(0);
             swSubItems.MouseLocation = new Point(-1, -1);
             swSubItems.MouseState = MaterialSkin.MouseState.HOVER;
             swSubItems.Name = "swSubItems";
             swSubItems.Ripple = true;
-            swSubItems.Size = new Size(152, 31);
+            swSubItems.Size = new Size(133, 32);
             swSubItems.TabIndex = 32;
             swSubItems.Text = "显示子物资";
             toolTip.SetToolTip(swSubItems, "Shows sub-items within a container/corpse");
@@ -1021,14 +1006,14 @@ namespace eft_dma_radar
             // swItemValue
             // 
             swItemValue.Depth = 0;
-            swItemValue.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swItemValue.Location = new Point(202, 96);
+            swItemValue.Font = new Font("Segoe UI", 9F);
+            swItemValue.Location = new Point(177, 96);
             swItemValue.Margin = new Padding(0);
             swItemValue.MouseLocation = new Point(-1, -1);
             swItemValue.MouseState = MaterialSkin.MouseState.HOVER;
             swItemValue.Name = "swItemValue";
             swItemValue.Ripple = true;
-            swItemValue.Size = new Size(170, 31);
+            swItemValue.Size = new Size(149, 32);
             swItemValue.TabIndex = 33;
             swItemValue.Text = "项目";
             toolTip.SetToolTip(swItemValue, "Shows item value");
@@ -1038,14 +1023,14 @@ namespace eft_dma_radar
             // swAutoRefresh
             // 
             swAutoRefresh.Depth = 0;
-            swAutoRefresh.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swAutoRefresh.Location = new Point(17, 143);
+            swAutoRefresh.Font = new Font("Segoe UI", 9F);
+            swAutoRefresh.Location = new Point(15, 143);
             swAutoRefresh.Margin = new Padding(0);
             swAutoRefresh.MouseLocation = new Point(-1, -1);
             swAutoRefresh.MouseState = MaterialSkin.MouseState.HOVER;
             swAutoRefresh.Name = "swAutoRefresh";
             swAutoRefresh.Ripple = true;
-            swAutoRefresh.Size = new Size(176, 31);
+            swAutoRefresh.Size = new Size(154, 32);
             swAutoRefresh.TabIndex = 34;
             swAutoRefresh.Text = "自动刷新地图";
             toolTip.SetToolTip(swAutoRefresh, "Automatically refreshes loot on the map");
@@ -1056,21 +1041,21 @@ namespace eft_dma_radar
             // 
             btnRefreshLoot.AutoSize = false;
             btnRefreshLoot.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnRefreshLoot.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnRefreshLoot.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnRefreshLoot.Depth = 0;
-            btnRefreshLoot.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnRefreshLoot.Font = new Font("Segoe UI", 8F);
             btnRefreshLoot.HighEmphasis = true;
             btnRefreshLoot.Icon = null;
-            btnRefreshLoot.Location = new Point(410, 41);
-            btnRefreshLoot.Margin = new Padding(5, 7, 5, 7);
+            btnRefreshLoot.Location = new Point(389, 42);
+            btnRefreshLoot.Margin = new Padding(4, 7, 4, 7);
             btnRefreshLoot.MouseState = MaterialSkin.MouseState.HOVER;
             btnRefreshLoot.Name = "btnRefreshLoot";
             btnRefreshLoot.NoAccentTextColor = Color.Empty;
-            btnRefreshLoot.Size = new Size(133, 41);
+            btnRefreshLoot.Size = new Size(116, 41);
             btnRefreshLoot.TabIndex = 35;
             btnRefreshLoot.Text = "手动刷新物资";
             toolTip.SetToolTip(btnRefreshLoot, "Manually triggers radar restart");
-            btnRefreshLoot.Type = MaterialButton.MaterialButtonType.Contained;
+            btnRefreshLoot.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnRefreshLoot.UseAccentColor = true;
             btnRefreshLoot.UseVisualStyleBackColor = true;
             btnRefreshLoot.Click += btnRefreshLoot_Click;
@@ -1090,11 +1075,11 @@ namespace eft_dma_radar
             cboAutoRefreshMap.Hint = "选择地图";
             cboAutoRefreshMap.IntegralHeight = false;
             cboAutoRefreshMap.ItemHeight = 29;
-            cboAutoRefreshMap.Location = new Point(199, 139);
+            cboAutoRefreshMap.Location = new Point(174, 139);
             cboAutoRefreshMap.MaxDropDownItems = 4;
             cboAutoRefreshMap.MouseState = MaterialSkin.MouseState.OUT;
             cboAutoRefreshMap.Name = "cboAutoRefreshMap";
-            cboAutoRefreshMap.Size = new Size(175, 35);
+            cboAutoRefreshMap.Size = new Size(154, 35);
             cboAutoRefreshMap.StartIndex = 0;
             cboAutoRefreshMap.TabIndex = 39;
             toolTip.SetToolTip(cboAutoRefreshMap, "The map to adjust the auto refresh delay on");
@@ -1106,12 +1091,12 @@ namespace eft_dma_radar
             // 
             sldrAutoRefreshDelay.Depth = 0;
             sldrAutoRefreshDelay.ForeColor = Color.Black;
-            sldrAutoRefreshDelay.Location = new Point(382, 139);
+            sldrAutoRefreshDelay.Location = new Point(334, 139);
             sldrAutoRefreshDelay.MouseState = MaterialSkin.MouseState.HOVER;
             sldrAutoRefreshDelay.Name = "sldrAutoRefreshDelay";
             sldrAutoRefreshDelay.RangeMax = 90;
             sldrAutoRefreshDelay.RangeMin = 1;
-            sldrAutoRefreshDelay.Size = new Size(195, 40);
+            sldrAutoRefreshDelay.Size = new Size(171, 40);
             sldrAutoRefreshDelay.TabIndex = 38;
             sldrAutoRefreshDelay.Text = "延迟";
             toolTip.SetToolTip(sldrAutoRefreshDelay, "The delay in seconds to automatically refresh loot");
@@ -1126,12 +1111,12 @@ namespace eft_dma_radar
             // 
             sldrMinSubItems.Depth = 0;
             sldrMinSubItems.ForeColor = Color.Black;
-            sldrMinSubItems.Location = new Point(390, 91);
+            sldrMinSubItems.Location = new Point(341, 91);
             sldrMinSubItems.MouseState = MaterialSkin.MouseState.HOVER;
             sldrMinSubItems.Name = "sldrMinSubItems";
             sldrMinSubItems.RangeMax = 200;
             sldrMinSubItems.RangeMin = 5;
-            sldrMinSubItems.Size = new Size(275, 40);
+            sldrMinSubItems.Size = new Size(241, 40);
             sldrMinSubItems.TabIndex = 34;
             sldrMinSubItems.Text = "显示子物资";
             toolTip.SetToolTip(sldrMinSubItems, "The minimum value for sub-items to be shown (eg mods on a weapon)");
@@ -1145,12 +1130,12 @@ namespace eft_dma_radar
             // 
             sldrMinImportantLoot.Depth = 0;
             sldrMinImportantLoot.ForeColor = Color.Black;
-            sldrMinImportantLoot.Location = new Point(17, 91);
+            sldrMinImportantLoot.Location = new Point(15, 91);
             sldrMinImportantLoot.MouseState = MaterialSkin.MouseState.HOVER;
             sldrMinImportantLoot.Name = "sldrMinImportantLoot";
             sldrMinImportantLoot.RangeMax = 600;
             sldrMinImportantLoot.RangeMin = 10;
-            sldrMinImportantLoot.Size = new Size(347, 40);
+            sldrMinImportantLoot.Size = new Size(304, 40);
             sldrMinImportantLoot.TabIndex = 35;
             sldrMinImportantLoot.Text = "重要物资";
             toolTip.SetToolTip(sldrMinImportantLoot, "The minimum value for loot to be considered 'important'");
@@ -1163,12 +1148,12 @@ namespace eft_dma_radar
             // btnAddFaction
             // 
             btnAddFaction.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnAddFaction.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnAddFaction.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnAddFaction.Depth = 0;
             btnAddFaction.HighEmphasis = true;
             btnAddFaction.Icon = (Image)resources.GetObject("btnAddFaction.Icon");
-            btnAddFaction.Location = new Point(241, 350);
-            btnAddFaction.Margin = new Padding(5, 7, 5, 7);
+            btnAddFaction.Location = new Point(222, 344);
+            btnAddFaction.Margin = new Padding(4, 7, 4, 7);
             btnAddFaction.MouseState = MaterialSkin.MouseState.HOVER;
             btnAddFaction.Name = "btnAddFaction";
             btnAddFaction.NoAccentTextColor = Color.Empty;
@@ -1176,7 +1161,7 @@ namespace eft_dma_radar
             btnAddFaction.TabIndex = 39;
             btnAddFaction.Text = "添加";
             toolTip.SetToolTip(btnAddFaction, "Creates a new loot filter profile");
-            btnAddFaction.Type = MaterialButton.MaterialButtonType.Contained;
+            btnAddFaction.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnAddFaction.UseAccentColor = true;
             btnAddFaction.UseVisualStyleBackColor = true;
             btnAddFaction.Click += btnAddFaction_Click;
@@ -1184,12 +1169,12 @@ namespace eft_dma_radar
             // btnRemoveFaction
             // 
             btnRemoveFaction.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnRemoveFaction.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnRemoveFaction.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnRemoveFaction.Depth = 0;
             btnRemoveFaction.HighEmphasis = true;
             btnRemoveFaction.Icon = (Image)resources.GetObject("btnRemoveFaction.Icon");
-            btnRemoveFaction.Location = new Point(263, 411);
-            btnRemoveFaction.Margin = new Padding(5, 7, 5, 7);
+            btnRemoveFaction.Location = new Point(222, 409);
+            btnRemoveFaction.Margin = new Padding(4, 7, 4, 7);
             btnRemoveFaction.MouseState = MaterialSkin.MouseState.HOVER;
             btnRemoveFaction.Name = "btnRemoveFaction";
             btnRemoveFaction.NoAccentTextColor = Color.Empty;
@@ -1197,7 +1182,7 @@ namespace eft_dma_radar
             btnRemoveFaction.TabIndex = 40;
             btnRemoveFaction.Text = "移除";
             toolTip.SetToolTip(btnRemoveFaction, "Removes the selected loot filter profile");
-            btnRemoveFaction.Type = MaterialButton.MaterialButtonType.Outlined;
+            btnRemoveFaction.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
             btnRemoveFaction.UseAccentColor = true;
             btnRemoveFaction.UseVisualStyleBackColor = true;
             btnRemoveFaction.Click += btnRemoveFaction_Click;
@@ -1205,12 +1190,12 @@ namespace eft_dma_radar
             // btnAddFactionEntry
             // 
             btnAddFactionEntry.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnAddFactionEntry.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnAddFactionEntry.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnAddFactionEntry.Depth = 0;
             btnAddFactionEntry.HighEmphasis = true;
             btnAddFactionEntry.Icon = (Image)resources.GetObject("btnAddFactionEntry.Icon");
-            btnAddFactionEntry.Location = new Point(331, 147);
-            btnAddFactionEntry.Margin = new Padding(5, 7, 5, 7);
+            btnAddFactionEntry.Location = new Point(329, 147);
+            btnAddFactionEntry.Margin = new Padding(4, 7, 4, 7);
             btnAddFactionEntry.MouseState = MaterialSkin.MouseState.HOVER;
             btnAddFactionEntry.Name = "btnAddFactionEntry";
             btnAddFactionEntry.NoAccentTextColor = Color.Empty;
@@ -1218,7 +1203,7 @@ namespace eft_dma_radar
             btnAddFactionEntry.TabIndex = 46;
             btnAddFactionEntry.Text = "添加名单";
             toolTip.SetToolTip(btnAddFactionEntry, "Creates a new loot filter profile");
-            btnAddFactionEntry.Type = MaterialButton.MaterialButtonType.Contained;
+            btnAddFactionEntry.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnAddFactionEntry.UseAccentColor = true;
             btnAddFactionEntry.UseVisualStyleBackColor = true;
             btnAddFactionEntry.Click += btnAddFactionEntry_Click;
@@ -1226,12 +1211,12 @@ namespace eft_dma_radar
             // btnRemoveFactionEntry
             // 
             btnRemoveFactionEntry.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnRemoveFactionEntry.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnRemoveFactionEntry.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnRemoveFactionEntry.Depth = 0;
             btnRemoveFactionEntry.HighEmphasis = true;
             btnRemoveFactionEntry.Icon = (Image)resources.GetObject("btnRemoveFactionEntry.Icon");
-            btnRemoveFactionEntry.Location = new Point(309, 51);
-            btnRemoveFactionEntry.Margin = new Padding(5, 7, 5, 7);
+            btnRemoveFactionEntry.Location = new Point(361, 51);
+            btnRemoveFactionEntry.Margin = new Padding(4, 7, 4, 7);
             btnRemoveFactionEntry.MouseState = MaterialSkin.MouseState.HOVER;
             btnRemoveFactionEntry.Name = "btnRemoveFactionEntry";
             btnRemoveFactionEntry.NoAccentTextColor = Color.Empty;
@@ -1239,7 +1224,7 @@ namespace eft_dma_radar
             btnRemoveFactionEntry.TabIndex = 48;
             btnRemoveFactionEntry.Text = "移除";
             toolTip.SetToolTip(btnRemoveFactionEntry, "Removes the selected loot filter profile");
-            btnRemoveFactionEntry.Type = MaterialButton.MaterialButtonType.Outlined;
+            btnRemoveFactionEntry.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
             btnRemoveFactionEntry.UseAccentColor = true;
             btnRemoveFactionEntry.UseVisualStyleBackColor = true;
             btnRemoveFactionEntry.Click += btnRemoveFactionEntry_Click;
@@ -1254,7 +1239,7 @@ namespace eft_dma_radar
             txtTeammateID.HideSelection = true;
             txtTeammateID.Hint = "队友ID";
             txtTeammateID.LeadingIcon = null;
-            txtTeammateID.Location = new Point(429, 191);
+            txtTeammateID.Location = new Point(453, 198);
             txtTeammateID.MaxLength = 32767;
             txtTeammateID.MouseState = MaterialSkin.MouseState.OUT;
             txtTeammateID.Name = "txtTeammateID";
@@ -1266,7 +1251,7 @@ namespace eft_dma_radar
             txtTeammateID.SelectionLength = 0;
             txtTeammateID.SelectionStart = 0;
             txtTeammateID.ShortcutsEnabled = true;
-            txtTeammateID.Size = new Size(275, 36);
+            txtTeammateID.Size = new Size(172, 36);
             txtTeammateID.TabIndex = 32;
             txtTeammateID.TabStop = false;
             txtTeammateID.TextAlign = HorizontalAlignment.Left;
@@ -1285,7 +1270,7 @@ namespace eft_dma_radar
             txtFactionEntryName.HideSelection = true;
             txtFactionEntryName.Hint = "ID";
             txtFactionEntryName.LeadingIcon = null;
-            txtFactionEntryName.Location = new Point(17, 51);
+            txtFactionEntryName.Location = new Point(15, 51);
             txtFactionEntryName.MaxLength = 32767;
             txtFactionEntryName.MouseState = MaterialSkin.MouseState.OUT;
             txtFactionEntryName.Name = "txtFactionEntryName";
@@ -1297,7 +1282,7 @@ namespace eft_dma_radar
             txtFactionEntryName.SelectionLength = 0;
             txtFactionEntryName.SelectionStart = 0;
             txtFactionEntryName.ShortcutsEnabled = true;
-            txtFactionEntryName.Size = new Size(213, 36);
+            txtFactionEntryName.Size = new Size(186, 36);
             txtFactionEntryName.TabIndex = 44;
             txtFactionEntryName.TabStop = false;
             txtFactionEntryName.TextAlign = HorizontalAlignment.Left;
@@ -1317,7 +1302,7 @@ namespace eft_dma_radar
             txtFactionName.HideSelection = true;
             txtFactionName.Hint = "队伍名称";
             txtFactionName.LeadingIcon = null;
-            txtFactionName.Location = new Point(241, 51);
+            txtFactionName.Location = new Point(254, 51);
             txtFactionName.MaxLength = 32767;
             txtFactionName.MouseState = MaterialSkin.MouseState.OUT;
             txtFactionName.Name = "txtFactionName";
@@ -1329,7 +1314,7 @@ namespace eft_dma_radar
             txtFactionName.SelectionLength = 0;
             txtFactionName.SelectionStart = 0;
             txtFactionName.ShortcutsEnabled = true;
-            txtFactionName.Size = new Size(247, 36);
+            txtFactionName.Size = new Size(216, 36);
             txtFactionName.TabIndex = 45;
             txtFactionName.TabStop = false;
             txtFactionName.TextAlign = HorizontalAlignment.Left;
@@ -1337,7 +1322,6 @@ namespace eft_dma_radar
             txtFactionName.TrailingIcon = null;
             txtFactionName.UseSystemPasswordChar = false;
             txtFactionName.UseTallSize = false;
-            txtFactionName.Click += txtFactionName_Click;
             txtFactionName.KeyDown += txtFactionName_KeyDown;
             // 
             // cboFactionType
@@ -1355,11 +1339,11 @@ namespace eft_dma_radar
             cboFactionType.Hint = "队伍类型";
             cboFactionType.IntegralHeight = false;
             cboFactionType.ItemHeight = 29;
-            cboFactionType.Location = new Point(241, 102);
+            cboFactionType.Location = new Point(254, 102);
             cboFactionType.MaxDropDownItems = 4;
             cboFactionType.MouseState = MaterialSkin.MouseState.OUT;
             cboFactionType.Name = "cboFactionType";
-            cboFactionType.Size = new Size(246, 35);
+            cboFactionType.Size = new Size(216, 35);
             cboFactionType.StartIndex = 0;
             cboFactionType.TabIndex = 44;
             toolTip.SetToolTip(cboFactionType, "The type of faction it is");
@@ -1370,21 +1354,21 @@ namespace eft_dma_radar
             // 
             btnResetTheme.AutoSize = false;
             btnResetTheme.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnResetTheme.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnResetTheme.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnResetTheme.Depth = 0;
-            btnResetTheme.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnResetTheme.Font = new Font("Segoe UI", 8F);
             btnResetTheme.HighEmphasis = true;
             btnResetTheme.Icon = null;
-            btnResetTheme.Location = new Point(85, 309);
-            btnResetTheme.Margin = new Padding(5, 7, 5, 7);
+            btnResetTheme.Location = new Point(74, 309);
+            btnResetTheme.Margin = new Padding(4, 7, 4, 7);
             btnResetTheme.MouseState = MaterialSkin.MouseState.HOVER;
             btnResetTheme.Name = "btnResetTheme";
             btnResetTheme.NoAccentTextColor = Color.Empty;
-            btnResetTheme.Size = new Size(120, 41);
+            btnResetTheme.Size = new Size(105, 41);
             btnResetTheme.TabIndex = 59;
             btnResetTheme.Text = "重置主题";
             toolTip.SetToolTip(btnResetTheme, "Manually triggers radar restart");
-            btnResetTheme.Type = MaterialButton.MaterialButtonType.Contained;
+            btnResetTheme.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnResetTheme.UseAccentColor = true;
             btnResetTheme.UseVisualStyleBackColor = true;
             btnResetTheme.Click += btnResetTheme_Click;
@@ -1393,21 +1377,21 @@ namespace eft_dma_radar
             // 
             btnMapSetupApply.AutoSize = false;
             btnMapSetupApply.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnMapSetupApply.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnMapSetupApply.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnMapSetupApply.Depth = 0;
-            btnMapSetupApply.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
+            btnMapSetupApply.Font = new Font("Segoe UI", 8F);
             btnMapSetupApply.HighEmphasis = true;
             btnMapSetupApply.Icon = null;
-            btnMapSetupApply.Location = new Point(293, 17);
-            btnMapSetupApply.Margin = new Padding(5, 7, 5, 7);
+            btnMapSetupApply.Location = new Point(282, 23);
+            btnMapSetupApply.Margin = new Padding(4, 7, 4, 7);
             btnMapSetupApply.MouseState = MaterialSkin.MouseState.HOVER;
             btnMapSetupApply.Name = "btnMapSetupApply";
             btnMapSetupApply.NoAccentTextColor = Color.Empty;
-            btnMapSetupApply.Size = new Size(65, 41);
+            btnMapSetupApply.Size = new Size(57, 41);
             btnMapSetupApply.TabIndex = 35;
             btnMapSetupApply.Text = "应用";
             toolTip.SetToolTip(btnMapSetupApply, "Manually triggers radar restart");
-            btnMapSetupApply.Type = MaterialButton.MaterialButtonType.Contained;
+            btnMapSetupApply.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnMapSetupApply.UseAccentColor = true;
             btnMapSetupApply.UseVisualStyleBackColor = true;
             btnMapSetupApply.Click += btnMapSetupApply_Click;
@@ -1423,7 +1407,7 @@ namespace eft_dma_radar
             txtMapSetupScale.HideSelection = true;
             txtMapSetupScale.Hint = "Scale";
             txtMapSetupScale.LeadingIcon = null;
-            txtMapSetupScale.Location = new Point(195, 20);
+            txtMapSetupScale.Location = new Point(197, 28);
             txtMapSetupScale.MaxLength = 32767;
             txtMapSetupScale.MouseState = MaterialSkin.MouseState.OUT;
             txtMapSetupScale.Name = "txtMapSetupScale";
@@ -1435,7 +1419,7 @@ namespace eft_dma_radar
             txtMapSetupScale.SelectionLength = 0;
             txtMapSetupScale.SelectionStart = 0;
             txtMapSetupScale.ShortcutsEnabled = true;
-            txtMapSetupScale.Size = new Size(89, 36);
+            txtMapSetupScale.Size = new Size(78, 36);
             txtMapSetupScale.TabIndex = 34;
             txtMapSetupScale.TabStop = false;
             txtMapSetupScale.TextAlign = HorizontalAlignment.Left;
@@ -1455,7 +1439,7 @@ namespace eft_dma_radar
             txtMapSetupY.HideSelection = true;
             txtMapSetupY.Hint = "Y";
             txtMapSetupY.LeadingIcon = null;
-            txtMapSetupY.Location = new Point(99, 20);
+            txtMapSetupY.Location = new Point(113, 28);
             txtMapSetupY.MaxLength = 32767;
             txtMapSetupY.MouseState = MaterialSkin.MouseState.OUT;
             txtMapSetupY.Name = "txtMapSetupY";
@@ -1467,7 +1451,7 @@ namespace eft_dma_radar
             txtMapSetupY.SelectionLength = 0;
             txtMapSetupY.SelectionStart = 0;
             txtMapSetupY.ShortcutsEnabled = true;
-            txtMapSetupY.Size = new Size(89, 36);
+            txtMapSetupY.Size = new Size(78, 36);
             txtMapSetupY.TabIndex = 33;
             txtMapSetupY.TabStop = false;
             txtMapSetupY.TextAlign = HorizontalAlignment.Left;
@@ -1487,7 +1471,7 @@ namespace eft_dma_radar
             txtMapSetupX.HideSelection = true;
             txtMapSetupX.Hint = "X";
             txtMapSetupX.LeadingIcon = null;
-            txtMapSetupX.Location = new Point(3, 20);
+            txtMapSetupX.Location = new Point(29, 28);
             txtMapSetupX.MaxLength = 32767;
             txtMapSetupX.MouseState = MaterialSkin.MouseState.OUT;
             txtMapSetupX.Name = "txtMapSetupX";
@@ -1499,7 +1483,7 @@ namespace eft_dma_radar
             txtMapSetupX.SelectionLength = 0;
             txtMapSetupX.SelectionStart = 0;
             txtMapSetupX.ShortcutsEnabled = true;
-            txtMapSetupX.Size = new Size(89, 36);
+            txtMapSetupX.Size = new Size(78, 36);
             txtMapSetupX.TabIndex = 32;
             txtMapSetupX.TabStop = false;
             txtMapSetupX.TextAlign = HorizontalAlignment.Left;
@@ -1512,20 +1496,20 @@ namespace eft_dma_radar
             // 
             btnToggleMapFree.AutoSize = false;
             btnToggleMapFree.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnToggleMapFree.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnToggleMapFree.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnToggleMapFree.Depth = 0;
             btnToggleMapFree.HighEmphasis = true;
             btnToggleMapFree.Icon = Properties.Resources.tick;
-            btnToggleMapFree.Location = new Point(7, 6);
-            btnToggleMapFree.Margin = new Padding(5, 7, 5, 7);
+            btnToggleMapFree.Location = new Point(6, 6);
+            btnToggleMapFree.Margin = new Padding(4, 7, 4, 7);
             btnToggleMapFree.MouseState = MaterialSkin.MouseState.HOVER;
             btnToggleMapFree.Name = "btnToggleMapFree";
             btnToggleMapFree.NoAccentTextColor = Color.Empty;
-            btnToggleMapFree.Size = new Size(122, 41);
+            btnToggleMapFree.Size = new Size(107, 41);
             btnToggleMapFree.TabIndex = 47;
             btnToggleMapFree.Text = "视角跟随";
             toolTip.SetToolTip(btnToggleMapFree, "Toggles radar following functionality");
-            btnToggleMapFree.Type = MaterialButton.MaterialButtonType.Text;
+            btnToggleMapFree.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             btnToggleMapFree.UseAccentColor = true;
             btnToggleMapFree.UseVisualStyleBackColor = true;
             btnToggleMapFree.Click += btnToggleMapFree_Click;
@@ -1533,12 +1517,12 @@ namespace eft_dma_radar
             // btnRemoveWatchlistEntry
             // 
             btnRemoveWatchlistEntry.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnRemoveWatchlistEntry.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnRemoveWatchlistEntry.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnRemoveWatchlistEntry.Depth = 0;
             btnRemoveWatchlistEntry.HighEmphasis = true;
             btnRemoveWatchlistEntry.Icon = (Image)resources.GetObject("btnRemoveWatchlistEntry.Icon");
-            btnRemoveWatchlistEntry.Location = new Point(408, 51);
-            btnRemoveWatchlistEntry.Margin = new Padding(5, 7, 5, 7);
+            btnRemoveWatchlistEntry.Location = new Point(357, 51);
+            btnRemoveWatchlistEntry.Margin = new Padding(4, 7, 4, 7);
             btnRemoveWatchlistEntry.MouseState = MaterialSkin.MouseState.HOVER;
             btnRemoveWatchlistEntry.Name = "btnRemoveWatchlistEntry";
             btnRemoveWatchlistEntry.NoAccentTextColor = Color.Empty;
@@ -1546,7 +1530,7 @@ namespace eft_dma_radar
             btnRemoveWatchlistEntry.TabIndex = 48;
             btnRemoveWatchlistEntry.Text = "移除";
             toolTip.SetToolTip(btnRemoveWatchlistEntry, "Removes the selected entry from the active watchlist profile");
-            btnRemoveWatchlistEntry.Type = MaterialButton.MaterialButtonType.Outlined;
+            btnRemoveWatchlistEntry.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
             btnRemoveWatchlistEntry.UseAccentColor = true;
             btnRemoveWatchlistEntry.UseVisualStyleBackColor = true;
             btnRemoveWatchlistEntry.Click += btnRemoveWatchlistEntry_Click;
@@ -1561,7 +1545,7 @@ namespace eft_dma_radar
             txtWatchlistAccountID.HideSelection = true;
             txtWatchlistAccountID.Hint = "帐户ID";
             txtWatchlistAccountID.LeadingIcon = null;
-            txtWatchlistAccountID.Location = new Point(17, 51);
+            txtWatchlistAccountID.Location = new Point(15, 51);
             txtWatchlistAccountID.MaxLength = 32767;
             txtWatchlistAccountID.MouseState = MaterialSkin.MouseState.OUT;
             txtWatchlistAccountID.Name = "txtWatchlistAccountID";
@@ -1573,7 +1557,7 @@ namespace eft_dma_radar
             txtWatchlistAccountID.SelectionLength = 0;
             txtWatchlistAccountID.SelectionStart = 0;
             txtWatchlistAccountID.ShortcutsEnabled = true;
-            txtWatchlistAccountID.Size = new Size(211, 36);
+            txtWatchlistAccountID.Size = new Size(185, 36);
             txtWatchlistAccountID.TabIndex = 44;
             txtWatchlistAccountID.TabStop = false;
             txtWatchlistAccountID.TextAlign = HorizontalAlignment.Left;
@@ -1581,7 +1565,6 @@ namespace eft_dma_radar
             txtWatchlistAccountID.TrailingIcon = null;
             txtWatchlistAccountID.UseSystemPasswordChar = false;
             txtWatchlistAccountID.UseTallSize = false;
-            txtWatchlistAccountID.Click += txtWatchlistAccountID_Click;
             txtWatchlistAccountID.KeyDown += txtWatchlistAccountID_KeyDown;
             // 
             // txtWatchlistProfileName
@@ -1594,7 +1577,7 @@ namespace eft_dma_radar
             txtWatchlistProfileName.HideSelection = true;
             txtWatchlistProfileName.Hint = "配置文件名称";
             txtWatchlistProfileName.LeadingIcon = null;
-            txtWatchlistProfileName.Location = new Point(285, 51);
+            txtWatchlistProfileName.Location = new Point(249, 51);
             txtWatchlistProfileName.MaxLength = 32767;
             txtWatchlistProfileName.MouseState = MaterialSkin.MouseState.OUT;
             txtWatchlistProfileName.Name = "txtWatchlistProfileName";
@@ -1606,7 +1589,7 @@ namespace eft_dma_radar
             txtWatchlistProfileName.SelectionLength = 0;
             txtWatchlistProfileName.SelectionStart = 0;
             txtWatchlistProfileName.ShortcutsEnabled = true;
-            txtWatchlistProfileName.Size = new Size(247, 36);
+            txtWatchlistProfileName.Size = new Size(216, 36);
             txtWatchlistProfileName.TabIndex = 45;
             txtWatchlistProfileName.TabStop = false;
             txtWatchlistProfileName.TextAlign = HorizontalAlignment.Left;
@@ -1619,12 +1602,12 @@ namespace eft_dma_radar
             // btnAddWatchlistEntry
             // 
             btnAddWatchlistEntry.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnAddWatchlistEntry.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnAddWatchlistEntry.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnAddWatchlistEntry.Depth = 0;
             btnAddWatchlistEntry.HighEmphasis = true;
             btnAddWatchlistEntry.Icon = (Image)resources.GetObject("btnAddWatchlistEntry.Icon");
-            btnAddWatchlistEntry.Location = new Point(423, 102);
-            btnAddWatchlistEntry.Margin = new Padding(5, 7, 5, 7);
+            btnAddWatchlistEntry.Location = new Point(370, 102);
+            btnAddWatchlistEntry.Margin = new Padding(4, 7, 4, 7);
             btnAddWatchlistEntry.MouseState = MaterialSkin.MouseState.HOVER;
             btnAddWatchlistEntry.Name = "btnAddWatchlistEntry";
             btnAddWatchlistEntry.NoAccentTextColor = Color.Empty;
@@ -1632,7 +1615,7 @@ namespace eft_dma_radar
             btnAddWatchlistEntry.TabIndex = 46;
             btnAddWatchlistEntry.Text = "添加";
             toolTip.SetToolTip(btnAddWatchlistEntry, "Adds a new entry to the active watchlist profile");
-            btnAddWatchlistEntry.Type = MaterialButton.MaterialButtonType.Contained;
+            btnAddWatchlistEntry.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnAddWatchlistEntry.UseAccentColor = true;
             btnAddWatchlistEntry.UseVisualStyleBackColor = true;
             btnAddWatchlistEntry.Click += btnAddWatchlistEntry_Click;
@@ -1640,12 +1623,12 @@ namespace eft_dma_radar
             // btnAddWatchlistProfile
             // 
             btnAddWatchlistProfile.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnAddWatchlistProfile.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnAddWatchlistProfile.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnAddWatchlistProfile.Depth = 0;
             btnAddWatchlistProfile.HighEmphasis = true;
             btnAddWatchlistProfile.Icon = (Image)resources.GetObject("btnAddWatchlistProfile.Icon");
-            btnAddWatchlistProfile.Location = new Point(423, 363);
-            btnAddWatchlistProfile.Margin = new Padding(5, 7, 5, 7);
+            btnAddWatchlistProfile.Location = new Point(209, 371);
+            btnAddWatchlistProfile.Margin = new Padding(4, 7, 4, 7);
             btnAddWatchlistProfile.MouseState = MaterialSkin.MouseState.HOVER;
             btnAddWatchlistProfile.Name = "btnAddWatchlistProfile";
             btnAddWatchlistProfile.NoAccentTextColor = Color.Empty;
@@ -1653,7 +1636,7 @@ namespace eft_dma_radar
             btnAddWatchlistProfile.TabIndex = 39;
             btnAddWatchlistProfile.Text = "添加";
             toolTip.SetToolTip(btnAddWatchlistProfile, "Creates a new watchlist profile");
-            btnAddWatchlistProfile.Type = MaterialButton.MaterialButtonType.Contained;
+            btnAddWatchlistProfile.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnAddWatchlistProfile.UseAccentColor = true;
             btnAddWatchlistProfile.UseVisualStyleBackColor = true;
             btnAddWatchlistProfile.Click += btnAddWatchlistProfile_Click;
@@ -1661,12 +1644,12 @@ namespace eft_dma_radar
             // btnRemoveWatchlistProfile
             // 
             btnRemoveWatchlistProfile.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnRemoveWatchlistProfile.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnRemoveWatchlistProfile.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnRemoveWatchlistProfile.Depth = 0;
             btnRemoveWatchlistProfile.HighEmphasis = true;
             btnRemoveWatchlistProfile.Icon = (Image)resources.GetObject("btnRemoveWatchlistProfile.Icon");
-            btnRemoveWatchlistProfile.Location = new Point(423, 426);
-            btnRemoveWatchlistProfile.Margin = new Padding(5, 7, 5, 7);
+            btnRemoveWatchlistProfile.Location = new Point(209, 425);
+            btnRemoveWatchlistProfile.Margin = new Padding(4, 7, 4, 7);
             btnRemoveWatchlistProfile.MouseState = MaterialSkin.MouseState.HOVER;
             btnRemoveWatchlistProfile.Name = "btnRemoveWatchlistProfile";
             btnRemoveWatchlistProfile.NoAccentTextColor = Color.Empty;
@@ -1674,7 +1657,7 @@ namespace eft_dma_radar
             btnRemoveWatchlistProfile.TabIndex = 40;
             btnRemoveWatchlistProfile.Text = "移除";
             toolTip.SetToolTip(btnRemoveWatchlistProfile, "Removes the selected watchlist profile");
-            btnRemoveWatchlistProfile.Type = MaterialButton.MaterialButtonType.Outlined;
+            btnRemoveWatchlistProfile.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
             btnRemoveWatchlistProfile.UseAccentColor = true;
             btnRemoveWatchlistProfile.UseVisualStyleBackColor = true;
             btnRemoveWatchlistProfile.Click += btnRemoveWatchlistProfile_Click;
@@ -1689,7 +1672,7 @@ namespace eft_dma_radar
             txtWatchlistTag.HideSelection = true;
             txtWatchlistTag.Hint = "名称";
             txtWatchlistTag.LeadingIcon = null;
-            txtWatchlistTag.Location = new Point(17, 102);
+            txtWatchlistTag.Location = new Point(15, 102);
             txtWatchlistTag.MaxLength = 32767;
             txtWatchlistTag.MouseState = MaterialSkin.MouseState.OUT;
             txtWatchlistTag.Name = "txtWatchlistTag";
@@ -1701,7 +1684,7 @@ namespace eft_dma_radar
             txtWatchlistTag.SelectionLength = 0;
             txtWatchlistTag.SelectionStart = 0;
             txtWatchlistTag.ShortcutsEnabled = true;
-            txtWatchlistTag.Size = new Size(211, 36);
+            txtWatchlistTag.Size = new Size(185, 36);
             txtWatchlistTag.TabIndex = 49;
             txtWatchlistTag.TabStop = false;
             txtWatchlistTag.TextAlign = HorizontalAlignment.Left;
@@ -1709,7 +1692,6 @@ namespace eft_dma_radar
             txtWatchlistTag.TrailingIcon = null;
             txtWatchlistTag.UseSystemPasswordChar = false;
             txtWatchlistTag.UseTallSize = false;
-            txtWatchlistTag.Click += txtWatchlistTag_Click;
             txtWatchlistTag.KeyDown += txtWatchlistTag_KeyDown;
             // 
             // txtWatchlistPlatformUsername
@@ -1722,7 +1704,7 @@ namespace eft_dma_radar
             txtWatchlistPlatformUsername.HideSelection = true;
             txtWatchlistPlatformUsername.Hint = "平台用户名";
             txtWatchlistPlatformUsername.LeadingIcon = null;
-            txtWatchlistPlatformUsername.Location = new Point(16, 153);
+            txtWatchlistPlatformUsername.Location = new Point(14, 153);
             txtWatchlistPlatformUsername.MaxLength = 32767;
             txtWatchlistPlatformUsername.MouseState = MaterialSkin.MouseState.OUT;
             txtWatchlistPlatformUsername.Name = "txtWatchlistPlatformUsername";
@@ -1734,7 +1716,7 @@ namespace eft_dma_radar
             txtWatchlistPlatformUsername.SelectionLength = 0;
             txtWatchlistPlatformUsername.SelectionStart = 0;
             txtWatchlistPlatformUsername.ShortcutsEnabled = true;
-            txtWatchlistPlatformUsername.Size = new Size(211, 36);
+            txtWatchlistPlatformUsername.Size = new Size(185, 36);
             txtWatchlistPlatformUsername.TabIndex = 53;
             txtWatchlistPlatformUsername.TabStop = false;
             txtWatchlistPlatformUsername.TextAlign = HorizontalAlignment.Left;
@@ -1742,24 +1724,23 @@ namespace eft_dma_radar
             txtWatchlistPlatformUsername.TrailingIcon = null;
             txtWatchlistPlatformUsername.UseSystemPasswordChar = false;
             txtWatchlistPlatformUsername.UseTallSize = false;
-            txtWatchlistPlatformUsername.Click += txtWatchlistPlatformUsername_Click;
             txtWatchlistPlatformUsername.KeyDown += txtWatchlistPlatformUsername_KeyDown;
             // 
             // rdbYoutube
             // 
             rdbYoutube.AutoSize = true;
             rdbYoutube.Depth = 0;
-            rdbYoutube.Location = new Point(346, 153);
+            rdbYoutube.Location = new Point(303, 153);
             rdbYoutube.Margin = new Padding(0);
             rdbYoutube.MouseLocation = new Point(-1, -1);
             rdbYoutube.MouseState = MaterialSkin.MouseState.HOVER;
             rdbYoutube.Name = "rdbYoutube";
             rdbYoutube.Ripple = true;
-            rdbYoutube.Size = new Size(67, 37);
+            rdbYoutube.Size = new Size(99, 37);
             rdbYoutube.TabIndex = 52;
             rdbYoutube.TabStop = true;
-            rdbYoutube.Text = "油管";
-            toolTip.SetToolTip(rdbYoutube, "是不是在油管直播?");
+            rdbYoutube.Text = "YouTube";
+            toolTip.SetToolTip(rdbYoutube, "Do they stream on YouTube?");
             rdbYoutube.UseVisualStyleBackColor = true;
             rdbYoutube.CheckedChanged += rdbYoutube_CheckedChanged;
             // 
@@ -1767,7 +1748,7 @@ namespace eft_dma_radar
             // 
             rdbTwitch.AutoSize = true;
             rdbTwitch.Depth = 0;
-            rdbTwitch.Location = new Point(248, 153);
+            rdbTwitch.Location = new Point(217, 153);
             rdbTwitch.Margin = new Padding(0);
             rdbTwitch.MouseLocation = new Point(-1, -1);
             rdbTwitch.MouseState = MaterialSkin.MouseState.HOVER;
@@ -1777,7 +1758,7 @@ namespace eft_dma_radar
             rdbTwitch.TabIndex = 51;
             rdbTwitch.TabStop = true;
             rdbTwitch.Text = "老鼠台";
-            toolTip.SetToolTip(rdbTwitch, "是不是在老鼠台上直播?");
+            toolTip.SetToolTip(rdbTwitch, "Do they stream on Twitch?");
             rdbTwitch.UseVisualStyleBackColor = true;
             rdbTwitch.CheckedChanged += rdbTwitch_CheckedChanged;
             // 
@@ -1785,7 +1766,7 @@ namespace eft_dma_radar
             // 
             swWatchlistIsStreamer.AutoSize = true;
             swWatchlistIsStreamer.Depth = 0;
-            swWatchlistIsStreamer.Location = new Point(249, 102);
+            swWatchlistIsStreamer.Location = new Point(218, 102);
             swWatchlistIsStreamer.Margin = new Padding(0);
             swWatchlistIsStreamer.MouseLocation = new Point(-1, -1);
             swWatchlistIsStreamer.MouseState = MaterialSkin.MouseState.HOVER;
@@ -1801,12 +1782,12 @@ namespace eft_dma_radar
             // btnResetPlayerlist
             // 
             btnResetPlayerlist.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnResetPlayerlist.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnResetPlayerlist.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnResetPlayerlist.Depth = 0;
             btnResetPlayerlist.HighEmphasis = true;
             btnResetPlayerlist.Icon = null;
-            btnResetPlayerlist.Location = new Point(94, 659);
-            btnResetPlayerlist.Margin = new Padding(5, 7, 5, 7);
+            btnResetPlayerlist.Location = new Point(82, 658);
+            btnResetPlayerlist.Margin = new Padding(4, 7, 4, 7);
             btnResetPlayerlist.MouseState = MaterialSkin.MouseState.HOVER;
             btnResetPlayerlist.Name = "btnResetPlayerlist";
             btnResetPlayerlist.NoAccentTextColor = Color.Empty;
@@ -1814,7 +1795,7 @@ namespace eft_dma_radar
             btnResetPlayerlist.TabIndex = 41;
             btnResetPlayerlist.Text = "重置";
             toolTip.SetToolTip(btnResetPlayerlist, "Removes the selected watchlist profile");
-            btnResetPlayerlist.Type = MaterialButton.MaterialButtonType.Outlined;
+            btnResetPlayerlist.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
             btnResetPlayerlist.UseAccentColor = true;
             btnResetPlayerlist.UseVisualStyleBackColor = true;
             btnResetPlayerlist.Click += btnResetPlayerlist_Click;
@@ -1834,11 +1815,11 @@ namespace eft_dma_radar
             cboLootFilterItemsToAdd.Hint = "要添加的项目";
             cboLootFilterItemsToAdd.IntegralHeight = false;
             cboLootFilterItemsToAdd.ItemHeight = 29;
-            cboLootFilterItemsToAdd.Location = new Point(17, 105);
+            cboLootFilterItemsToAdd.Location = new Point(15, 105);
             cboLootFilterItemsToAdd.MaxDropDownItems = 25;
             cboLootFilterItemsToAdd.MouseState = MaterialSkin.MouseState.OUT;
             cboLootFilterItemsToAdd.Name = "cboLootFilterItemsToAdd";
-            cboLootFilterItemsToAdd.Size = new Size(562, 35);
+            cboLootFilterItemsToAdd.Size = new Size(492, 35);
             cboLootFilterItemsToAdd.StartIndex = 0;
             cboLootFilterItemsToAdd.TabIndex = 38;
             toolTip.SetToolTip(cboLootFilterItemsToAdd, "The item to add to the loot filter");
@@ -1854,7 +1835,7 @@ namespace eft_dma_radar
             txtLootFilterItemToSearch.HideSelection = true;
             txtLootFilterItemToSearch.Hint = "要搜索的项目...";
             txtLootFilterItemToSearch.LeadingIcon = null;
-            txtLootFilterItemToSearch.Location = new Point(17, 51);
+            txtLootFilterItemToSearch.Location = new Point(15, 51);
             txtLootFilterItemToSearch.MaxLength = 32767;
             txtLootFilterItemToSearch.MouseState = MaterialSkin.MouseState.OUT;
             txtLootFilterItemToSearch.Name = "txtLootFilterItemToSearch";
@@ -1866,7 +1847,7 @@ namespace eft_dma_radar
             txtLootFilterItemToSearch.SelectionLength = 0;
             txtLootFilterItemToSearch.SelectionStart = 0;
             txtLootFilterItemToSearch.ShortcutsEnabled = true;
-            txtLootFilterItemToSearch.Size = new Size(331, 36);
+            txtLootFilterItemToSearch.Size = new Size(290, 36);
             txtLootFilterItemToSearch.TabIndex = 45;
             txtLootFilterItemToSearch.TabStop = false;
             txtLootFilterItemToSearch.TextAlign = HorizontalAlignment.Left;
@@ -1874,17 +1855,17 @@ namespace eft_dma_radar
             txtLootFilterItemToSearch.TrailingIcon = null;
             txtLootFilterItemToSearch.UseSystemPasswordChar = false;
             txtLootFilterItemToSearch.UseTallSize = false;
-            txtLootFilterItemToSearch.KeyDown += txtLootFilterItemToSearch_KeyDown;
+            txtLootFilterItemToSearch.TextChanged += txtLootFilterItemToSearch_TextChanged;
             // 
             // btnAddLootFilterItem
             // 
             btnAddLootFilterItem.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnAddLootFilterItem.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnAddLootFilterItem.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnAddLootFilterItem.Depth = 0;
             btnAddLootFilterItem.HighEmphasis = true;
             btnAddLootFilterItem.Icon = (Image)resources.GetObject("btnAddLootFilterItem.Icon");
-            btnAddLootFilterItem.Location = new Point(359, 51);
-            btnAddLootFilterItem.Margin = new Padding(5, 7, 5, 7);
+            btnAddLootFilterItem.Location = new Point(314, 51);
+            btnAddLootFilterItem.Margin = new Padding(4, 7, 4, 7);
             btnAddLootFilterItem.MouseState = MaterialSkin.MouseState.HOVER;
             btnAddLootFilterItem.Name = "btnAddLootFilterItem";
             btnAddLootFilterItem.NoAccentTextColor = Color.Empty;
@@ -1892,7 +1873,7 @@ namespace eft_dma_radar
             btnAddLootFilterItem.TabIndex = 46;
             btnAddLootFilterItem.Text = "添加";
             toolTip.SetToolTip(btnAddLootFilterItem, "Creates a new loot filter profile");
-            btnAddLootFilterItem.Type = MaterialButton.MaterialButtonType.Contained;
+            btnAddLootFilterItem.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnAddLootFilterItem.UseAccentColor = true;
             btnAddLootFilterItem.UseVisualStyleBackColor = true;
             btnAddLootFilterItem.Click += btnAddLootFilterItem_Click;
@@ -1900,12 +1881,12 @@ namespace eft_dma_radar
             // btnRemoveLootFilterItem
             // 
             btnRemoveLootFilterItem.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnRemoveLootFilterItem.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnRemoveLootFilterItem.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnRemoveLootFilterItem.Depth = 0;
             btnRemoveLootFilterItem.HighEmphasis = true;
             btnRemoveLootFilterItem.Icon = (Image)resources.GetObject("btnRemoveLootFilterItem.Icon");
-            btnRemoveLootFilterItem.Location = new Point(457, 51);
-            btnRemoveLootFilterItem.Margin = new Padding(5, 7, 5, 7);
+            btnRemoveLootFilterItem.Location = new Point(400, 51);
+            btnRemoveLootFilterItem.Margin = new Padding(4, 7, 4, 7);
             btnRemoveLootFilterItem.MouseState = MaterialSkin.MouseState.HOVER;
             btnRemoveLootFilterItem.Name = "btnRemoveLootFilterItem";
             btnRemoveLootFilterItem.NoAccentTextColor = Color.Empty;
@@ -1913,7 +1894,7 @@ namespace eft_dma_radar
             btnRemoveLootFilterItem.TabIndex = 47;
             btnRemoveLootFilterItem.Text = "移除";
             toolTip.SetToolTip(btnRemoveLootFilterItem, "Removes the selected loot filter profile");
-            btnRemoveLootFilterItem.Type = MaterialButton.MaterialButtonType.Outlined;
+            btnRemoveLootFilterItem.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
             btnRemoveLootFilterItem.UseAccentColor = true;
             btnRemoveLootFilterItem.UseVisualStyleBackColor = true;
             btnRemoveLootFilterItem.Click += btnRemoveLootFilterItem_Click;
@@ -1928,7 +1909,7 @@ namespace eft_dma_radar
             txtLootFilterName.HideSelection = true;
             txtLootFilterName.Hint = "过滤器名称";
             txtLootFilterName.LeadingIcon = null;
-            txtLootFilterName.Location = new Point(384, 51);
+            txtLootFilterName.Location = new Point(336, 51);
             txtLootFilterName.MaxLength = 32767;
             txtLootFilterName.MouseState = MaterialSkin.MouseState.OUT;
             txtLootFilterName.Name = "txtLootFilterName";
@@ -1940,7 +1921,7 @@ namespace eft_dma_radar
             txtLootFilterName.SelectionLength = 0;
             txtLootFilterName.SelectionStart = 0;
             txtLootFilterName.ShortcutsEnabled = true;
-            txtLootFilterName.Size = new Size(197, 36);
+            txtLootFilterName.Size = new Size(172, 36);
             txtLootFilterName.TabIndex = 39;
             txtLootFilterName.TabStop = false;
             txtLootFilterName.TextAlign = HorizontalAlignment.Left;
@@ -1953,30 +1934,29 @@ namespace eft_dma_radar
             // swLootFilterActive
             // 
             swLootFilterActive.Depth = 0;
-            swLootFilterActive.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swLootFilterActive.Location = new Point(447, 153);
+            swLootFilterActive.Font = new Font("Segoe UI", 9F);
+            swLootFilterActive.Location = new Point(384, 153);
             swLootFilterActive.Margin = new Padding(0);
             swLootFilterActive.MouseLocation = new Point(-1, -1);
             swLootFilterActive.MouseState = MaterialSkin.MouseState.HOVER;
             swLootFilterActive.Name = "swLootFilterActive";
             swLootFilterActive.Ripple = true;
-            swLootFilterActive.Size = new Size(134, 31);
+            swLootFilterActive.Size = new Size(117, 32);
             swLootFilterActive.TabIndex = 45;
             swLootFilterActive.Text = "显示";
             toolTip.SetToolTip(swLootFilterActive, "Only shows items considered 'important' or ones in a filter");
             swLootFilterActive.UseVisualStyleBackColor = true;
-            swLootFilterActive.CheckedChanged += swLootFilterActive_CheckedChanged_1;
             swLootFilterActive.Click += swLootFilterActive_CheckedChanged;
             // 
             // btnAddFilter
             // 
             btnAddFilter.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnAddFilter.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnAddFilter.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnAddFilter.Depth = 0;
             btnAddFilter.HighEmphasis = true;
             btnAddFilter.Icon = (Image)resources.GetObject("btnAddFilter.Icon");
-            btnAddFilter.Location = new Point(256, 422);
-            btnAddFilter.Margin = new Padding(5, 7, 5, 7);
+            btnAddFilter.Location = new Point(224, 423);
+            btnAddFilter.Margin = new Padding(4, 7, 4, 7);
             btnAddFilter.MouseState = MaterialSkin.MouseState.HOVER;
             btnAddFilter.Name = "btnAddFilter";
             btnAddFilter.NoAccentTextColor = Color.Empty;
@@ -1984,7 +1964,7 @@ namespace eft_dma_radar
             btnAddFilter.TabIndex = 39;
             btnAddFilter.Text = "添加";
             toolTip.SetToolTip(btnAddFilter, "Creates a new loot filter profile");
-            btnAddFilter.Type = MaterialButton.MaterialButtonType.Contained;
+            btnAddFilter.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             btnAddFilter.UseAccentColor = true;
             btnAddFilter.UseVisualStyleBackColor = true;
             btnAddFilter.Click += btnAddFilter_Click;
@@ -1992,12 +1972,12 @@ namespace eft_dma_radar
             // btnRemoveFilter
             // 
             btnRemoveFilter.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnRemoveFilter.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnRemoveFilter.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnRemoveFilter.Depth = 0;
             btnRemoveFilter.HighEmphasis = true;
             btnRemoveFilter.Icon = (Image)resources.GetObject("btnRemoveFilter.Icon");
-            btnRemoveFilter.Location = new Point(256, 477);
-            btnRemoveFilter.Margin = new Padding(5, 7, 5, 7);
+            btnRemoveFilter.Location = new Point(224, 477);
+            btnRemoveFilter.Margin = new Padding(4, 7, 4, 7);
             btnRemoveFilter.MouseState = MaterialSkin.MouseState.HOVER;
             btnRemoveFilter.Name = "btnRemoveFilter";
             btnRemoveFilter.NoAccentTextColor = Color.Empty;
@@ -2005,7 +1985,7 @@ namespace eft_dma_radar
             btnRemoveFilter.TabIndex = 40;
             btnRemoveFilter.Text = "移除";
             toolTip.SetToolTip(btnRemoveFilter, "Removes the selected loot filter profile");
-            btnRemoveFilter.Type = MaterialButton.MaterialButtonType.Outlined;
+            btnRemoveFilter.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Outlined;
             btnRemoveFilter.UseAccentColor = true;
             btnRemoveFilter.UseVisualStyleBackColor = true;
             btnRemoveFilter.Click += btnRemoveFilter_Click;
@@ -2013,16 +1993,16 @@ namespace eft_dma_radar
             // swMaxEndurance
             // 
             swMaxEndurance.Depth = 0;
-            swMaxEndurance.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swMaxEndurance.Location = new Point(17, 51);
+            swMaxEndurance.Font = new Font("Segoe UI", 9F);
+            swMaxEndurance.Location = new Point(15, 51);
             swMaxEndurance.Margin = new Padding(0);
             swMaxEndurance.MouseLocation = new Point(-1, -1);
             swMaxEndurance.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxEndurance.Name = "swMaxEndurance";
             swMaxEndurance.Ripple = true;
-            swMaxEndurance.Size = new Size(157, 31);
+            swMaxEndurance.Size = new Size(137, 32);
             swMaxEndurance.TabIndex = 35;
-            swMaxEndurance.Text = "REMOVE";
+            swMaxEndurance.Text = "Endurance";
             toolTip.SetToolTip(swMaxEndurance, "Maximises endurance buffs");
             swMaxEndurance.UseVisualStyleBackColor = true;
             swMaxEndurance.CheckedChanged += swMaxEndurance_CheckedChanged;
@@ -2030,14 +2010,14 @@ namespace eft_dma_radar
             // swMaxStrength
             // 
             swMaxStrength.Depth = 0;
-            swMaxStrength.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swMaxStrength.Location = new Point(199, 51);
+            swMaxStrength.Font = new Font("Segoe UI", 9F);
+            swMaxStrength.Location = new Point(174, 51);
             swMaxStrength.Margin = new Padding(0);
             swMaxStrength.MouseLocation = new Point(-1, -1);
             swMaxStrength.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxStrength.Name = "swMaxStrength";
             swMaxStrength.Ripple = true;
-            swMaxStrength.Size = new Size(138, 31);
+            swMaxStrength.Size = new Size(121, 32);
             swMaxStrength.TabIndex = 36;
             swMaxStrength.Text = "Strength";
             toolTip.SetToolTip(swMaxStrength, "Maximises strength buffs");
@@ -2047,14 +2027,14 @@ namespace eft_dma_radar
             // swMaxVitality
             // 
             swMaxVitality.Depth = 0;
-            swMaxVitality.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swMaxVitality.Location = new Point(429, 51);
+            swMaxVitality.Font = new Font("Segoe UI", 9F);
+            swMaxVitality.Location = new Point(375, 51);
             swMaxVitality.Margin = new Padding(0);
             swMaxVitality.MouseLocation = new Point(-1, -1);
             swMaxVitality.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxVitality.Name = "swMaxVitality";
             swMaxVitality.Ripple = true;
-            swMaxVitality.Size = new Size(129, 31);
+            swMaxVitality.Size = new Size(113, 32);
             swMaxVitality.TabIndex = 37;
             swMaxVitality.Text = "Vitality";
             toolTip.SetToolTip(swMaxVitality, "Maximises vitality buffs");
@@ -2064,14 +2044,14 @@ namespace eft_dma_radar
             // swMaxHealth
             // 
             swMaxHealth.Depth = 0;
-            swMaxHealth.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swMaxHealth.Location = new Point(17, 96);
+            swMaxHealth.Font = new Font("Segoe UI", 9F);
+            swMaxHealth.Location = new Point(15, 96);
             swMaxHealth.Margin = new Padding(0);
             swMaxHealth.MouseLocation = new Point(-1, -1);
             swMaxHealth.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxHealth.Name = "swMaxHealth";
             swMaxHealth.Ripple = true;
-            swMaxHealth.Size = new Size(129, 31);
+            swMaxHealth.Size = new Size(113, 32);
             swMaxHealth.TabIndex = 38;
             swMaxHealth.Text = "Health";
             toolTip.SetToolTip(swMaxHealth, "Maximises health buffs");
@@ -2081,14 +2061,14 @@ namespace eft_dma_radar
             // swMaxStressResistance
             // 
             swMaxStressResistance.Depth = 0;
-            swMaxStressResistance.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swMaxStressResistance.Location = new Point(199, 96);
+            swMaxStressResistance.Font = new Font("Segoe UI", 9F);
+            swMaxStressResistance.Location = new Point(174, 96);
             swMaxStressResistance.Margin = new Padding(0);
             swMaxStressResistance.MouseLocation = new Point(-1, -1);
             swMaxStressResistance.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxStressResistance.Name = "swMaxStressResistance";
             swMaxStressResistance.Ripple = true;
-            swMaxStressResistance.Size = new Size(214, 31);
+            swMaxStressResistance.Size = new Size(187, 32);
             swMaxStressResistance.TabIndex = 39;
             swMaxStressResistance.Text = "Stress Resistance";
             toolTip.SetToolTip(swMaxStressResistance, "Maximises stress resistance buffs\r\n");
@@ -2098,14 +2078,14 @@ namespace eft_dma_radar
             // swMaxMetabolism
             // 
             swMaxMetabolism.Depth = 0;
-            swMaxMetabolism.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swMaxMetabolism.Location = new Point(429, 96);
+            swMaxMetabolism.Font = new Font("Segoe UI", 9F);
+            swMaxMetabolism.Location = new Point(375, 96);
             swMaxMetabolism.Margin = new Padding(0);
             swMaxMetabolism.MouseLocation = new Point(-1, -1);
             swMaxMetabolism.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxMetabolism.Name = "swMaxMetabolism";
             swMaxMetabolism.Ripple = true;
-            swMaxMetabolism.Size = new Size(167, 31);
+            swMaxMetabolism.Size = new Size(146, 32);
             swMaxMetabolism.TabIndex = 40;
             swMaxMetabolism.Text = "Metabolism";
             toolTip.SetToolTip(swMaxMetabolism, "Maximises metabolsim buffs\r\n");
@@ -2115,14 +2095,14 @@ namespace eft_dma_radar
             // swMaxImmunity
             // 
             swMaxImmunity.Depth = 0;
-            swMaxImmunity.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swMaxImmunity.Location = new Point(17, 142);
+            swMaxImmunity.Font = new Font("Segoe UI", 9F);
+            swMaxImmunity.Location = new Point(15, 142);
             swMaxImmunity.Margin = new Padding(0);
             swMaxImmunity.MouseLocation = new Point(-1, -1);
             swMaxImmunity.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxImmunity.Name = "swMaxImmunity";
             swMaxImmunity.Ripple = true;
-            swMaxImmunity.Size = new Size(149, 31);
+            swMaxImmunity.Size = new Size(130, 32);
             swMaxImmunity.TabIndex = 41;
             swMaxImmunity.Text = "Immunity";
             toolTip.SetToolTip(swMaxImmunity, "Maximises immunity buffs\r\n");
@@ -2132,14 +2112,14 @@ namespace eft_dma_radar
             // swMaxPerception
             // 
             swMaxPerception.Depth = 0;
-            swMaxPerception.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swMaxPerception.Location = new Point(199, 142);
+            swMaxPerception.Font = new Font("Segoe UI", 9F);
+            swMaxPerception.Location = new Point(174, 142);
             swMaxPerception.Margin = new Padding(0);
             swMaxPerception.MouseLocation = new Point(-1, -1);
             swMaxPerception.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxPerception.Name = "swMaxPerception";
             swMaxPerception.Ripple = true;
-            swMaxPerception.Size = new Size(157, 31);
+            swMaxPerception.Size = new Size(137, 32);
             swMaxPerception.TabIndex = 42;
             swMaxPerception.Text = "Perception";
             toolTip.SetToolTip(swMaxPerception, "Maximises perception buffs\r\n");
@@ -2149,14 +2129,14 @@ namespace eft_dma_radar
             // swMaxIntellect
             // 
             swMaxIntellect.Depth = 0;
-            swMaxIntellect.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swMaxIntellect.Location = new Point(429, 142);
+            swMaxIntellect.Font = new Font("Segoe UI", 9F);
+            swMaxIntellect.Location = new Point(375, 142);
             swMaxIntellect.Margin = new Padding(0);
             swMaxIntellect.MouseLocation = new Point(-1, -1);
             swMaxIntellect.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxIntellect.Name = "swMaxIntellect";
             swMaxIntellect.Ripple = true;
-            swMaxIntellect.Size = new Size(138, 31);
+            swMaxIntellect.Size = new Size(121, 32);
             swMaxIntellect.TabIndex = 43;
             swMaxIntellect.Text = "Intellect";
             toolTip.SetToolTip(swMaxIntellect, "Maximises intellect buffs\r\n");
@@ -2166,14 +2146,14 @@ namespace eft_dma_radar
             // swMaxThrowables
             // 
             swMaxThrowables.Depth = 0;
-            swMaxThrowables.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swMaxThrowables.Location = new Point(429, 187);
+            swMaxThrowables.Font = new Font("Segoe UI", 9F);
+            swMaxThrowables.Location = new Point(375, 187);
             swMaxThrowables.Margin = new Padding(0);
             swMaxThrowables.MouseLocation = new Point(-1, -1);
             swMaxThrowables.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxThrowables.Name = "swMaxThrowables";
             swMaxThrowables.Ripple = true;
-            swMaxThrowables.Size = new Size(169, 31);
+            swMaxThrowables.Size = new Size(148, 32);
             swMaxThrowables.TabIndex = 44;
             swMaxThrowables.Text = "Throwables";
             toolTip.SetToolTip(swMaxThrowables, "Maximises throwables buffs\r\n");
@@ -2183,14 +2163,14 @@ namespace eft_dma_radar
             // swMaxSurgery
             // 
             swMaxSurgery.Depth = 0;
-            swMaxSurgery.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swMaxSurgery.Location = new Point(17, 232);
+            swMaxSurgery.Font = new Font("Segoe UI", 9F);
+            swMaxSurgery.Location = new Point(15, 232);
             swMaxSurgery.Margin = new Padding(0);
             swMaxSurgery.MouseLocation = new Point(-1, -1);
             swMaxSurgery.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxSurgery.Name = "swMaxSurgery";
             swMaxSurgery.Ripple = true;
-            swMaxSurgery.Size = new Size(133, 31);
+            swMaxSurgery.Size = new Size(116, 32);
             swMaxSurgery.TabIndex = 45;
             swMaxSurgery.Text = "Surgery";
             toolTip.SetToolTip(swMaxSurgery, "Maximises surgery buffs\r\n");
@@ -2200,14 +2180,14 @@ namespace eft_dma_radar
             // swMaxCovertMovement
             // 
             swMaxCovertMovement.Depth = 0;
-            swMaxCovertMovement.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swMaxCovertMovement.Location = new Point(199, 187);
+            swMaxCovertMovement.Font = new Font("Segoe UI", 9F);
+            swMaxCovertMovement.Location = new Point(174, 187);
             swMaxCovertMovement.Margin = new Padding(0);
             swMaxCovertMovement.MouseLocation = new Point(-1, -1);
             swMaxCovertMovement.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxCovertMovement.Name = "swMaxCovertMovement";
             swMaxCovertMovement.Ripple = true;
-            swMaxCovertMovement.Size = new Size(214, 31);
+            swMaxCovertMovement.Size = new Size(187, 32);
             swMaxCovertMovement.TabIndex = 46;
             swMaxCovertMovement.Text = "Covert Movement";
             toolTip.SetToolTip(swMaxCovertMovement, "Maximises covert movement buffs\r\n");
@@ -2217,14 +2197,14 @@ namespace eft_dma_radar
             // swMaxSearch
             // 
             swMaxSearch.Depth = 0;
-            swMaxSearch.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swMaxSearch.Location = new Point(199, 232);
+            swMaxSearch.Font = new Font("Segoe UI", 9F);
+            swMaxSearch.Location = new Point(174, 232);
             swMaxSearch.Margin = new Padding(0);
             swMaxSearch.MouseLocation = new Point(-1, -1);
             swMaxSearch.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxSearch.Name = "swMaxSearch";
             swMaxSearch.Ripple = true;
-            swMaxSearch.Size = new Size(127, 31);
+            swMaxSearch.Size = new Size(111, 32);
             swMaxSearch.TabIndex = 47;
             swMaxSearch.Text = "Search";
             toolTip.SetToolTip(swMaxSearch, "Maximises search buffs\r\n");
@@ -2234,14 +2214,14 @@ namespace eft_dma_radar
             // swMaxMagDrills
             // 
             swMaxMagDrills.Depth = 0;
-            swMaxMagDrills.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swMaxMagDrills.Location = new Point(429, 232);
+            swMaxMagDrills.Font = new Font("Segoe UI", 9F);
+            swMaxMagDrills.Location = new Point(375, 232);
             swMaxMagDrills.Margin = new Padding(0);
             swMaxMagDrills.MouseLocation = new Point(-1, -1);
             swMaxMagDrills.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxMagDrills.Name = "swMaxMagDrills";
             swMaxMagDrills.Ripple = true;
-            swMaxMagDrills.Size = new Size(154, 31);
+            swMaxMagDrills.Size = new Size(135, 32);
             swMaxMagDrills.TabIndex = 48;
             swMaxMagDrills.Text = "Mag Drills";
             toolTip.SetToolTip(swMaxMagDrills, "Maximises mag drills buffs\r\n");
@@ -2251,14 +2231,14 @@ namespace eft_dma_radar
             // swMaxLightVests
             // 
             swMaxLightVests.Depth = 0;
-            swMaxLightVests.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swMaxLightVests.Location = new Point(17, 278);
+            swMaxLightVests.Font = new Font("Segoe UI", 9F);
+            swMaxLightVests.Location = new Point(15, 278);
             swMaxLightVests.Margin = new Padding(0);
             swMaxLightVests.MouseLocation = new Point(-1, -1);
             swMaxLightVests.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxLightVests.Name = "swMaxLightVests";
             swMaxLightVests.Ripple = true;
-            swMaxLightVests.Size = new Size(162, 31);
+            swMaxLightVests.Size = new Size(142, 32);
             swMaxLightVests.TabIndex = 49;
             swMaxLightVests.Text = "Light Vests";
             toolTip.SetToolTip(swMaxLightVests, "Maximises light vests buffs\r\n");
@@ -2268,14 +2248,14 @@ namespace eft_dma_radar
             // swMaxHeavyVests
             // 
             swMaxHeavyVests.Depth = 0;
-            swMaxHeavyVests.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swMaxHeavyVests.Location = new Point(199, 278);
+            swMaxHeavyVests.Font = new Font("Segoe UI", 9F);
+            swMaxHeavyVests.Location = new Point(174, 278);
             swMaxHeavyVests.Margin = new Padding(0);
             swMaxHeavyVests.MouseLocation = new Point(-1, -1);
             swMaxHeavyVests.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxHeavyVests.Name = "swMaxHeavyVests";
             swMaxHeavyVests.Ripple = true;
-            swMaxHeavyVests.Size = new Size(169, 31);
+            swMaxHeavyVests.Size = new Size(148, 32);
             swMaxHeavyVests.TabIndex = 50;
             swMaxHeavyVests.Text = "Heavy Vests";
             toolTip.SetToolTip(swMaxHeavyVests, "Maximises heavy vests buffs\r\n");
@@ -2285,14 +2265,14 @@ namespace eft_dma_radar
             // swMaxAttention
             // 
             swMaxAttention.Depth = 0;
-            swMaxAttention.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swMaxAttention.Location = new Point(19, 187);
+            swMaxAttention.Font = new Font("Segoe UI", 9F);
+            swMaxAttention.Location = new Point(17, 187);
             swMaxAttention.Margin = new Padding(0);
             swMaxAttention.MouseLocation = new Point(-1, -1);
             swMaxAttention.MouseState = MaterialSkin.MouseState.HOVER;
             swMaxAttention.Name = "swMaxAttention";
             swMaxAttention.Ripple = true;
-            swMaxAttention.Size = new Size(146, 31);
+            swMaxAttention.Size = new Size(128, 32);
             swMaxAttention.TabIndex = 51;
             swMaxAttention.Text = "Attention";
             toolTip.SetToolTip(swMaxAttention, "Maximises attention buffs\r\n");
@@ -2302,14 +2282,14 @@ namespace eft_dma_radar
             // swProcessLoot
             // 
             swProcessLoot.Depth = 0;
-            swProcessLoot.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swProcessLoot.Location = new Point(17, 51);
+            swProcessLoot.Font = new Font("Segoe UI", 9F);
+            swProcessLoot.Location = new Point(15, 51);
             swProcessLoot.Margin = new Padding(0);
             swProcessLoot.MouseLocation = new Point(-1, -1);
             swProcessLoot.MouseState = MaterialSkin.MouseState.HOVER;
             swProcessLoot.Name = "swProcessLoot";
             swProcessLoot.Ripple = true;
-            swProcessLoot.Size = new Size(183, 31);
+            swProcessLoot.Size = new Size(160, 32);
             swProcessLoot.TabIndex = 40;
             swProcessLoot.Text = "物资显示";
             toolTip.SetToolTip(swProcessLoot, "Enables processing of loot items");
@@ -2319,14 +2299,14 @@ namespace eft_dma_radar
             // swRadarStats
             // 
             swRadarStats.Depth = 0;
-            swRadarStats.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swRadarStats.Location = new Point(17, 96);
+            swRadarStats.Font = new Font("Segoe UI", 9F);
+            swRadarStats.Location = new Point(14, 96);
             swRadarStats.Margin = new Padding(0);
             swRadarStats.MouseLocation = new Point(-1, -1);
             swRadarStats.MouseState = MaterialSkin.MouseState.HOVER;
             swRadarStats.Name = "swRadarStats";
             swRadarStats.Ripple = true;
-            swRadarStats.Size = new Size(165, 31);
+            swRadarStats.Size = new Size(162, 32);
             swRadarStats.TabIndex = 31;
             swRadarStats.Text = "显示统计信息";
             toolTip.SetToolTip(swRadarStats, "Shows radar stats on radar tab");
@@ -2336,14 +2316,14 @@ namespace eft_dma_radar
             // swRadarVsync
             // 
             swRadarVsync.Depth = 0;
-            swRadarVsync.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swRadarVsync.Location = new Point(197, 51);
+            swRadarVsync.Font = new Font("Segoe UI", 9F);
+            swRadarVsync.Location = new Point(172, 51);
             swRadarVsync.Margin = new Padding(0);
             swRadarVsync.MouseLocation = new Point(-1, -1);
             swRadarVsync.MouseState = MaterialSkin.MouseState.HOVER;
             swRadarVsync.Name = "swRadarVsync";
             swRadarVsync.Ripple = true;
-            swRadarVsync.Size = new Size(135, 31);
+            swRadarVsync.Size = new Size(118, 32);
             swRadarVsync.TabIndex = 32;
             swRadarVsync.Text = "VSync";
             toolTip.SetToolTip(swRadarVsync, "Shows radar stats on radar tab");
@@ -2353,14 +2333,14 @@ namespace eft_dma_radar
             // swRadarEnemyCount
             // 
             swRadarEnemyCount.Depth = 0;
-            swRadarEnemyCount.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swRadarEnemyCount.Location = new Point(197, 96);
+            swRadarEnemyCount.Font = new Font("Segoe UI", 9F);
+            swRadarEnemyCount.Location = new Point(167, 96);
             swRadarEnemyCount.Margin = new Padding(0);
             swRadarEnemyCount.MouseLocation = new Point(-1, -1);
             swRadarEnemyCount.MouseState = MaterialSkin.MouseState.HOVER;
             swRadarEnemyCount.Name = "swRadarEnemyCount";
             swRadarEnemyCount.Ripple = true;
-            swRadarEnemyCount.Size = new Size(174, 31);
+            swRadarEnemyCount.Size = new Size(152, 32);
             swRadarEnemyCount.TabIndex = 33;
             swRadarEnemyCount.Text = "敌人统计";
             toolTip.SetToolTip(swRadarEnemyCount, "Shows radar stats on radar tab");
@@ -2371,12 +2351,12 @@ namespace eft_dma_radar
             // 
             sldrFontSize.Depth = 0;
             sldrFontSize.ForeColor = Color.Black;
-            sldrFontSize.Location = new Point(238, 241);
+            sldrFontSize.Location = new Point(206, 194);
             sldrFontSize.MouseState = MaterialSkin.MouseState.HOVER;
             sldrFontSize.Name = "sldrFontSize";
             sldrFontSize.RangeMax = 36;
             sldrFontSize.RangeMin = 1;
-            sldrFontSize.Size = new Size(275, 40);
+            sldrFontSize.Size = new Size(241, 40);
             sldrFontSize.TabIndex = 39;
             sldrFontSize.Text = "字体大小";
             toolTip.SetToolTip(sldrFontSize, "The font size to use for the text on the radar");
@@ -2402,11 +2382,11 @@ namespace eft_dma_radar
             cboFont.IntegralHeight = false;
             cboFont.ItemHeight = 29;
             cboFont.Items.AddRange(new object[] { "Microsoft YaHei", "SimSun", "SimHei", "KaiTi", "Arial" });
-            cboFont.Location = new Point(19, 241);
+            cboFont.Location = new Point(14, 196);
             cboFont.MaxDropDownItems = 10;
             cboFont.MouseState = MaterialSkin.MouseState.OUT;
             cboFont.Name = "cboFont";
-            cboFont.Size = new Size(195, 35);
+            cboFont.Size = new Size(171, 35);
             cboFont.StartIndex = 0;
             cboFont.TabIndex = 39;
             toolTip.SetToolTip(cboFont, "The item to add to the loot filter");
@@ -2416,29 +2396,325 @@ namespace eft_dma_radar
             // swUnknownQuestItems
             // 
             swUnknownQuestItems.Depth = 0;
-            swUnknownQuestItems.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            swUnknownQuestItems.Location = new Point(374, 106);
+            swUnknownQuestItems.Font = new Font("Segoe UI", 9F);
+            swUnknownQuestItems.Location = new Point(327, 107);
             swUnknownQuestItems.Margin = new Padding(0);
             swUnknownQuestItems.MouseLocation = new Point(-1, -1);
             swUnknownQuestItems.MouseState = MaterialSkin.MouseState.HOVER;
             swUnknownQuestItems.Name = "swUnknownQuestItems";
             swUnknownQuestItems.Ripple = true;
-            swUnknownQuestItems.Size = new Size(251, 31);
+            swUnknownQuestItems.Size = new Size(220, 32);
             swUnknownQuestItems.TabIndex = 40;
             swUnknownQuestItems.Text = "未知任务项目";
             toolTip.SetToolTip(swUnknownQuestItems, "Displays all active quest tasks/items on the map. Must use 'Show Loot' to display quest items.");
             swUnknownQuestItems.UseVisualStyleBackColor = true;
             swUnknownQuestItems.CheckedChanged += swUnknownQuestItems_CheckedChanged;
             // 
+            // swChams
+            // 
+            swChams.Depth = 0;
+            swChams.Font = new Font("Segoe UI", 9F);
+            swChams.Location = new Point(15, 51);
+            swChams.Margin = new Padding(0);
+            swChams.MouseLocation = new Point(-1, -1);
+            swChams.MouseState = MaterialSkin.MouseState.HOVER;
+            swChams.Name = "swChams";
+            swChams.Ripple = true;
+            swChams.Size = new Size(113, 32);
+            swChams.TabIndex = 36;
+            swChams.Text = "热能";
+            toolTip.SetToolTip(swChams, "Shows selected player types through walls");
+            swChams.UseVisualStyleBackColor = true;
+            swChams.CheckedChanged += swChams_CheckedChanged;
+            // 
+            // swChamsPMCs
+            // 
+            swChamsPMCs.Depth = 0;
+            swChamsPMCs.Font = new Font("Segoe UI", 9F);
+            swChamsPMCs.Location = new Point(139, 51);
+            swChamsPMCs.Margin = new Padding(0);
+            swChamsPMCs.MouseLocation = new Point(-1, -1);
+            swChamsPMCs.MouseState = MaterialSkin.MouseState.HOVER;
+            swChamsPMCs.Name = "swChamsPMCs";
+            swChamsPMCs.Ripple = true;
+            swChamsPMCs.Size = new Size(102, 32);
+            swChamsPMCs.TabIndex = 37;
+            swChamsPMCs.Text = "玩家";
+            toolTip.SetToolTip(swChamsPMCs, "Shows BEAR/USEC players through walls");
+            swChamsPMCs.UseVisualStyleBackColor = true;
+            swChamsPMCs.Visible = false;
+            swChamsPMCs.CheckedChanged += swChamsPlayers_CheckedChanged;
+            // 
+            // swChamsBosses
+            // 
+            swChamsBosses.Depth = 0;
+            swChamsBosses.Font = new Font("Segoe UI", 9F);
+            swChamsBosses.Location = new Point(413, 51);
+            swChamsBosses.Margin = new Padding(0);
+            swChamsBosses.MouseLocation = new Point(-1, -1);
+            swChamsBosses.MouseState = MaterialSkin.MouseState.HOVER;
+            swChamsBosses.Name = "swChamsBosses";
+            swChamsBosses.Ripple = true;
+            swChamsBosses.Size = new Size(110, 32);
+            swChamsBosses.TabIndex = 38;
+            swChamsBosses.Text = "Boss";
+            toolTip.SetToolTip(swChamsBosses, "Shows bosses through walls");
+            swChamsBosses.UseVisualStyleBackColor = true;
+            swChamsBosses.Visible = false;
+            swChamsBosses.CheckedChanged += swChamsBosses_CheckedChanged;
+            // 
+            // swChamsRogues
+            // 
+            swChamsRogues.Depth = 0;
+            swChamsRogues.Font = new Font("Segoe UI", 9F);
+            swChamsRogues.Location = new Point(256, 96);
+            swChamsRogues.Margin = new Padding(0);
+            swChamsRogues.MouseLocation = new Point(-1, -1);
+            swChamsRogues.MouseState = MaterialSkin.MouseState.HOVER;
+            swChamsRogues.Name = "swChamsRogues";
+            swChamsRogues.Ripple = true;
+            swChamsRogues.Size = new Size(170, 32);
+            swChamsRogues.TabIndex = 39;
+            swChamsRogues.Text = "精英AI/流浪者";
+            toolTip.SetToolTip(swChamsRogues, "Shows rogues/boss guards through walls");
+            swChamsRogues.UseVisualStyleBackColor = true;
+            swChamsRogues.Visible = false;
+            swChamsRogues.CheckedChanged += swChamsRogues_CheckedChanged;
+            // 
+            // swChamsCultists
+            // 
+            swChamsCultists.Depth = 0;
+            swChamsCultists.Font = new Font("Segoe UI", 9F);
+            swChamsCultists.Location = new Point(15, 96);
+            swChamsCultists.Margin = new Padding(0);
+            swChamsCultists.MouseLocation = new Point(-1, -1);
+            swChamsCultists.MouseState = MaterialSkin.MouseState.HOVER;
+            swChamsCultists.Name = "swChamsCultists";
+            swChamsCultists.Ripple = true;
+            swChamsCultists.Size = new Size(113, 32);
+            swChamsCultists.TabIndex = 40;
+            swChamsCultists.Text = "邪教徒";
+            toolTip.SetToolTip(swChamsCultists, "Shows cultists through walls");
+            swChamsCultists.UseVisualStyleBackColor = true;
+            swChamsCultists.Visible = false;
+            swChamsCultists.CheckedChanged += swChamsCultists_CheckedChanged;
+            // 
+            // swChamsScavs
+            // 
+            swChamsScavs.Depth = 0;
+            swChamsScavs.Font = new Font("Segoe UI", 9F);
+            swChamsScavs.Location = new Point(139, 96);
+            swChamsScavs.Margin = new Padding(0);
+            swChamsScavs.MouseLocation = new Point(-1, -1);
+            swChamsScavs.MouseState = MaterialSkin.MouseState.HOVER;
+            swChamsScavs.Name = "swChamsScavs";
+            swChamsScavs.Ripple = true;
+            swChamsScavs.Size = new Size(102, 32);
+            swChamsScavs.TabIndex = 41;
+            swChamsScavs.Text = "Scavs";
+            toolTip.SetToolTip(swChamsScavs, "Shows scavs through walls");
+            swChamsScavs.UseVisualStyleBackColor = true;
+            swChamsScavs.Visible = false;
+            swChamsScavs.CheckedChanged += swChamsScavs_CheckedChanged;
+            // 
+            // swChamsTeammates
+            // 
+            swChamsTeammates.Depth = 0;
+            swChamsTeammates.Font = new Font("Segoe UI", 9F);
+            swChamsTeammates.Location = new Point(139, 142);
+            swChamsTeammates.Margin = new Padding(0);
+            swChamsTeammates.MouseLocation = new Point(-1, -1);
+            swChamsTeammates.MouseState = MaterialSkin.MouseState.HOVER;
+            swChamsTeammates.Name = "swChamsTeammates";
+            swChamsTeammates.Ripple = true;
+            swChamsTeammates.Size = new Size(147, 32);
+            swChamsTeammates.TabIndex = 42;
+            swChamsTeammates.Text = "队友";
+            toolTip.SetToolTip(swChamsTeammates, "Shows teammates through walls");
+            swChamsTeammates.UseVisualStyleBackColor = true;
+            swChamsTeammates.Visible = false;
+            swChamsTeammates.CheckedChanged += swChamsTeammates_CheckedChanged;
+            // 
+            // swChamsCorpses
+            // 
+            swChamsCorpses.Depth = 0;
+            swChamsCorpses.Font = new Font("Segoe UI", 9F);
+            swChamsCorpses.Location = new Point(15, 142);
+            swChamsCorpses.Margin = new Padding(0);
+            swChamsCorpses.MouseLocation = new Point(-1, -1);
+            swChamsCorpses.MouseState = MaterialSkin.MouseState.HOVER;
+            swChamsCorpses.Name = "swChamsCorpses";
+            swChamsCorpses.Ripple = true;
+            swChamsCorpses.Size = new Size(116, 32);
+            swChamsCorpses.TabIndex = 43;
+            swChamsCorpses.Text = "尸体";
+            toolTip.SetToolTip(swChamsCorpses, "Shows corpses through walls");
+            swChamsCorpses.UseVisualStyleBackColor = true;
+            swChamsCorpses.CheckedChanged += swChamsCorpses_CheckedChanged;
+            // 
+            // swChamsRevert
+            // 
+            swChamsRevert.Depth = 0;
+            swChamsRevert.Font = new Font("Segoe UI", 9F);
+            swChamsRevert.Location = new Point(256, 142);
+            swChamsRevert.Margin = new Padding(0);
+            swChamsRevert.MouseLocation = new Point(-1, -1);
+            swChamsRevert.MouseState = MaterialSkin.MouseState.HOVER;
+            swChamsRevert.Name = "swChamsRevert";
+            swChamsRevert.Ripple = true;
+            swChamsRevert.Size = new Size(218, 32);
+            swChamsRevert.TabIndex = 44;
+            swChamsRevert.Text = "崩溃/关闭时还原";
+            toolTip.SetToolTip(swChamsRevert, "Reverts applied chams when radar crashes/closes");
+            swChamsRevert.UseVisualStyleBackColor = true;
+            swChamsRevert.Visible = false;
+            swChamsRevert.CheckedChanged += swChamsRevert_CheckedChanged;
+            // 
+            // swChamsPlayerScavs
+            // 
+            swChamsPlayerScavs.Depth = 0;
+            swChamsPlayerScavs.Font = new Font("Segoe UI", 9F);
+            swChamsPlayerScavs.Location = new Point(256, 51);
+            swChamsPlayerScavs.Margin = new Padding(0);
+            swChamsPlayerScavs.MouseLocation = new Point(-1, -1);
+            swChamsPlayerScavs.MouseState = MaterialSkin.MouseState.HOVER;
+            swChamsPlayerScavs.Name = "swChamsPlayerScavs";
+            swChamsPlayerScavs.Ripple = true;
+            swChamsPlayerScavs.Size = new Size(152, 32);
+            swChamsPlayerScavs.TabIndex = 45;
+            swChamsPlayerScavs.Text = "玩家 Scavs";
+            toolTip.SetToolTip(swChamsPlayerScavs, "Shows Player Scavs through walls");
+            swChamsPlayerScavs.UseVisualStyleBackColor = true;
+            swChamsPlayerScavs.Visible = false;
+            swChamsPlayerScavs.CheckedChanged += swChamsPlayerScavs_CheckedChanged;
+            // 
+            // btnPingSelectedItem
+            // 
+            btnPingSelectedItem.AutoSize = false;
+            btnPingSelectedItem.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnPingSelectedItem.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnPingSelectedItem.Depth = 0;
+            btnPingSelectedItem.Font = new Font("Segoe UI", 8F);
+            btnPingSelectedItem.HighEmphasis = true;
+            btnPingSelectedItem.Icon = null;
+            btnPingSelectedItem.Location = new Point(381, 192);
+            btnPingSelectedItem.Margin = new Padding(4, 7, 4, 7);
+            btnPingSelectedItem.MouseState = MaterialSkin.MouseState.HOVER;
+            btnPingSelectedItem.Name = "btnPingSelectedItem";
+            btnPingSelectedItem.NoAccentTextColor = Color.Empty;
+            btnPingSelectedItem.Size = new Size(57, 41);
+            btnPingSelectedItem.TabIndex = 35;
+            btnPingSelectedItem.Text = "寻找";
+            toolTip.SetToolTip(btnPingSelectedItem, "Pings the item(s) on the radar");
+            btnPingSelectedItem.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnPingSelectedItem.UseAccentColor = true;
+            btnPingSelectedItem.UseVisualStyleBackColor = true;
+            btnPingSelectedItem.Click += btnPingSelectedItem_Click;
+            // 
+            // txtLootItemFilter
+            // 
+            txtLootItemFilter.AnimateReadOnly = false;
+            txtLootItemFilter.BackgroundImageLayout = ImageLayout.None;
+            txtLootItemFilter.CharacterCasing = CharacterCasing.Normal;
+            txtLootItemFilter.Depth = 0;
+            txtLootItemFilter.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtLootItemFilter.HideSelection = true;
+            txtLootItemFilter.Hint = "搜索项目...";
+            txtLootItemFilter.LeadingIcon = null;
+            txtLootItemFilter.Location = new Point(2, 194);
+            txtLootItemFilter.MaxLength = 32767;
+            txtLootItemFilter.MouseState = MaterialSkin.MouseState.OUT;
+            txtLootItemFilter.Name = "txtLootItemFilter";
+            txtLootItemFilter.PasswordChar = '\0';
+            txtLootItemFilter.PrefixSuffixText = null;
+            txtLootItemFilter.ReadOnly = false;
+            txtLootItemFilter.RightToLeft = RightToLeft.No;
+            txtLootItemFilter.SelectedText = "";
+            txtLootItemFilter.SelectionLength = 0;
+            txtLootItemFilter.SelectionStart = 0;
+            txtLootItemFilter.ShortcutsEnabled = true;
+            txtLootItemFilter.Size = new Size(332, 36);
+            txtLootItemFilter.TabIndex = 51;
+            txtLootItemFilter.TabStop = false;
+            txtLootItemFilter.TextAlign = HorizontalAlignment.Left;
+            toolTip.SetToolTip(txtLootItemFilter, "The item to search for");
+            txtLootItemFilter.TrailingIcon = null;
+            txtLootItemFilter.UseSystemPasswordChar = false;
+            txtLootItemFilter.UseTallSize = false;
+            txtLootItemFilter.Click += txtLootItemFilter_Click;
+            txtLootItemFilter.TextChanged += txtLootItemFilter_TextChanged;
+            // 
+            // btnToggleLootItemViewer
+            // 
+            btnToggleLootItemViewer.AutoSize = false;
+            btnToggleLootItemViewer.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnToggleLootItemViewer.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnToggleLootItemViewer.Depth = 0;
+            btnToggleLootItemViewer.HighEmphasis = true;
+            btnToggleLootItemViewer.Icon = Properties.Resources.loot_search;
+            btnToggleLootItemViewer.Location = new Point(121, 6);
+            btnToggleLootItemViewer.Margin = new Padding(4, 7, 4, 7);
+            btnToggleLootItemViewer.MouseState = MaterialSkin.MouseState.HOVER;
+            btnToggleLootItemViewer.Name = "btnToggleLootItemViewer";
+            btnToggleLootItemViewer.NoAccentTextColor = Color.Empty;
+            btnToggleLootItemViewer.Size = new Size(42, 41);
+            btnToggleLootItemViewer.TabIndex = 48;
+            btnToggleLootItemViewer.Text = " ";
+            toolTip.SetToolTip(btnToggleLootItemViewer, "Shows the loot item viewer");
+            btnToggleLootItemViewer.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            btnToggleLootItemViewer.UseAccentColor = true;
+            btnToggleLootItemViewer.UseVisualStyleBackColor = true;
+            btnToggleLootItemViewer.Click += btnToggleLootItemViewer_Click;
+            // 
+            // sldrLootPingMaxRadius
+            // 
+            sldrLootPingMaxRadius.Depth = 0;
+            sldrLootPingMaxRadius.ForeColor = Color.Black;
+            sldrLootPingMaxRadius.Location = new Point(341, 51);
+            sldrLootPingMaxRadius.MouseState = MaterialSkin.MouseState.HOVER;
+            sldrLootPingMaxRadius.Name = "sldrLootPingMaxRadius";
+            sldrLootPingMaxRadius.RangeMax = 75;
+            sldrLootPingMaxRadius.RangeMin = 1;
+            sldrLootPingMaxRadius.Size = new Size(241, 40);
+            sldrLootPingMaxRadius.TabIndex = 31;
+            sldrLootPingMaxRadius.Text = "最大半径";
+            toolTip.SetToolTip(sldrLootPingMaxRadius, "The maximum radius of the ping circle in pixels");
+            sldrLootPingMaxRadius.UseAccentColor = true;
+            sldrLootPingMaxRadius.Value = 25;
+            sldrLootPingMaxRadius.ValueMax = 75;
+            sldrLootPingMaxRadius.ValueSuffix = "px";
+            sldrLootPingMaxRadius.onValueChanged += sldrLootPingMaxRadius_onValueChanged;
+            sldrLootPingMaxRadius.Click += sldrLootPingMaxRadius_Click;
+            // 
+            // sldrLootPingAnimationSpeed
+            // 
+            sldrLootPingAnimationSpeed.Depth = 0;
+            sldrLootPingAnimationSpeed.ForeColor = Color.Black;
+            sldrLootPingAnimationSpeed.Location = new Point(15, 51);
+            sldrLootPingAnimationSpeed.MouseState = MaterialSkin.MouseState.HOVER;
+            sldrLootPingAnimationSpeed.Name = "sldrLootPingAnimationSpeed";
+            sldrLootPingAnimationSpeed.RangeMax = 4000;
+            sldrLootPingAnimationSpeed.RangeMin = 500;
+            sldrLootPingAnimationSpeed.Size = new Size(320, 40);
+            sldrLootPingAnimationSpeed.TabIndex = 30;
+            sldrLootPingAnimationSpeed.Text = "动画速度";
+            toolTip.SetToolTip(sldrLootPingAnimationSpeed, "The animation speed in miliseconds (how fast it takes to complete)");
+            sldrLootPingAnimationSpeed.UseAccentColor = true;
+            sldrLootPingAnimationSpeed.Value = 1000;
+            sldrLootPingAnimationSpeed.ValueMax = 4000;
+            sldrLootPingAnimationSpeed.ValueSuffix = "ms";
+            sldrLootPingAnimationSpeed.onValueChanged += sldrLootPingAnimationSpeed_onValueChanged;
+            sldrLootPingAnimationSpeed.Click += sldrLootPingAnimationSpeed_Click;
+            // 
             // sldrThermalColorCoefficient
             // 
             sldrThermalColorCoefficient.Depth = 0;
             sldrThermalColorCoefficient.ForeColor = Color.Black;
-            sldrThermalColorCoefficient.Location = new Point(222, 45);
+            sldrThermalColorCoefficient.Location = new Point(194, 45);
             sldrThermalColorCoefficient.MouseState = MaterialSkin.MouseState.HOVER;
             sldrThermalColorCoefficient.Name = "sldrThermalColorCoefficient";
             sldrThermalColorCoefficient.RangeMin = 1;
-            sldrThermalColorCoefficient.Size = new Size(370, 40);
+            sldrThermalColorCoefficient.Size = new Size(324, 40);
             sldrThermalColorCoefficient.TabIndex = 36;
             sldrThermalColorCoefficient.Text = "颜色";
             sldrThermalColorCoefficient.UseAccentColor = true;
@@ -2450,11 +2726,11 @@ namespace eft_dma_radar
             // 
             sldrMinTemperature.Depth = 0;
             sldrMinTemperature.ForeColor = Color.Black;
-            sldrMinTemperature.Location = new Point(222, 91);
+            sldrMinTemperature.Location = new Point(194, 91);
             sldrMinTemperature.MouseState = MaterialSkin.MouseState.HOVER;
             sldrMinTemperature.Name = "sldrMinTemperature";
             sldrMinTemperature.RangeMin = 1;
-            sldrMinTemperature.Size = new Size(370, 40);
+            sldrMinTemperature.Size = new Size(324, 40);
             sldrMinTemperature.TabIndex = 35;
             sldrMinTemperature.Text = "Min Temperature";
             sldrMinTemperature.UseAccentColor = true;
@@ -2466,11 +2742,11 @@ namespace eft_dma_radar
             // 
             sldrThermalRampShift.Depth = 0;
             sldrThermalRampShift.ForeColor = Color.Black;
-            sldrThermalRampShift.Location = new Point(222, 136);
+            sldrThermalRampShift.Location = new Point(194, 136);
             sldrThermalRampShift.MouseState = MaterialSkin.MouseState.HOVER;
             sldrThermalRampShift.Name = "sldrThermalRampShift";
             sldrThermalRampShift.RangeMin = 1;
-            sldrThermalRampShift.Size = new Size(370, 40);
+            sldrThermalRampShift.Size = new Size(324, 40);
             sldrThermalRampShift.TabIndex = 30;
             sldrThermalRampShift.Text = "Ramp Shift";
             sldrThermalRampShift.UseAccentColor = true;
@@ -2485,7 +2761,6 @@ namespace eft_dma_radar
             tabControlMain.Controls.Add(tabPlayerLoadouts);
             tabControlMain.Controls.Add(tabWatchlist);
             tabControlMain.Controls.Add(tabLootFilter);
-            tabControlMain.Controls.Add(tabPageLootList);
             tabControlMain.Depth = 0;
             tabControlMain.Dock = DockStyle.Fill;
             tabControlMain.ImageList = iconList;
@@ -2495,13 +2770,14 @@ namespace eft_dma_radar
             tabControlMain.Multiline = true;
             tabControlMain.Name = "tabControlMain";
             tabControlMain.SelectedIndex = 0;
-            tabControlMain.Size = new Size(1491, 846);
+            tabControlMain.Size = new Size(1305, 846);
             tabControlMain.TabIndex = 10;
             tabControlMain.SelectedIndexChanged += TabControl_SelectedIndexChanged;
             // 
             // tabRadar
             // 
             tabRadar.BackColor = Color.White;
+            tabRadar.Controls.Add(mcRadarLootItemViewer);
             tabRadar.Controls.Add(mcRadarEnemyStats);
             tabRadar.Controls.Add(mcRadarStats);
             tabRadar.Controls.Add(mcRadarSettings);
@@ -2511,9 +2787,62 @@ namespace eft_dma_radar
             tabRadar.Location = new Point(4, 39);
             tabRadar.Name = "tabRadar";
             tabRadar.Padding = new Padding(3);
-            tabRadar.Size = new Size(1483, 803);
+            tabRadar.Size = new Size(1297, 803);
             tabRadar.TabIndex = 0;
             tabRadar.Text = "雷达";
+            // 
+            // mcRadarLootItemViewer
+            // 
+            mcRadarLootItemViewer.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            mcRadarLootItemViewer.BackColor = Color.FromArgb(255, 255, 255);
+            mcRadarLootItemViewer.Controls.Add(txtLootItemFilter);
+            mcRadarLootItemViewer.Controls.Add(lstLootItems);
+            mcRadarLootItemViewer.Controls.Add(btnPingSelectedItem);
+            mcRadarLootItemViewer.Depth = 0;
+            mcRadarLootItemViewer.ForeColor = Color.FromArgb(222, 0, 0, 0);
+            mcRadarLootItemViewer.Location = new Point(5, 559);
+            mcRadarLootItemViewer.Margin = new Padding(14, 16, 14, 16);
+            mcRadarLootItemViewer.MouseState = MaterialSkin.MouseState.HOVER;
+            mcRadarLootItemViewer.Name = "mcRadarLootItemViewer";
+            mcRadarLootItemViewer.Padding = new Padding(14, 16, 14, 16);
+            mcRadarLootItemViewer.Size = new Size(474, 236);
+            mcRadarLootItemViewer.TabIndex = 50;
+            // 
+            // lstLootItems
+            // 
+            lstLootItems.AutoSizeTable = false;
+            lstLootItems.BackColor = Color.FromArgb(255, 255, 255);
+            lstLootItems.BorderStyle = BorderStyle.None;
+            lstLootItems.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3 });
+            lstLootItems.Depth = 0;
+            lstLootItems.Font = new Font("Segoe UI", 8.25F, FontStyle.Underline | FontStyle.Strikeout, GraphicsUnit.Point, 0);
+            lstLootItems.FullRowSelect = true;
+            lstLootItems.Location = new Point(0, 0);
+            lstLootItems.MinimumSize = new Size(100, 113);
+            lstLootItems.MouseLocation = new Point(-1, -1);
+            lstLootItems.MouseState = MaterialSkin.MouseState.OUT;
+            lstLootItems.Name = "lstLootItems";
+            lstLootItems.OwnerDraw = true;
+            lstLootItems.Size = new Size(474, 187);
+            lstLootItems.TabIndex = 50;
+            lstLootItems.UseCompatibleStateImageBehavior = false;
+            lstLootItems.View = View.Details;
+            lstLootItems.SelectedIndexChanged += lstLootItems_SelectedIndexChanged;
+            // 
+            // columnHeader1
+            // 
+            columnHeader1.Text = "数量";
+            columnHeader1.Width = 54;
+            // 
+            // columnHeader2
+            // 
+            columnHeader2.Text = "物资";
+            columnHeader2.Width = 327;
+            // 
+            // columnHeader3
+            // 
+            columnHeader3.Text = "价格";
+            columnHeader3.Width = 76;
             // 
             // mcRadarEnemyStats
             // 
@@ -2531,12 +2860,12 @@ namespace eft_dma_radar
             mcRadarEnemyStats.Controls.Add(lblRadarPMCs);
             mcRadarEnemyStats.Depth = 0;
             mcRadarEnemyStats.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcRadarEnemyStats.Location = new Point(1274, 705);
-            mcRadarEnemyStats.Margin = new Padding(16);
+            mcRadarEnemyStats.Location = new Point(1091, 706);
+            mcRadarEnemyStats.Margin = new Padding(14, 16, 14, 16);
             mcRadarEnemyStats.MouseState = MaterialSkin.MouseState.HOVER;
             mcRadarEnemyStats.Name = "mcRadarEnemyStats";
-            mcRadarEnemyStats.Padding = new Padding(16);
-            mcRadarEnemyStats.Size = new Size(103, 86);
+            mcRadarEnemyStats.Padding = new Padding(14, 16, 14, 16);
+            mcRadarEnemyStats.Size = new Size(98, 86);
             mcRadarEnemyStats.TabIndex = 49;
             mcRadarEnemyStats.Visible = false;
             // 
@@ -2546,7 +2875,7 @@ namespace eft_dma_radar
             lblRadarBossesValue.Depth = 0;
             lblRadarBossesValue.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarBossesValue.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarBossesValue.Location = new Point(91, 67);
+            lblRadarBossesValue.Location = new Point(80, 67);
             lblRadarBossesValue.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarBossesValue.Name = "lblRadarBossesValue";
             lblRadarBossesValue.Size = new Size(8, 14);
@@ -2559,7 +2888,7 @@ namespace eft_dma_radar
             lblRadarPlayerScavsValue.Depth = 0;
             lblRadarPlayerScavsValue.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarPlayerScavsValue.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarPlayerScavsValue.Location = new Point(91, 20);
+            lblRadarPlayerScavsValue.Location = new Point(80, 19);
             lblRadarPlayerScavsValue.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarPlayerScavsValue.Name = "lblRadarPlayerScavsValue";
             lblRadarPlayerScavsValue.Size = new Size(8, 14);
@@ -2572,12 +2901,12 @@ namespace eft_dma_radar
             lblRadarBosses.Depth = 0;
             lblRadarBosses.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarBosses.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarBosses.Location = new Point(48, 66);
+            lblRadarBosses.Location = new Point(44, 67);
             lblRadarBosses.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarBosses.Name = "lblRadarBosses";
-            lblRadarBosses.Size = new Size(34, 14);
+            lblRadarBosses.Size = new Size(30, 14);
             lblRadarBosses.TabIndex = 1;
-            lblRadarBosses.Text = "BOOS:";
+            lblRadarBosses.Text = "Boss:";
             // 
             // lblRadarPlayerScavs
             // 
@@ -2585,7 +2914,7 @@ namespace eft_dma_radar
             lblRadarPlayerScavs.Depth = 0;
             lblRadarPlayerScavs.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarPlayerScavs.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarPlayerScavs.Location = new Point(19, 20);
+            lblRadarPlayerScavs.Location = new Point(11, 19);
             lblRadarPlayerScavs.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarPlayerScavs.Name = "lblRadarPlayerScavs";
             lblRadarPlayerScavs.Size = new Size(63, 14);
@@ -2598,7 +2927,7 @@ namespace eft_dma_radar
             lblRadarRoguesValue.Depth = 0;
             lblRadarRoguesValue.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarRoguesValue.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarRoguesValue.Location = new Point(91, 51);
+            lblRadarRoguesValue.Location = new Point(80, 51);
             lblRadarRoguesValue.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarRoguesValue.Name = "lblRadarRoguesValue";
             lblRadarRoguesValue.Size = new Size(8, 14);
@@ -2611,7 +2940,7 @@ namespace eft_dma_radar
             lblRadarAIScavsValue.Depth = 0;
             lblRadarAIScavsValue.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarAIScavsValue.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarAIScavsValue.Location = new Point(91, 35);
+            lblRadarAIScavsValue.Location = new Point(80, 35);
             lblRadarAIScavsValue.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarAIScavsValue.Name = "lblRadarAIScavsValue";
             lblRadarAIScavsValue.Size = new Size(8, 14);
@@ -2624,7 +2953,7 @@ namespace eft_dma_radar
             lblRadarPMCsValue.Depth = 0;
             lblRadarPMCsValue.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarPMCsValue.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarPMCsValue.Location = new Point(91, 3);
+            lblRadarPMCsValue.Location = new Point(80, 3);
             lblRadarPMCsValue.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarPMCsValue.Name = "lblRadarPMCsValue";
             lblRadarPMCsValue.Size = new Size(8, 14);
@@ -2637,12 +2966,12 @@ namespace eft_dma_radar
             lblRadarRogues.Depth = 0;
             lblRadarRogues.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarRogues.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarRogues.Location = new Point(38, 52);
+            lblRadarRogues.Location = new Point(35, 51);
             lblRadarRogues.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarRogues.Name = "lblRadarRogues";
-            lblRadarRogues.Size = new Size(44, 14);
+            lblRadarRogues.Size = new Size(40, 14);
             lblRadarRogues.TabIndex = 3;
-            lblRadarRogues.Text = "Rogues:";
+            lblRadarRogues.Text = "流浪者:";
             // 
             // lblRadarAIScavs
             // 
@@ -2650,12 +2979,12 @@ namespace eft_dma_radar
             lblRadarAIScavs.Depth = 0;
             lblRadarAIScavs.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarAIScavs.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarAIScavs.Location = new Point(19, 35);
+            lblRadarAIScavs.Location = new Point(27, 35);
             lblRadarAIScavs.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarAIScavs.Name = "lblRadarAIScavs";
-            lblRadarAIScavs.Size = new Size(63, 14);
+            lblRadarAIScavs.Size = new Size(50, 14);
             lblRadarAIScavs.TabIndex = 2;
-            lblRadarAIScavs.Text = "人机 Scavs:";
+            lblRadarAIScavs.Text = "AI Scavs:";
             // 
             // lblRadarPMCs
             // 
@@ -2663,7 +2992,7 @@ namespace eft_dma_radar
             lblRadarPMCs.Depth = 0;
             lblRadarPMCs.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarPMCs.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarPMCs.Location = new Point(57, 3);
+            lblRadarPMCs.Location = new Point(46, 3);
             lblRadarPMCs.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarPMCs.Name = "lblRadarPMCs";
             lblRadarPMCs.Size = new Size(28, 14);
@@ -2686,12 +3015,12 @@ namespace eft_dma_radar
             mcRadarStats.Controls.Add(lblRadarFPS);
             mcRadarStats.Depth = 0;
             mcRadarStats.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcRadarStats.Location = new Point(1372, 705);
-            mcRadarStats.Margin = new Padding(16);
+            mcRadarStats.Location = new Point(1190, 706);
+            mcRadarStats.Margin = new Padding(14, 16, 14, 16);
             mcRadarStats.MouseState = MaterialSkin.MouseState.HOVER;
             mcRadarStats.Name = "mcRadarStats";
-            mcRadarStats.Padding = new Padding(16);
-            mcRadarStats.Size = new Size(105, 86);
+            mcRadarStats.Padding = new Padding(14, 16, 14, 16);
+            mcRadarStats.Size = new Size(102, 86);
             mcRadarStats.TabIndex = 36;
             mcRadarStats.Visible = false;
             // 
@@ -2701,7 +3030,7 @@ namespace eft_dma_radar
             lblRadarCorpsesValue.Depth = 0;
             lblRadarCorpsesValue.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarCorpsesValue.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarCorpsesValue.Location = new Point(82, 67);
+            lblRadarCorpsesValue.Location = new Point(72, 67);
             lblRadarCorpsesValue.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarCorpsesValue.Name = "lblRadarCorpsesValue";
             lblRadarCorpsesValue.Size = new Size(8, 14);
@@ -2714,7 +3043,7 @@ namespace eft_dma_radar
             lblRadarCorpses.Depth = 0;
             lblRadarCorpses.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarCorpses.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarCorpses.Location = new Point(48, 67);
+            lblRadarCorpses.Location = new Point(38, 69);
             lblRadarCorpses.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarCorpses.Name = "lblRadarCorpses";
             lblRadarCorpses.Size = new Size(28, 14);
@@ -2727,7 +3056,7 @@ namespace eft_dma_radar
             lblRadarMemSValue.Depth = 0;
             lblRadarMemSValue.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarMemSValue.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarMemSValue.Location = new Point(82, 20);
+            lblRadarMemSValue.Location = new Point(72, 19);
             lblRadarMemSValue.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarMemSValue.Name = "lblRadarMemSValue";
             lblRadarMemSValue.Size = new Size(8, 14);
@@ -2740,7 +3069,7 @@ namespace eft_dma_radar
             lblRadarMemS.Depth = 0;
             lblRadarMemS.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarMemS.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarMemS.Location = new Point(34, 20);
+            lblRadarMemS.Location = new Point(24, 19);
             lblRadarMemS.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarMemS.Name = "lblRadarMemS";
             lblRadarMemS.Size = new Size(42, 14);
@@ -2753,7 +3082,7 @@ namespace eft_dma_radar
             lblRadarContainersValue.Depth = 0;
             lblRadarContainersValue.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarContainersValue.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarContainersValue.Location = new Point(82, 51);
+            lblRadarContainersValue.Location = new Point(72, 51);
             lblRadarContainersValue.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarContainersValue.Name = "lblRadarContainersValue";
             lblRadarContainersValue.Size = new Size(8, 14);
@@ -2766,7 +3095,7 @@ namespace eft_dma_radar
             lblRadarLooseLootValue.Depth = 0;
             lblRadarLooseLootValue.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarLooseLootValue.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarLooseLootValue.Location = new Point(82, 35);
+            lblRadarLooseLootValue.Location = new Point(72, 35);
             lblRadarLooseLootValue.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarLooseLootValue.Name = "lblRadarLooseLootValue";
             lblRadarLooseLootValue.Size = new Size(8, 14);
@@ -2779,7 +3108,7 @@ namespace eft_dma_radar
             lblRadarFPSValue.Depth = 0;
             lblRadarFPSValue.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarFPSValue.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarFPSValue.Location = new Point(82, 3);
+            lblRadarFPSValue.Location = new Point(72, 3);
             lblRadarFPSValue.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarFPSValue.Name = "lblRadarFPSValue";
             lblRadarFPSValue.Size = new Size(8, 14);
@@ -2792,7 +3121,7 @@ namespace eft_dma_radar
             lblRadarContainers.Depth = 0;
             lblRadarContainers.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarContainers.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarContainers.Location = new Point(48, 51);
+            lblRadarContainers.Location = new Point(38, 53);
             lblRadarContainers.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarContainers.Name = "lblRadarContainers";
             lblRadarContainers.Size = new Size(28, 14);
@@ -2805,7 +3134,7 @@ namespace eft_dma_radar
             lblRadarLooseLoot.Depth = 0;
             lblRadarLooseLoot.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarLooseLoot.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarLooseLoot.Location = new Point(24, 34);
+            lblRadarLooseLoot.Location = new Point(14, 37);
             lblRadarLooseLoot.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarLooseLoot.Name = "lblRadarLooseLoot";
             lblRadarLooseLoot.Size = new Size(52, 14);
@@ -2818,7 +3147,7 @@ namespace eft_dma_radar
             lblRadarFPS.Depth = 0;
             lblRadarFPS.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarFPS.FontType = MaterialSkin.MaterialSkinManager.fontType.Caption;
-            lblRadarFPS.Location = new Point(12, 3);
+            lblRadarFPS.Location = new Point(5, 3);
             lblRadarFPS.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarFPS.Name = "lblRadarFPS";
             lblRadarFPS.Size = new Size(64, 14);
@@ -2829,15 +3158,16 @@ namespace eft_dma_radar
             // 
             mcRadarSettings.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             mcRadarSettings.BackColor = Color.FromArgb(255, 255, 255);
+            mcRadarSettings.Controls.Add(btnToggleLootItemViewer);
             mcRadarSettings.Controls.Add(btnToggleMapFree);
             mcRadarSettings.Depth = 0;
             mcRadarSettings.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcRadarSettings.Location = new Point(1341, 6);
-            mcRadarSettings.Margin = new Padding(16);
+            mcRadarSettings.Location = new Point(1126, 6);
+            mcRadarSettings.Margin = new Padding(14, 16, 14, 16);
             mcRadarSettings.MouseState = MaterialSkin.MouseState.HOVER;
             mcRadarSettings.Name = "mcRadarSettings";
-            mcRadarSettings.Padding = new Padding(16);
-            mcRadarSettings.Size = new Size(136, 52);
+            mcRadarSettings.Padding = new Padding(14, 16, 14, 16);
+            mcRadarSettings.Size = new Size(166, 52);
             mcRadarSettings.TabIndex = 48;
             // 
             // mcRadarMapSetup
@@ -2850,12 +3180,12 @@ namespace eft_dma_radar
             mcRadarMapSetup.Controls.Add(lblRadarMapSetup);
             mcRadarMapSetup.Depth = 0;
             mcRadarMapSetup.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcRadarMapSetup.Location = new Point(3, 740);
-            mcRadarMapSetup.Margin = new Padding(16);
+            mcRadarMapSetup.Location = new Point(5, 6);
+            mcRadarMapSetup.Margin = new Padding(14, 16, 14, 16);
             mcRadarMapSetup.MouseState = MaterialSkin.MouseState.HOVER;
             mcRadarMapSetup.Name = "mcRadarMapSetup";
-            mcRadarMapSetup.Padding = new Padding(16);
-            mcRadarMapSetup.Size = new Size(371, 60);
+            mcRadarMapSetup.Padding = new Padding(14, 16, 14, 16);
+            mcRadarMapSetup.Size = new Size(357, 76);
             mcRadarMapSetup.TabIndex = 18;
             mcRadarMapSetup.Visible = false;
             // 
@@ -2866,7 +3196,7 @@ namespace eft_dma_radar
             lblRadarMapSetup.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblRadarMapSetup.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle1;
             lblRadarMapSetup.HighEmphasis = true;
-            lblRadarMapSetup.Location = new Point(125, 0);
+            lblRadarMapSetup.Location = new Point(152, 1);
             lblRadarMapSetup.MouseState = MaterialSkin.MouseState.HOVER;
             lblRadarMapSetup.Name = "lblRadarMapSetup";
             lblRadarMapSetup.Size = new Size(65, 19);
@@ -2877,12 +3207,12 @@ namespace eft_dma_radar
             // 
             // skMapCanvas
             // 
-            skMapCanvas.BackColor = Color.Brown;
+            skMapCanvas.BackColor = Color.Black;
             skMapCanvas.Dock = DockStyle.Fill;
             skMapCanvas.Location = new Point(3, 3);
-            skMapCanvas.Margin = new Padding(5, 3, 5, 3);
+            skMapCanvas.Margin = new Padding(4, 3, 4, 3);
             skMapCanvas.Name = "skMapCanvas";
-            skMapCanvas.Size = new Size(1477, 797);
+            skMapCanvas.Size = new Size(1291, 797);
             skMapCanvas.TabIndex = 13;
             skMapCanvas.VSync = true;
             skMapCanvas.PaintSurface += skMapCanvas_PaintSurface;
@@ -2899,14 +3229,14 @@ namespace eft_dma_radar
             tabSettings.Location = new Point(4, 39);
             tabSettings.Margin = new Padding(0);
             tabSettings.Name = "tabSettings";
-            tabSettings.Size = new Size(1483, 803);
+            tabSettings.Size = new Size(1297, 803);
             tabSettings.TabIndex = 1;
             tabSettings.Text = "雷达设置";
             // 
             // tabSelector
             // 
             tabSelector.BaseTabControl = tabControlSettings;
-            tabSelector.CharacterCasing = MaterialTabSelector.CustomCharacterCasing.Normal;
+            tabSelector.CharacterCasing = MaterialSkin.Controls.MaterialTabSelector.CustomCharacterCasing.Normal;
             tabSelector.Depth = 0;
             tabSelector.Dock = DockStyle.Top;
             tabSelector.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
@@ -2914,7 +3244,7 @@ namespace eft_dma_radar
             tabSelector.Margin = new Padding(0);
             tabSelector.MouseState = MaterialSkin.MouseState.HOVER;
             tabSelector.Name = "tabSelector";
-            tabSelector.Size = new Size(1483, 41);
+            tabSelector.Size = new Size(1297, 41);
             tabSelector.TabIndex = 29;
             tabSelector.TabIndicatorHeight = 1;
             tabSelector.Text = "雷达设置";
@@ -2929,14 +3259,14 @@ namespace eft_dma_radar
             tabControlSettings.Controls.Add(tabSettingsAIFactions);
             tabControlSettings.Controls.Add(tabSettingsColors);
             tabControlSettings.Depth = 0;
-            tabControlSettings.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            tabControlSettings.Font = new Font("Segoe UI", 9F);
             tabControlSettings.Location = new Point(0, 41);
             tabControlSettings.Margin = new Padding(0);
             tabControlSettings.MouseState = MaterialSkin.MouseState.HOVER;
             tabControlSettings.Multiline = true;
             tabControlSettings.Name = "tabControlSettings";
             tabControlSettings.SelectedIndex = 0;
-            tabControlSettings.Size = new Size(1473, 756);
+            tabControlSettings.Size = new Size(1289, 757);
             tabControlSettings.TabIndex = 28;
             // 
             // tabSettingsGeneral
@@ -2948,19 +3278,19 @@ namespace eft_dma_radar
             tabSettingsGeneral.Location = new Point(4, 24);
             tabSettingsGeneral.Margin = new Padding(0);
             tabSettingsGeneral.Name = "tabSettingsGeneral";
-            tabSettingsGeneral.Size = new Size(1465, 728);
+            tabSettingsGeneral.Size = new Size(1281, 729);
             tabSettingsGeneral.TabIndex = 0;
-            tabSettingsGeneral.Text = "雷达设置";
+            tabSettingsGeneral.Text = "全局设置";
             // 
             // mcSettingsGeneralUI
             // 
             mcSettingsGeneralUI.BackColor = Color.FromArgb(255, 255, 255);
+            mcSettingsGeneralUI.Controls.Add(sldrZoomSensitivity);
             mcSettingsGeneralUI.Controls.Add(swUnknownQuestItems);
             mcSettingsGeneralUI.Controls.Add(cboFont);
             mcSettingsGeneralUI.Controls.Add(sldrFontSize);
             mcSettingsGeneralUI.Controls.Add(txtTeammateID);
             mcSettingsGeneralUI.Controls.Add(lblSettingsGeneralUI);
-            mcSettingsGeneralUI.Controls.Add(sldrZoomDistance);
             mcSettingsGeneralUI.Controls.Add(sldrUIScale);
             mcSettingsGeneralUI.Controls.Add(sldrAimlineLength);
             mcSettingsGeneralUI.Controls.Add(swExfilNames);
@@ -2971,13 +3301,30 @@ namespace eft_dma_radar
             mcSettingsGeneralUI.Controls.Add(swShowLoot);
             mcSettingsGeneralUI.Depth = 0;
             mcSettingsGeneralUI.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcSettingsGeneralUI.Location = new Point(17, 188);
-            mcSettingsGeneralUI.Margin = new Padding(16);
+            mcSettingsGeneralUI.Location = new Point(15, 188);
+            mcSettingsGeneralUI.Margin = new Padding(14, 16, 14, 16);
             mcSettingsGeneralUI.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsGeneralUI.Name = "mcSettingsGeneralUI";
-            mcSettingsGeneralUI.Padding = new Padding(16);
-            mcSettingsGeneralUI.Size = new Size(723, 306);
+            mcSettingsGeneralUI.Padding = new Padding(14, 16, 14, 16);
+            mcSettingsGeneralUI.Size = new Size(633, 297);
             mcSettingsGeneralUI.TabIndex = 31;
+            // 
+            // sldrZoomSensitivity
+            // 
+            sldrZoomSensitivity.Depth = 0;
+            sldrZoomSensitivity.ForeColor = Color.Black;
+            sldrZoomSensitivity.Location = new Point(15, 237);
+            sldrZoomSensitivity.MouseState = MaterialSkin.MouseState.HOVER;
+            sldrZoomSensitivity.Name = "sldrZoomSensitivity";
+            sldrZoomSensitivity.RangeMax = 30;
+            sldrZoomSensitivity.RangeMin = 1;
+            sldrZoomSensitivity.Size = new Size(304, 40);
+            sldrZoomSensitivity.TabIndex = 41;
+            sldrZoomSensitivity.Text = "缩放灵敏度";
+            sldrZoomSensitivity.UseAccentColor = true;
+            sldrZoomSensitivity.Value = 15;
+            sldrZoomSensitivity.ValueMax = 30;
+            sldrZoomSensitivity.onValueChanged += sldrZoomSensitivity_onValueChanged;
             // 
             // lblSettingsGeneralUI
             // 
@@ -2986,7 +3333,7 @@ namespace eft_dma_radar
             lblSettingsGeneralUI.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblSettingsGeneralUI.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblSettingsGeneralUI.HighEmphasis = true;
-            lblSettingsGeneralUI.Location = new Point(19, 14);
+            lblSettingsGeneralUI.Location = new Point(17, 14);
             lblSettingsGeneralUI.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsGeneralUI.Name = "lblSettingsGeneralUI";
             lblSettingsGeneralUI.Size = new Size(81, 24);
@@ -3006,12 +3353,12 @@ namespace eft_dma_radar
             mcSettingsGeneralRadar.Controls.Add(swMapHelper);
             mcSettingsGeneralRadar.Depth = 0;
             mcSettingsGeneralRadar.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcSettingsGeneralRadar.Location = new Point(17, 16);
-            mcSettingsGeneralRadar.Margin = new Padding(16);
+            mcSettingsGeneralRadar.Location = new Point(15, 16);
+            mcSettingsGeneralRadar.Margin = new Padding(14, 16, 14, 16);
             mcSettingsGeneralRadar.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsGeneralRadar.Name = "mcSettingsGeneralRadar";
-            mcSettingsGeneralRadar.Padding = new Padding(16);
-            mcSettingsGeneralRadar.Size = new Size(723, 154);
+            mcSettingsGeneralRadar.Padding = new Padding(14, 16, 14, 16);
+            mcSettingsGeneralRadar.Size = new Size(633, 154);
             mcSettingsGeneralRadar.TabIndex = 30;
             // 
             // lblSettingsGeneralRadar
@@ -3021,7 +3368,7 @@ namespace eft_dma_radar
             lblSettingsGeneralRadar.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblSettingsGeneralRadar.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblSettingsGeneralRadar.HighEmphasis = true;
-            lblSettingsGeneralRadar.Location = new Point(19, 17);
+            lblSettingsGeneralRadar.Location = new Point(17, 17);
             lblSettingsGeneralRadar.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsGeneralRadar.Name = "lblSettingsGeneralRadar";
             lblSettingsGeneralRadar.Size = new Size(81, 24);
@@ -3032,6 +3379,7 @@ namespace eft_dma_radar
             // tabSettingsMemoryWriting
             // 
             tabSettingsMemoryWriting.BackColor = Color.White;
+            tabSettingsMemoryWriting.Controls.Add(mcSettingsMemoryWritingChams);
             tabSettingsMemoryWriting.Controls.Add(mcSettingsMemoryWritingSkillBuffs);
             tabSettingsMemoryWriting.Controls.Add(mcSettingsMemoryWritingThermal);
             tabSettingsMemoryWriting.Controls.Add(swMasterSwitch);
@@ -3040,9 +3388,48 @@ namespace eft_dma_radar
             tabSettingsMemoryWriting.Location = new Point(4, 24);
             tabSettingsMemoryWriting.Name = "tabSettingsMemoryWriting";
             tabSettingsMemoryWriting.Padding = new Padding(3);
-            tabSettingsMemoryWriting.Size = new Size(1465, 728);
+            tabSettingsMemoryWriting.Size = new Size(1281, 729);
             tabSettingsMemoryWriting.TabIndex = 1;
             tabSettingsMemoryWriting.Text = "内存功能（危险）";
+            // 
+            // mcSettingsMemoryWritingChams
+            // 
+            mcSettingsMemoryWritingChams.BackColor = Color.FromArgb(255, 255, 255);
+            mcSettingsMemoryWritingChams.Controls.Add(swChamsPlayerScavs);
+            mcSettingsMemoryWritingChams.Controls.Add(swChamsRevert);
+            mcSettingsMemoryWritingChams.Controls.Add(swChamsCorpses);
+            mcSettingsMemoryWritingChams.Controls.Add(swChamsTeammates);
+            mcSettingsMemoryWritingChams.Controls.Add(swChamsScavs);
+            mcSettingsMemoryWritingChams.Controls.Add(swChamsCultists);
+            mcSettingsMemoryWritingChams.Controls.Add(swChamsRogues);
+            mcSettingsMemoryWritingChams.Controls.Add(swChamsBosses);
+            mcSettingsMemoryWritingChams.Controls.Add(swChamsPMCs);
+            mcSettingsMemoryWritingChams.Controls.Add(swChams);
+            mcSettingsMemoryWritingChams.Controls.Add(lblSettingsMemoryWritingChams);
+            mcSettingsMemoryWritingChams.Depth = 0;
+            mcSettingsMemoryWritingChams.ForeColor = Color.FromArgb(222, 0, 0, 0);
+            mcSettingsMemoryWritingChams.Location = new Point(573, 485);
+            mcSettingsMemoryWritingChams.Margin = new Padding(14, 16, 14, 16);
+            mcSettingsMemoryWritingChams.MouseState = MaterialSkin.MouseState.HOVER;
+            mcSettingsMemoryWritingChams.Name = "mcSettingsMemoryWritingChams";
+            mcSettingsMemoryWritingChams.Padding = new Padding(14, 16, 14, 16);
+            mcSettingsMemoryWritingChams.Size = new Size(530, 194);
+            mcSettingsMemoryWritingChams.TabIndex = 43;
+            // 
+            // lblSettingsMemoryWritingChams
+            // 
+            lblSettingsMemoryWritingChams.AutoSize = true;
+            lblSettingsMemoryWritingChams.Depth = 0;
+            lblSettingsMemoryWritingChams.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
+            lblSettingsMemoryWritingChams.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            lblSettingsMemoryWritingChams.HighEmphasis = true;
+            lblSettingsMemoryWritingChams.Location = new Point(17, 14);
+            lblSettingsMemoryWritingChams.MouseState = MaterialSkin.MouseState.HOVER;
+            lblSettingsMemoryWritingChams.Name = "lblSettingsMemoryWritingChams";
+            lblSettingsMemoryWritingChams.Size = new Size(41, 24);
+            lblSettingsMemoryWritingChams.TabIndex = 33;
+            lblSettingsMemoryWritingChams.Text = "热能";
+            lblSettingsMemoryWritingChams.UseAccent = true;
             // 
             // mcSettingsMemoryWritingSkillBuffs
             // 
@@ -3070,12 +3457,12 @@ namespace eft_dma_radar
             mcSettingsMemoryWritingSkillBuffs.Controls.Add(lblSettingsMemoryWritingSkills);
             mcSettingsMemoryWritingSkillBuffs.Depth = 0;
             mcSettingsMemoryWritingSkillBuffs.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcSettingsMemoryWritingSkillBuffs.Location = new Point(655, 64);
-            mcSettingsMemoryWritingSkillBuffs.Margin = new Padding(16);
+            mcSettingsMemoryWritingSkillBuffs.Location = new Point(573, 63);
+            mcSettingsMemoryWritingSkillBuffs.Margin = new Padding(14, 16, 14, 16);
             mcSettingsMemoryWritingSkillBuffs.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsMemoryWritingSkillBuffs.Name = "mcSettingsMemoryWritingSkillBuffs";
-            mcSettingsMemoryWritingSkillBuffs.Padding = new Padding(16);
-            mcSettingsMemoryWritingSkillBuffs.Size = new Size(606, 405);
+            mcSettingsMemoryWritingSkillBuffs.Padding = new Padding(14, 16, 14, 16);
+            mcSettingsMemoryWritingSkillBuffs.Size = new Size(530, 406);
             mcSettingsMemoryWritingSkillBuffs.TabIndex = 42;
             // 
             // lblSettingsMemoryWritingSkills
@@ -3085,7 +3472,7 @@ namespace eft_dma_radar
             lblSettingsMemoryWritingSkills.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblSettingsMemoryWritingSkills.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblSettingsMemoryWritingSkills.HighEmphasis = true;
-            lblSettingsMemoryWritingSkills.Location = new Point(19, 14);
+            lblSettingsMemoryWritingSkills.Location = new Point(17, 14);
             lblSettingsMemoryWritingSkills.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsMemoryWritingSkills.Name = "lblSettingsMemoryWritingSkills";
             lblSettingsMemoryWritingSkills.Size = new Size(215, 24);
@@ -3104,12 +3491,12 @@ namespace eft_dma_radar
             mcSettingsMemoryWritingThermal.Controls.Add(sldrThermalRampShift);
             mcSettingsMemoryWritingThermal.Depth = 0;
             mcSettingsMemoryWritingThermal.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcSettingsMemoryWritingThermal.Location = new Point(17, 380);
-            mcSettingsMemoryWritingThermal.Margin = new Padding(16);
+            mcSettingsMemoryWritingThermal.Location = new Point(15, 380);
+            mcSettingsMemoryWritingThermal.Margin = new Padding(14, 16, 14, 16);
             mcSettingsMemoryWritingThermal.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsMemoryWritingThermal.Name = "mcSettingsMemoryWritingThermal";
-            mcSettingsMemoryWritingThermal.Padding = new Padding(16);
-            mcSettingsMemoryWritingThermal.Size = new Size(611, 186);
+            mcSettingsMemoryWritingThermal.Padding = new Padding(14, 16, 14, 16);
+            mcSettingsMemoryWritingThermal.Size = new Size(535, 186);
             mcSettingsMemoryWritingThermal.TabIndex = 41;
             mcSettingsMemoryWritingThermal.Visible = false;
             // 
@@ -3120,7 +3507,7 @@ namespace eft_dma_radar
             lblSettingsMemoryWritingThermal.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblSettingsMemoryWritingThermal.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblSettingsMemoryWritingThermal.HighEmphasis = true;
-            lblSettingsMemoryWritingThermal.Location = new Point(19, 14);
+            lblSettingsMemoryWritingThermal.Location = new Point(17, 14);
             lblSettingsMemoryWritingThermal.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsMemoryWritingThermal.Name = "lblSettingsMemoryWritingThermal";
             lblSettingsMemoryWritingThermal.Size = new Size(61, 24);
@@ -3136,15 +3523,14 @@ namespace eft_dma_radar
             mcSettingsMemoryWritingGlobal.Controls.Add(sldrTimeOfDay);
             mcSettingsMemoryWritingGlobal.Controls.Add(swExtendedReach);
             mcSettingsMemoryWritingGlobal.Controls.Add(swFreezeTime);
-            mcSettingsMemoryWritingGlobal.Controls.Add(swChams);
             mcSettingsMemoryWritingGlobal.Depth = 0;
             mcSettingsMemoryWritingGlobal.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcSettingsMemoryWritingGlobal.Location = new Point(17, 64);
-            mcSettingsMemoryWritingGlobal.Margin = new Padding(16);
+            mcSettingsMemoryWritingGlobal.Location = new Point(15, 63);
+            mcSettingsMemoryWritingGlobal.Margin = new Padding(14, 16, 14, 16);
             mcSettingsMemoryWritingGlobal.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsMemoryWritingGlobal.Name = "mcSettingsMemoryWritingGlobal";
-            mcSettingsMemoryWritingGlobal.Padding = new Padding(16);
-            mcSettingsMemoryWritingGlobal.Size = new Size(611, 142);
+            mcSettingsMemoryWritingGlobal.Padding = new Padding(14, 16, 14, 16);
+            mcSettingsMemoryWritingGlobal.Size = new Size(535, 142);
             mcSettingsMemoryWritingGlobal.TabIndex = 38;
             // 
             // lblSettingsMemoryWritingGlobal
@@ -3154,7 +3540,7 @@ namespace eft_dma_radar
             lblSettingsMemoryWritingGlobal.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblSettingsMemoryWritingGlobal.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblSettingsMemoryWritingGlobal.HighEmphasis = true;
-            lblSettingsMemoryWritingGlobal.Location = new Point(19, 14);
+            lblSettingsMemoryWritingGlobal.Location = new Point(17, 14);
             lblSettingsMemoryWritingGlobal.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsMemoryWritingGlobal.Name = "lblSettingsMemoryWritingGlobal";
             lblSettingsMemoryWritingGlobal.Size = new Size(81, 24);
@@ -3174,12 +3560,12 @@ namespace eft_dma_radar
             mcSettingsMemoryWritingGear.Controls.Add(swNoRecoilSway);
             mcSettingsMemoryWritingGear.Depth = 0;
             mcSettingsMemoryWritingGear.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcSettingsMemoryWritingGear.Location = new Point(17, 222);
-            mcSettingsMemoryWritingGear.Margin = new Padding(16);
+            mcSettingsMemoryWritingGear.Location = new Point(15, 222);
+            mcSettingsMemoryWritingGear.Margin = new Padding(14, 16, 14, 16);
             mcSettingsMemoryWritingGear.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsMemoryWritingGear.Name = "mcSettingsMemoryWritingGear";
-            mcSettingsMemoryWritingGear.Padding = new Padding(16);
-            mcSettingsMemoryWritingGear.Size = new Size(611, 139);
+            mcSettingsMemoryWritingGear.Padding = new Padding(14, 16, 14, 16);
+            mcSettingsMemoryWritingGear.Size = new Size(535, 139);
             mcSettingsMemoryWritingGear.TabIndex = 39;
             // 
             // lblSettingsMemoryWritingGear
@@ -3189,26 +3575,58 @@ namespace eft_dma_radar
             lblSettingsMemoryWritingGear.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblSettingsMemoryWritingGear.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblSettingsMemoryWritingGear.HighEmphasis = true;
-            lblSettingsMemoryWritingGear.Location = new Point(19, 14);
+            lblSettingsMemoryWritingGear.Location = new Point(17, 14);
             lblSettingsMemoryWritingGear.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsMemoryWritingGear.Name = "lblSettingsMemoryWritingGear";
-            lblSettingsMemoryWritingGear.Size = new Size(128, 24);
+            lblSettingsMemoryWritingGear.Size = new Size(81, 24);
             lblSettingsMemoryWritingGear.TabIndex = 33;
-            lblSettingsMemoryWritingGear.Text = "Gear Features";
+            lblSettingsMemoryWritingGear.Text = "玩家选项";
             lblSettingsMemoryWritingGear.UseAccent = true;
             lblSettingsMemoryWritingGear.Click += lblSettingsMemoryWritingGear_Click;
             // 
             // tabSettingsLoot
             // 
             tabSettingsLoot.BackColor = Color.White;
+            tabSettingsLoot.Controls.Add(mcSettingsLootPing);
             tabSettingsLoot.Controls.Add(mcSettingsLootMinRubleValue);
             tabSettingsLoot.Controls.Add(mcSettingsLootGeneral);
             tabSettingsLoot.Location = new Point(4, 24);
             tabSettingsLoot.Margin = new Padding(0);
             tabSettingsLoot.Name = "tabSettingsLoot";
-            tabSettingsLoot.Size = new Size(1465, 728);
+            tabSettingsLoot.Size = new Size(1281, 729);
             tabSettingsLoot.TabIndex = 2;
             tabSettingsLoot.Text = "物资";
+            // 
+            // mcSettingsLootPing
+            // 
+            mcSettingsLootPing.BackColor = Color.FromArgb(255, 255, 255);
+            mcSettingsLootPing.Controls.Add(lblSettingsLootPing);
+            mcSettingsLootPing.Controls.Add(sldrLootPingMaxRadius);
+            mcSettingsLootPing.Controls.Add(sldrLootPingAnimationSpeed);
+            mcSettingsLootPing.Depth = 0;
+            mcSettingsLootPing.ForeColor = Color.FromArgb(222, 0, 0, 0);
+            mcSettingsLootPing.Location = new Point(615, 16);
+            mcSettingsLootPing.Margin = new Padding(14, 16, 14, 16);
+            mcSettingsLootPing.MouseState = MaterialSkin.MouseState.HOVER;
+            mcSettingsLootPing.Name = "mcSettingsLootPing";
+            mcSettingsLootPing.Padding = new Padding(14, 16, 14, 16);
+            mcSettingsLootPing.Size = new Size(586, 113);
+            mcSettingsLootPing.TabIndex = 38;
+            // 
+            // lblSettingsLootPing
+            // 
+            lblSettingsLootPing.AutoSize = true;
+            lblSettingsLootPing.Depth = 0;
+            lblSettingsLootPing.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
+            lblSettingsLootPing.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            lblSettingsLootPing.HighEmphasis = true;
+            lblSettingsLootPing.Location = new Point(17, 14);
+            lblSettingsLootPing.MouseState = MaterialSkin.MouseState.HOVER;
+            lblSettingsLootPing.Name = "lblSettingsLootPing";
+            lblSettingsLootPing.Size = new Size(81, 24);
+            lblSettingsLootPing.TabIndex = 33;
+            lblSettingsLootPing.Text = "物资查找";
+            lblSettingsLootPing.UseAccent = true;
             // 
             // mcSettingsLootMinRubleValue
             // 
@@ -3220,12 +3638,12 @@ namespace eft_dma_radar
             mcSettingsLootMinRubleValue.Controls.Add(sldrMinRegularLoot);
             mcSettingsLootMinRubleValue.Depth = 0;
             mcSettingsLootMinRubleValue.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcSettingsLootMinRubleValue.Location = new Point(17, 235);
-            mcSettingsLootMinRubleValue.Margin = new Padding(16);
+            mcSettingsLootMinRubleValue.Location = new Point(15, 235);
+            mcSettingsLootMinRubleValue.Margin = new Padding(14, 16, 14, 16);
             mcSettingsLootMinRubleValue.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsLootMinRubleValue.Name = "mcSettingsLootMinRubleValue";
-            mcSettingsLootMinRubleValue.Padding = new Padding(16);
-            mcSettingsLootMinRubleValue.Size = new Size(670, 142);
+            mcSettingsLootMinRubleValue.Padding = new Padding(14, 16, 14, 16);
+            mcSettingsLootMinRubleValue.Size = new Size(586, 142);
             mcSettingsLootMinRubleValue.TabIndex = 37;
             // 
             // lblSettingsLootMinRubleValues
@@ -3235,7 +3653,7 @@ namespace eft_dma_radar
             lblSettingsLootMinRubleValues.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblSettingsLootMinRubleValues.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblSettingsLootMinRubleValues.HighEmphasis = true;
-            lblSettingsLootMinRubleValues.Location = new Point(17, 16);
+            lblSettingsLootMinRubleValues.Location = new Point(17, 14);
             lblSettingsLootMinRubleValues.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsLootMinRubleValues.Name = "lblSettingsLootMinRubleValues";
             lblSettingsLootMinRubleValues.Size = new Size(81, 24);
@@ -3258,12 +3676,12 @@ namespace eft_dma_radar
             mcSettingsLootGeneral.Controls.Add(swCorpses);
             mcSettingsLootGeneral.Depth = 0;
             mcSettingsLootGeneral.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcSettingsLootGeneral.Location = new Point(17, 16);
-            mcSettingsLootGeneral.Margin = new Padding(16);
+            mcSettingsLootGeneral.Location = new Point(15, 16);
+            mcSettingsLootGeneral.Margin = new Padding(14, 16, 14, 16);
             mcSettingsLootGeneral.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsLootGeneral.Name = "mcSettingsLootGeneral";
-            mcSettingsLootGeneral.Padding = new Padding(16);
-            mcSettingsLootGeneral.Size = new Size(670, 201);
+            mcSettingsLootGeneral.Padding = new Padding(14, 16, 14, 16);
+            mcSettingsLootGeneral.Size = new Size(586, 202);
             mcSettingsLootGeneral.TabIndex = 36;
             // 
             // lblSettingsLootGeneral
@@ -3273,7 +3691,7 @@ namespace eft_dma_radar
             lblSettingsLootGeneral.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblSettingsLootGeneral.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblSettingsLootGeneral.HighEmphasis = true;
-            lblSettingsLootGeneral.Location = new Point(19, 17);
+            lblSettingsLootGeneral.Location = new Point(17, 17);
             lblSettingsLootGeneral.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsLootGeneral.Name = "lblSettingsLootGeneral";
             lblSettingsLootGeneral.Size = new Size(81, 24);
@@ -3290,9 +3708,9 @@ namespace eft_dma_radar
             tabSettingsAIFactions.Location = new Point(4, 24);
             tabSettingsAIFactions.Margin = new Padding(0);
             tabSettingsAIFactions.Name = "tabSettingsAIFactions";
-            tabSettingsAIFactions.Size = new Size(1465, 728);
+            tabSettingsAIFactions.Size = new Size(1281, 729);
             tabSettingsAIFactions.TabIndex = 3;
-            tabSettingsAIFactions.Text = "队伍管理";
+            tabSettingsAIFactions.Text = "AI 队伍管理";
             // 
             // lstFactionEntries
             // 
@@ -3302,17 +3720,17 @@ namespace eft_dma_radar
             lstFactionEntries.BorderStyle = BorderStyle.None;
             lstFactionEntries.Columns.AddRange(new ColumnHeader[] { colFactionsAIName });
             lstFactionEntries.Depth = 0;
-            lstFactionEntries.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lstFactionEntries.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             lstFactionEntries.FullRowSelect = true;
-            lstFactionEntries.Location = new Point(17, 16);
-            lstFactionEntries.MaximumSize = new Size(480, 1020);
-            lstFactionEntries.MinimumSize = new Size(229, 113);
+            lstFactionEntries.Location = new Point(15, 16);
+            lstFactionEntries.MaximumSize = new Size(420, 1020);
+            lstFactionEntries.MinimumSize = new Size(200, 113);
             lstFactionEntries.MouseLocation = new Point(-1, -1);
             lstFactionEntries.MouseState = MaterialSkin.MouseState.OUT;
             lstFactionEntries.MultiSelect = false;
             lstFactionEntries.Name = "lstFactionEntries";
             lstFactionEntries.OwnerDraw = true;
-            lstFactionEntries.Size = new Size(286, 704);
+            lstFactionEntries.Size = new Size(250, 706);
             lstFactionEntries.TabIndex = 44;
             lstFactionEntries.UseCompatibleStateImageBehavior = false;
             lstFactionEntries.View = View.Details;
@@ -3320,7 +3738,7 @@ namespace eft_dma_radar
             // 
             // colFactionsAIName
             // 
-            colFactionsAIName.Text = "Name";
+            colFactionsAIName.Text = "名字";
             colFactionsAIName.Width = 250;
             // 
             // mcSettingsAIFactionsEntryManagement
@@ -3331,12 +3749,12 @@ namespace eft_dma_radar
             mcSettingsAIFactionsEntryManagement.Controls.Add(lblSettingsAIFactionsEntryManagement);
             mcSettingsAIFactionsEntryManagement.Depth = 0;
             mcSettingsAIFactionsEntryManagement.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcSettingsAIFactionsEntryManagement.Location = new Point(320, 16);
-            mcSettingsAIFactionsEntryManagement.Margin = new Padding(16);
+            mcSettingsAIFactionsEntryManagement.Location = new Point(280, 16);
+            mcSettingsAIFactionsEntryManagement.Margin = new Padding(14, 16, 14, 16);
             mcSettingsAIFactionsEntryManagement.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsAIFactionsEntryManagement.Name = "mcSettingsAIFactionsEntryManagement";
-            mcSettingsAIFactionsEntryManagement.Padding = new Padding(16);
-            mcSettingsAIFactionsEntryManagement.Size = new Size(545, 122);
+            mcSettingsAIFactionsEntryManagement.Padding = new Padding(14, 16, 14, 16);
+            mcSettingsAIFactionsEntryManagement.Size = new Size(477, 122);
             mcSettingsAIFactionsEntryManagement.TabIndex = 43;
             // 
             // lblSettingsAIFactionsEntryManagement
@@ -3346,14 +3764,13 @@ namespace eft_dma_radar
             lblSettingsAIFactionsEntryManagement.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblSettingsAIFactionsEntryManagement.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblSettingsAIFactionsEntryManagement.HighEmphasis = true;
-            lblSettingsAIFactionsEntryManagement.Location = new Point(19, 17);
+            lblSettingsAIFactionsEntryManagement.Location = new Point(17, 17);
             lblSettingsAIFactionsEntryManagement.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsAIFactionsEntryManagement.Name = "lblSettingsAIFactionsEntryManagement";
             lblSettingsAIFactionsEntryManagement.Size = new Size(100, 24);
             lblSettingsAIFactionsEntryManagement.TabIndex = 30;
             lblSettingsAIFactionsEntryManagement.Text = "AI队伍管理";
             lblSettingsAIFactionsEntryManagement.UseAccent = true;
-            lblSettingsAIFactionsEntryManagement.Click += lblSettingsAIFactionsEntryManagement_Click;
             // 
             // mcSettingsAIFactionsFactions
             // 
@@ -3367,12 +3784,12 @@ namespace eft_dma_radar
             mcSettingsAIFactionsFactions.Controls.Add(lblSettingsAIFactionsFactions);
             mcSettingsAIFactionsFactions.Depth = 0;
             mcSettingsAIFactionsFactions.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcSettingsAIFactionsFactions.Location = new Point(320, 156);
-            mcSettingsAIFactionsFactions.Margin = new Padding(16);
+            mcSettingsAIFactionsFactions.Location = new Point(280, 155);
+            mcSettingsAIFactionsFactions.Margin = new Padding(14, 16, 14, 16);
             mcSettingsAIFactionsFactions.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsAIFactionsFactions.Name = "mcSettingsAIFactionsFactions";
-            mcSettingsAIFactionsFactions.Padding = new Padding(16);
-            mcSettingsAIFactionsFactions.Size = new Size(545, 468);
+            mcSettingsAIFactionsFactions.Padding = new Padding(14, 16, 14, 16);
+            mcSettingsAIFactionsFactions.Size = new Size(477, 468);
             mcSettingsAIFactionsFactions.TabIndex = 42;
             // 
             // lstFactions
@@ -3383,13 +3800,13 @@ namespace eft_dma_radar
             lstFactions.Columns.AddRange(new ColumnHeader[] { colFactionName });
             lstFactions.Depth = 0;
             lstFactions.FullRowSelect = true;
-            lstFactions.Location = new Point(17, 51);
-            lstFactions.MinimumSize = new Size(229, 113);
+            lstFactions.Location = new Point(15, 51);
+            lstFactions.MinimumSize = new Size(200, 113);
             lstFactions.MouseLocation = new Point(-1, -1);
             lstFactions.MouseState = MaterialSkin.MouseState.OUT;
             lstFactions.Name = "lstFactions";
             lstFactions.OwnerDraw = true;
-            lstFactions.Size = new Size(229, 400);
+            lstFactions.Size = new Size(200, 400);
             lstFactions.TabIndex = 44;
             lstFactions.UseCompatibleStateImageBehavior = false;
             lstFactions.View = View.Details;
@@ -3407,7 +3824,7 @@ namespace eft_dma_radar
             lblSettingsAIFactionsFactions.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblSettingsAIFactionsFactions.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblSettingsAIFactionsFactions.HighEmphasis = true;
-            lblSettingsAIFactionsFactions.Location = new Point(19, 14);
+            lblSettingsAIFactionsFactions.Location = new Point(17, 14);
             lblSettingsAIFactionsFactions.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsAIFactionsFactions.Name = "lblSettingsAIFactionsFactions";
             lblSettingsAIFactionsFactions.Size = new Size(41, 24);
@@ -3426,7 +3843,7 @@ namespace eft_dma_radar
             tabSettingsColors.Location = new Point(4, 24);
             tabSettingsColors.Margin = new Padding(0);
             tabSettingsColors.Name = "tabSettingsColors";
-            tabSettingsColors.Size = new Size(1465, 728);
+            tabSettingsColors.Size = new Size(1281, 729);
             tabSettingsColors.TabIndex = 4;
             tabSettingsColors.Text = "颜色";
             // 
@@ -3435,199 +3852,200 @@ namespace eft_dma_radar
             mcSettingsColorsOther.BackColor = Color.FromArgb(255, 255, 255);
             mcSettingsColorsOther.Controls.Add(btnResetTheme);
             mcSettingsColorsOther.Controls.Add(picOtherAccent);
-            mcSettingsColorsOther.Controls.Add(lblSettingsOtherAccent);
+            mcSettingsColorsOther.Controls.Add(lblSettingsColorOtherAccent);
             mcSettingsColorsOther.Controls.Add(picOtherPrimaryLight);
-            mcSettingsColorsOther.Controls.Add(lblSettingsOtherPrimaryLight);
+            mcSettingsColorsOther.Controls.Add(ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss);
             mcSettingsColorsOther.Controls.Add(picOtherPrimaryDark);
-            mcSettingsColorsOther.Controls.Add(lblSettingsOtherPrimaryDark);
+            mcSettingsColorsOther.Controls.Add(lblSettingsColorOtherPrimaryDark);
             mcSettingsColorsOther.Controls.Add(picOtherPrimary);
-            mcSettingsColorsOther.Controls.Add(lblSettingsOtherPrimary);
+            mcSettingsColorsOther.Controls.Add(lblSettingsColorOtherPrimary);
             mcSettingsColorsOther.Controls.Add(picOtherChams);
-            mcSettingsColorsOther.Controls.Add(lblSettingsOtherChams);
+            mcSettingsColorsOther.Controls.Add(lblSettingsColorOtherChams);
             mcSettingsColorsOther.Controls.Add(picOtherDeathMarker);
-            mcSettingsColorsOther.Controls.Add(lblSettingsOtherDeathMarker);
+            mcSettingsColorsOther.Controls.Add(lblSettingsColorOtherDeathMarker);
             mcSettingsColorsOther.Controls.Add(picOtherTextOutline);
-            mcSettingsColorsOther.Controls.Add(lblSettingsOtherTextOutline);
+            mcSettingsColorsOther.Controls.Add(lblSettingsColorOtherTextOutline);
             mcSettingsColorsOther.Controls.Add(lblSettingsColorsOther);
             mcSettingsColorsOther.Depth = 0;
             mcSettingsColorsOther.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcSettingsColorsOther.Location = new Point(995, 16);
-            mcSettingsColorsOther.Margin = new Padding(16);
+            mcSettingsColorsOther.Location = new Point(871, 16);
+            mcSettingsColorsOther.Margin = new Padding(14, 16, 14, 16);
             mcSettingsColorsOther.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsColorsOther.Name = "mcSettingsColorsOther";
-            mcSettingsColorsOther.Padding = new Padding(16);
-            mcSettingsColorsOther.Size = new Size(213, 365);
+            mcSettingsColorsOther.Padding = new Padding(14, 16, 14, 16);
+            mcSettingsColorsOther.Size = new Size(186, 365);
             mcSettingsColorsOther.TabIndex = 43;
             // 
             // picOtherAccent
             // 
             picOtherAccent.BackColor = Color.Transparent;
             picOtherAccent.BorderStyle = BorderStyle.FixedSingle;
-            picOtherAccent.Location = new Point(125, 255);
+            picOtherAccent.Location = new Point(109, 255);
             picOtherAccent.Name = "picOtherAccent";
-            picOtherAccent.Size = new Size(80, 26);
+            picOtherAccent.Size = new Size(70, 26);
             picOtherAccent.TabIndex = 58;
             picOtherAccent.TabStop = false;
             picOtherAccent.Click += picOtherAccent_Click;
             // 
-            // lblSettingsOtherAccent
+            // lblSettingsColorOtherAccent
             // 
-            lblSettingsOtherAccent.AutoSize = true;
-            lblSettingsOtherAccent.Depth = 0;
-            lblSettingsOtherAccent.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
-            lblSettingsOtherAccent.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsOtherAccent.Location = new Point(81, 255);
-            lblSettingsOtherAccent.MouseState = MaterialSkin.MouseState.HOVER;
-            lblSettingsOtherAccent.Name = "lblSettingsOtherAccent";
-            lblSettingsOtherAccent.Size = new Size(32, 17);
-            lblSettingsOtherAccent.TabIndex = 57;
-            lblSettingsOtherAccent.Text = "主题:";
+            lblSettingsColorOtherAccent.AutoSize = true;
+            lblSettingsColorOtherAccent.Depth = 0;
+            lblSettingsColorOtherAccent.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
+            lblSettingsColorOtherAccent.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
+            lblSettingsColorOtherAccent.Location = new Point(56, 255);
+            lblSettingsColorOtherAccent.MouseState = MaterialSkin.MouseState.HOVER;
+            lblSettingsColorOtherAccent.Name = "lblSettingsColorOtherAccent";
+            lblSettingsColorOtherAccent.Size = new Size(47, 17);
+            lblSettingsColorOtherAccent.TabIndex = 57;
+            lblSettingsColorOtherAccent.Text = "Accent:";
+            lblSettingsColorOtherAccent.Click += lblSettingsColorOtherAccent_Click;
             // 
             // picOtherPrimaryLight
             // 
             picOtherPrimaryLight.BackColor = Color.Transparent;
             picOtherPrimaryLight.BorderStyle = BorderStyle.FixedSingle;
-            picOtherPrimaryLight.Location = new Point(125, 221);
+            picOtherPrimaryLight.Location = new Point(109, 221);
             picOtherPrimaryLight.Name = "picOtherPrimaryLight";
-            picOtherPrimaryLight.Size = new Size(80, 26);
+            picOtherPrimaryLight.Size = new Size(70, 26);
             picOtherPrimaryLight.TabIndex = 56;
             picOtherPrimaryLight.TabStop = false;
             picOtherPrimaryLight.Click += picOtherPrimaryLight_Click;
             // 
-            // lblSettingsOtherPrimaryLight
+            // ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
             // 
-            lblSettingsOtherPrimaryLight.AutoSize = true;
-            lblSettingsOtherPrimaryLight.Depth = 0;
-            lblSettingsOtherPrimaryLight.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
-            lblSettingsOtherPrimaryLight.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsOtherPrimaryLight.Location = new Point(81, 221);
-            lblSettingsOtherPrimaryLight.MouseState = MaterialSkin.MouseState.HOVER;
-            lblSettingsOtherPrimaryLight.Name = "lblSettingsOtherPrimaryLight";
-            lblSettingsOtherPrimaryLight.Size = new Size(32, 17);
-            lblSettingsOtherPrimaryLight.TabIndex = 55;
-            lblSettingsOtherPrimaryLight.Text = "主题:";
-            lblSettingsOtherPrimaryLight.Click += lblSettingsOtherPrimaryLight_Click;
+            ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss.AutoSize = true;
+            ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss.Depth = 0;
+            ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
+            ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
+            ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss.Location = new Point(43, 221);
+            ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss.MouseState = MaterialSkin.MouseState.HOVER;
+            ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss.Name = "ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss";
+            ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss.Size = new Size(60, 17);
+            ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss.TabIndex = 55;
+            ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss.Text = "主题灯光:";
+            ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss.Click += ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss_Click;
             // 
             // picOtherPrimaryDark
             // 
             picOtherPrimaryDark.BackColor = Color.Transparent;
             picOtherPrimaryDark.BorderStyle = BorderStyle.FixedSingle;
-            picOtherPrimaryDark.Location = new Point(125, 187);
+            picOtherPrimaryDark.Location = new Point(109, 187);
             picOtherPrimaryDark.Name = "picOtherPrimaryDark";
-            picOtherPrimaryDark.Size = new Size(80, 26);
+            picOtherPrimaryDark.Size = new Size(70, 26);
             picOtherPrimaryDark.TabIndex = 54;
             picOtherPrimaryDark.TabStop = false;
             picOtherPrimaryDark.Click += picOtherPrimaryDark_Click;
             // 
-            // lblSettingsOtherPrimaryDark
+            // lblSettingsColorOtherPrimaryDark
             // 
-            lblSettingsOtherPrimaryDark.AutoSize = true;
-            lblSettingsOtherPrimaryDark.Depth = 0;
-            lblSettingsOtherPrimaryDark.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
-            lblSettingsOtherPrimaryDark.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsOtherPrimaryDark.Location = new Point(81, 187);
-            lblSettingsOtherPrimaryDark.MouseState = MaterialSkin.MouseState.HOVER;
-            lblSettingsOtherPrimaryDark.Name = "lblSettingsOtherPrimaryDark";
-            lblSettingsOtherPrimaryDark.Size = new Size(32, 17);
-            lblSettingsOtherPrimaryDark.TabIndex = 53;
-            lblSettingsOtherPrimaryDark.Text = "主题:";
+            lblSettingsColorOtherPrimaryDark.AutoSize = true;
+            lblSettingsColorOtherPrimaryDark.Depth = 0;
+            lblSettingsColorOtherPrimaryDark.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
+            lblSettingsColorOtherPrimaryDark.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
+            lblSettingsColorOtherPrimaryDark.Location = new Point(43, 187);
+            lblSettingsColorOtherPrimaryDark.MouseState = MaterialSkin.MouseState.HOVER;
+            lblSettingsColorOtherPrimaryDark.Name = "lblSettingsColorOtherPrimaryDark";
+            lblSettingsColorOtherPrimaryDark.Size = new Size(60, 17);
+            lblSettingsColorOtherPrimaryDark.TabIndex = 53;
+            lblSettingsColorOtherPrimaryDark.Text = "黑暗主题:";
+            lblSettingsColorOtherPrimaryDark.Click += lblSettingsColorOtherPrimaryDark_Click;
             // 
             // picOtherPrimary
             // 
             picOtherPrimary.BackColor = Color.Transparent;
             picOtherPrimary.BorderStyle = BorderStyle.FixedSingle;
-            picOtherPrimary.Location = new Point(125, 153);
+            picOtherPrimary.Location = new Point(109, 153);
             picOtherPrimary.Name = "picOtherPrimary";
-            picOtherPrimary.Size = new Size(80, 26);
+            picOtherPrimary.Size = new Size(70, 26);
             picOtherPrimary.TabIndex = 52;
             picOtherPrimary.TabStop = false;
             picOtherPrimary.Click += picOtherPrimary_Click;
             // 
-            // lblSettingsOtherPrimary
+            // lblSettingsColorOtherPrimary
             // 
-            lblSettingsOtherPrimary.AutoSize = true;
-            lblSettingsOtherPrimary.Depth = 0;
-            lblSettingsOtherPrimary.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
-            lblSettingsOtherPrimary.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsOtherPrimary.Location = new Point(67, 153);
-            lblSettingsOtherPrimary.MouseState = MaterialSkin.MouseState.HOVER;
-            lblSettingsOtherPrimary.Name = "lblSettingsOtherPrimary";
-            lblSettingsOtherPrimary.Size = new Size(46, 17);
-            lblSettingsOtherPrimary.TabIndex = 51;
-            lblSettingsOtherPrimary.Text = "重要的:";
+            lblSettingsColorOtherPrimary.AutoSize = true;
+            lblSettingsColorOtherPrimary.Depth = 0;
+            lblSettingsColorOtherPrimary.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
+            lblSettingsColorOtherPrimary.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
+            lblSettingsColorOtherPrimary.Location = new Point(71, 153);
+            lblSettingsColorOtherPrimary.MouseState = MaterialSkin.MouseState.HOVER;
+            lblSettingsColorOtherPrimary.Name = "lblSettingsColorOtherPrimary";
+            lblSettingsColorOtherPrimary.Size = new Size(32, 17);
+            lblSettingsColorOtherPrimary.TabIndex = 51;
+            lblSettingsColorOtherPrimary.Text = "重要:";
             // 
             // picOtherChams
             // 
             picOtherChams.BackColor = Color.Transparent;
             picOtherChams.BorderStyle = BorderStyle.FixedSingle;
-            picOtherChams.Location = new Point(125, 119);
+            picOtherChams.Location = new Point(109, 119);
             picOtherChams.Name = "picOtherChams";
-            picOtherChams.Size = new Size(80, 26);
+            picOtherChams.Size = new Size(70, 26);
             picOtherChams.TabIndex = 50;
             picOtherChams.TabStop = false;
             picOtherChams.Click += picOtherChams_Click;
             // 
-            // lblSettingsOtherChams
+            // lblSettingsColorOtherChams
             // 
-            lblSettingsOtherChams.AutoSize = true;
-            lblSettingsOtherChams.Depth = 0;
-            lblSettingsOtherChams.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
-            lblSettingsOtherChams.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsOtherChams.Location = new Point(59, 120);
-            lblSettingsOtherChams.MouseState = MaterialSkin.MouseState.HOVER;
-            lblSettingsOtherChams.Name = "lblSettingsOtherChams";
-            lblSettingsOtherChams.Size = new Size(60, 17);
-            lblSettingsOtherChams.TabIndex = 49;
-            lblSettingsOtherChams.Text = "热能颜色:";
-            lblSettingsOtherChams.Click += lblSettingsOtherChams_Click;
+            lblSettingsColorOtherChams.AutoSize = true;
+            lblSettingsColorOtherChams.Depth = 0;
+            lblSettingsColorOtherChams.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
+            lblSettingsColorOtherChams.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
+            lblSettingsColorOtherChams.Location = new Point(43, 119);
+            lblSettingsColorOtherChams.MouseState = MaterialSkin.MouseState.HOVER;
+            lblSettingsColorOtherChams.Name = "lblSettingsColorOtherChams";
+            lblSettingsColorOtherChams.Size = new Size(60, 17);
+            lblSettingsColorOtherChams.TabIndex = 49;
+            lblSettingsColorOtherChams.Text = "热能颜色:";
             // 
             // picOtherDeathMarker
             // 
             picOtherDeathMarker.BackColor = Color.Transparent;
             picOtherDeathMarker.BorderStyle = BorderStyle.FixedSingle;
-            picOtherDeathMarker.Location = new Point(125, 85);
+            picOtherDeathMarker.Location = new Point(109, 85);
             picOtherDeathMarker.Name = "picOtherDeathMarker";
-            picOtherDeathMarker.Size = new Size(80, 26);
+            picOtherDeathMarker.Size = new Size(70, 26);
             picOtherDeathMarker.TabIndex = 48;
             picOtherDeathMarker.TabStop = false;
             picOtherDeathMarker.Click += picOtherDeathMarker_Click;
             // 
-            // lblSettingsOtherDeathMarker
+            // lblSettingsColorOtherDeathMarker
             // 
-            lblSettingsOtherDeathMarker.AutoSize = true;
-            lblSettingsOtherDeathMarker.Depth = 0;
-            lblSettingsOtherDeathMarker.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
-            lblSettingsOtherDeathMarker.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsOtherDeathMarker.Location = new Point(55, 86);
-            lblSettingsOtherDeathMarker.MouseState = MaterialSkin.MouseState.HOVER;
-            lblSettingsOtherDeathMarker.Name = "lblSettingsOtherDeathMarker";
-            lblSettingsOtherDeathMarker.Size = new Size(60, 17);
-            lblSettingsOtherDeathMarker.TabIndex = 47;
-            lblSettingsOtherDeathMarker.Text = "死亡标记:";
+            lblSettingsColorOtherDeathMarker.AutoSize = true;
+            lblSettingsColorOtherDeathMarker.Depth = 0;
+            lblSettingsColorOtherDeathMarker.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
+            lblSettingsColorOtherDeathMarker.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
+            lblSettingsColorOtherDeathMarker.Location = new Point(43, 85);
+            lblSettingsColorOtherDeathMarker.MouseState = MaterialSkin.MouseState.HOVER;
+            lblSettingsColorOtherDeathMarker.Name = "lblSettingsColorOtherDeathMarker";
+            lblSettingsColorOtherDeathMarker.Size = new Size(60, 17);
+            lblSettingsColorOtherDeathMarker.TabIndex = 47;
+            lblSettingsColorOtherDeathMarker.Text = "死亡标记:";
             // 
             // picOtherTextOutline
             // 
             picOtherTextOutline.BackColor = Color.Transparent;
             picOtherTextOutline.BorderStyle = BorderStyle.FixedSingle;
-            picOtherTextOutline.Location = new Point(125, 51);
+            picOtherTextOutline.Location = new Point(109, 51);
             picOtherTextOutline.Name = "picOtherTextOutline";
-            picOtherTextOutline.Size = new Size(80, 26);
+            picOtherTextOutline.Size = new Size(70, 26);
             picOtherTextOutline.TabIndex = 46;
             picOtherTextOutline.TabStop = false;
             picOtherTextOutline.Click += picOtherTextOutline_Click;
             // 
-            // lblSettingsOtherTextOutline
+            // lblSettingsColorOtherTextOutline
             // 
-            lblSettingsOtherTextOutline.AutoSize = true;
-            lblSettingsOtherTextOutline.Depth = 0;
-            lblSettingsOtherTextOutline.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
-            lblSettingsOtherTextOutline.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsOtherTextOutline.Location = new Point(85, 51);
-            lblSettingsOtherTextOutline.MouseState = MaterialSkin.MouseState.HOVER;
-            lblSettingsOtherTextOutline.Name = "lblSettingsOtherTextOutline";
-            lblSettingsOtherTextOutline.Size = new Size(32, 17);
-            lblSettingsOtherTextOutline.TabIndex = 44;
-            lblSettingsOtherTextOutline.Text = "文本:";
+            lblSettingsColorOtherTextOutline.AutoSize = true;
+            lblSettingsColorOtherTextOutline.Depth = 0;
+            lblSettingsColorOtherTextOutline.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
+            lblSettingsColorOtherTextOutline.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
+            lblSettingsColorOtherTextOutline.Location = new Point(71, 51);
+            lblSettingsColorOtherTextOutline.MouseState = MaterialSkin.MouseState.HOVER;
+            lblSettingsColorOtherTextOutline.Name = "lblSettingsColorOtherTextOutline";
+            lblSettingsColorOtherTextOutline.Size = new Size(32, 17);
+            lblSettingsColorOtherTextOutline.TabIndex = 44;
+            lblSettingsColorOtherTextOutline.Text = "文本:";
             // 
             // lblSettingsColorsOther
             // 
@@ -3636,7 +4054,7 @@ namespace eft_dma_radar
             lblSettingsColorsOther.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblSettingsColorsOther.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblSettingsColorsOther.HighEmphasis = true;
-            lblSettingsColorsOther.Location = new Point(19, 14);
+            lblSettingsColorsOther.Location = new Point(17, 14);
             lblSettingsColorsOther.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsOther.Name = "lblSettingsColorsOther";
             lblSettingsColorsOther.Size = new Size(41, 24);
@@ -3647,120 +4065,146 @@ namespace eft_dma_radar
             // mcSettingsColorsLootAndQuests
             // 
             mcSettingsColorsLootAndQuests.BackColor = Color.FromArgb(255, 255, 255);
+            mcSettingsColorsLootAndQuests.Controls.Add(picLootPing);
+            mcSettingsColorsLootAndQuests.Controls.Add(lblSettingsColorsLootPing);
             mcSettingsColorsLootAndQuests.Controls.Add(picQuestZone);
-            mcSettingsColorsLootAndQuests.Controls.Add(lblSettingsQuestZones);
+            mcSettingsColorsLootAndQuests.Controls.Add(lblSettingsColorsQuestZones);
             mcSettingsColorsLootAndQuests.Controls.Add(picQuestItem);
-            mcSettingsColorsLootAndQuests.Controls.Add(lblSettingsQuestItems);
+            mcSettingsColorsLootAndQuests.Controls.Add(lblSettingsColorsQuestItems);
             mcSettingsColorsLootAndQuests.Controls.Add(picLootImportant);
-            mcSettingsColorsLootAndQuests.Controls.Add(lblSettingsLootImportant);
+            mcSettingsColorsLootAndQuests.Controls.Add(lblSettingsColorsLootImportant);
             mcSettingsColorsLootAndQuests.Controls.Add(picLootRegular);
-            mcSettingsColorsLootAndQuests.Controls.Add(lblSettingsLootRegular);
+            mcSettingsColorsLootAndQuests.Controls.Add(lblSettingsColorsLootRegular);
             mcSettingsColorsLootAndQuests.Controls.Add(lblSettingsColorsLootQuests);
             mcSettingsColorsLootAndQuests.Depth = 0;
             mcSettingsColorsLootAndQuests.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcSettingsColorsLootAndQuests.Location = new Point(744, 16);
-            mcSettingsColorsLootAndQuests.Margin = new Padding(16);
+            mcSettingsColorsLootAndQuests.Location = new Point(651, 16);
+            mcSettingsColorsLootAndQuests.Margin = new Padding(14, 16, 14, 16);
             mcSettingsColorsLootAndQuests.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsColorsLootAndQuests.Name = "mcSettingsColorsLootAndQuests";
-            mcSettingsColorsLootAndQuests.Padding = new Padding(16);
-            mcSettingsColorsLootAndQuests.Size = new Size(225, 365);
+            mcSettingsColorsLootAndQuests.Padding = new Padding(14, 16, 14, 16);
+            mcSettingsColorsLootAndQuests.Size = new Size(197, 365);
             mcSettingsColorsLootAndQuests.TabIndex = 42;
+            // 
+            // picLootPing
+            // 
+            picLootPing.BackColor = Color.Transparent;
+            picLootPing.BorderStyle = BorderStyle.FixedSingle;
+            picLootPing.Location = new Point(120, 187);
+            picLootPing.Name = "picLootPing";
+            picLootPing.Size = new Size(70, 26);
+            picLootPing.TabIndex = 54;
+            picLootPing.TabStop = false;
+            picLootPing.Click += picLootPing_Click;
+            // 
+            // lblSettingsColorsLootPing
+            // 
+            lblSettingsColorsLootPing.AutoSize = true;
+            lblSettingsColorsLootPing.Depth = 0;
+            lblSettingsColorsLootPing.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
+            lblSettingsColorsLootPing.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
+            lblSettingsColorsLootPing.Location = new Point(74, 187);
+            lblSettingsColorsLootPing.MouseState = MaterialSkin.MouseState.HOVER;
+            lblSettingsColorsLootPing.Name = "lblSettingsColorsLootPing";
+            lblSettingsColorsLootPing.Size = new Size(32, 17);
+            lblSettingsColorsLootPing.TabIndex = 53;
+            lblSettingsColorsLootPing.Text = "Ping:";
             // 
             // picQuestZone
             // 
             picQuestZone.BackColor = Color.Transparent;
             picQuestZone.BorderStyle = BorderStyle.FixedSingle;
-            picQuestZone.Location = new Point(137, 153);
+            picQuestZone.Location = new Point(120, 153);
             picQuestZone.Name = "picQuestZone";
-            picQuestZone.Size = new Size(80, 26);
+            picQuestZone.Size = new Size(70, 26);
             picQuestZone.TabIndex = 52;
             picQuestZone.TabStop = false;
             picQuestZone.Click += picQuestZone_Click;
             // 
-            // lblSettingsQuestZones
+            // lblSettingsColorsQuestZones
             // 
-            lblSettingsQuestZones.AutoSize = true;
-            lblSettingsQuestZones.Depth = 0;
-            lblSettingsQuestZones.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
-            lblSettingsQuestZones.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsQuestZones.Location = new Point(71, 153);
-            lblSettingsQuestZones.MouseState = MaterialSkin.MouseState.HOVER;
-            lblSettingsQuestZones.Name = "lblSettingsQuestZones";
-            lblSettingsQuestZones.Size = new Size(60, 17);
-            lblSettingsQuestZones.TabIndex = 51;
-            lblSettingsQuestZones.Text = "任务位置:";
+            lblSettingsColorsQuestZones.AutoSize = true;
+            lblSettingsColorsQuestZones.Depth = 0;
+            lblSettingsColorsQuestZones.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
+            lblSettingsColorsQuestZones.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
+            lblSettingsColorsQuestZones.Location = new Point(46, 153);
+            lblSettingsColorsQuestZones.MouseState = MaterialSkin.MouseState.HOVER;
+            lblSettingsColorsQuestZones.Name = "lblSettingsColorsQuestZones";
+            lblSettingsColorsQuestZones.Size = new Size(60, 17);
+            lblSettingsColorsQuestZones.TabIndex = 51;
+            lblSettingsColorsQuestZones.Text = "任务位置:";
             // 
             // picQuestItem
             // 
             picQuestItem.BackColor = Color.Transparent;
             picQuestItem.BorderStyle = BorderStyle.FixedSingle;
-            picQuestItem.Location = new Point(137, 120);
+            picQuestItem.Location = new Point(120, 120);
             picQuestItem.Name = "picQuestItem";
-            picQuestItem.Size = new Size(80, 26);
+            picQuestItem.Size = new Size(70, 26);
             picQuestItem.TabIndex = 50;
             picQuestItem.TabStop = false;
             picQuestItem.Click += picQuestItem_Click;
             // 
-            // lblSettingsQuestItems
+            // lblSettingsColorsQuestItems
             // 
-            lblSettingsQuestItems.AutoSize = true;
-            lblSettingsQuestItems.Depth = 0;
-            lblSettingsQuestItems.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
-            lblSettingsQuestItems.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsQuestItems.Location = new Point(71, 120);
-            lblSettingsQuestItems.MouseState = MaterialSkin.MouseState.HOVER;
-            lblSettingsQuestItems.Name = "lblSettingsQuestItems";
-            lblSettingsQuestItems.Size = new Size(60, 17);
-            lblSettingsQuestItems.TabIndex = 49;
-            lblSettingsQuestItems.Text = "任务物品:";
+            lblSettingsColorsQuestItems.AutoSize = true;
+            lblSettingsColorsQuestItems.Depth = 0;
+            lblSettingsColorsQuestItems.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
+            lblSettingsColorsQuestItems.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
+            lblSettingsColorsQuestItems.Location = new Point(46, 119);
+            lblSettingsColorsQuestItems.MouseState = MaterialSkin.MouseState.HOVER;
+            lblSettingsColorsQuestItems.Name = "lblSettingsColorsQuestItems";
+            lblSettingsColorsQuestItems.Size = new Size(60, 17);
+            lblSettingsColorsQuestItems.TabIndex = 49;
+            lblSettingsColorsQuestItems.Text = "任务物品:";
             // 
             // picLootImportant
             // 
             picLootImportant.BackColor = Color.Transparent;
             picLootImportant.BorderStyle = BorderStyle.FixedSingle;
-            picLootImportant.Location = new Point(137, 86);
+            picLootImportant.Location = new Point(120, 86);
             picLootImportant.Name = "picLootImportant";
-            picLootImportant.Size = new Size(80, 26);
+            picLootImportant.Size = new Size(70, 26);
             picLootImportant.TabIndex = 48;
             picLootImportant.TabStop = false;
             picLootImportant.Click += picLootImportant_Click;
             // 
-            // lblSettingsLootImportant
+            // lblSettingsColorsLootImportant
             // 
-            lblSettingsLootImportant.AutoSize = true;
-            lblSettingsLootImportant.Depth = 0;
-            lblSettingsLootImportant.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
-            lblSettingsLootImportant.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsLootImportant.Location = new Point(71, 86);
-            lblSettingsLootImportant.MouseState = MaterialSkin.MouseState.HOVER;
-            lblSettingsLootImportant.Name = "lblSettingsLootImportant";
-            lblSettingsLootImportant.Size = new Size(60, 17);
-            lblSettingsLootImportant.TabIndex = 47;
-            lblSettingsLootImportant.Text = "高级物资:";
+            lblSettingsColorsLootImportant.AutoSize = true;
+            lblSettingsColorsLootImportant.Depth = 0;
+            lblSettingsColorsLootImportant.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
+            lblSettingsColorsLootImportant.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
+            lblSettingsColorsLootImportant.Location = new Point(46, 85);
+            lblSettingsColorsLootImportant.MouseState = MaterialSkin.MouseState.HOVER;
+            lblSettingsColorsLootImportant.Name = "lblSettingsColorsLootImportant";
+            lblSettingsColorsLootImportant.Size = new Size(60, 17);
+            lblSettingsColorsLootImportant.TabIndex = 47;
+            lblSettingsColorsLootImportant.Text = "高级物资:";
             // 
             // picLootRegular
             // 
             picLootRegular.BackColor = Color.Transparent;
             picLootRegular.BorderStyle = BorderStyle.FixedSingle;
-            picLootRegular.Location = new Point(137, 51);
+            picLootRegular.Location = new Point(120, 51);
             picLootRegular.Name = "picLootRegular";
-            picLootRegular.Size = new Size(80, 26);
+            picLootRegular.Size = new Size(70, 26);
             picLootRegular.TabIndex = 46;
             picLootRegular.TabStop = false;
             picLootRegular.Click += picLootRegular_Click;
             // 
-            // lblSettingsLootRegular
+            // lblSettingsColorsLootRegular
             // 
-            lblSettingsLootRegular.AutoSize = true;
-            lblSettingsLootRegular.Depth = 0;
-            lblSettingsLootRegular.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
-            lblSettingsLootRegular.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsLootRegular.Location = new Point(71, 51);
-            lblSettingsLootRegular.MouseState = MaterialSkin.MouseState.HOVER;
-            lblSettingsLootRegular.Name = "lblSettingsLootRegular";
-            lblSettingsLootRegular.Size = new Size(60, 17);
-            lblSettingsLootRegular.TabIndex = 44;
-            lblSettingsLootRegular.Text = "普通物资:";
+            lblSettingsColorsLootRegular.AutoSize = true;
+            lblSettingsColorsLootRegular.Depth = 0;
+            lblSettingsColorsLootRegular.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
+            lblSettingsColorsLootRegular.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
+            lblSettingsColorsLootRegular.Location = new Point(46, 51);
+            lblSettingsColorsLootRegular.MouseState = MaterialSkin.MouseState.HOVER;
+            lblSettingsColorsLootRegular.Name = "lblSettingsColorsLootRegular";
+            lblSettingsColorsLootRegular.Size = new Size(60, 17);
+            lblSettingsColorsLootRegular.TabIndex = 44;
+            lblSettingsColorsLootRegular.Text = "普通物资:";
             // 
             // lblSettingsColorsLootQuests
             // 
@@ -3769,7 +4213,7 @@ namespace eft_dma_radar
             lblSettingsColorsLootQuests.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblSettingsColorsLootQuests.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblSettingsColorsLootQuests.HighEmphasis = true;
-            lblSettingsColorsLootQuests.Location = new Point(19, 14);
+            lblSettingsColorsLootQuests.Location = new Point(17, 14);
             lblSettingsColorsLootQuests.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsLootQuests.Name = "lblSettingsColorsLootQuests";
             lblSettingsColorsLootQuests.Size = new Size(89, 24);
@@ -3795,21 +4239,21 @@ namespace eft_dma_radar
             mcSettingsColorsExfiltration.Controls.Add(lblSettingsColorsExfiltration);
             mcSettingsColorsExfiltration.Depth = 0;
             mcSettingsColorsExfiltration.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcSettingsColorsExfiltration.Location = new Point(509, 16);
-            mcSettingsColorsExfiltration.Margin = new Padding(16);
+            mcSettingsColorsExfiltration.Location = new Point(432, 16);
+            mcSettingsColorsExfiltration.Margin = new Padding(14, 16, 14, 16);
             mcSettingsColorsExfiltration.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsColorsExfiltration.Name = "mcSettingsColorsExfiltration";
-            mcSettingsColorsExfiltration.Padding = new Padding(16);
-            mcSettingsColorsExfiltration.Size = new Size(209, 365);
+            mcSettingsColorsExfiltration.Padding = new Padding(14, 16, 14, 16);
+            mcSettingsColorsExfiltration.Size = new Size(204, 365);
             mcSettingsColorsExfiltration.TabIndex = 41;
             // 
             // picExfilClosedIcon
             // 
             picExfilClosedIcon.BackColor = Color.Transparent;
             picExfilClosedIcon.BorderStyle = BorderStyle.FixedSingle;
-            picExfilClosedIcon.Location = new Point(121, 221);
+            picExfilClosedIcon.Location = new Point(122, 221);
             picExfilClosedIcon.Name = "picExfilClosedIcon";
-            picExfilClosedIcon.Size = new Size(80, 26);
+            picExfilClosedIcon.Size = new Size(70, 26);
             picExfilClosedIcon.TabIndex = 56;
             picExfilClosedIcon.TabStop = false;
             picExfilClosedIcon.Click += picExfilClosedIcon_Click;
@@ -3820,21 +4264,20 @@ namespace eft_dma_radar
             lblSettingsColorsExfilClosedIcon.Depth = 0;
             lblSettingsColorsExfilClosedIcon.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsExfilClosedIcon.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsExfilClosedIcon.Location = new Point(36, 221);
+            lblSettingsColorsExfilClosedIcon.Location = new Point(21, 221);
             lblSettingsColorsExfilClosedIcon.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsExfilClosedIcon.Name = "lblSettingsColorsExfilClosedIcon";
-            lblSettingsColorsExfilClosedIcon.Size = new Size(74, 17);
+            lblSettingsColorsExfilClosedIcon.Size = new Size(102, 17);
             lblSettingsColorsExfilClosedIcon.TabIndex = 55;
-            lblSettingsColorsExfilClosedIcon.Text = "撤离点图标:";
-            lblSettingsColorsExfilClosedIcon.Click += lblSettingsColorsExfilClosedIcon_Click;
+            lblSettingsColorsExfilClosedIcon.Text = "关闭撤离点图标:";
             // 
             // picExfilClosedText
             // 
             picExfilClosedText.BackColor = Color.Transparent;
             picExfilClosedText.BorderStyle = BorderStyle.FixedSingle;
-            picExfilClosedText.Location = new Point(121, 187);
+            picExfilClosedText.Location = new Point(122, 185);
             picExfilClosedText.Name = "picExfilClosedText";
-            picExfilClosedText.Size = new Size(80, 26);
+            picExfilClosedText.Size = new Size(70, 26);
             picExfilClosedText.TabIndex = 54;
             picExfilClosedText.TabStop = false;
             picExfilClosedText.Click += picExfilClosedText_Click;
@@ -3845,21 +4288,20 @@ namespace eft_dma_radar
             lblSettingsColorsExfilClosedText.Depth = 0;
             lblSettingsColorsExfilClosedText.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsExfilClosedText.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsExfilClosedText.Location = new Point(36, 187);
+            lblSettingsColorsExfilClosedText.Location = new Point(21, 187);
             lblSettingsColorsExfilClosedText.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsExfilClosedText.Name = "lblSettingsColorsExfilClosedText";
-            lblSettingsColorsExfilClosedText.Size = new Size(74, 17);
+            lblSettingsColorsExfilClosedText.Size = new Size(102, 17);
             lblSettingsColorsExfilClosedText.TabIndex = 53;
-            lblSettingsColorsExfilClosedText.Text = "撤离点文字:";
-            lblSettingsColorsExfilClosedText.Click += lblSettingsColorsExfilClosedText_Click;
+            lblSettingsColorsExfilClosedText.Text = "关闭撤离点文字:";
             // 
             // picExfilPendingIcon
             // 
             picExfilPendingIcon.BackColor = Color.Transparent;
             picExfilPendingIcon.BorderStyle = BorderStyle.FixedSingle;
-            picExfilPendingIcon.Location = new Point(121, 153);
+            picExfilPendingIcon.Location = new Point(122, 153);
             picExfilPendingIcon.Name = "picExfilPendingIcon";
-            picExfilPendingIcon.Size = new Size(80, 26);
+            picExfilPendingIcon.Size = new Size(70, 26);
             picExfilPendingIcon.TabIndex = 52;
             picExfilPendingIcon.TabStop = false;
             picExfilPendingIcon.Click += picExfilPendingIcon_Click;
@@ -3870,21 +4312,20 @@ namespace eft_dma_radar
             lblSettingsColorsExfilPendingIcon.Depth = 0;
             lblSettingsColorsExfilPendingIcon.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsExfilPendingIcon.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsExfilPendingIcon.Location = new Point(36, 153);
+            lblSettingsColorsExfilPendingIcon.Location = new Point(7, 153);
             lblSettingsColorsExfilPendingIcon.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsExfilPendingIcon.Name = "lblSettingsColorsExfilPendingIcon";
-            lblSettingsColorsExfilPendingIcon.Size = new Size(74, 17);
+            lblSettingsColorsExfilPendingIcon.Size = new Size(116, 17);
             lblSettingsColorsExfilPendingIcon.TabIndex = 51;
-            lblSettingsColorsExfilPendingIcon.Text = "固定的标记:";
-            lblSettingsColorsExfilPendingIcon.Click += lblSettingsColorsExfilPendingIcon_Click;
+            lblSettingsColorsExfilPendingIcon.Text = "未激活撤离点图标:";
             // 
             // picExfilPendingText
             // 
             picExfilPendingText.BackColor = Color.Transparent;
             picExfilPendingText.BorderStyle = BorderStyle.FixedSingle;
-            picExfilPendingText.Location = new Point(121, 119);
+            picExfilPendingText.Location = new Point(122, 119);
             picExfilPendingText.Name = "picExfilPendingText";
-            picExfilPendingText.Size = new Size(80, 26);
+            picExfilPendingText.Size = new Size(70, 26);
             picExfilPendingText.TabIndex = 50;
             picExfilPendingText.TabStop = false;
             picExfilPendingText.Click += picExfilPendingText_Click;
@@ -3895,21 +4336,21 @@ namespace eft_dma_radar
             lblSettingsColorsExfilPendingText.Depth = 0;
             lblSettingsColorsExfilPendingText.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsExfilPendingText.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsExfilPendingText.Location = new Point(36, 120);
+            lblSettingsColorsExfilPendingText.Location = new Point(21, 120);
             lblSettingsColorsExfilPendingText.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsExfilPendingText.Name = "lblSettingsColorsExfilPendingText";
-            lblSettingsColorsExfilPendingText.Size = new Size(74, 17);
+            lblSettingsColorsExfilPendingText.Size = new Size(102, 17);
             lblSettingsColorsExfilPendingText.TabIndex = 49;
-            lblSettingsColorsExfilPendingText.Text = "固定的字体:";
+            lblSettingsColorsExfilPendingText.Text = "未激活的撤离点:";
             lblSettingsColorsExfilPendingText.Click += lblSettingsColorsExfilPendingText_Click;
             // 
             // picExfilActiveIcon
             // 
             picExfilActiveIcon.BackColor = Color.Transparent;
             picExfilActiveIcon.BorderStyle = BorderStyle.FixedSingle;
-            picExfilActiveIcon.Location = new Point(121, 85);
+            picExfilActiveIcon.Location = new Point(122, 85);
             picExfilActiveIcon.Name = "picExfilActiveIcon";
-            picExfilActiveIcon.Size = new Size(80, 26);
+            picExfilActiveIcon.Size = new Size(70, 26);
             picExfilActiveIcon.TabIndex = 48;
             picExfilActiveIcon.TabStop = false;
             picExfilActiveIcon.Click += picExfilActiveIcon_Click;
@@ -3920,21 +4361,20 @@ namespace eft_dma_radar
             lblSettingsColorsExfilActiveIcon.Depth = 0;
             lblSettingsColorsExfilActiveIcon.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsExfilActiveIcon.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsExfilActiveIcon.Location = new Point(52, 86);
+            lblSettingsColorsExfilActiveIcon.Location = new Point(17, 86);
             lblSettingsColorsExfilActiveIcon.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsExfilActiveIcon.Name = "lblSettingsColorsExfilActiveIcon";
-            lblSettingsColorsExfilActiveIcon.Size = new Size(60, 17);
+            lblSettingsColorsExfilActiveIcon.Size = new Size(102, 17);
             lblSettingsColorsExfilActiveIcon.TabIndex = 47;
-            lblSettingsColorsExfilActiveIcon.Text = "任务标记:";
-            lblSettingsColorsExfilActiveIcon.Click += lblSettingsColorsExfilActiveIcon_Click;
+            lblSettingsColorsExfilActiveIcon.Text = "激活撤离点图标:";
             // 
             // picExfilActiveText
             // 
             picExfilActiveText.BackColor = Color.Transparent;
             picExfilActiveText.BorderStyle = BorderStyle.FixedSingle;
-            picExfilActiveText.Location = new Point(121, 51);
+            picExfilActiveText.Location = new Point(122, 51);
             picExfilActiveText.Name = "picExfilActiveText";
-            picExfilActiveText.Size = new Size(80, 26);
+            picExfilActiveText.Size = new Size(70, 26);
             picExfilActiveText.TabIndex = 46;
             picExfilActiveText.TabStop = false;
             picExfilActiveText.Click += picExfilActiveText_Click;
@@ -3945,12 +4385,13 @@ namespace eft_dma_radar
             lblSettingsColorsExfilActiveText.Depth = 0;
             lblSettingsColorsExfilActiveText.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsExfilActiveText.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsExfilActiveText.Location = new Point(57, 51);
+            lblSettingsColorsExfilActiveText.Location = new Point(21, 51);
             lblSettingsColorsExfilActiveText.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsExfilActiveText.Name = "lblSettingsColorsExfilActiveText";
-            lblSettingsColorsExfilActiveText.Size = new Size(60, 17);
+            lblSettingsColorsExfilActiveText.Size = new Size(102, 17);
             lblSettingsColorsExfilActiveText.TabIndex = 44;
-            lblSettingsColorsExfilActiveText.Text = "任务文本:";
+            lblSettingsColorsExfilActiveText.Text = "激活撤离点文本:";
+            lblSettingsColorsExfilActiveText.Click += lblSettingsColorsExfilActiveText_Click;
             // 
             // lblSettingsColorsExfiltration
             // 
@@ -3959,13 +4400,14 @@ namespace eft_dma_radar
             lblSettingsColorsExfiltration.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblSettingsColorsExfiltration.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblSettingsColorsExfiltration.HighEmphasis = true;
-            lblSettingsColorsExfiltration.Location = new Point(19, 14);
+            lblSettingsColorsExfiltration.Location = new Point(17, 14);
             lblSettingsColorsExfiltration.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsExfiltration.Name = "lblSettingsColorsExfiltration";
-            lblSettingsColorsExfiltration.Size = new Size(98, 24);
+            lblSettingsColorsExfiltration.Size = new Size(61, 24);
             lblSettingsColorsExfiltration.TabIndex = 33;
-            lblSettingsColorsExfiltration.Text = "Exfiltration";
+            lblSettingsColorsExfiltration.Text = "撤离点";
             lblSettingsColorsExfiltration.UseAccent = true;
+            lblSettingsColorsExfiltration.Click += lblSettingsColorsExfiltration_Click;
             // 
             // mcSettingsColorsPlayers
             // 
@@ -3987,21 +4429,21 @@ namespace eft_dma_radar
             mcSettingsColorsPlayers.Controls.Add(lblSettingsColorsPlayers);
             mcSettingsColorsPlayers.Depth = 0;
             mcSettingsColorsPlayers.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcSettingsColorsPlayers.Location = new Point(280, 16);
-            mcSettingsColorsPlayers.Margin = new Padding(16);
+            mcSettingsColorsPlayers.Location = new Point(245, 16);
+            mcSettingsColorsPlayers.Margin = new Padding(14, 16, 14, 16);
             mcSettingsColorsPlayers.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsColorsPlayers.Name = "mcSettingsColorsPlayers";
-            mcSettingsColorsPlayers.Padding = new Padding(16);
-            mcSettingsColorsPlayers.Size = new Size(202, 365);
+            mcSettingsColorsPlayers.Padding = new Padding(14, 16, 14, 16);
+            mcSettingsColorsPlayers.Size = new Size(177, 365);
             mcSettingsColorsPlayers.TabIndex = 40;
             // 
             // picPlayersSpecial
             // 
             picPlayersSpecial.BackColor = Color.Transparent;
             picPlayersSpecial.BorderStyle = BorderStyle.FixedSingle;
-            picPlayersSpecial.Location = new Point(114, 255);
+            picPlayersSpecial.Location = new Point(100, 255);
             picPlayersSpecial.Name = "picPlayersSpecial";
-            picPlayersSpecial.Size = new Size(80, 26);
+            picPlayersSpecial.Size = new Size(70, 26);
             picPlayersSpecial.TabIndex = 58;
             picPlayersSpecial.TabStop = false;
             picPlayersSpecial.Click += picPlayersSpecial_Click;
@@ -4012,7 +4454,7 @@ namespace eft_dma_radar
             lblSettingsColorsPlayersSpecial.Depth = 0;
             lblSettingsColorsPlayersSpecial.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsPlayersSpecial.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsPlayersSpecial.Location = new Point(51, 255);
+            lblSettingsColorsPlayersSpecial.Location = new Point(27, 255);
             lblSettingsColorsPlayersSpecial.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsPlayersSpecial.Name = "lblSettingsColorsPlayersSpecial";
             lblSettingsColorsPlayersSpecial.Size = new Size(60, 17);
@@ -4023,9 +4465,9 @@ namespace eft_dma_radar
             // 
             picPlayersTeamHover.BackColor = Color.Transparent;
             picPlayersTeamHover.BorderStyle = BorderStyle.FixedSingle;
-            picPlayersTeamHover.Location = new Point(114, 221);
+            picPlayersTeamHover.Location = new Point(100, 221);
             picPlayersTeamHover.Name = "picPlayersTeamHover";
-            picPlayersTeamHover.Size = new Size(80, 26);
+            picPlayersTeamHover.Size = new Size(70, 26);
             picPlayersTeamHover.TabIndex = 56;
             picPlayersTeamHover.TabStop = false;
             picPlayersTeamHover.Click += picPlayersTeamHover_Click;
@@ -4036,20 +4478,20 @@ namespace eft_dma_radar
             lblSettingsColorsPlayersTeamHover.Depth = 0;
             lblSettingsColorsPlayersTeamHover.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsPlayersTeamHover.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsPlayersTeamHover.Location = new Point(51, 221);
+            lblSettingsColorsPlayersTeamHover.Location = new Point(55, 221);
             lblSettingsColorsPlayersTeamHover.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsPlayersTeamHover.Name = "lblSettingsColorsPlayersTeamHover";
-            lblSettingsColorsPlayersTeamHover.Size = new Size(60, 17);
+            lblSettingsColorsPlayersTeamHover.Size = new Size(32, 17);
             lblSettingsColorsPlayersTeamHover.TabIndex = 55;
-            lblSettingsColorsPlayersTeamHover.Text = "团队悬停:";
+            lblSettingsColorsPlayersTeamHover.Text = "团队:";
             // 
             // picPlayersTeammate
             // 
             picPlayersTeammate.BackColor = Color.Transparent;
             picPlayersTeammate.BorderStyle = BorderStyle.FixedSingle;
-            picPlayersTeammate.Location = new Point(114, 187);
+            picPlayersTeammate.Location = new Point(100, 187);
             picPlayersTeammate.Name = "picPlayersTeammate";
-            picPlayersTeammate.Size = new Size(80, 26);
+            picPlayersTeammate.Size = new Size(70, 26);
             picPlayersTeammate.TabIndex = 54;
             picPlayersTeammate.TabStop = false;
             picPlayersTeammate.Click += picPlayersTeammate_Click;
@@ -4060,7 +4502,7 @@ namespace eft_dma_radar
             lblSettingsColorsPlayersTeammate.Depth = 0;
             lblSettingsColorsPlayersTeammate.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsPlayersTeammate.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsPlayersTeammate.Location = new Point(79, 187);
+            lblSettingsColorsPlayersTeammate.Location = new Point(55, 187);
             lblSettingsColorsPlayersTeammate.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsPlayersTeammate.Name = "lblSettingsColorsPlayersTeammate";
             lblSettingsColorsPlayersTeammate.Size = new Size(32, 17);
@@ -4071,9 +4513,9 @@ namespace eft_dma_radar
             // 
             picPlayersLocalPlayer.BackColor = Color.Transparent;
             picPlayersLocalPlayer.BorderStyle = BorderStyle.FixedSingle;
-            picPlayersLocalPlayer.Location = new Point(114, 153);
+            picPlayersLocalPlayer.Location = new Point(100, 153);
             picPlayersLocalPlayer.Name = "picPlayersLocalPlayer";
-            picPlayersLocalPlayer.Size = new Size(80, 26);
+            picPlayersLocalPlayer.Size = new Size(70, 26);
             picPlayersLocalPlayer.TabIndex = 52;
             picPlayersLocalPlayer.TabStop = false;
             picPlayersLocalPlayer.Click += picPlayersLocalPlayer_Click;
@@ -4084,7 +4526,7 @@ namespace eft_dma_radar
             lblSettingsColorsPlayersLocalPlayer.Depth = 0;
             lblSettingsColorsPlayersLocalPlayer.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsPlayersLocalPlayer.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsPlayersLocalPlayer.Location = new Point(79, 153);
+            lblSettingsColorsPlayersLocalPlayer.Location = new Point(58, 153);
             lblSettingsColorsPlayersLocalPlayer.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsPlayersLocalPlayer.Name = "lblSettingsColorsPlayersLocalPlayer";
             lblSettingsColorsPlayersLocalPlayer.Size = new Size(29, 17);
@@ -4095,9 +4537,9 @@ namespace eft_dma_radar
             // 
             picPlayersScav.BackColor = Color.Transparent;
             picPlayersScav.BorderStyle = BorderStyle.FixedSingle;
-            picPlayersScav.Location = new Point(114, 119);
+            picPlayersScav.Location = new Point(100, 119);
             picPlayersScav.Name = "picPlayersScav";
-            picPlayersScav.Size = new Size(80, 26);
+            picPlayersScav.Size = new Size(70, 26);
             picPlayersScav.TabIndex = 50;
             picPlayersScav.TabStop = false;
             picPlayersScav.Click += picPlayersScav_Click;
@@ -4108,7 +4550,7 @@ namespace eft_dma_radar
             lblSettingsColorsPlayersScav.Depth = 0;
             lblSettingsColorsPlayersScav.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsPlayersScav.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsPlayersScav.Location = new Point(74, 120);
+            lblSettingsColorsPlayersScav.Location = new Point(53, 120);
             lblSettingsColorsPlayersScav.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsPlayersScav.Name = "lblSettingsColorsPlayersScav";
             lblSettingsColorsPlayersScav.Size = new Size(34, 17);
@@ -4119,9 +4561,9 @@ namespace eft_dma_radar
             // 
             picPlayersBEAR.BackColor = Color.Transparent;
             picPlayersBEAR.BorderStyle = BorderStyle.FixedSingle;
-            picPlayersBEAR.Location = new Point(114, 85);
+            picPlayersBEAR.Location = new Point(100, 85);
             picPlayersBEAR.Name = "picPlayersBEAR";
-            picPlayersBEAR.Size = new Size(80, 26);
+            picPlayersBEAR.Size = new Size(70, 26);
             picPlayersBEAR.TabIndex = 48;
             picPlayersBEAR.TabStop = false;
             picPlayersBEAR.Click += picPlayersBEAR_Click;
@@ -4132,7 +4574,7 @@ namespace eft_dma_radar
             lblSettingsColorsPlayersBEAR.Depth = 0;
             lblSettingsColorsPlayersBEAR.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsPlayersBEAR.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsPlayersBEAR.Location = new Point(76, 86);
+            lblSettingsColorsPlayersBEAR.Location = new Point(55, 85);
             lblSettingsColorsPlayersBEAR.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsPlayersBEAR.Name = "lblSettingsColorsPlayersBEAR";
             lblSettingsColorsPlayersBEAR.Size = new Size(32, 17);
@@ -4143,9 +4585,9 @@ namespace eft_dma_radar
             // 
             picPlayersUSEC.BackColor = Color.Transparent;
             picPlayersUSEC.BorderStyle = BorderStyle.FixedSingle;
-            picPlayersUSEC.Location = new Point(114, 51);
+            picPlayersUSEC.Location = new Point(100, 51);
             picPlayersUSEC.Name = "picPlayersUSEC";
-            picPlayersUSEC.Size = new Size(80, 26);
+            picPlayersUSEC.Size = new Size(70, 26);
             picPlayersUSEC.TabIndex = 46;
             picPlayersUSEC.TabStop = false;
             picPlayersUSEC.Click += picPlayersUSEC_Click;
@@ -4156,7 +4598,7 @@ namespace eft_dma_radar
             lblSettingsColorsPlayersUSEC.Depth = 0;
             lblSettingsColorsPlayersUSEC.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsPlayersUSEC.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsPlayersUSEC.Location = new Point(76, 51);
+            lblSettingsColorsPlayersUSEC.Location = new Point(56, 51);
             lblSettingsColorsPlayersUSEC.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsPlayersUSEC.Name = "lblSettingsColorsPlayersUSEC";
             lblSettingsColorsPlayersUSEC.Size = new Size(32, 17);
@@ -4170,7 +4612,7 @@ namespace eft_dma_radar
             lblSettingsColorsPlayers.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblSettingsColorsPlayers.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblSettingsColorsPlayers.HighEmphasis = true;
-            lblSettingsColorsPlayers.Location = new Point(19, 14);
+            lblSettingsColorsPlayers.Location = new Point(17, 14);
             lblSettingsColorsPlayers.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsPlayers.Name = "lblSettingsColorsPlayers";
             lblSettingsColorsPlayers.Size = new Size(41, 24);
@@ -4202,21 +4644,21 @@ namespace eft_dma_radar
             mcSettingsColorsAI.Controls.Add(lblSettingsColorsAI);
             mcSettingsColorsAI.Depth = 0;
             mcSettingsColorsAI.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcSettingsColorsAI.Location = new Point(17, 16);
-            mcSettingsColorsAI.Margin = new Padding(16);
+            mcSettingsColorsAI.Location = new Point(15, 16);
+            mcSettingsColorsAI.Margin = new Padding(14, 16, 14, 16);
             mcSettingsColorsAI.MouseState = MaterialSkin.MouseState.HOVER;
             mcSettingsColorsAI.Name = "mcSettingsColorsAI";
-            mcSettingsColorsAI.Padding = new Padding(16);
-            mcSettingsColorsAI.Size = new Size(237, 365);
+            mcSettingsColorsAI.Padding = new Padding(14, 16, 14, 16);
+            mcSettingsColorsAI.Size = new Size(207, 365);
             mcSettingsColorsAI.TabIndex = 39;
             // 
             // picAIOther
             // 
             picAIOther.BackColor = Color.Transparent;
             picAIOther.BorderStyle = BorderStyle.FixedSingle;
-            picAIOther.Location = new Point(149, 323);
+            picAIOther.Location = new Point(130, 323);
             picAIOther.Name = "picAIOther";
-            picAIOther.Size = new Size(80, 26);
+            picAIOther.Size = new Size(70, 26);
             picAIOther.TabIndex = 62;
             picAIOther.TabStop = false;
             picAIOther.Click += picAIOther_Click;
@@ -4227,7 +4669,7 @@ namespace eft_dma_radar
             lblSettingsColorsAIOther.Depth = 0;
             lblSettingsColorsAIOther.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsAIOther.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsAIOther.Location = new Point(108, 323);
+            lblSettingsColorsAIOther.Location = new Point(92, 323);
             lblSettingsColorsAIOther.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsAIOther.Name = "lblSettingsColorsAIOther";
             lblSettingsColorsAIOther.Size = new Size(32, 17);
@@ -4238,9 +4680,9 @@ namespace eft_dma_radar
             // 
             picAIScav.BackColor = Color.Transparent;
             picAIScav.BorderStyle = BorderStyle.FixedSingle;
-            picAIScav.Location = new Point(149, 289);
+            picAIScav.Location = new Point(130, 289);
             picAIScav.Name = "picAIScav";
-            picAIScav.Size = new Size(80, 26);
+            picAIScav.Size = new Size(70, 26);
             picAIScav.TabIndex = 60;
             picAIScav.TabStop = false;
             picAIScav.Click += picAIScav_Click;
@@ -4251,7 +4693,7 @@ namespace eft_dma_radar
             lblSettingsColorsAIScav.Depth = 0;
             lblSettingsColorsAIScav.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsAIScav.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsAIScav.Location = new Point(105, 289);
+            lblSettingsColorsAIScav.Location = new Point(90, 289);
             lblSettingsColorsAIScav.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsAIScav.Name = "lblSettingsColorsAIScav";
             lblSettingsColorsAIScav.Size = new Size(34, 17);
@@ -4262,9 +4704,9 @@ namespace eft_dma_radar
             // 
             picAIFollowerOfMorana.BackColor = Color.Transparent;
             picAIFollowerOfMorana.BorderStyle = BorderStyle.FixedSingle;
-            picAIFollowerOfMorana.Location = new Point(149, 255);
+            picAIFollowerOfMorana.Location = new Point(130, 255);
             picAIFollowerOfMorana.Name = "picAIFollowerOfMorana";
-            picAIFollowerOfMorana.Size = new Size(80, 26);
+            picAIFollowerOfMorana.Size = new Size(70, 26);
             picAIFollowerOfMorana.TabIndex = 58;
             picAIFollowerOfMorana.TabStop = false;
             picAIFollowerOfMorana.Click += picAIFollowerOfMorana_Click;
@@ -4275,21 +4717,20 @@ namespace eft_dma_radar
             lblSettingsColorsAIMoranaFollower.Depth = 0;
             lblSettingsColorsAIMoranaFollower.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsAIMoranaFollower.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsAIMoranaFollower.Location = new Point(42, 255);
+            lblSettingsColorsAIMoranaFollower.Location = new Point(26, 255);
             lblSettingsColorsAIMoranaFollower.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsAIMoranaFollower.Name = "lblSettingsColorsAIMoranaFollower";
             lblSettingsColorsAIMoranaFollower.Size = new Size(98, 17);
             lblSettingsColorsAIMoranaFollower.TabIndex = 57;
             lblSettingsColorsAIMoranaFollower.Text = "Morana 追随者:";
-            lblSettingsColorsAIMoranaFollower.Click += lblSettingsColorsAIMoranaFollower_Click;
             // 
             // picAICultist
             // 
             picAICultist.BackColor = Color.Transparent;
             picAICultist.BorderStyle = BorderStyle.FixedSingle;
-            picAICultist.Location = new Point(149, 221);
+            picAICultist.Location = new Point(130, 221);
             picAICultist.Name = "picAICultist";
-            picAICultist.Size = new Size(80, 26);
+            picAICultist.Size = new Size(70, 26);
             picAICultist.TabIndex = 56;
             picAICultist.TabStop = false;
             picAICultist.Click += picAICultist_Click;
@@ -4300,7 +4741,7 @@ namespace eft_dma_radar
             lblSettingsColorsAICultists.Depth = 0;
             lblSettingsColorsAICultists.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsAICultists.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsAICultists.Location = new Point(97, 221);
+            lblSettingsColorsAICultists.Location = new Point(78, 221);
             lblSettingsColorsAICultists.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsAICultists.Name = "lblSettingsColorsAICultists";
             lblSettingsColorsAICultists.Size = new Size(46, 17);
@@ -4311,9 +4752,9 @@ namespace eft_dma_radar
             // 
             picAIRogue.BackColor = Color.Transparent;
             picAIRogue.BorderStyle = BorderStyle.FixedSingle;
-            picAIRogue.Location = new Point(149, 187);
+            picAIRogue.Location = new Point(130, 187);
             picAIRogue.Name = "picAIRogue";
-            picAIRogue.Size = new Size(80, 26);
+            picAIRogue.Size = new Size(70, 26);
             picAIRogue.TabIndex = 54;
             picAIRogue.TabStop = false;
             picAIRogue.Click += picAIRogue_Click;
@@ -4324,7 +4765,7 @@ namespace eft_dma_radar
             lblSettingsColorsAIRogues.Depth = 0;
             lblSettingsColorsAIRogues.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsAIRogues.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsAIRogues.Location = new Point(98, 187);
+            lblSettingsColorsAIRogues.Location = new Point(78, 187);
             lblSettingsColorsAIRogues.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsAIRogues.Name = "lblSettingsColorsAIRogues";
             lblSettingsColorsAIRogues.Size = new Size(46, 17);
@@ -4335,9 +4776,9 @@ namespace eft_dma_radar
             // 
             picAIRaider.BackColor = Color.Transparent;
             picAIRaider.BorderStyle = BorderStyle.FixedSingle;
-            picAIRaider.Location = new Point(149, 153);
+            picAIRaider.Location = new Point(130, 153);
             picAIRaider.Name = "picAIRaider";
-            picAIRaider.Size = new Size(80, 26);
+            picAIRaider.Size = new Size(70, 26);
             picAIRaider.TabIndex = 52;
             picAIRaider.TabStop = false;
             picAIRaider.Click += picAIRaider_Click;
@@ -4348,7 +4789,7 @@ namespace eft_dma_radar
             lblSettingsColorsAIRaiders.Depth = 0;
             lblSettingsColorsAIRaiders.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsAIRaiders.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsAIRaiders.Location = new Point(95, 153);
+            lblSettingsColorsAIRaiders.Location = new Point(79, 153);
             lblSettingsColorsAIRaiders.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsAIRaiders.Name = "lblSettingsColorsAIRaiders";
             lblSettingsColorsAIRaiders.Size = new Size(45, 17);
@@ -4359,9 +4800,9 @@ namespace eft_dma_radar
             // 
             picAIBossFollower.BackColor = Color.Transparent;
             picAIBossFollower.BorderStyle = BorderStyle.FixedSingle;
-            picAIBossFollower.Location = new Point(149, 119);
+            picAIBossFollower.Location = new Point(130, 119);
             picAIBossFollower.Name = "picAIBossFollower";
-            picAIBossFollower.Size = new Size(80, 26);
+            picAIBossFollower.Size = new Size(70, 26);
             picAIBossFollower.TabIndex = 50;
             picAIBossFollower.TabStop = false;
             picAIBossFollower.Click += picAIBossFollower_Click;
@@ -4372,7 +4813,7 @@ namespace eft_dma_radar
             lblSettingsColorsAIBossFollower.Depth = 0;
             lblSettingsColorsAIBossFollower.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsAIBossFollower.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsAIBossFollower.Location = new Point(60, 120);
+            lblSettingsColorsAIBossFollower.Location = new Point(44, 120);
             lblSettingsColorsAIBossFollower.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsAIBossFollower.Name = "lblSettingsColorsAIBossFollower";
             lblSettingsColorsAIBossFollower.Size = new Size(80, 17);
@@ -4383,9 +4824,9 @@ namespace eft_dma_radar
             // 
             picAIBossGuard.BackColor = Color.Transparent;
             picAIBossGuard.BorderStyle = BorderStyle.FixedSingle;
-            picAIBossGuard.Location = new Point(149, 85);
+            picAIBossGuard.Location = new Point(130, 85);
             picAIBossGuard.Name = "picAIBossGuard";
-            picAIBossGuard.Size = new Size(80, 26);
+            picAIBossGuard.Size = new Size(70, 26);
             picAIBossGuard.TabIndex = 48;
             picAIBossGuard.TabStop = false;
             picAIBossGuard.Click += picAIBossGuard_Click;
@@ -4396,20 +4837,20 @@ namespace eft_dma_radar
             lblSettingsColorsAIBossGuard.Depth = 0;
             lblSettingsColorsAIBossGuard.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsAIBossGuard.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsAIBossGuard.Location = new Point(77, 86);
+            lblSettingsColorsAIBossGuard.Location = new Point(58, 85);
             lblSettingsColorsAIBossGuard.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsAIBossGuard.Name = "lblSettingsColorsAIBossGuard";
-            lblSettingsColorsAIBossGuard.Size = new Size(63, 17);
+            lblSettingsColorsAIBossGuard.Size = new Size(66, 17);
             lblSettingsColorsAIBossGuard.TabIndex = 47;
-            lblSettingsColorsAIBossGuard.Text = "Boss 警卫";
+            lblSettingsColorsAIBossGuard.Text = "Boss 警卫:";
             // 
             // picAIBoss
             // 
             picAIBoss.BackColor = Color.Transparent;
             picAIBoss.BorderStyle = BorderStyle.FixedSingle;
-            picAIBoss.Location = new Point(149, 51);
+            picAIBoss.Location = new Point(130, 51);
             picAIBoss.Name = "picAIBoss";
-            picAIBoss.Size = new Size(80, 26);
+            picAIBoss.Size = new Size(70, 26);
             picAIBoss.TabIndex = 46;
             picAIBoss.TabStop = false;
             picAIBoss.Click += picAIBoss_Click;
@@ -4420,13 +4861,12 @@ namespace eft_dma_radar
             lblSettingsColorsAIBoss.Depth = 0;
             lblSettingsColorsAIBoss.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Pixel);
             lblSettingsColorsAIBoss.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2;
-            lblSettingsColorsAIBoss.Location = new Point(105, 51);
+            lblSettingsColorsAIBoss.Location = new Point(89, 51);
             lblSettingsColorsAIBoss.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsAIBoss.Name = "lblSettingsColorsAIBoss";
             lblSettingsColorsAIBoss.Size = new Size(35, 17);
             lblSettingsColorsAIBoss.TabIndex = 44;
             lblSettingsColorsAIBoss.Text = "Boss:";
-            lblSettingsColorsAIBoss.Click += lblSettingsColorsAIBoss_Click;
             // 
             // lblSettingsColorsAI
             // 
@@ -4435,7 +4875,7 @@ namespace eft_dma_radar
             lblSettingsColorsAI.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblSettingsColorsAI.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblSettingsColorsAI.HighEmphasis = true;
-            lblSettingsColorsAI.Location = new Point(19, 14);
+            lblSettingsColorsAI.Location = new Point(17, 14);
             lblSettingsColorsAI.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsColorsAI.Name = "lblSettingsColorsAI";
             lblSettingsColorsAI.Size = new Size(60, 24);
@@ -4451,7 +4891,7 @@ namespace eft_dma_radar
             tabPlayerLoadouts.ImageKey = "loadouts.png";
             tabPlayerLoadouts.Location = new Point(4, 39);
             tabPlayerLoadouts.Name = "tabPlayerLoadouts";
-            tabPlayerLoadouts.Size = new Size(1483, 803);
+            tabPlayerLoadouts.Size = new Size(1297, 803);
             tabPlayerLoadouts.TabIndex = 2;
             tabPlayerLoadouts.Text = "玩家";
             // 
@@ -4463,13 +4903,13 @@ namespace eft_dma_radar
             mcPlayerLoadoutsAI.Controls.Add(flpPlayerLoadoutsAI);
             mcPlayerLoadoutsAI.Depth = 0;
             mcPlayerLoadoutsAI.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcPlayerLoadoutsAI.Location = new Point(719, 6);
+            mcPlayerLoadoutsAI.Location = new Point(629, 6);
             mcPlayerLoadoutsAI.Margin = new Padding(0);
-            mcPlayerLoadoutsAI.MaximumSize = new Size(686, 1020);
+            mcPlayerLoadoutsAI.MaximumSize = new Size(600, 1020);
             mcPlayerLoadoutsAI.MouseState = MaterialSkin.MouseState.HOVER;
             mcPlayerLoadoutsAI.Name = "mcPlayerLoadoutsAI";
-            mcPlayerLoadoutsAI.Padding = new Padding(16);
-            mcPlayerLoadoutsAI.Size = new Size(686, 768);
+            mcPlayerLoadoutsAI.Padding = new Padding(14, 16, 14, 16);
+            mcPlayerLoadoutsAI.Size = new Size(600, 768);
             mcPlayerLoadoutsAI.TabIndex = 3;
             // 
             // lblPlayerLoadoutsAI
@@ -4480,7 +4920,7 @@ namespace eft_dma_radar
             lblPlayerLoadoutsAI.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblPlayerLoadoutsAI.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblPlayerLoadoutsAI.HighEmphasis = true;
-            lblPlayerLoadoutsAI.Location = new Point(16, 16);
+            lblPlayerLoadoutsAI.Location = new Point(14, 16);
             lblPlayerLoadoutsAI.MouseState = MaterialSkin.MouseState.HOVER;
             lblPlayerLoadoutsAI.Name = "lblPlayerLoadoutsAI";
             lblPlayerLoadoutsAI.Size = new Size(360, 24);
@@ -4493,26 +4933,27 @@ namespace eft_dma_radar
             flpPlayerLoadoutsAI.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             flpPlayerLoadoutsAI.AutoScroll = true;
             flpPlayerLoadoutsAI.FlowDirection = FlowDirection.TopDown;
-            flpPlayerLoadoutsAI.Location = new Point(16, 57);
+            flpPlayerLoadoutsAI.Location = new Point(3, 57);
             flpPlayerLoadoutsAI.Name = "flpPlayerLoadoutsAI";
-            flpPlayerLoadoutsAI.Size = new Size(651, 692);
+            flpPlayerLoadoutsAI.Size = new Size(594, 708);
             flpPlayerLoadoutsAI.TabIndex = 0;
             flpPlayerLoadoutsAI.WrapContents = false;
             // 
             // mcPlayerLoadoutsPlayers
             // 
+            mcPlayerLoadoutsPlayers.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             mcPlayerLoadoutsPlayers.BackColor = Color.FromArgb(255, 255, 255);
             mcPlayerLoadoutsPlayers.Controls.Add(lblPlayerLoadoutsPlayers);
             mcPlayerLoadoutsPlayers.Controls.Add(flpPlayerLoadoutsPlayers);
             mcPlayerLoadoutsPlayers.Depth = 0;
             mcPlayerLoadoutsPlayers.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcPlayerLoadoutsPlayers.Location = new Point(17, 6);
+            mcPlayerLoadoutsPlayers.Location = new Point(15, 6);
             mcPlayerLoadoutsPlayers.Margin = new Padding(0);
-            mcPlayerLoadoutsPlayers.MaximumSize = new Size(686, 1020);
+            mcPlayerLoadoutsPlayers.MaximumSize = new Size(600, 1020);
             mcPlayerLoadoutsPlayers.MouseState = MaterialSkin.MouseState.HOVER;
             mcPlayerLoadoutsPlayers.Name = "mcPlayerLoadoutsPlayers";
-            mcPlayerLoadoutsPlayers.Padding = new Padding(16);
-            mcPlayerLoadoutsPlayers.Size = new Size(686, 768);
+            mcPlayerLoadoutsPlayers.Padding = new Padding(14, 16, 14, 16);
+            mcPlayerLoadoutsPlayers.Size = new Size(600, 768);
             mcPlayerLoadoutsPlayers.TabIndex = 2;
             // 
             // lblPlayerLoadoutsPlayers
@@ -4523,7 +4964,7 @@ namespace eft_dma_radar
             lblPlayerLoadoutsPlayers.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblPlayerLoadoutsPlayers.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblPlayerLoadoutsPlayers.HighEmphasis = true;
-            lblPlayerLoadoutsPlayers.Location = new Point(16, 16);
+            lblPlayerLoadoutsPlayers.Location = new Point(14, 16);
             lblPlayerLoadoutsPlayers.MouseState = MaterialSkin.MouseState.HOVER;
             lblPlayerLoadoutsPlayers.Name = "lblPlayerLoadoutsPlayers";
             lblPlayerLoadoutsPlayers.Size = new Size(41, 24);
@@ -4536,9 +4977,9 @@ namespace eft_dma_radar
             flpPlayerLoadoutsPlayers.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             flpPlayerLoadoutsPlayers.AutoScroll = true;
             flpPlayerLoadoutsPlayers.FlowDirection = FlowDirection.TopDown;
-            flpPlayerLoadoutsPlayers.Location = new Point(16, 57);
+            flpPlayerLoadoutsPlayers.Location = new Point(3, 57);
             flpPlayerLoadoutsPlayers.Name = "flpPlayerLoadoutsPlayers";
-            flpPlayerLoadoutsPlayers.Size = new Size(651, 692);
+            flpPlayerLoadoutsPlayers.Size = new Size(594, 708);
             flpPlayerLoadoutsPlayers.TabIndex = 0;
             flpPlayerLoadoutsPlayers.WrapContents = false;
             // 
@@ -4552,7 +4993,7 @@ namespace eft_dma_radar
             tabWatchlist.ImageKey = "watchlist.png";
             tabWatchlist.Location = new Point(4, 39);
             tabWatchlist.Name = "tabWatchlist";
-            tabWatchlist.Size = new Size(1483, 803);
+            tabWatchlist.Size = new Size(1297, 803);
             tabWatchlist.TabIndex = 3;
             tabWatchlist.Text = "监视列表";
             // 
@@ -4564,12 +5005,12 @@ namespace eft_dma_radar
             mcWatchlistPlayerlist.Controls.Add(lblWatchlistPlayerlist);
             mcWatchlistPlayerlist.Depth = 0;
             mcWatchlistPlayerlist.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcWatchlistPlayerlist.Location = new Point(1080, 6);
-            mcWatchlistPlayerlist.Margin = new Padding(16);
+            mcWatchlistPlayerlist.Location = new Point(945, 6);
+            mcWatchlistPlayerlist.Margin = new Padding(14, 16, 14, 16);
             mcWatchlistPlayerlist.MouseState = MaterialSkin.MouseState.HOVER;
             mcWatchlistPlayerlist.Name = "mcWatchlistPlayerlist";
-            mcWatchlistPlayerlist.Padding = new Padding(16);
-            mcWatchlistPlayerlist.Size = new Size(264, 717);
+            mcWatchlistPlayerlist.Padding = new Padding(14, 16, 14, 16);
+            mcWatchlistPlayerlist.Size = new Size(231, 716);
             mcWatchlistPlayerlist.TabIndex = 48;
             // 
             // lstWatchlistPlayerList
@@ -4580,13 +5021,13 @@ namespace eft_dma_radar
             lstWatchlistPlayerList.Columns.AddRange(new ColumnHeader[] { colPlayerlistName });
             lstWatchlistPlayerList.Depth = 0;
             lstWatchlistPlayerList.FullRowSelect = true;
-            lstWatchlistPlayerList.Location = new Point(19, 59);
-            lstWatchlistPlayerList.MinimumSize = new Size(114, 113);
+            lstWatchlistPlayerList.Location = new Point(17, 59);
+            lstWatchlistPlayerList.MinimumSize = new Size(100, 113);
             lstWatchlistPlayerList.MouseLocation = new Point(-1, -1);
             lstWatchlistPlayerList.MouseState = MaterialSkin.MouseState.OUT;
             lstWatchlistPlayerList.Name = "lstWatchlistPlayerList";
             lstWatchlistPlayerList.OwnerDraw = true;
-            lstWatchlistPlayerList.Size = new Size(225, 589);
+            lstWatchlistPlayerList.Size = new Size(197, 589);
             lstWatchlistPlayerList.TabIndex = 48;
             lstWatchlistPlayerList.UseCompatibleStateImageBehavior = false;
             lstWatchlistPlayerList.View = View.Details;
@@ -4603,7 +5044,7 @@ namespace eft_dma_radar
             lblWatchlistPlayerlist.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblWatchlistPlayerlist.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblWatchlistPlayerlist.HighEmphasis = true;
-            lblWatchlistPlayerlist.Location = new Point(19, 17);
+            lblWatchlistPlayerlist.Location = new Point(17, 17);
             lblWatchlistPlayerlist.MouseState = MaterialSkin.MouseState.HOVER;
             lblWatchlistPlayerlist.Name = "lblWatchlistPlayerlist";
             lblWatchlistPlayerlist.Size = new Size(81, 24);
@@ -4622,12 +5063,12 @@ namespace eft_dma_radar
             mcWatchlistProfiles.Controls.Add(btnRemoveWatchlistProfile);
             mcWatchlistProfiles.Depth = 0;
             mcWatchlistProfiles.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcWatchlistProfiles.Location = new Point(514, 239);
-            mcWatchlistProfiles.Margin = new Padding(16);
+            mcWatchlistProfiles.Location = new Point(450, 239);
+            mcWatchlistProfiles.Margin = new Padding(14, 16, 14, 16);
             mcWatchlistProfiles.MouseState = MaterialSkin.MouseState.HOVER;
             mcWatchlistProfiles.Name = "mcWatchlistProfiles";
-            mcWatchlistProfiles.Padding = new Padding(16);
-            mcWatchlistProfiles.Size = new Size(549, 483);
+            mcWatchlistProfiles.Padding = new Padding(14, 16, 14, 16);
+            mcWatchlistProfiles.Size = new Size(480, 483);
             mcWatchlistProfiles.TabIndex = 47;
             // 
             // lstWatchlistProfiles
@@ -4638,13 +5079,13 @@ namespace eft_dma_radar
             lstWatchlistProfiles.Columns.AddRange(new ColumnHeader[] { colWatchlistProfileName });
             lstWatchlistProfiles.Depth = 0;
             lstWatchlistProfiles.FullRowSelect = true;
-            lstWatchlistProfiles.Location = new Point(19, 54);
-            lstWatchlistProfiles.MinimumSize = new Size(114, 113);
+            lstWatchlistProfiles.Location = new Point(15, 51);
+            lstWatchlistProfiles.MinimumSize = new Size(100, 113);
             lstWatchlistProfiles.MouseLocation = new Point(-1, -1);
             lstWatchlistProfiles.MouseState = MaterialSkin.MouseState.OUT;
             lstWatchlistProfiles.Name = "lstWatchlistProfiles";
             lstWatchlistProfiles.OwnerDraw = true;
-            lstWatchlistProfiles.Size = new Size(211, 407);
+            lstWatchlistProfiles.Size = new Size(185, 407);
             lstWatchlistProfiles.TabIndex = 49;
             lstWatchlistProfiles.UseCompatibleStateImageBehavior = false;
             lstWatchlistProfiles.View = View.Details;
@@ -4662,14 +5103,13 @@ namespace eft_dma_radar
             lblWatchlistProfiles.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblWatchlistProfiles.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblWatchlistProfiles.HighEmphasis = true;
-            lblWatchlistProfiles.Location = new Point(19, 16);
+            lblWatchlistProfiles.Location = new Point(17, 17);
             lblWatchlistProfiles.MouseState = MaterialSkin.MouseState.HOVER;
             lblWatchlistProfiles.Name = "lblWatchlistProfiles";
             lblWatchlistProfiles.Size = new Size(81, 24);
             lblWatchlistProfiles.TabIndex = 33;
             lblWatchlistProfiles.Text = "配置文件";
             lblWatchlistProfiles.UseAccent = true;
-            lblWatchlistProfiles.Click += lblWatchlistProfiles_Click;
             // 
             // mcWatchlistPlayerManagement
             // 
@@ -4684,12 +5124,12 @@ namespace eft_dma_radar
             mcWatchlistPlayerManagement.Controls.Add(txtWatchlistTag);
             mcWatchlistPlayerManagement.Depth = 0;
             mcWatchlistPlayerManagement.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcWatchlistPlayerManagement.Location = new Point(514, 6);
-            mcWatchlistPlayerManagement.Margin = new Padding(16);
+            mcWatchlistPlayerManagement.Location = new Point(450, 6);
+            mcWatchlistPlayerManagement.Margin = new Padding(14, 16, 14, 16);
             mcWatchlistPlayerManagement.MouseState = MaterialSkin.MouseState.HOVER;
             mcWatchlistPlayerManagement.Name = "mcWatchlistPlayerManagement";
-            mcWatchlistPlayerManagement.Padding = new Padding(16);
-            mcWatchlistPlayerManagement.Size = new Size(549, 217);
+            mcWatchlistPlayerManagement.Padding = new Padding(14, 16, 14, 16);
+            mcWatchlistPlayerManagement.Size = new Size(480, 216);
             mcWatchlistPlayerManagement.TabIndex = 46;
             // 
             // lblWatchlistPlayerManagement
@@ -4699,7 +5139,7 @@ namespace eft_dma_radar
             lblWatchlistPlayerManagement.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblWatchlistPlayerManagement.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblWatchlistPlayerManagement.HighEmphasis = true;
-            lblWatchlistPlayerManagement.Location = new Point(19, 17);
+            lblWatchlistPlayerManagement.Location = new Point(17, 17);
             lblWatchlistPlayerManagement.MouseState = MaterialSkin.MouseState.HOVER;
             lblWatchlistPlayerManagement.Name = "lblWatchlistPlayerManagement";
             lblWatchlistPlayerManagement.Size = new Size(81, 24);
@@ -4715,17 +5155,17 @@ namespace eft_dma_radar
             lstWatchlistEntries.BorderStyle = BorderStyle.None;
             lstWatchlistEntries.Columns.AddRange(new ColumnHeader[] { colWatchlistAccID, colWatchlistTag, colWatchlistUsername });
             lstWatchlistEntries.Depth = 0;
-            lstWatchlistEntries.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lstWatchlistEntries.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             lstWatchlistEntries.FullRowSelect = true;
-            lstWatchlistEntries.Location = new Point(17, 6);
-            lstWatchlistEntries.MaximumSize = new Size(480, 1020);
-            lstWatchlistEntries.MinimumSize = new Size(229, 113);
+            lstWatchlistEntries.Location = new Point(15, 6);
+            lstWatchlistEntries.MaximumSize = new Size(420, 1020);
+            lstWatchlistEntries.MinimumSize = new Size(200, 113);
             lstWatchlistEntries.MouseLocation = new Point(-1, -1);
             lstWatchlistEntries.MouseState = MaterialSkin.MouseState.OUT;
             lstWatchlistEntries.MultiSelect = false;
             lstWatchlistEntries.Name = "lstWatchlistEntries";
             lstWatchlistEntries.OwnerDraw = true;
-            lstWatchlistEntries.Size = new Size(480, 781);
+            lstWatchlistEntries.Size = new Size(420, 781);
             lstWatchlistEntries.TabIndex = 37;
             lstWatchlistEntries.UseCompatibleStateImageBehavior = false;
             lstWatchlistEntries.View = View.Details;
@@ -4755,7 +5195,7 @@ namespace eft_dma_radar
             tabLootFilter.ImageKey = "loot.png";
             tabLootFilter.Location = new Point(4, 39);
             tabLootFilter.Name = "tabLootFilter";
-            tabLootFilter.Size = new Size(1483, 803);
+            tabLootFilter.Size = new Size(1297, 803);
             tabLootFilter.TabIndex = 4;
             tabLootFilter.Text = "物资过滤器";
             // 
@@ -4774,12 +5214,12 @@ namespace eft_dma_radar
             mcLootFilterFilters.Controls.Add(btnFilterPriorityDown);
             mcLootFilterFilters.Depth = 0;
             mcLootFilterFilters.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcLootFilterFilters.Location = new Point(663, 184);
-            mcLootFilterFilters.Margin = new Padding(16);
+            mcLootFilterFilters.Location = new Point(580, 184);
+            mcLootFilterFilters.Margin = new Padding(14, 16, 14, 16);
             mcLootFilterFilters.MouseState = MaterialSkin.MouseState.HOVER;
             mcLootFilterFilters.Name = "mcLootFilterFilters";
-            mcLootFilterFilters.Padding = new Padding(16);
-            mcLootFilterFilters.Size = new Size(598, 538);
+            mcLootFilterFilters.Padding = new Padding(14, 16, 14, 16);
+            mcLootFilterFilters.Size = new Size(523, 538);
             mcLootFilterFilters.TabIndex = 48;
             // 
             // lstLootFilters
@@ -4789,15 +5229,15 @@ namespace eft_dma_radar
             lstLootFilters.BorderStyle = BorderStyle.None;
             lstLootFilters.Columns.AddRange(new ColumnHeader[] { colLootFilterName });
             lstLootFilters.Depth = 0;
-            lstLootFilters.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lstLootFilters.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             lstLootFilters.FullRowSelect = true;
-            lstLootFilters.Location = new Point(17, 51);
-            lstLootFilters.MinimumSize = new Size(229, 113);
+            lstLootFilters.Location = new Point(15, 51);
+            lstLootFilters.MinimumSize = new Size(200, 113);
             lstLootFilters.MouseLocation = new Point(-1, -1);
             lstLootFilters.MouseState = MaterialSkin.MouseState.OUT;
             lstLootFilters.Name = "lstLootFilters";
             lstLootFilters.OwnerDraw = true;
-            lstLootFilters.Size = new Size(229, 472);
+            lstLootFilters.Size = new Size(200, 471);
             lstLootFilters.TabIndex = 47;
             lstLootFilters.UseCompatibleStateImageBehavior = false;
             lstLootFilters.View = View.Details;
@@ -4815,7 +5255,7 @@ namespace eft_dma_radar
             lblSettingsLootFilters.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblSettingsLootFilters.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblSettingsLootFilters.HighEmphasis = true;
-            lblSettingsLootFilters.Location = new Point(19, 17);
+            lblSettingsLootFilters.Location = new Point(17, 17);
             lblSettingsLootFilters.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsLootFilters.Name = "lblSettingsLootFilters";
             lblSettingsLootFilters.Size = new Size(101, 24);
@@ -4827,9 +5267,9 @@ namespace eft_dma_radar
             // 
             picLootFilterColor.BackColor = Color.Transparent;
             picLootFilterColor.BorderStyle = BorderStyle.FixedSingle;
-            picLootFilterColor.Location = new Point(439, 108);
+            picLootFilterColor.Location = new Point(384, 108);
             picLootFilterColor.Name = "picLootFilterColor";
-            picLootFilterColor.Size = new Size(141, 26);
+            picLootFilterColor.Size = new Size(124, 26);
             picLootFilterColor.TabIndex = 46;
             picLootFilterColor.TabStop = false;
             picLootFilterColor.Click += picLootFilterColor_Click;
@@ -4838,18 +5278,18 @@ namespace eft_dma_radar
             // 
             btnFilterPriorityUp.AutoSize = false;
             btnFilterPriorityUp.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnFilterPriorityUp.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnFilterPriorityUp.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnFilterPriorityUp.Depth = 0;
             btnFilterPriorityUp.HighEmphasis = true;
             btnFilterPriorityUp.Icon = (Image)resources.GetObject("btnFilterPriorityUp.Icon");
-            btnFilterPriorityUp.Location = new Point(256, 45);
-            btnFilterPriorityUp.Margin = new Padding(5, 7, 5, 7);
+            btnFilterPriorityUp.Location = new Point(224, 45);
+            btnFilterPriorityUp.Margin = new Padding(4, 7, 4, 7);
             btnFilterPriorityUp.MouseState = MaterialSkin.MouseState.HOVER;
             btnFilterPriorityUp.Name = "btnFilterPriorityUp";
             btnFilterPriorityUp.NoAccentTextColor = Color.Empty;
-            btnFilterPriorityUp.Size = new Size(46, 45);
+            btnFilterPriorityUp.Size = new Size(40, 45);
             btnFilterPriorityUp.TabIndex = 41;
-            btnFilterPriorityUp.Type = MaterialButton.MaterialButtonType.Text;
+            btnFilterPriorityUp.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             btnFilterPriorityUp.UseAccentColor = true;
             btnFilterPriorityUp.UseVisualStyleBackColor = true;
             btnFilterPriorityUp.Click += btnFilterPriorityUp_Click;
@@ -4859,7 +5299,7 @@ namespace eft_dma_radar
             lblSettingsLootFilterColor.AutoSize = true;
             lblSettingsLootFilterColor.Depth = 0;
             lblSettingsLootFilterColor.Font = new Font("Roboto", 14F, FontStyle.Regular, GraphicsUnit.Pixel);
-            lblSettingsLootFilterColor.Location = new Point(353, 115);
+            lblSettingsLootFilterColor.Location = new Point(314, 108);
             lblSettingsLootFilterColor.MouseState = MaterialSkin.MouseState.HOVER;
             lblSettingsLootFilterColor.Name = "lblSettingsLootFilterColor";
             lblSettingsLootFilterColor.Size = new Size(69, 19);
@@ -4870,19 +5310,19 @@ namespace eft_dma_radar
             // 
             btnFilterPriorityDown.AutoSize = false;
             btnFilterPriorityDown.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            btnFilterPriorityDown.Density = MaterialButton.MaterialButtonDensity.Default;
+            btnFilterPriorityDown.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             btnFilterPriorityDown.Depth = 0;
             btnFilterPriorityDown.HighEmphasis = true;
             btnFilterPriorityDown.Icon = (Image)resources.GetObject("btnFilterPriorityDown.Icon");
-            btnFilterPriorityDown.Location = new Point(256, 102);
-            btnFilterPriorityDown.Margin = new Padding(5, 7, 5, 7);
+            btnFilterPriorityDown.Location = new Point(224, 102);
+            btnFilterPriorityDown.Margin = new Padding(4, 7, 4, 7);
             btnFilterPriorityDown.MouseState = MaterialSkin.MouseState.HOVER;
             btnFilterPriorityDown.Name = "btnFilterPriorityDown";
             btnFilterPriorityDown.NoAccentTextColor = Color.Empty;
             btnFilterPriorityDown.RightToLeft = RightToLeft.No;
-            btnFilterPriorityDown.Size = new Size(46, 45);
+            btnFilterPriorityDown.Size = new Size(40, 45);
             btnFilterPriorityDown.TabIndex = 42;
-            btnFilterPriorityDown.Type = MaterialButton.MaterialButtonType.Text;
+            btnFilterPriorityDown.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
             btnFilterPriorityDown.UseAccentColor = true;
             btnFilterPriorityDown.UseVisualStyleBackColor = true;
             btnFilterPriorityDown.Click += btnFilterPriorityDown_Click;
@@ -4897,12 +5337,12 @@ namespace eft_dma_radar
             mcLootFilterItemManagement.Controls.Add(cboLootFilterItemsToAdd);
             mcLootFilterItemManagement.Depth = 0;
             mcLootFilterItemManagement.ForeColor = Color.FromArgb(222, 0, 0, 0);
-            mcLootFilterItemManagement.Location = new Point(663, 6);
-            mcLootFilterItemManagement.Margin = new Padding(16);
+            mcLootFilterItemManagement.Location = new Point(580, 6);
+            mcLootFilterItemManagement.Margin = new Padding(14, 16, 14, 16);
             mcLootFilterItemManagement.MouseState = MaterialSkin.MouseState.HOVER;
             mcLootFilterItemManagement.Name = "mcLootFilterItemManagement";
-            mcLootFilterItemManagement.Padding = new Padding(16);
-            mcLootFilterItemManagement.Size = new Size(598, 161);
+            mcLootFilterItemManagement.Padding = new Padding(14, 16, 14, 16);
+            mcLootFilterItemManagement.Size = new Size(523, 161);
             mcLootFilterItemManagement.TabIndex = 47;
             // 
             // lblLootFilterItemManagement
@@ -4912,14 +5352,13 @@ namespace eft_dma_radar
             lblLootFilterItemManagement.Font = new Font("Roboto Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             lblLootFilterItemManagement.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
             lblLootFilterItemManagement.HighEmphasis = true;
-            lblLootFilterItemManagement.Location = new Point(19, 17);
+            lblLootFilterItemManagement.Location = new Point(17, 17);
             lblLootFilterItemManagement.MouseState = MaterialSkin.MouseState.HOVER;
             lblLootFilterItemManagement.Name = "lblLootFilterItemManagement";
             lblLootFilterItemManagement.Size = new Size(101, 24);
             lblLootFilterItemManagement.TabIndex = 33;
             lblLootFilterItemManagement.Text = "物资检索器";
             lblLootFilterItemManagement.UseAccent = true;
-            lblLootFilterItemManagement.Click += lblLootFilterItemManagement_Click;
             // 
             // lstLootFilterEntries
             // 
@@ -4929,21 +5368,20 @@ namespace eft_dma_radar
             lstLootFilterEntries.BorderStyle = BorderStyle.None;
             lstLootFilterEntries.Columns.AddRange(new ColumnHeader[] { colLootFilterItemName, colLootFilterItemValue });
             lstLootFilterEntries.Depth = 0;
-            lstLootFilterEntries.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lstLootFilterEntries.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             lstLootFilterEntries.FullRowSelect = true;
-            lstLootFilterEntries.Location = new Point(17, 6);
-            lstLootFilterEntries.MaximumSize = new Size(629, 1020);
-            lstLootFilterEntries.MinimumSize = new Size(229, 113);
+            lstLootFilterEntries.Location = new Point(15, 6);
+            lstLootFilterEntries.MaximumSize = new Size(550, 1020);
+            lstLootFilterEntries.MinimumSize = new Size(200, 113);
             lstLootFilterEntries.MouseLocation = new Point(-1, -1);
             lstLootFilterEntries.MouseState = MaterialSkin.MouseState.OUT;
             lstLootFilterEntries.MultiSelect = false;
             lstLootFilterEntries.Name = "lstLootFilterEntries";
             lstLootFilterEntries.OwnerDraw = true;
-            lstLootFilterEntries.Size = new Size(629, 781);
+            lstLootFilterEntries.Size = new Size(550, 781);
             lstLootFilterEntries.TabIndex = 28;
             lstLootFilterEntries.UseCompatibleStateImageBehavior = false;
             lstLootFilterEntries.View = View.Details;
-            lstLootFilterEntries.SelectedIndexChanged += lstLootFilterEntries_SelectedIndexChanged;
             // 
             // colLootFilterItemName
             // 
@@ -4952,52 +5390,8 @@ namespace eft_dma_radar
             // 
             // colLootFilterItemValue
             // 
-            colLootFilterItemValue.Text = "价值";
+            colLootFilterItemValue.Text = "价格";
             colLootFilterItemValue.Width = 80;
-            // 
-            // tabPageLootList
-            // 
-            tabPageLootList.BackColor = Color.DimGray;
-            tabPageLootList.Controls.Add(lootListListView);
-            tabPageLootList.ImageKey = "list.png";
-            tabPageLootList.Location = new Point(4, 39);
-            tabPageLootList.Name = "tabPageLootList";
-            tabPageLootList.Padding = new Padding(3);
-            tabPageLootList.Size = new Size(1483, 803);
-            tabPageLootList.TabIndex = 5;
-            tabPageLootList.Text = "物资列表";
-            // 
-            // lootListListView
-            // 
-            lootListListView.AutoSizeTable = false;
-            lootListListView.BackColor = Color.FromArgb(255, 255, 255);
-            lootListListView.BorderStyle = BorderStyle.None;
-            lootListListView.Columns.AddRange(new ColumnHeader[] { columnName1, columnValue1 });
-            lootListListView.Depth = 0;
-            lootListListView.Dock = DockStyle.Fill;
-            lootListListView.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            lootListListView.FullRowSelect = true;
-            lootListListView.Location = new Point(3, 3);
-            lootListListView.MinimumSize = new Size(229, 113);
-            lootListListView.MouseLocation = new Point(-1, -1);
-            lootListListView.MouseState = MaterialSkin.MouseState.OUT;
-            lootListListView.Name = "lootListListView";
-            lootListListView.OwnerDraw = true;
-            lootListListView.Size = new Size(1477, 797);
-            lootListListView.TabIndex = 0;
-            lootListListView.UseCompatibleStateImageBehavior = false;
-            lootListListView.View = View.Details;
-            lootListListView.SelectedIndexChanged += lootListListView_SelectedIndexChanged;
-            // 
-            // columnName1
-            // 
-            columnName1.Text = "物资";
-            columnName1.Width = 400;
-            // 
-            // columnValue1
-            // 
-            columnValue1.Text = "价格";
-            columnValue1.Width = 100;
             // 
             // iconList
             // 
@@ -5009,7 +5403,6 @@ namespace eft_dma_radar
             iconList.Images.SetKeyName(2, "loadouts.png");
             iconList.Images.SetKeyName(3, "watchlist.png");
             iconList.Images.SetKeyName(4, "loot.png");
-            iconList.Images.SetKeyName(5, "list.png");
             // 
             // materialLabel1
             // 
@@ -5018,36 +5411,33 @@ namespace eft_dma_radar
             materialLabel1.Font = new Font("Roboto", 16F, FontStyle.Regular, GraphicsUnit.Pixel);
             materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle1;
             materialLabel1.HighEmphasis = true;
-            materialLabel1.Location = new Point(216, 8);
+            materialLabel1.Location = new Point(179, 8);
             materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             materialLabel1.Name = "materialLabel1";
             materialLabel1.Size = new Size(1014, 19);
-            materialLabel1.TabIndex = 50;
+            materialLabel1.TabIndex = 51;
             materialLabel1.Text = "此文件由翻译by：Snip1编译修改 QQ:2213762483，文件开源免费，请勿盗卖,git:https://github.com/Snip1-99/EFT_DMA_Radar,请移步自行下载";
             materialLabel1.UseAccent = true;
-            materialLabel1.Click += materialLabel1_Click;
             // 
             // frmMain
             // 
-            AutoScaleDimensions = new SizeF(8F, 17F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(255, 192, 255);
-            ClientSize = new Size(1491, 873);
+            ClientSize = new Size(1305, 873);
             Controls.Add(materialLabel1);
             Controls.Add(tabControlMain);
             DrawerShowIconsWhenHidden = true;
             DrawerTabControl = tabControlMain;
             DrawerWidth = 180;
-            Font = new Font("微软雅黑", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             FormStyle = FormStyles.ActionBar_None;
-            Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(5, 3, 5, 3);
+            Margin = new Padding(4, 3, 4, 3);
             Name = "frmMain";
             Padding = new Padding(0, 27, 0, 0);
-            Load += frmMain_Load;
+            Text = "d";
             Shown += frmMain_Shown;
             tabControlMain.ResumeLayout(false);
             tabRadar.ResumeLayout(false);
+            mcRadarLootItemViewer.ResumeLayout(false);
             mcRadarEnemyStats.ResumeLayout(false);
             mcRadarEnemyStats.PerformLayout();
             mcRadarStats.ResumeLayout(false);
@@ -5063,6 +5453,8 @@ namespace eft_dma_radar
             mcSettingsGeneralRadar.ResumeLayout(false);
             mcSettingsGeneralRadar.PerformLayout();
             tabSettingsMemoryWriting.ResumeLayout(false);
+            mcSettingsMemoryWritingChams.ResumeLayout(false);
+            mcSettingsMemoryWritingChams.PerformLayout();
             mcSettingsMemoryWritingSkillBuffs.ResumeLayout(false);
             mcSettingsMemoryWritingSkillBuffs.PerformLayout();
             mcSettingsMemoryWritingThermal.ResumeLayout(false);
@@ -5072,6 +5464,8 @@ namespace eft_dma_radar
             mcSettingsMemoryWritingGear.ResumeLayout(false);
             mcSettingsMemoryWritingGear.PerformLayout();
             tabSettingsLoot.ResumeLayout(false);
+            mcSettingsLootPing.ResumeLayout(false);
+            mcSettingsLootPing.PerformLayout();
             mcSettingsLootMinRubleValue.ResumeLayout(false);
             mcSettingsLootMinRubleValue.PerformLayout();
             mcSettingsLootGeneral.ResumeLayout(false);
@@ -5093,6 +5487,7 @@ namespace eft_dma_radar
             ((System.ComponentModel.ISupportInitialize)picOtherTextOutline).EndInit();
             mcSettingsColorsLootAndQuests.ResumeLayout(false);
             mcSettingsColorsLootAndQuests.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picLootPing).EndInit();
             ((System.ComponentModel.ISupportInitialize)picQuestZone).EndInit();
             ((System.ComponentModel.ISupportInitialize)picQuestItem).EndInit();
             ((System.ComponentModel.ISupportInitialize)picLootImportant).EndInit();
@@ -5143,7 +5538,6 @@ namespace eft_dma_radar
             ((System.ComponentModel.ISupportInitialize)picLootFilterColor).EndInit();
             mcLootFilterItemManagement.ResumeLayout(false);
             mcLootFilterItemManagement.PerformLayout();
-            tabPageLootList.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -5177,7 +5571,6 @@ namespace eft_dma_radar
         private MaterialSkin.Controls.MaterialSwitch swNames;
         private MaterialSkin.Controls.MaterialSwitch swAimview;
         private MaterialSkin.Controls.MaterialSwitch swShowLoot;
-        private MaterialSkin.Controls.MaterialSlider sldrZoomDistance;
         private MaterialSkin.Controls.MaterialSlider sldrUIScale;
         private MaterialSkin.Controls.MaterialLabel lblSettingsGeneralRadar;
         private MaterialSkin.Controls.MaterialLabel lblSettingsGeneralUI;
@@ -5197,7 +5590,6 @@ namespace eft_dma_radar
         private MaterialSkin.Controls.MaterialSlider sldrTimeOfDay;
         private MaterialSkin.Controls.MaterialSwitch swExtendedReach;
         private MaterialSkin.Controls.MaterialSwitch swFreezeTime;
-        private MaterialSkin.Controls.MaterialSwitch swChams;
         private MaterialSkin.Controls.MaterialCard mcSettingsMemoryWritingGear;
         private MaterialSkin.Controls.MaterialSwitch swNightVision;
         private MaterialSkin.Controls.MaterialSwitch swOpticalThermal;
@@ -5272,21 +5664,21 @@ namespace eft_dma_radar
         private MaterialSkin.Controls.MaterialLabel lblSettingsColorsPlayers;
         private MaterialSkin.Controls.MaterialCard mcSettingsColorsOther;
         private PictureBox picOtherChams;
-        private MaterialSkin.Controls.MaterialLabel lblSettingsOtherChams;
+        private MaterialSkin.Controls.MaterialLabel lblSettingsColorOtherChams;
         private PictureBox picOtherDeathMarker;
-        private MaterialSkin.Controls.MaterialLabel lblSettingsOtherDeathMarker;
+        private MaterialSkin.Controls.MaterialLabel lblSettingsColorOtherDeathMarker;
         private PictureBox picOtherTextOutline;
-        private MaterialSkin.Controls.MaterialLabel lblSettingsOtherTextOutline;
+        private MaterialSkin.Controls.MaterialLabel lblSettingsColorOtherTextOutline;
         private MaterialSkin.Controls.MaterialLabel lblSettingsColorsOther;
         private MaterialSkin.Controls.MaterialCard mcSettingsColorsLootAndQuests;
         private PictureBox picQuestZone;
-        private MaterialSkin.Controls.MaterialLabel lblSettingsQuestZones;
+        private MaterialSkin.Controls.MaterialLabel lblSettingsColorsQuestZones;
         private PictureBox picQuestItem;
-        private MaterialSkin.Controls.MaterialLabel lblSettingsQuestItems;
+        private MaterialSkin.Controls.MaterialLabel lblSettingsColorsQuestItems;
         private PictureBox picLootImportant;
-        private MaterialSkin.Controls.MaterialLabel lblSettingsLootImportant;
+        private MaterialSkin.Controls.MaterialLabel lblSettingsColorsLootImportant;
         private PictureBox picLootRegular;
-        private MaterialSkin.Controls.MaterialLabel lblSettingsLootRegular;
+        private MaterialSkin.Controls.MaterialLabel lblSettingsColorsLootRegular;
         private MaterialSkin.Controls.MaterialLabel lblSettingsColorsLootQuests;
         private MaterialSkin.Controls.MaterialCard mcSettingsColorsExfiltration;
         private PictureBox picExfilClosedIcon;
@@ -5303,13 +5695,13 @@ namespace eft_dma_radar
         private MaterialSkin.Controls.MaterialLabel lblSettingsColorsExfilActiveText;
         private MaterialSkin.Controls.MaterialLabel lblSettingsColorsExfiltration;
         private PictureBox picOtherAccent;
-        private MaterialSkin.Controls.MaterialLabel lblSettingsOtherAccent;
+        private MaterialSkin.Controls.MaterialLabel lblSettingsColorOtherAccent;
         private PictureBox picOtherPrimaryLight;
-        private MaterialSkin.Controls.MaterialLabel lblSettingsOtherPrimaryLight;
+        private MaterialSkin.Controls.MaterialLabel ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss;
         private PictureBox picOtherPrimaryDark;
-        private MaterialSkin.Controls.MaterialLabel lblSettingsOtherPrimaryDark;
+        private MaterialSkin.Controls.MaterialLabel lblSettingsColorOtherPrimaryDark;
         private PictureBox picOtherPrimary;
-        private MaterialSkin.Controls.MaterialLabel lblSettingsOtherPrimary;
+        private MaterialSkin.Controls.MaterialLabel lblSettingsColorOtherPrimary;
         private MaterialSkin.Controls.MaterialTextBox2 txtTeammateID;
         private MaterialSkin.Controls.MaterialTextBox2 txtFactionName;
         private MaterialSkin.Controls.MaterialTextBox2 txtFactionEntryName;
@@ -5427,12 +5819,34 @@ namespace eft_dma_radar
         private MaterialSkin.Controls.MaterialListView lstFactionEntries;
         private ColumnHeader colFactionsAIName;
         private MaterialSkin.Controls.MaterialSwitch swUnknownQuestItems;
-        
-        private TabPage tabPageLootList;
-        private MaterialSkin.Controls.MaterialListView lootListListView;
-        private ColumnHeader columnName1;
-        private ColumnHeader columnValue1;
-        private MaterialLabel materialLabel1;
+        private MaterialSkin.Controls.MaterialSlider sldrZoomSensitivity;
+        private MaterialSkin.Controls.MaterialCard mcSettingsMemoryWritingChams;
+        private MaterialSkin.Controls.MaterialLabel lblSettingsMemoryWritingChams;
+        private MaterialSkin.Controls.MaterialSwitch swChams;
+        private MaterialSkin.Controls.MaterialSwitch swChamsPMCs;
+        private MaterialSkin.Controls.MaterialSwitch swChamsScavs;
+        private MaterialSkin.Controls.MaterialSwitch swChamsCultists;
+        private MaterialSkin.Controls.MaterialSwitch swChamsRogues;
+        private MaterialSkin.Controls.MaterialSwitch swChamsBosses;
+        private MaterialSkin.Controls.MaterialSwitch swChamsTeammates;
+        private MaterialSkin.Controls.MaterialSwitch swChamsCorpses;
+        private MaterialSkin.Controls.MaterialSwitch swChamsRevert;
+        private MaterialSkin.Controls.MaterialSwitch swChamsPlayerScavs;
+        private MaterialSkin.Controls.MaterialCard mcRadarLootItemViewer;
+        private MaterialSkin.Controls.MaterialButton btnPingSelectedItem;
+        private MaterialSkin.Controls.MaterialListView lstLootItems;
+        private ColumnHeader columnHeader1;
+        private ColumnHeader columnHeader2;
+        private ColumnHeader columnHeader3;
+        private MaterialSkin.Controls.MaterialTextBox2 txtLootItemFilter;
+        private PictureBox picLootPing;
+        private MaterialSkin.Controls.MaterialLabel lblSettingsColorsLootPing;
+        private MaterialSkin.Controls.MaterialButton btnToggleLootItemViewer;
+        private MaterialSkin.Controls.MaterialCard mcSettingsLootPing;
+        private MaterialSkin.Controls.MaterialLabel lblSettingsLootPing;
+        private MaterialSkin.Controls.MaterialSlider sldrLootPingMaxRadius;
+        private MaterialSkin.Controls.MaterialSlider sldrLootPingAnimationSpeed;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
     }
 }
 

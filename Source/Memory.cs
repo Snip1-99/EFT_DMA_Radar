@@ -99,6 +99,11 @@ namespace eft_dma_radar
             get => _game?.Exfils;
         }
 
+        public static PlayerManager PlayerManager
+        {
+            get => _game?.PlayerManager;
+        }
+
         public static QuestManager QuestManager
         {
             get => _game?.QuestManager;
@@ -107,6 +112,16 @@ namespace eft_dma_radar
         public static CameraManager CameraManager
         {
             get => _game?.CameraManager;
+        }
+
+        public static Toolbox Toolbox
+        {
+            get => _game?.Toolbox;
+        }
+
+        public static Chams Chams
+        {
+            get => _game?.Chams;
         }
 
         public static ReadOnlyCollection<PlayerCorpse> Corpses
@@ -616,68 +631,68 @@ namespace eft_dma_radar
         }
         #endregion
 
-        //#region WriteMethods
+        #region WriteMethods
 
-        ///// <summary>
-        ///// (Base)
-        ///// Write value type/struct to specified address.
-        ///// </summary>
-        ///// <typeparam name="T">Value Type to write.</typeparam>
-        ///// <param name="pid">Process ID to write to.</param>
-        ///// <param name="addr">Virtual Address to write to.</param>
-        ///// <param name="value"></param>
-        ///// <exception cref="DMAException"></exception>
-        //public static void WriteValue<T>(ulong addr, T value)
-        //    where T : unmanaged
-        //{
-        //    try
-        //    {
-        //        if (!vmmInstance.MemWriteStruct(_pid, addr, value))
-        //            throw new Exception("Memory Write Failed!");
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new DMAException($"[DMA] ERROR writing {typeof(T)} value at 0x{addr.ToString("X")}", ex);
-        //    }
-        //}
+        /// <summary>
+        /// (Base)
+        /// Write value type/struct to specified address.
+        /// </summary>
+        /// <typeparam name="T">Value Type to write.</typeparam>
+        /// <param name="pid">Process ID to write to.</param>
+        /// <param name="addr">Virtual Address to write to.</param>
+        /// <param name="value"></param>
+        /// <exception cref="DMAException"></exception>
+        public static void WriteValue<T>(ulong addr, T value)
+            where T : unmanaged
+        {
+            try
+            {
+                if (!vmmInstance.MemWriteStruct(_pid, addr, value))
+                    throw new Exception("Memory Write Failed!");
+            }
+            catch (Exception ex)
+            {
+                throw new DMAException($"[DMA] ERROR writing {typeof(T)} value at 0x{addr.ToString("X")}", ex);
+            }
+        }
 
-        ///// <summary>
-        ///// Performs multiple memory write operations in a single call
-        ///// </summary>
-        ///// <param name="entries">A collection of entries defining the memory writes.</param>
-        //public static void WriteScatter(IEnumerable<IScatterWriteEntry> entries)
-        //{
-        //    using (var scatter = vmmInstance.Scatter_Initialize(_pid, Vmm.FLAG_NOCACHE))
-        //    {
-        //        if (scatter == null)
-        //            throw new InvalidOperationException("Failed to initialize scatter.");
+        /// <summary>
+        /// Performs multiple memory write operations in a single call
+        /// </summary>
+        /// <param name="entries">A collection of entries defining the memory writes.</param>
+        public static void WriteScatter(IEnumerable<IScatterWriteEntry> entries)
+        {
+            using (var scatter = vmmInstance.Scatter_Initialize(_pid, Vmm.FLAG_NOCACHE))
+            {
+                if (scatter == null)
+                    throw new InvalidOperationException("Failed to initialize scatter.");
 
-        //        foreach (var entry in entries)
-        //        {
-        //            bool success = entry switch
-        //            {
-        //                IScatterWriteDataEntry<int> intEntry => scatter.PrepareWriteStruct(intEntry.Address, intEntry.Data),
-        //                IScatterWriteDataEntry<float> floatEntry => scatter.PrepareWriteStruct(floatEntry.Address, floatEntry.Data),
-        //                IScatterWriteDataEntry<ulong> ulongEntry => scatter.PrepareWriteStruct(ulongEntry.Address, ulongEntry.Data),
-        //                IScatterWriteDataEntry<bool> boolEntry => scatter.PrepareWriteStruct(boolEntry.Address, boolEntry.Data),
-        //                IScatterWriteDataEntry<byte> byteEntry => scatter.PrepareWriteStruct(byteEntry.Address, byteEntry.Data),
-        //                _ => throw new NotSupportedException($"Unsupported data type: {entry.GetType()}")
-        //            };
+                foreach (var entry in entries)
+                {
+                    bool success = entry switch
+                    {
+                        IScatterWriteDataEntry<int> intEntry => scatter.PrepareWriteStruct(intEntry.Address, intEntry.Data),
+                        IScatterWriteDataEntry<float> floatEntry => scatter.PrepareWriteStruct(floatEntry.Address, floatEntry.Data),
+                        IScatterWriteDataEntry<ulong> ulongEntry => scatter.PrepareWriteStruct(ulongEntry.Address, ulongEntry.Data),
+                        IScatterWriteDataEntry<bool> boolEntry => scatter.PrepareWriteStruct(boolEntry.Address, boolEntry.Data),
+                        IScatterWriteDataEntry<byte> byteEntry => scatter.PrepareWriteStruct(byteEntry.Address, byteEntry.Data),
+                        _ => throw new NotSupportedException($"Unsupported data type: {entry.GetType()}")
+                    };
 
-        //            if (!success)
-        //            {
-        //                Program.Log($"Failed to prepare scatter write for address: {entry.Address}");
-        //                continue;
-        //            }
-        //        }
+                    if (!success)
+                    {
+                        Program.Log($"Failed to prepare scatter write for address: {entry.Address}");
+                        continue;
+                    }
+                }
 
-        //        if (!scatter.Execute())
-        //            throw new Exception("Scatter write execution failed.");
+                if (!scatter.Execute())
+                    throw new Exception("Scatter write execution failed.");
 
-        //        scatter.Close();
-        //    }
-        //}
-        //#endregion
+                scatter.Close();
+            }
+        }
+        #endregion
 
         #region Methods
         /// <summary>

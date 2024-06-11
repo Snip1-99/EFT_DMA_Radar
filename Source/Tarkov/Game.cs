@@ -12,11 +12,12 @@ namespace eft_dma_radar
         private RegisteredPlayers _rgtPlayers;
         private GrenadeManager _grenadeManager;
         private ExfilManager _exfilManager;
-
+        private PlayerManager _playerManager;
         private Config _config;
         private CameraManager _cameraManager;
         private QuestManager _questManager;
-
+        private Toolbox _toolbox;
+        private Chams _chams;
         private CorpseManager _corpseManager;
         private ulong _localGameWorld;
         private readonly ulong _unityBase;
@@ -95,6 +96,15 @@ namespace eft_dma_radar
             get => _cameraManager;
         }
 
+        public PlayerManager PlayerManager
+        {
+            get => _playerManager;
+        }
+
+        public Toolbox Toolbox
+        {
+            get => _toolbox;
+        }
 
         public QuestManager QuestManager
         {
@@ -102,6 +112,10 @@ namespace eft_dma_radar
             get => _questManager;
         }
 
+        public Chams Chams
+        {
+            get => _chams;
+        }
 
         public CorpseManager CorpseManager
         {
@@ -133,6 +147,12 @@ namespace eft_dma_radar
         {
             try
             {
+                if (!this._inGame)
+                {
+                    Memory.Chams?.ChamsDisable();
+                    throw new RaidEnded("Raid has ended!");
+                }
+
                 this._rgtPlayers.UpdateList();
                 this._rgtPlayers.UpdateAllPlayers();
                 this.UpdateMisc();
@@ -420,6 +440,45 @@ namespace eft_dma_radar
                         catch (Exception ex)
                         {
                             Program.Log($"ERROR loading CameraManager: {ex}");
+                        }
+                    }
+
+                    if (this._playerManager is null)
+                    {
+                        try
+                        {
+                            this._playerManager = new PlayerManager(this._localGameWorld);
+                        }
+                        catch (Exception ex)
+                        {
+                            Program.Log($"ERROR loading PlayerManager: {ex}");
+                        }
+                    }
+
+                    if (this._toolbox is null)
+                    {
+                        try
+                        {
+                            this._toolbox = new Toolbox();
+                        }
+                        catch (Exception ex)
+                        {
+                            Program.Log($"ERROR loading Toolbox: {ex}");
+                        }
+                    }
+
+                    if (this._chams is null)
+                    {
+                        try
+                        {
+                            if (this._rgtPlayers is not null)
+                            {
+                                this._chams = new Chams();
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            Program.Log($"ERROR loading Chams: {ex}");
                         }
                     }
                 }

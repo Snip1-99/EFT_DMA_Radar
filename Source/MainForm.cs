@@ -9,6 +9,9 @@ using MaterialSkin.Controls;
 using eft_dma_radar.Properties;
 using System.Windows.Forms;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
+using System.Text.RegularExpressions;
+using static vmmsharp.LeechCore;
 
 namespace eft_dma_radar
 {
@@ -44,17 +47,22 @@ namespace eft_dma_radar
         private string _lastFactionEntry;
         private List<Player> _watchlistMatchPlayers = new();
 
-        private const double ZoomSensitivity = 0.1;
-        private const int ZoomInterval = 1;
+        private const int ZOOM_INTERVAL = 10;
         private int targetZoomValue = 0;
         private System.Windows.Forms.Timer zoomTimer;
 
-        private const float DragSensitivity = 12f;
+        private const float DRAG_SENSITIVITY = 3.5f;
 
-        private const double PanSmoothness = 0.1;
-        private const int PanInterval = 1;
+        private const double PAN_SMOOTHNESS = 0.1;
+        private const int PAN_INTERVAL = 10;
         private SKPoint targetPanPosition;
         private System.Windows.Forms.Timer panTimer;
+
+        private int lastLootItemCount = -1;
+
+        private System.Windows.Forms.Timer itemAnimationTimer;
+        private bool isAnimationRunning = false;
+        private List<ItemAnimation> activeItemAnimations = new List<ItemAnimation>();
 
         #region Getters
         /// <summary>
@@ -173,11 +181,11 @@ namespace eft_dma_radar
             _fpsWatch.Start();
 
             zoomTimer = new System.Windows.Forms.Timer();
-            zoomTimer.Interval = ZoomInterval;
+            zoomTimer.Interval = ZOOM_INTERVAL;
             zoomTimer.Tick += ZoomTimer_Tick;
 
             panTimer = new System.Windows.Forms.Timer();
-            panTimer.Interval = PanInterval;
+            panTimer.Interval = PAN_INTERVAL;
             panTimer.Tick += PanTimer_Tick;
         }
         #endregion
@@ -190,9 +198,10 @@ namespace eft_dma_radar
         {
             e.Cancel = true; // Cancel shutdown
             this.Enabled = false; // Lock window
+            Memory.Loot?.StopAutoRefresh();
+            Memory.Toolbox?.StopToolbox();
 
             Config.SaveConfig(_config); // Save Config to Config.json
-            Memory.Loot?.StopAutoRefresh();
             Memory.Shutdown(); // Wait for Memory Thread to gracefully exit
             e.Cancel = false; // Ready to close
             base.OnFormClosing(e); // Proceed with closing
@@ -203,8 +212,8 @@ namespace eft_dma_radar
         /// </summary>
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData) => keyData switch
         {
-            Keys.Up => ZoomIn(5),
-            Keys.Down => ZoomOut(5),
+            Keys.F1 => ZoomIn(5),
+            Keys.F2 => ZoomOut(5),
             Keys.F3 => swShowLoot.Checked = !swShowLoot.Checked,
             Keys.F4 => swAimview.Checked = !swAimview.Checked,
             Keys.F5 => ToggleMap(),
@@ -221,7 +230,8 @@ namespace eft_dma_radar
         {
             if (tabControlMain.SelectedIndex == 0) // Main Radar Tab should be open
             {
-                int zoomDelta = -(int)(e.Delta * ZoomSensitivity);
+                var zoomSens = (double)_config.ZoomSensitivity / 100;
+                int zoomDelta = -(int)(e.Delta * zoomSens);
 
                 if (zoomDelta < 0)
                     ZoomIn(-zoomDelta);
@@ -346,6 +356,7 @@ namespace eft_dma_radar
             SKPaints.PaintExfilPending.StrokeWidth = 1 * _uiScale;
             SKPaints.PaintExfilClosed.StrokeWidth = 1 * _uiScale;
             #endregion
+
             _aimviewWindowSize = 200 * _uiScale;
 
             InitiateFontSize();
@@ -418,6 +429,7 @@ namespace eft_dma_radar
             swRadarVsync.Checked = _config.VSync;
             swRadarEnemyCount.Checked = _config.EnemyCount;
             mcRadarEnemyStats.Visible = _config.EnemyCount;
+            mcRadarLootItemViewer.Visible = _config.LootItemViewer;
 
             // User Interface
             swShowLoot.Checked = _config.ShowLoot;
@@ -430,7 +442,7 @@ namespace eft_dma_radar
             swHoverArmor.Checked = _config.ShowHoverArmor;
             txtTeammateID.Text = _config.PrimaryTeammateId;
             sldrAimlineLength.Value = _config.PlayerAimLineLength;
-            sldrZoomDistance.Value = _config.DefaultZoom;
+            sldrZoomSensitivity.Value = _config.ZoomSensitivity;
 
             sldrUIScale.Value = _config.UIScale;
             cboFont.SelectedIndex = _config.Font;
@@ -442,7 +454,6 @@ namespace eft_dma_radar
 
             // Global Features
             mcSettingsMemoryWritingGlobal.Enabled = _config.MasterSwitch;
-            swChams.Checked = _config.ChamsEnabled;
             swExtendedReach.Checked = _config.ExtendedReach;
             swFreezeTime.Checked = _config.FreezeTimeOfDay;
             sldrTimeOfDay.Visible = _config.FreezeTimeOfDay;
@@ -493,6 +504,29 @@ namespace eft_dma_radar
             sldrThermalColorCoefficient.Value = (int)(_config.MainThermalSetting.ColorCoefficient * 100);
             sldrMinTemperature.Value = (int)((_config.MainThermalSetting.MinTemperature - 0.001f) / (0.01f - 0.001f) * 100.0f);
             sldrThermalRampShift.Value = (int)((_config.MainThermalSetting.RampShift + 1.0f) * 100.0f);
+
+            // Chams
+            mcSettingsMemoryWritingChams.Enabled = _config.MasterSwitch;
+            var enabled = _config.Chams["Enabled"];
+            swChams.Checked = enabled;
+            swChamsPMCs.Checked = _config.Chams["PMCs"];
+            swChamsPMCs.Visible = enabled;
+            swChamsPlayerScavs.Checked = _config.Chams["PlayerScavs"];
+            swChamsPlayerScavs.Visible = enabled;
+            swChamsBosses.Checked = _config.Chams["Bosses"];
+            swChamsBosses.Visible = enabled;
+            swChamsRogues.Checked = _config.Chams["Rogues"];
+            swChamsRogues.Visible = enabled;
+            swChamsCultists.Checked = _config.Chams["Cultists"];
+            swChamsCultists.Visible = enabled;
+            swChamsScavs.Checked = _config.Chams["Scavs"];
+            swChamsScavs.Visible = enabled;
+            swChamsTeammates.Checked = _config.Chams["Teammates"];
+            swChamsTeammates.Visible = enabled;
+            swChamsCorpses.Checked = _config.Chams["Corpses"];
+            swChamsCorpses.Visible = enabled;
+            swChamsRevert.Checked = _config.Chams["RevertOnClose"];
+            swChamsRevert.Visible = enabled;
             #endregion
 
             #region Loot
@@ -514,6 +548,10 @@ namespace eft_dma_radar
             sldrMinImportantLoot.Value = _config.MinImportantLootValue / 1000;
             sldrMinCorpse.Value = _config.MinCorpseValue / 1000;
             sldrMinSubItems.Value = _config.MinSubItemValue / 1000;
+
+            // Loot Ping
+            sldrLootPingAnimationSpeed.Value = _config.LootPing["AnimationSpeed"];
+            sldrLootPingMaxRadius.Value = _config.LootPing["Radius"];
             #endregion
             #endregion
 
@@ -607,55 +645,7 @@ namespace eft_dma_radar
             {
                 GenerateCards(flpPlayerLoadoutsPlayers, x => x.IsHumanHostileActive, x => x.IsPMC, x => x.Value);
                 GenerateCards(flpPlayerLoadoutsAI, x => x.IsHostileActive && !x.IsHuman, x => x.Type == PlayerType.Boss, x => x.IsBossRaider, x => x.Value);
-            }
-            else if (tabControlMain.SelectedIndex == 5)
-            {
-                lootListListView.Items.Clear();
 
-                var localPlayer = this.LocalPlayer;
-                if (this.InGame && localPlayer is not null)
-                {
-                    var loot = this.Loot;
-                    if (loot is not null)
-                    {
-                        var filter = loot.Filter;
-                        if (filter is not null)
-                        {
-                            List<(string name, int value)> rawItems = new() { };
-
-                            foreach (var item in filter)
-                            {
-                                if (item is LootItem lootItem)
-                                {
-                                    rawItems.Add((item.Name, item.Value));
-                                }
-                                else if (item is LootContainer container)
-                                {
-                                    foreach (var containerItem in ((LootContainer)item).Items)
-                                    {
-                                        rawItems.Add((item.Name + ">" + containerItem.Name, containerItem.Value));
-                                    }
-                                }
-                                else
-                                {
-                                    // skip corpses
-                                    continue;
-                                }
-                            }
-
-                            List<(string name, int value)> sortedItems = rawItems.OrderByDescending(item => item.value).ToList();
-                            foreach (var item in sortedItems)
-                            {
-                                var listViewItem = new ListViewItem(item.name);
-                                listViewItem.SubItems.Add(item.value.ToString());
-                                lootListListView.Items.Add(listViewItem);
-                            }
-
-                            lootListListView.Columns[0].AutoResize(ColumnHeaderAutoResizeStyle.ColumnContent);
-                            lootListListView.Columns[1].Width = 100;
-                        }
-                    }
-                }
             }
         }
 
@@ -936,7 +926,7 @@ namespace eft_dma_radar
             int mapLayerIndex = GetMapLayerIndex(localPlayerPos.Height);
 
             var bitmap = _loadedBitmaps[mapLayerIndex];
-            float zoomFactor = 0.01f * sldrZoomDistance.Value;
+            float zoomFactor = 0.01f * _config.DefaultZoom;
             float zoomWidth = bitmap.Width * zoomFactor;
             float zoomHeight = bitmap.Height * zoomFactor;
 
@@ -1088,11 +1078,7 @@ namespace eft_dma_radar
 
                                     var friendlyMapPos = friendlyPos.ToMapPos(_selectedMap);
 
-                                    if (!player.IsHuman)
-                                    {
-                                        aimlineLength = 15; // shorten AI aimline
-                                    }
-                                    else if (IsAggressorFacingTarget(playerMapPos.GetPoint(), player.Rotation.X, friendlyMapPos.GetPoint(), friendlyDist))
+                                    if (IsAggressorFacingTarget(playerMapPos.GetPoint(), player.Rotation.X, friendlyMapPos.GetPoint(), friendlyDist))
                                     {
                                         aimlineLength = 1000; // Lengthen aimline
                                         break;
@@ -1164,6 +1150,40 @@ namespace eft_dma_radar
             }
         }
 
+        private void DrawItemAnimations(SKCanvas canvas)
+        {
+            var localPlayer = this.LocalPlayer;
+            if (localPlayer is not null)
+            {
+                var mapParams = GetMapLocation();
+
+                foreach (var animation in activeItemAnimations)
+                {
+                    var itemZoomedPos = animation.Item.Position
+                                            .ToMapPos(_selectedMap)
+                                            .ToZoomedPos(mapParams);
+
+                    var animationTime = animation.AnimationTime % animation.MaxAnimationTime;
+                    var maxRadius = _config.LootPing["Radius"];
+
+                    var cycleScale = Lerp(0f, 1f, animationTime / (animation.MaxAnimationTime / 2f));
+                    if (animationTime > animation.MaxAnimationTime / 2f)
+                        cycleScale = Lerp(1f, 0f, (animationTime - animation.MaxAnimationTime / 2f) / (animation.MaxAnimationTime / 2f));
+
+                    var radius = maxRadius * cycleScale;
+
+                    using (var paint = new SKPaint())
+                    {
+                        paint.Color = Extensions.SKColorFromPaintColor("LootPing", (byte)(255 * cycleScale));
+                        paint.Style = SKPaintStyle.Stroke;
+                        paint.StrokeWidth = 3f;
+
+                        canvas.DrawCircle(itemZoomedPos.X, itemZoomedPos.Y, radius, paint);
+                    }
+                }
+            }
+        }
+
         private void DrawLoot(SKCanvas canvas)
         {
             var localPlayer = this.LocalPlayer;
@@ -1175,9 +1195,7 @@ namespace eft_dma_radar
                     if (loot is not null)
                     {
                         if (loot.Filter is null)
-                        {
                             loot.ApplyFilter();
-                        }
 
                         var filter = loot.Filter;
 
@@ -1185,6 +1203,15 @@ namespace eft_dma_radar
                         {
                             var localPlayerMapPos = localPlayer.Position.ToMapPos(_selectedMap);
                             var mapParams = GetMapLocation();
+
+                            // ghetto auto refresh but works
+                            if (loot.Loot?.Count != lastLootItemCount)
+                            {
+                                lastLootItemCount = loot.Loot.Count;
+
+                                if (lstLootItems.Items.Count != lastLootItemCount)
+                                    RefreshLootListItems();
+                            }
 
                             foreach (var item in filter)
                             {
@@ -1233,6 +1260,9 @@ namespace eft_dma_radar
                             var items = _config.UnknownQuestItems ? questItems.Where(x => x?.Position.X != 0 && x?.Name == "????") : questItems.Where(x => x?.Position.X != 0 && x?.Name != "????");
                             foreach (var item in items)
                             {
+                                if (item is null)
+                                    continue;
+
                                 float position = item.Position.Z - localPlayerMapPos.Height;
                                 var itemZoomedPos = item.Position
                                                         .ToMapPos(_selectedMap)
@@ -1364,20 +1394,28 @@ namespace eft_dma_radar
 
                 if (aimviewPlayers is not null)
                 {
+                    var isItemListVisible = lstLootItems.Visible;
+                    var localPlayerAimviewBoundsX = mcRadarLootItemViewer.Location.X;
+                    var localPlayerAimviewBoundsY = mcRadarLootItemViewer.Location.Y - _aimviewWindowSize - 5;
+
                     var localPlayerAimviewBounds = new SKRect()
                     {
-                        Left = _mapCanvas.Left,
-                        Right = _mapCanvas.Left + _aimviewWindowSize,
-                        Bottom = _mapCanvas.Bottom,
-                        Top = _mapCanvas.Bottom - _aimviewWindowSize
+                        Left = (isItemListVisible ? localPlayerAimviewBoundsX : _mapCanvas.Left),
+                        Right = (isItemListVisible ? localPlayerAimviewBoundsX : _mapCanvas.Left) + _aimviewWindowSize,
+                        Bottom = (isItemListVisible ? localPlayerAimviewBoundsY + _aimviewWindowSize : _mapCanvas.Bottom),
+                        Top = (isItemListVisible ? localPlayerAimviewBoundsY : _mapCanvas.Bottom - _aimviewWindowSize)
                     };
+
+                    var isRadarStatsVisible = mcRadarStats.Visible || mcRadarEnemyStats.Visible;
+                    var primaryTeammateAimviewBoundsX = mcRadarStats.Location.X - mcRadarStats.Width;
+                    var primaryTeammateAimviewBoundsY = mcRadarStats.Location.Y - _aimviewWindowSize - 5;
 
                     var primaryTeammateAimviewBounds = new SKRect()
                     {
-                        Left = _mapCanvas.Right - _aimviewWindowSize,
-                        Right = _mapCanvas.Right,
-                        Bottom = _mapCanvas.Bottom,
-                        Top = _mapCanvas.Bottom - _aimviewWindowSize
+                        Left = (isRadarStatsVisible ? primaryTeammateAimviewBoundsX : _mapCanvas.Right - _aimviewWindowSize),
+                        Right = (isRadarStatsVisible ? primaryTeammateAimviewBoundsX + _aimviewWindowSize : _mapCanvas.Right),
+                        Bottom = (isRadarStatsVisible ? primaryTeammateAimviewBoundsY + _aimviewWindowSize : _mapCanvas.Bottom),
+                        Top = (isRadarStatsVisible ? primaryTeammateAimviewBoundsY : _mapCanvas.Bottom - _aimviewWindowSize)
                     };
 
                     var primaryTeammate = this.AllPlayers?
@@ -1459,15 +1497,15 @@ namespace eft_dma_radar
             string statusText;
             if (!isReady)
             {
-                statusText = "未找到游戏";
+                statusText = "Game Process Not Running";
             }
             else if (isAtHideout)
             {
-                statusText = "等待菜单...";
+                statusText = "Main Menu or Hideout...";
             }
             else if (!inGame)
             {
-                statusText = "等待加入游戏...";
+                statusText = "Waiting for Raid Start...";
 
                 if (selectedMap is not null)
                 {
@@ -1498,11 +1536,11 @@ namespace eft_dma_radar
             }
             else if (localPlayer is null)
             {
-                statusText = "找不到玩家位置";
+                statusText = "Cannot find LocalPlayer";
             }
             else if (selectedMap is null)
             {
-                statusText = "正在加载地图...";
+                statusText = "Loading Map";
             }
             else
             {
@@ -1789,6 +1827,180 @@ namespace eft_dma_radar
 
             return null;
         }
+
+        private void PanTimer_Tick(object sender, EventArgs e)
+        {
+            var panDifference = new SKPoint(
+                this.targetPanPosition.X - this._mapPanPosition.X,
+                this.targetPanPosition.Y - this._mapPanPosition.Y
+            );
+
+            if (panDifference.Length > 0.1)
+            {
+                this._mapPanPosition.X += (float)(panDifference.X * PAN_SMOOTHNESS);
+                this._mapPanPosition.Y += (float)(panDifference.Y * PAN_SMOOTHNESS);
+            }
+            else
+            {
+                this.panTimer.Stop();
+            }
+        }
+
+        private void ZoomTimer_Tick(object sender, EventArgs e)
+        {
+            int zoomDifference = this.targetZoomValue - _config.DefaultZoom;
+
+            if (zoomDifference != 0)
+            {
+                int zoomStep = Math.Sign(zoomDifference);
+                _config.DefaultZoom += zoomStep;
+            }
+            else
+            {
+                this.zoomTimer.Stop();
+            }
+        }
+
+        private bool ZoomIn(int amt)
+        {
+            this.targetZoomValue = Math.Max(10, _config.DefaultZoom - amt);
+            this.zoomTimer.Start();
+
+            return true;
+        }
+
+        private bool ZoomOut(int amt)
+        {
+            this.targetZoomValue = Math.Min(200, _config.DefaultZoom + amt);
+            this.zoomTimer.Start();
+
+            return false;
+        }
+
+        private float Lerp(float a, float b, float t)
+        {
+            return a + (b - a) * t;
+        }
+
+        private void AnimationTimer_Tick(object sender, EventArgs e)
+        {
+            var shouldStopAnimation = true;
+
+            foreach (var animation in activeItemAnimations)
+            {
+                animation.AnimationTime += 0.016f;
+
+                if (animation.AnimationTime < animation.MaxAnimationTime)
+                {
+                    shouldStopAnimation = false;
+                }
+            }
+
+            if (shouldStopAnimation)
+            {
+                itemAnimationTimer.Stop();
+                itemAnimationTimer.Dispose();
+                isAnimationRunning = false;
+            }
+
+            activeItemAnimations.RemoveAll(animation => animation.AnimationTime >= animation.MaxAnimationTime);
+
+            _mapCanvas.Invalidate();
+        }
+
+        private List<LootItem> GetLootAndContainerItems()
+        {
+            var lootItems = new List<LootItem>();
+
+            if (this.Loot?.Loot is null)
+                return lootItems;
+
+            lootItems.AddRange(this.Loot.Loot.OfType<LootItem>());
+
+            foreach (var container in this.Loot.Loot.OfType<LootContainer>())
+            {
+                lootItems.AddRange(container.Items);
+            }
+
+            foreach (var corpse in this.Loot.Loot.OfType<LootCorpse>())
+            {
+                foreach (var gearItem in corpse.Items)
+                {
+                    var itemToAdd = gearItem.Item;
+                    var itemsToAdd = gearItem.Loot;
+
+                    if (itemToAdd?.Item is not null)
+                        lootItems.Add(itemToAdd);
+
+
+                    if (itemsToAdd.Count > 0)
+                        lootItems.AddRange(itemsToAdd);
+                }
+            }
+
+            return lootItems;
+        }
+
+        private void RefreshLootListItems()
+        {
+            if (this.Loot?.Loot?.Count < 1 || !_config.LootItemViewer)
+                return;
+
+            lstLootItems.Items.Clear();
+
+            var lootItems = this.GetLootAndContainerItems();
+
+            if (lootItems.Count < 1)
+                return;
+
+            var itemToFind = txtLootItemFilter.Text.Trim();
+
+            var mergedLootItems = lootItems
+             .GroupBy(lootItem => lootItem.ID)
+             .Select(group =>
+             {
+                 var count = group.Count();
+                 var firstItem = group.First();
+
+                 return new
+                 {
+                     LootItem = new LootItem
+                     {
+                         ID = firstItem.ID,
+                         Name = firstItem.Name,
+                         Position = firstItem.Position,
+                         Important = firstItem.Important,
+                         AlwaysShow = firstItem.AlwaysShow,
+                         Value = firstItem.Value,
+                         Color = firstItem.Color
+                     },
+                     Quantity = count
+                 };
+             })
+             .OrderByDescending(x => x.LootItem.Value)
+             .ToList();
+
+            if (!string.IsNullOrEmpty(itemToFind))
+            {
+                mergedLootItems = mergedLootItems
+                    .Where(item => item.LootItem.Name.IndexOf(itemToFind, StringComparison.OrdinalIgnoreCase) != -1)
+                    .ToList();
+            }
+
+            if (mergedLootItems.Count < 1)
+                return;
+
+            lstLootItems.Items.AddRange(mergedLootItems.Select(item => new ListViewItem
+            {
+                Text = item.Quantity.ToString(),
+                Tag = item.LootItem,
+                SubItems =
+                {
+                    item.LootItem.Name,
+                    TarkovDevManager.FormatNumber(item.LootItem.Value)
+                }
+            }).ToArray());
+        }
         #endregion
 
         #region Event Handlers
@@ -1897,9 +2109,8 @@ namespace eft_dma_radar
                     int dx = e.X - this._lastMousePosition.X;
                     int dy = e.Y - this._lastMousePosition.Y;
 
-                    float sensitivityFactor = DragSensitivity;
-                    dx = (int)(dx * sensitivityFactor);
-                    dy = (int)(dy * sensitivityFactor);
+                    dx = (int)(dx * DRAG_SENSITIVITY);
+                    dy = (int)(dy * DRAG_SENSITIVITY);
 
                     this.targetPanPosition.X -= dx;
                     this.targetPanPosition.Y -= dy;
@@ -1949,7 +2160,10 @@ namespace eft_dma_radar
                             DrawCorpses(canvas);
 
                         if (_config.ProcessLoot && _config.ShowLoot)
+                        {
+                            DrawItemAnimations(canvas);
                             DrawLoot(canvas);
+                        }
 
                         if (_config.QuestHelper)
                             DrawQuestItems(canvas);
@@ -1958,12 +2172,12 @@ namespace eft_dma_radar
 
                         DrawExfils(canvas);
 
+                        DrawPlayers(canvas);
+
                         if (_config.AimviewEnabled)
                             DrawAimview(canvas);
 
                         DrawToolTips(canvas);
-
-                        DrawPlayers(canvas); // draw last to make them appear on top
                     }
                 }
                 else
@@ -1981,60 +2195,55 @@ namespace eft_dma_radar
             ToggleMap();
         }
 
-        private void PanTimer_Tick(object sender, EventArgs e)
-        {
-            var panDifference = new SKPoint(
-                this.targetPanPosition.X - this._mapPanPosition.X,
-                this.targetPanPosition.Y - this._mapPanPosition.Y
-            );
-
-            if (panDifference.Length > 0.1)
-            {
-                this._mapPanPosition.X += (float)(panDifference.X * PanSmoothness);
-                this._mapPanPosition.Y += (float)(panDifference.Y * PanSmoothness);
-            }
-            else
-            {
-                this.panTimer.Stop();
-            }
-        }
-
-        private void ZoomTimer_Tick(object sender, EventArgs e)
-        {
-            int zoomDifference = this.targetZoomValue - sldrZoomDistance.Value;
-
-            if (zoomDifference != 0)
-            {
-                int zoomStep = Math.Sign(zoomDifference);
-                sldrZoomDistance.Value += zoomStep;
-            }
-            else
-            {
-                this.zoomTimer.Stop();
-            }
-        }
-
-        private bool ZoomIn(int amt)
-        {
-            this.targetZoomValue = Math.Max(sldrZoomDistance.RangeMin, sldrZoomDistance.Value - amt);
-            this.zoomTimer.Start();
-
-            return true;
-        }
-
-        private bool ZoomOut(int amt)
-        {
-            this.targetZoomValue = Math.Min(sldrZoomDistance.RangeMax, sldrZoomDistance.Value + amt);
-            this.zoomTimer.Start();
-
-            return false;
-        }
-
         private void swRadarStats_CheckedChanged(object sender, EventArgs e)
         {
             var enabled = swRadarStats.Checked;
             _config.ShowRadarStats = enabled;
             mcRadarStats.Visible = enabled;
+        }
+
+        private void btnPingSelectedItem_Click(object sender, EventArgs e)
+        {
+            var localPlayer = this.LocalPlayer;
+            var selectedItem = lstLootItems.SelectedItems.Count > 0 ? lstLootItems.SelectedItems[0]?.Tag as LootItem : null;
+
+            if (selectedItem is null || localPlayer is null)
+                return;
+
+            var lootItems = this.GetLootAndContainerItems();
+            var itemsToPing = lootItems.Where(item => item.ID == selectedItem.ID).ToList();
+
+            activeItemAnimations.Clear();
+
+            foreach (var item in itemsToPing)
+            {
+                activeItemAnimations.Add(new ItemAnimation(item)
+                {
+                    MaxAnimationTime = ((float)_config.LootPing["AnimationSpeed"] / 1000)
+                });
+            }
+
+            isAnimationRunning = false;
+            itemAnimationTimer?.Stop();
+            itemAnimationTimer?.Dispose();
+
+            itemAnimationTimer = new System.Windows.Forms.Timer();
+            itemAnimationTimer.Interval = 16;
+            itemAnimationTimer.Tick += AnimationTimer_Tick;
+            itemAnimationTimer.Start();
+            isAnimationRunning = true;
+        }
+
+        private void txtLootItemFilter_TextChanged(object sender, EventArgs e)
+        {
+            this.RefreshLootListItems();
+        }
+
+        private void btnToggleLootItemViewer_Click(object sender, EventArgs e)
+        {
+            mcRadarLootItemViewer.Visible = _config.LootItemViewer = !_config.LootItemViewer;
+            if (_config.LootItemViewer)
+                this.RefreshLootListItems();
         }
         #endregion
         #endregion
@@ -2092,11 +2301,6 @@ namespace eft_dma_radar
             _config.ShowHoverArmor = swHoverArmor.Checked;
         }
 
-        private void sldrZoomDistance_onValueChanged(object sender, int newValue)
-        {
-            _config.DefaultZoom = newValue;
-        }
-
         private void sldrUIScale_onValueChanged(object sender, int newValue)
         {
             _config.UIScale = newValue;
@@ -2138,6 +2342,11 @@ namespace eft_dma_radar
             _config.FontSize = newValue;
             InitiateFontSize();
         }
+
+        private void sldrZoomSensitivity_onValueChanged(object sender, int newValue)
+        {
+            _config.ZoomSensitivity = newValue;
+        }
         #endregion
         #endregion
 
@@ -2147,13 +2356,14 @@ namespace eft_dma_radar
         {
             return cboThermalType.SelectedItem?.ToString() == "Main" ? _config.MainThermalSetting : _config.OpticThermalSetting;
         }
+
+        private void RefreshChams()
+        {
+            Memory.Chams?.ChamsDisable();
+            Memory.Chams?.ChamsEnable();
+        }
         #endregion
         #region Event Handlers
-        private void swChams_CheckedChanged(object sender, EventArgs e)
-        {
-            _config.ChamsEnabled = swChams.Checked;
-        }
-
         private void swExtendedReach_CheckedChanged(object sender, EventArgs e)
         {
             _config.ExtendedReach = swExtendedReach.Checked;
@@ -2211,6 +2421,18 @@ namespace eft_dma_radar
         private void sldrMagDrillsSpeed_onValueChanged(object sender, int newValue)
         {
             _config.MagDrillSpeed = newValue;
+
+            if (_config.MaxSkills["Mag Drills"] && Memory.LocalPlayer is not null)
+            {
+                var loadSpeedSkill = Memory.PlayerManager.Skills["MagDrills"]["LoadSpeed"];
+                loadSpeedSkill.MaxValue = (float)newValue;
+
+                var unloadSpeedSkill = Memory.PlayerManager.Skills["MagDrills"]["UnloadSpeed"];
+                unloadSpeedSkill.MaxValue = (float)newValue;
+
+                Memory.PlayerManager?.SetMaxSkill(loadSpeedSkill);
+                Memory.PlayerManager?.SetMaxSkill(unloadSpeedSkill);
+            }
         }
 
         private void swInfiniteStamina_CheckedChanged(object sender, EventArgs e)
@@ -2221,11 +2443,27 @@ namespace eft_dma_radar
         private void sldrJumpStrength_onValueChanged(object sender, int newValue)
         {
             _config.JumpPowerStrength = newValue;
+
+            if (_config.MaxSkills["Strength"] && Memory.LocalPlayer is not null)
+            {
+                var jumpHeightSkill = Memory.PlayerManager.Skills["Strength"]["BuffJumpHeightInc"];
+                jumpHeightSkill.MaxValue = 0.2f + ((float)newValue / 100);
+
+                Memory.PlayerManager?.SetMaxSkill(jumpHeightSkill);
+            }
         }
 
         private void sldrThrowStrength_onValueChanged(object sender, int newValue)
         {
             _config.ThrowPowerStrength = newValue;
+
+            if (_config.MaxSkills["Strength"] && Memory.LocalPlayer is not null)
+            {
+                var throwDistanceSkill = Memory.PlayerManager.Skills["Strength"]["BuffThrowDistanceInc"];
+                throwDistanceSkill.MaxValue = (float)newValue / 100;
+
+                Memory.PlayerManager?.SetMaxSkill(throwDistanceSkill);
+            }
         }
 
         private void cboThermalType_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -2275,6 +2513,12 @@ namespace eft_dma_radar
             mcSettingsMemoryWritingGear.Enabled = isChecked;
             mcSettingsMemoryWritingThermal.Enabled = isChecked;
             mcSettingsMemoryWritingSkillBuffs.Enabled = isChecked;
+            mcSettingsMemoryWritingChams.Enabled = isChecked;
+
+            if (isChecked)
+                Memory.Toolbox?.StartToolbox();
+            else
+                Memory.Toolbox?.StopToolbox();
         }
 
         private void swMaxEndurance_CheckedChanged(object sender, EventArgs e)
@@ -2366,6 +2610,75 @@ namespace eft_dma_radar
         private void swMaxHeavyVests_CheckedChanged(object sender, EventArgs e)
         {
             _config.MaxSkills["Heavy Vests"] = swMaxHeavyVests.Checked;
+        }
+
+        private void swChams_CheckedChanged(object sender, EventArgs e)
+        {
+            var isChecked = swChams.Checked;
+            _config.Chams["Enabled"] = isChecked;
+
+            swChamsPMCs.Visible = isChecked;
+            swChamsPlayerScavs.Visible = isChecked;
+            swChamsBosses.Visible = isChecked;
+            swChamsRogues.Visible = isChecked;
+            swChamsCultists.Visible = isChecked;
+            swChamsScavs.Visible = isChecked;
+            swChamsTeammates.Visible = isChecked;
+            swChamsCorpses.Visible = isChecked;
+            swChamsRevert.Visible = isChecked;
+        }
+
+        private void swChamsPlayers_CheckedChanged(object sender, EventArgs e)
+        {
+            _config.Chams["PMCs"] = swChamsPMCs.Checked;
+            RefreshChams();
+        }
+
+        private void swChamsPlayerScavs_CheckedChanged(object sender, EventArgs e)
+        {
+            _config.Chams["PlayerScavs"] = swChamsPlayerScavs.Checked;
+            RefreshChams();
+        }
+
+        private void swChamsBosses_CheckedChanged(object sender, EventArgs e)
+        {
+            _config.Chams["Bosses"] = swChamsBosses.Checked;
+            RefreshChams();
+        }
+
+        private void swChamsRogues_CheckedChanged(object sender, EventArgs e)
+        {
+            _config.Chams["Rogues"] = swChamsRogues.Checked;
+            RefreshChams();
+        }
+
+        private void swChamsCultists_CheckedChanged(object sender, EventArgs e)
+        {
+            _config.Chams["Cultists"] = swChamsCultists.Checked;
+            RefreshChams();
+        }
+
+        private void swChamsScavs_CheckedChanged(object sender, EventArgs e)
+        {
+            _config.Chams["Scavs"] = swChamsScavs.Checked;
+            RefreshChams();
+        }
+
+        private void swChamsTeammates_CheckedChanged(object sender, EventArgs e)
+        {
+            _config.Chams["Teammates"] = swChamsTeammates.Checked;
+            RefreshChams();
+        }
+
+        private void swChamsCorpses_CheckedChanged(object sender, EventArgs e)
+        {
+            _config.Chams["Corpses"] = swChamsCorpses.Checked;
+            RefreshChams();
+        }
+
+        private void swChamsRevert_CheckedChanged(object sender, EventArgs e)
+        {
+            _config.Chams["RevertOnClose"] = swChamsRevert.Checked;
         }
         #endregion
         #endregion
@@ -2500,6 +2813,17 @@ namespace eft_dma_radar
                 Loot?.ApplyFilter();
             }
 
+        }
+
+        // Loot Ping
+        private void sldrLootPingAnimationSpeed_onValueChanged(object sender, int newValue)
+        {
+            _config.LootPing["AnimationSpeed"] = newValue;
+        }
+
+        private void sldrLootPingMaxRadius_onValueChanged(object sender, int newValue)
+        {
+            _config.LootPing["Radius"] = newValue;
         }
         #endregion
         #endregion
@@ -2869,7 +3193,6 @@ namespace eft_dma_radar
             setColor(picAIScav, "Scav");
 
             // Players
-
             setColor(picPlayersUSEC, "USEC");
             setColor(picPlayersBEAR, "BEAR");
             setColor(picPlayersScav, "PlayerScav");
@@ -2891,6 +3214,7 @@ namespace eft_dma_radar
             setColor(picLootImportant, "ImportantLoot");
             setColor(picQuestItem, "QuestItem");
             setColor(picQuestZone, "QuestZone");
+            setColor(picLootPing, "LootPing");
 
             // Other
             setColor(picOtherTextOutline, "TextOutline");
@@ -3064,8 +3388,12 @@ namespace eft_dma_radar
             UpdatePaintColorByName("QuestZone", picQuestZone);
         }
 
-        // Other
+        private void picLootPing_Click(object sender, EventArgs e)
+        {
+            UpdatePaintColorByName("LootPing", picLootPing);
+        }
 
+        // Other
         private void picOtherTextOutline_Click(object sender, EventArgs e)
         {
             UpdatePaintColorByName("TextOutline", picOtherTextOutline);
@@ -3609,7 +3937,7 @@ namespace eft_dma_radar
         #endregion
 
         #region Event Handlers
-        private void txtLootFilterItemToSearch_KeyDown(object sender, KeyEventArgs e)
+        private void txtLootFilterItemToSearch_TextChanged(object sender, EventArgs e)
         {
             var itemToSearch = txtLootFilterItemToSearch.Text.Trim();
 
@@ -3617,7 +3945,7 @@ namespace eft_dma_radar
                 return;
 
             var lootList = TarkovDevManager.AllItems.Values
-                .Where(x => x.Name.Contains(itemToSearch, StringComparison.OrdinalIgnoreCase))
+                .Where(x => x.Name.IndexOf(itemToSearch, StringComparison.OrdinalIgnoreCase) != -1)
                 .OrderBy(x => x.Name)
                 .Take(25)
                 .ToArray();
@@ -3777,97 +4105,42 @@ namespace eft_dma_radar
         #endregion
         #endregion
 
-        private void tabSelector_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSettingsColorsAIBoss_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void lblRadarMapSetup_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void materialLabel1_Click(object sender, EventArgs e)
+        private void lstLootItems_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void lblSettingsColorsAIMoranaFollower_Click(object sender, EventArgs e)
+        private void tabSelector_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void frmMain_Load(object sender, EventArgs e)
+        private void lblSettingsMemoryWritingGear_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void lblLootFilterItemManagement_Click(object sender, EventArgs e)
+        private void txtLootItemFilter_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void lstLootFilterEntries_SelectedIndexChanged(object sender, EventArgs e)
+        private void sldrLootPingAnimationSpeed_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void swLootFilterActive_CheckedChanged_1(object sender, EventArgs e)
+        private void sldrLootPingMaxRadius_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void lootListListView_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSettingsAIFactionsEntryManagement_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtFactionName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtWatchlistAccountID_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtWatchlistTag_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtWatchlistPlatformUsername_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblWatchlistProfiles_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSettingsOtherChams_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSettingsOtherPrimaryLight_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSettingsColorsExfilActiveIcon_Click(object sender, EventArgs e)
+        private void lblSettingsColorsExfiltration_Click(object sender, EventArgs e)
         {
 
         }
@@ -3877,22 +4150,22 @@ namespace eft_dma_radar
 
         }
 
-        private void lblSettingsColorsExfilPendingIcon_Click(object sender, EventArgs e)
+        private void lblSettingsColorsExfilActiveText_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void lblSettingsColorsExfilClosedText_Click(object sender, EventArgs e)
+        private void lblSettingsColorOtherPrimaryDark_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void lblSettingsColorsExfilClosedIcon_Click(object sender, EventArgs e)
+        private void ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void lblSettingsMemoryWritingGear_Click(object sender, EventArgs e)
+        private void lblSettingsColorOtherAccent_Click(object sender, EventArgs e)
         {
 
         }
